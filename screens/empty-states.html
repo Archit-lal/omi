@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>omi — Empty states</title>
+<link rel="stylesheet" href="../design-system.css">
+<style>
+  .es-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:820px;margin:0 auto}
+  .es{padding:36px 30px;display:flex;flex-direction:column;align-items:flex-start;min-height:190px}
+  .es .ic{width:40px;height:40px;border-radius:11px;display:flex;align-items:center;justify-content:center;
+    background:var(--surface-2);color:var(--muted);border:1px solid var(--hair)}
+  .es .ic svg{width:20px;height:20px}
+  .es .ttl{font-family:var(--serif);font-size:21px;color:var(--ink);letter-spacing:-.01em;margin-top:18px;line-height:1.15}
+  .es .sub{font-size:13.5px;color:var(--muted);margin-top:8px;line-height:1.5}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="../common.js"></script>
+<script>
+const items = [
+  ['check','No tasks yet',"Nothing on your plate yet. I'll add things as they come up."],
+  ['brain','Your brain, filling in','Your brain map fills in as you go. Give it a day.'],
+  ['msg','Inbox is quiet',"No drafts waiting. I'll ping you when something needs you."],
+  ['ask','Ask me anything','Ask me anything — I remember what you saw and said.'],
+];
+const cards = items.map(i=>`
+  <div class="card es">
+    <div class="ic">${icon(i[0])}</div>
+    <div class="ttl">${i[1]}</div>
+    <div class="sub">${i[2]}</div>
+  </div>`).join('');
+
+const inner = `
+<div style="padding:56px 48px">
+  <div style="max-width:820px;margin:0 auto 26px">
+    <div class="eyebrow">Empty states · the voice</div>
+    <div class="h2 mt2">Never "No data." An empty screen is an invitation.</div>
+  </div>
+  <div class="es-grid">${cards}</div>
+</div>`;
+document.getElementById('root').innerHTML = bareWindow({ title:'omi', presence:'none', body: inner });
+</script>
+<script src="../interactions.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>omi — First ping</title>
+<link rel="stylesheet" href="../design-system.css">
+<style>
+  .ob { min-height:720px; display:flex; flex-direction:column; }
+  .ob-top { display:flex; align-items:center; justify-content:space-between; padding:22px 30px; position:relative; z-index:3; }
+  .desk { flex:1; position:relative; overflow:hidden; display:flex; flex-direction:column; align-items:center; justify-content:center; }
+  /* dimmed generic desktop backdrop */
+  .desk::before { content:""; position:absolute; inset:0;
+    background:
+      linear-gradient(120deg, var(--surface-2), var(--soft)),
+      repeating-linear-gradient(90deg, transparent 0 120px, var(--hair) 120px 121px);
+    opacity:0.5; }
+  .desk .scrim { position:absolute; inset:0; background:var(--scrim); }
+  .ping-toast { position:relative; z-index:2; width:420px; }
+  .ping-cap { position:relative; z-index:2; color:#fff; font-size:14px; margin-top:26px; opacity:0.9; text-align:center; }
+  .skip { color: var(--faint); font-size:13px; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="../common.js"></script>
+<script>
+function prog(cur){let s='';for(let k=1;k<=7;k++)s+=`<i class="${k<cur?'on':''} ${k===cur?'cur':''}"></i>`;return `<div class="prog">${s}</div>`;}
+
+const toast = `
+<div class="toast ping-toast">
+  <div class="from"><span class="live-dot amber"></span><span class="mk">omi</span><span class="caption" style="margin-left:auto">now</span></div>
+  <div class="ink" style="font-size:15.5px;line-height:1.4;font-weight:500">Reply to Sarah before 3pm — you promised her the deck.</div>
+  <div class="small" style="margin-top:6px">I already drafted it from your thread.</div>
+  <div class="row gap2 mt4">
+    <button class="btn accent sm" onclick="go('messages-imessage')">Draft it</button>
+    <button class="btn ghost sm">Snooze</button>
+  </div>
+</div>`;
+
+const body = `
+<div class="ob">
+  <div class="ob-top"><span class="wordmark" style="font-size:20px">omi</span>${prog(6)}<span class="skip"></span></div>
+  <div class="desk">
+    <div class="scrim"></div>
+    ${toast}
+    <div class="ping-cap">I'll catch things like this all day — you don't have to ask.</div>
+    <div class="row gap3" style="position:relative;z-index:2;margin-top:30px"><button class="btn accent lg" onclick="go('ob-goal')">Got it</button></div>
+  </div>
+</div>`;
+
+document.getElementById('root').innerHTML = bareWindow({ title:'omi', presence:'live', body });
+</script>
+<script src="../interactions.js"></script>
+</body>
+</html>

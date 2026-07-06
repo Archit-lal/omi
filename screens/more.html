@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>omi — all features</title>
+<link rel="stylesheet" href="../design-system.css">
+<style>
+  .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-top:22px; }
+  .fcard { display:flex; gap:12px; align-items:flex-start; padding:16px; border:1px solid var(--hair); border-radius:14px; background:var(--surface); cursor:pointer; transition:background .12s var(--ease); text-align:left; }
+  .fcard:hover { background:var(--surface-2); }
+  .fcard .k { width:34px;height:34px;border-radius:9px;flex:none;display:flex;align-items:center;justify-content:center;background:var(--surface-2);color:var(--body); }
+  .fcard:hover .k { color:var(--accent-strong); }
+  .fcard .t { font-size:14px;font-weight:540;color:var(--ink); }
+  .fcard .s { font-size:12px;color:var(--muted);margin-top:2px; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="../common.js"></script>
+<script>
+const items = [
+  ['home','home','Home','Your one next move'],
+  ['dashboard','home','Dashboard','Score, goals & focus'],
+  ['live','mic','Live capture','Transcript & notes, live'],
+  ['ask','ask','Ask omi','Anything you’ve seen or said'],
+  ['memory','brain','Memory','Facts & everything kept'],
+  ['memory-graph','share','Brain map','How it all connects'],
+  ['persona','users','Persona','How I sound as you'],
+  ['tasks','check','Tasks','What you owe, by when'],
+  ['conversations','msg','Conversations','Every talk, summarized'],
+  ['focus','clock','Focus','Protect your best hours'],
+  ['insights','bolt','Insights','Quiet things I noticed'],
+  ['messages-imessage','msg','Messages','Drafts & auto-reply'],
+  ['rewind','rewind','Rewind','Find anything you saw'],
+  ['apps','apps','Apps','Connect & export'],
+  ['settings','settings','Settings','Everything, tuned'],
+  ['plan-usage','star','Plan & usage','Operator'],
+  ['permissions','shield','Permissions','See, hear, act'],
+  ['help','msg','Help','Talk to a founder'],
+];
+const body = `
+<main class="main">
+  <div class="pad-lg" style="max-width:840px;margin:0 auto">
+    <div class="caption mono">Everything, one tap away</div>
+    <h1 class="h1 mt2">All of omi</h1>
+    <div class="small mt2">The calm home stays out of your way. Everything lives here.</div>
+    <div class="grid">
+      ${items.map(it=>`<div class="fcard" onclick="go('${it[0]}')">
+        <span class="k">${icon(it[1],'icon-sm')}</span>
+        <div><div class="t">${it[2]}</div><div class="s">${it[3]}</div></div>
+      </div>`).join('')}
+    </div>
+  </div>
+</main>`;
+document.getElementById('root').innerHTML = windowShell({ active:'apps', title:'omi — All features', presence:'live', body });
+</script>
+<script src="../interactions.js"></script>
+</body>
+</html>

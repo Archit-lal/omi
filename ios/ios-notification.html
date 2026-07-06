@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>omi iOS — Proactive push</title>
+<link rel="stylesheet" href="../design-system.css">
+<link rel="stylesheet" href="ios.css">
+<style>
+  .lockwrap { position:relative; height:100%; }
+  .lockbg { position:absolute; inset:0; background:
+      radial-gradient(120% 70% at 50% 0%, rgba(224,168,46,0.18), transparent 55%),
+      linear-gradient(180deg,#111009 0%, #0a0a0b 60%, #060607 100%); }
+  .lockface { position:relative; z-index:2; height:100%; display:flex; flex-direction:column; align-items:center; padding-top:74px; }
+  .lock-date { color:rgba(255,255,255,0.6); font-size:16px; font-weight:500; }
+  .lock-time { color:#fff; font-size:82px; font-weight:640; letter-spacing:-0.03em; line-height:1; margin-top:2px; }
+  .push {
+    width:340px; margin-top:auto; margin-bottom:40px;
+    background:rgba(30,29,26,0.72); backdrop-filter:blur(24px); -webkit-backdrop-filter:blur(24px);
+    border:1px solid rgba(255,255,255,0.10); border-radius:22px; padding:15px 16px;
+    box-shadow:0 16px 40px -12px rgba(0,0,0,0.5);
+  }
+  .push .top { display:flex; align-items:center; gap:9px; margin-bottom:8px; }
+  .push .app-ic { width:22px;height:22px;border-radius:6px;background:var(--accent);color:#241a05;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:14px;font-weight:600; }
+  .push .app-name { color:rgba(255,255,255,0.85); font-size:13px; font-weight:600; letter-spacing:0.02em; }
+  .push .app-time { margin-left:auto; color:rgba(255,255,255,0.45); font-size:12px; }
+  .push .title { color:#fff; font-size:15px; font-weight:600; }
+  .push .body { color:rgba(255,255,255,0.82); font-size:14.5px; margin-top:3px; line-height:1.4; }
+  .push .acts { display:flex; gap:8px; margin-top:12px; }
+  .push .pill-act { flex:1; text-align:center; background:rgba(255,255,255,0.12); color:#fff; border-radius:11px; padding:9px 0; font-size:13.5px; font-weight:540; }
+  .push .pill-act.primary { background:var(--accent); color:#241a05; font-weight:600; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="../common.js"></script>
+<script src="ios-frame.js"></script>
+<script>
+const app = `
+<div class="lockwrap">
+  <div class="lockbg"></div>
+  <div class="lockface">
+    <div class="lock-date">Monday, July 6</div>
+    <div class="lock-time">9:41</div>
+
+    <div class="push">
+      <div class="top">
+        <div class="app-ic">o</div>
+        <div class="app-name">omi</div>
+        <div class="app-time">now</div>
+      </div>
+      <div class="title">Send Nick the PR link</div>
+      <div class="body">He's blocked on your review and you said before standup. I've drafted it — want to send?</div>
+      <div class="acts">
+        <div class="pill-act primary">Review draft</div>
+        <div class="pill-act">Snooze</div>
+      </div>
+    </div>
+  </div>
+</div>`;
+
+document.getElementById('root').innerHTML = phone({ app });
+</script>
+</body>
+</html>

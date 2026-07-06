@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>omi — Home</title>
+<link rel="stylesheet" href="../design-system.css">
+</head>
+<body>
+<div id="root"></div>
+<script src="../common.js"></script>
+<script>
+const main = `
+<main class="main">
+  <div class="pad-lg" style="max-width:840px;margin:0 auto">
+
+    <div class="between">
+      <div>
+        <div class="caption mono">Monday, July 6</div>
+        <h1 class="h1 mt2">Good morning, Archit.</h1>
+      </div>
+      <a class="member" onclick="go('referral')" style="cursor:pointer">${icon('star','icon-sm')} Member #4,120</a>
+    </div>
+
+    <!-- the one focus: do this next -->
+    <div class="next-card mt5">
+      <div class="between">
+        <span class="kicker"><span class="dot"></span> Do this next</span>
+        <span class="caption">8 more waiting</span>
+      </div>
+      <div class="display mt4" style="font-size:27px;max-width:580px">
+        Send Nick the PR link — he's blocked on your review.
+      </div>
+      <div class="small mt3" style="max-width:540px">
+        You said you'd send it before standup. I drafted it with the branch and a one-line summary. Take a look.
+      </div>
+      <div class="row gap3 mt5">
+        <button class="btn accent" onclick="go('messages-imessage')">${icon('send','icon-sm')} Review the draft</button>
+        <button class="btn ghost">Snooze 1 hour</button>
+      </div>
+    </div>
+
+    <!-- ask bar -->
+    <div class="input mt5" style="height:52px;border-radius:var(--r-pill);cursor:text" onclick="go('ask')">
+      ${icon('ask','icon')}
+      <span class="ph" style="font-size:15px">Ask omi anything — it remembers what you saw and said</span>
+      <span class="kbd">⌘K</span>
+    </div>
+
+    <!-- quiet stats: big serif numbers, tiny labels -->
+    <div class="row gap6 mt7" style="padding-left:2px">
+      <div class="stat" onclick="go('memory')" style="cursor:pointer"><div class="n">1,923</div><div class="l">Remembered</div></div>
+      <div class="stat" onclick="go('tasks')" style="cursor:pointer"><div class="n">9</div><div class="l">Tasks today</div></div>
+      <div class="stat" onclick="go('messages-imessage')" style="cursor:pointer"><div class="n">3</div><div class="l">Drafts waiting</div></div>
+      <div class="stat" onclick="go('conversations')" style="cursor:pointer"><div class="n">14</div><div class="l">Conversations today</div></div>
+    </div>
+
+    <div class="caption mt6" style="display:flex;align-items:center;gap:8px">
+      ${icon('lock','icon-sm')} On your Mac · encrypted · you own it all.
+    </div>
+  </div>
+</main>`;
+
+document.getElementById('root').innerHTML = windowShell({ active:'home', title:'omi', presence:'live', body: main });
+</script>
+<script src="../interactions.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>omi iOS — Memory</title>
+<link rel="stylesheet" href="../design-system.css">
+<link rel="stylesheet" href="ios.css">
+</head>
+<body>
+<div id="root"></div>
+<script src="../common.js"></script>
+<script src="ios-frame.js"></script>
+<script>
+const mem = (title, when, src) => `
+  <div class="list-row" style="padding:14px 0;border-bottom:1px solid var(--hair);border-radius:0">
+    <div class="grow">
+      <div class="body ink" style="font-weight:520">${title}</div>
+      <div class="caption" style="margin-top:3px">${src} · ${when}</div>
+    </div>
+    ${icon('chev','icon-sm')}
+  </div>`;
+
+const app = `
+<div class="apppad">
+  <div class="m-h1" style="margin-top:6px">Memory</div>
+  <div class="m-ask" style="margin-top:14px;height:46px">${icon('search','icon')}<span style="flex:1">Search everything you've seen</span></div>
+
+  <!-- what I know about you -->
+  <div class="card tile" style="margin-top:18px;padding:18px">
+    <div class="between">
+      <span class="eyebrow">What I know about you</span>
+      <span class="caption">Edit</span>
+    </div>
+    <div class="fact"><span class="v">You founded <b>GetEventful.com</b>.</span></div>
+    <div class="fact"><span class="v">Goal: GetEventful to $100K MRR by summer 2026.</span></div>
+    <div class="fact"><span class="v">You live in SF with Maher.</span></div>
+    <div class="fact" style="border-bottom:none"><span class="v">David runs Alaris Security.</span></div>
+    <div class="caption" style="margin-top:12px">I learned these on my own. Fix anything that's wrong.</div>
+  </div>
+
+  <div class="eyebrow" style="margin:24px 2px 6px">Recent</div>
+  ${mem("Ask 20 people for feedback on the app — due today", "today", "Tasks")}
+  ${mem("Team chose the HTML-mockup approach", "today", "Meeting")}
+  ${mem("Send Nick the PR link for review", "today", "Telegram")}
+  ${mem("Book flight to Minneapolis", "Fri", "Travel")}
+  ${mem("Connected to Claude, ChatGPT & OpenClaw", "last week", "Apps")}
+</div>`;
+
+document.getElementById('root').innerHTML = phone({ app, tab:'memory' });
+</script>
+</body>
+</html>

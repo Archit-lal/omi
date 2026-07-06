@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>omi iOS — Live</title>
+<link rel="stylesheet" href="../design-system.css">
+<link rel="stylesheet" href="ios.css">
+</head>
+<body>
+<div id="root"></div>
+<script src="../common.js"></script>
+<script src="ios-frame.js"></script>
+<script>
+const app = `
+<div style="display:flex;flex-direction:column;height:100%">
+  <div class="apppad" style="flex:1;overflow:auto;padding-top:2px">
+    <div class="live-topbar">
+      <div class="icon-btn" style="margin-left:0" onclick="iosGo('ios-conversations')">${icon('chevD','icon')}</div>
+      <span class="rec-dot"></span>
+      <span class="st-txt">🎙️ Listening</span>
+      <span class="timer">03:42</span>
+    </div>
+
+    <div class="seg-tabs">
+      <div class="st on">Transcript</div>
+      <div class="st">Summary</div>
+    </div>
+
+    <div style="margin-top:14px">
+      <div class="trow">
+        <span class="av sm fill-slate">N</span>
+        <div><div class="who">Nick <span>03:31</span></div>
+        <div class="tx">Did you get a chance to push the auto-reply fix? I'm blocked on the review.</div></div>
+      </div>
+      <div class="trow">
+        <span class="av sm fill-ink">A</span>
+        <div><div class="who">You <span>03:34</span></div>
+        <div class="tx">Yeah, rebasing on main now — I'll send the PR link right after this.</div></div>
+      </div>
+      <div class="trow">
+        <span class="av sm fill-slate">N</span>
+        <div><div class="who">Nick <span>03:38</span></div>
+        <div class="tx">Perfect. Also let's grab the coworking space this week.</div></div>
+      </div>
+      <div class="trow new">
+        <span class="av sm fill-ink">A</span>
+        <div><div class="who">You <span>03:42</span></div>
+        <div class="tx">Sounds good — I'll book it and loop in Will.</div></div>
+      </div>
+    </div>
+
+    <div class="savedline"><span class="d"></span> Audio saved on your iPhone · 3:42</div>
+  </div>
+
+  <div class="live-ctrls">
+    <div class="mute-btn">${icon('mic','icon')}</div>
+    <button class="btn accent" style="flex:1;height:52px" onclick="iosGo('ios-conversations')">${icon('check','icon-sm')} Process now</button>
+  </div>
+</div>`;
+document.getElementById('root').innerHTML = phone({ app });
+</script>
+</body>
+</html>

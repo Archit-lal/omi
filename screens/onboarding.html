@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>omi — hello</title>
+<link rel="stylesheet" href="../design-system.css">
+<style>
+  .ob { height:100%; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:22px; padding:44px 40px 30px; text-align:center; }
+  .ob .buddy-say { opacity:0; transition: opacity .4s var(--ease); animation:none;
+    height:auto; min-height:0; line-height:1.35; padding:15px 24px; max-width:480px;
+    display:inline-flex; align-items:center; justify-content:center; text-align:center;
+    white-space:normal; overflow:visible; box-sizing:border-box; }
+  .ob .buddy-say.show { opacity:1; }
+  .panel { width:460px; max-width:100%; opacity:0; transform: translateY(8px); transition: all .45s var(--ease); }
+  .panel.show { opacity:1; transform:none; }
+  .prow { display:flex; align-items:center; gap:12px; padding:13px 15px; border-radius:12px; border:1px solid var(--hair); background:var(--surface); margin-top:8px; text-align:left; }
+  .prow .ico { width:34px;height:34px;border-radius:9px;display:flex;align-items:center;justify-content:center;background:var(--surface-2);color:var(--body);flex:none }
+  .prow .nm { font-size:14px;font-weight:540;color:var(--ink) }
+  .prow .pay { font-size:12.5px;color:var(--muted) }
+  .prow .st { margin-left:auto; color:var(--faint); transition: color .3s var(--ease); flex:none }
+  .prow.on .st { color:var(--live); }
+  .prow .av { width:34px;height:34px;font-size:13px;border-radius:9px }
+  .prow .lg { width:34px;height:34px;border-radius:9px;background:var(--surface-2);display:flex;align-items:center;justify-content:center;flex:none }
+  .prow .lg img { width:19px;height:19px;object-fit:contain }
+  .cta { display:flex; flex-direction:column; align-items:center; gap:10px; opacity:0; transform:translateY(8px); transition: all .4s var(--ease); }
+  .cta.show { opacity:1; transform:none; }
+  .cta .btn { height:52px; padding:0 32px; font-size:16px; }
+  .prog { margin-bottom:6px; }
+  .bignum { font-family:var(--serif); font-size:44px; color:var(--ink); letter-spacing:-.02em; }
+  .imp { text-align:left; font-size:13.5px; color:var(--body); padding:9px 0; border-bottom:1px solid var(--hair); display:flex; gap:9px; align-items:center; opacity:0; animation: rise .5s var(--ease) forwards; }
+  .imp .src { margin-left:auto; font-size:11.5px; color:var(--faint); }
+  .ob .buddy.lg { --bd:118px; --dot:13px; }
+  .skip { margin-top:4px; text-align:center; }
+  .skip a{ color:var(--faint); font-size:12.5px; cursor:pointer }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="../common.js"></script>
+<script>
+document.getElementById('root').innerHTML = bareWindow({ title:'omi', presence:'none', body:`
+  <main class="main" style="display:block;height:100%">
+    <div class="ob">
+      <div class="prog" id="prog"></div>
+      <div class="buddy-wrap"><div class="buddy lg" id="bud">
+        <span class="d"></span><span class="d"></span><span class="d"></span><span class="d"></span>
+        <span class="d"></span><span class="d"></span><span class="d"></span><span class="d"></span>
+      </div></div>
+      <div class="buddy-say" id="say"></div>
+      <div class="panel" id="panel"></div>
+      <div class="cta" id="cta"></div>
+      <div class="skip"><a onclick="go('home')">Skip setup</a></div>
+    </div>
+  </main>`});
+
+const bud = document.getElementById('bud');
+const sayEl = document.getElementById('say');
+const panel = document.getElementById('panel');
+const cta = document.getElementById('cta');
+const prog = document.getElementById('prog');
+
+// each step: the line omi "says", the panel content, and the button
+const steps = [
+  {
+    say: "Hi Archit — I'm omi. Give me a minute and I'll set myself up.",
+    panel: "",
+    cta: "Let's go", act: next
+  },
+  {
+    say: "First — let me see, hear, and act for you.",
+    panel: permRows(), cta: "Allow all", act: grantAll
+  },
+  {
+    say: "Now hook up where your life actually happens.",
+    panel: connectRows(), cta: "Connect all", act: connectAll
+  },
+  {
+    say: "Reading your last 30 days…",
+    panel: importPanel(), cta: "This is wild — keep going", act: next
+  },
+  {
+    say: "I'm live, and I've got your back. Everything stays on your Mac.",
+    panel: "", cta: "Open omi", act: ()=>go('home')
+  },
+];
+
+function permRows(){
+  const p = [
+    ['screen','Screen','so I can see what you see'],
+    ['mic','Microphone','so I never miss what’s said'],
+    ['settings','Accessibility','so I can send and click for you'],
+    ['file','Full disk','so I can read iMessage history'],
+  ];
+  return p.map((r,i)=>`<div class="prow" data-i="${i}">
+      <span class="ico">${icon(r[0])}</span>
+      <div><div class="nm">${r[1]}</div><div class="pay">${r[2]}</div></div>
+      <span class="st" data-st>${icon('plus','icon-sm')}</span>
+    </div>`).join('');
+}
+function connectRows(){
+  const L='../assets/logos/';
+  const c = [
+    ['gmail_logo.png','Gmail','lal00020@umn.edu'],
+    ['google_calendar_logo.png','Calendar','12 events this week'],
+    ['apple.svg','iMessage','so I can draft your replies'],
+    ['telegram.svg','Telegram','so I can draft your replies'],
+    ['whatsapp.svg','WhatsApp','so I can draft your replies'],
+    ['notion.svg','Notes & Notion','your docs and notes'],
+  ];
+  return c.map((r,i)=>`<div class="prow" data-i="${i}">
+      <span class="lg"><img src="${L}${r[0]}" alt=""></span>
+      <div><div class="nm">${r[1]}</div><div class="pay">${r[2]}</div></div>
+      <span class="st" data-st>${icon('plus','icon-sm')}</span>
+    </div>`).join('');
+}
+function importPanel(){
+  const items = [
+    ['Ask 20 people for feedback on the app','due today','flag'],
+    ['Send Nick the PR link for review','task','check'],
+    ['Book flight to Minneapolis','task','check'],
+    ['David runs Alaris Security','person','users'],
+    ['Goal: GetEventful to $100K MRR by summer','goal','star'],
+  ];
+  return `<div style="text-align:center"><span class="bignum">1,923</span>
+      <div class="caption" style="margin-top:4px">things I now remember · 9 tasks · 11 people</div></div>
+    <div style="margin-top:18px" id="impl">${items.map((it,i)=>`
+      <div class="imp" style="animation-delay:${.15*i}s">${icon(it[2],'icon-sm')} ${it[0]} <span class="src">${it[1]}</span></div>`).join('')}
+    </div>`;
+}
+
+let i = -1;
+function render(){
+  const s = steps[i];
+  // progress dots
+  prog.innerHTML = steps.map((_,k)=>`<i class="${k<i?'on':k===i?'cur':''}"></i>`).join('');
+  // buddy speaks
+  bud.classList.add('talking');
+  sayEl.classList.remove('show'); panel.classList.remove('show'); cta.classList.remove('show');
+  setTimeout(()=>{ sayEl.textContent = s.say; sayEl.classList.add('show'); }, 180);
+  setTimeout(()=>{ bud.classList.remove('talking'); }, 1500);
+  // panel + cta
+  panel.innerHTML = s.panel;
+  cta.innerHTML = s.cta ? `<button class="btn accent" id="cbtn">${s.cta} →</button>` : '';
+  setTimeout(()=>{ if(s.panel) panel.classList.add('show'); }, 420);
+  setTimeout(()=>{ cta.classList.add('show'); const b=document.getElementById('cbtn'); if(b) b.onclick=s.act; }, s.panel?900:700);
+}
+function next(){ i++; if(i<steps.length) render(); }
+// grant/connect: flip rows to green in a calm cascade, then advance
+function cascadeThenNext(){
+  const rows = panel.querySelectorAll('.prow');
+  rows.forEach((r,k)=> setTimeout(()=>{ r.classList.add('on'); r.querySelector('[data-st]').innerHTML = icon('check','icon-sm'); }, 180*k));
+  const btn = document.getElementById('cbtn'); if(btn){ btn.textContent='Done ✓'; btn.disabled=true; btn.style.opacity=.7; }
+  setTimeout(next, 180*rows.length + 700);
+}
+function grantAll(){ cascadeThenNext(); }
+function connectAll(){ cascadeThenNext(); }
+
+// ?s=N jumps to a step (for review/screenshots)
+const startAt = parseInt(new URLSearchParams(location.search).get('s')||'0',10);
+i = startAt - 1; next();
+</script>
+<script src="../interactions.js"></script>
+</body>
+</html>

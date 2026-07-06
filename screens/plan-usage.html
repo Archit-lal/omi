@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>omi — Plan & usage</title>
+<link rel="stylesheet" href="../design-system.css">
+<style>
+  .meter { height:8px; border-radius:99px; background:var(--surface-2); overflow:hidden; margin-top:8px; }
+  .meter i { display:block; height:100%; background:var(--accent); border-radius:99px; }
+  .inc { display:flex; gap:10px; padding:9px 0; font-size:14px; color:var(--body); align-items:center; }
+  .inc svg { color:var(--live); }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="../common.js"></script>
+<script>
+function usage(lab,val,pct){ return `<div style="margin-top:16px">
+  <div class="between"><span class="body">${lab}</span><span class="caption mono">${val}</span></div>
+  <div class="meter"><i style="width:${pct}%"></i></div></div>`; }
+
+const body = `
+<main class="main">
+  <div class="pad-lg" style="max-width:740px;margin:0 auto">
+    <div class="eyebrow">Plan & usage</div>
+    <div class="between mt2">
+      <h1 class="h1">You’re on Operator.</h1>
+      <span class="pill">Renews Aug 6</span>
+    </div>
+
+    <div class="card mt5" style="border-radius:16px">
+      <div class="h3">What’s included</div>
+      <div class="mt2">
+        <div class="inc">${icon('check','icon-sm')} Unlimited memory, on your Mac and phone</div>
+        <div class="inc">${icon('check','icon-sm')} Messaging auto-reply across iMessage, Telegram, WhatsApp</div>
+        <div class="inc">${icon('check','icon-sm')} Rewind screen history + proactive nudges</div>
+        <div class="inc">${icon('check','icon-sm')} Use your memory in Claude, ChatGPT, and more</div>
+      </div>
+    </div>
+
+    <div class="card mt4" style="border-radius:16px">
+      <div class="h3">This month</div>
+      ${usage('Conversations kept','1,923', 46)}
+      ${usage('Drafts written','214', 32)}
+      ${usage('Screen history','12 of 30 days', 40)}
+    </div>
+
+    <div class="next-card mt4">
+      <span class="kicker"><span class="dot"></span> More power</span>
+      <div class="body mt3" style="max-width:480px">Add teammates and I’ll remember your shared meetings for both of you.</div>
+      <div class="mt4"><button class="btn accent" onclick="go('referral')">Add a teammate</button></div>
+    </div>
+  </div>
+</main>`;
+document.getElementById('root').innerHTML = windowShell({ active:'settings', title:'omi — Plan & usage', presence:'live', body });
+</script>
+<script src="../interactions.js"></script>
+</body>
+</html>

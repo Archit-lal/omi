@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>omi — Apps</title>
+<link rel="stylesheet" href="../design-system.css">
+<style>
+  .apps-grid { display:grid; grid-template-columns: 1fr 1fr; gap: 22px; align-items:start; }
+  .conn { display:flex; align-items:center; gap:13px; padding:13px 4px; }
+  .conn + .conn { border-top:1px solid var(--hair); }
+  .conn .meta { flex:1; min-width:0; }
+  .conn .nm { font-size:14px; color:var(--ink); font-weight:500; }
+  .conn .sb { font-size:12px; color:var(--faint); margin-top:1px; }
+  .state { display:inline-flex; align-items:center; gap:6px; font-size:12.5px; color:var(--live); font-weight:520; }
+  .state .d { width:7px;height:7px;border-radius:50%;background:var(--live); }
+  /* logo chip — light surface so monochrome SVG marks read as clean dark logos */
+  .chip { width:34px;height:34px;border-radius:9px; display:flex;align-items:center;justify-content:center;
+    background:#fff; border:1px solid var(--hair); flex:none; }
+  .chip img { width:20px; height:20px; object-fit:contain; display:block; }
+  .chip svg { width:19px; height:19px; color:var(--ink); }
+  :root[data-theme="dark"] .chip { background:var(--surface-2); }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="../common.js"></script>
+<script>
+const L = '../assets/logos/';
+// mark: {img:'file'} under logos/, {app:'file'} under assets/, or {ic:'name'} SF-style icon
+function chip(mark){
+  if (mark.ic) return `<div class="chip">${icon(mark.ic)}</div>`;
+  const src = mark.app ? '../assets/'+mark.app : L+mark.img;
+  return `<div class="chip"><img src="${src}" alt=""></div>`;
+}
+function conn(mark, name, sub, connected){
+  return `<div class="conn">
+    ${chip(mark)}
+    <div class="meta"><div class="nm">${name}</div>${sub?`<div class="sb">${sub}</div>`:''}</div>
+    ${connected ? `<span class="state"><span class="d"></span> Connected</span>`
+                : `<button class="btn sm">Connect</button>`}
+  </div>`;
+}
+
+const sources = [
+  conn({img:'gmail_logo.png'},'Gmail','lal00020@umn.edu',true),
+  conn({img:'google_calendar_logo.png'},'Google Calendar','Meetings and who they’re with',true),
+  conn({img:'apple.svg'},'iMessage','So I can draft your replies',true),
+  conn({img:'telegram.svg'},'Telegram','So I can draft your replies',true),
+  conn({img:'whatsapp.svg'},'WhatsApp','So I can draft your replies',true),
+  conn({img:'apple.svg'},'Apple Notes','Your own scribbles',true),
+  conn({ic:'file'},'Files on this Mac','Docs and PDFs, indexed locally',true),
+  conn({app:'appicon.png'},'Omi pendant','Your in-person conversations',true),
+  conn({img:'notion.svg'},'Notion','Docs and wikis',false),
+  conn({img:'obsidian_logo.png'},'Obsidian','Your vault',false),
+  conn({img:'x.svg'},'X','Posts and DMs',false),
+].join('');
+
+const dests = [
+  conn({img:'claude.svg'},'Claude / Claude Code','Your memory in every chat',true),
+  conn({img:'openai.svg'},'ChatGPT','',true),
+  conn({img:'openclaw_logo.png'},'OpenClaw','',true),
+  conn({img:'openai.svg'},'Codex','Context for what you’re building',false),
+  conn({img:'gemini_logo.png'},'Gemini','',false),
+  conn({img:'hermes_logo.png'},'Hermes','',false),
+].join('');
+
+const main = `
+<main class="main">
+  <div class="pad" style="max-width:1000px">
+
+    <div class="eyebrow">Apps</div>
+    <h1 class="h1 mt2">Where I learn, and where I work.</h1>
+    <div class="small mt2" style="max-width:560px">Point me at what you already use. I read from the left, and I act inside the tools on the right.</div>
+
+    <div class="apps-grid mt6">
+      <div class="card">
+        <div class="sec-head"><span class="h3">Sources I learn from</span><span class="caption">8 connected</span></div>
+        ${sources}
+      </div>
+
+      <div class="card">
+        <div class="sec-head"><span class="h3">Places I work</span><span class="caption">Your memory, anywhere</span></div>
+        ${dests}
+        <div class="row gap2 mt4 caption" style="color:var(--faint)">${icon('code','icon-sm')} Connected over MCP · open protocol, your keys.</div>
+      </div>
+    </div>
+  </div>
+</main>`;
+document.getElementById('root').innerHTML = windowShell({ active:'apps', title:'omi — Apps', presence:'live', body: main });
+</script>
+<script src="../interactions.js"></script>
+</body>
+</html>

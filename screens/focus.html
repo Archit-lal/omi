@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>omi — Focus</title>
+<link rel="stylesheet" href="../design-system.css">
+</head>
+<body>
+<div id="root"></div>
+<script src="../common.js"></script>
+<script>
+const body = `
+<main class="main">
+  <div class="pad-lg" style="max-width:760px;margin:0 auto">
+    <div class="eyebrow">Focus · Monday</div>
+    <div class="row gap6 mt4" style="align-items:flex-end">
+      <div><div class="display" style="font-size:72px">82</div></div>
+      <div style="padding-bottom:12px">
+        <div class="h3">Sharp morning.</div>
+        <div class="small mt2" style="max-width:360px">Your best two hours were 9–11am. I kept them clear.</div>
+      </div>
+    </div>
+
+    <div class="card mt6" style="border-radius:14px">
+      <div class="h3">Today’s deep work</div>
+      <div class="list mt3">
+        <div class="row gap3" style="padding:10px 0;border-bottom:1px solid var(--hair)">
+          ${icon('lock','icon-sm')}<span class="body">9:00 – 11:00</span><span class="small">Protected · building the auto-reply fix</span>
+          <span class="badge sent" style="margin-left:auto"><span class="d"></span>Held</span>
+        </div>
+        <div class="row gap3" style="padding:10px 0;border-bottom:1px solid var(--hair)">
+          ${icon('clock','icon-sm')}<span class="body">2:00 – 3:30</span><span class="small">Recruiting calls</span>
+        </div>
+        <div class="row gap3" style="padding:10px 0">
+          ${icon('screen','icon-sm')}<span class="body muted-ink">Pulled away 6×</span><span class="small">mostly Telegram</span>
+          <button class="btn sm" style="margin-left:auto">Mute it 9–11</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="next-card mt5">
+      <span class="kicker"><span class="dot"></span> Tomorrow</span>
+      <div class="body mt3" style="max-width:520px">I’ll guard 9–11am again — it’s where you do your best work. Meetings after 4pm stay off your calendar.</div>
+      <div class="mt4"><button class="btn accent">Protect my mornings</button></div>
+    </div>
+  </div>
+</main>`;
+document.getElementById('root').innerHTML = windowShell({ active:'home', title:'omi — Focus', presence:'live', body });
+</script>
+<script src="../interactions.js"></script>
+</body>
+</html>

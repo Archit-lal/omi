@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>omi — Dashboard</title>
+<link rel="stylesheet" href="../design-system.css">
+<style>
+  .dgrid { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  .wcard { background:var(--surface); border:1px solid var(--hair); border-radius:16px; padding:20px 22px; }
+  .wcard .wh { display:flex; align-items:center; justify-content:space-between; margin-bottom:14px; }
+  .wcard .wt { font-size:14px; font-weight:560; color:var(--ink); }
+  .wcard .wl { font-size:12px; color:var(--faint); }
+  .link { font-size:12.5px; color:var(--accent-strong); font-weight:540; cursor:pointer; }
+  .span2 { grid-column:span 2; }
+
+  .gauge { display:flex; align-items:center; gap:20px; }
+  .gauge svg { width:180px; height:104px; flex:none; }
+  .gauge .num { font-family:var(--serif); font-size:34px; color:var(--ink); line-height:1; }
+
+  .goal { padding:11px 0; border-bottom:1px solid var(--hair); }
+  .goal:last-child { border-bottom:0; }
+  .goal .gt { display:flex; justify-content:space-between; font-size:13.5px; color:var(--ink); margin-bottom:7px; }
+  .goal .gp { font-family:var(--mono); font-size:12px; color:var(--muted); }
+  .track { height:6px; border-radius:3px; background:var(--surface-2); overflow:hidden; }
+  .track i { display:block; height:100%; background:var(--ink); border-radius:3px; }
+
+  .tabs { display:inline-flex; background:var(--surface-2); border:1px solid var(--hair); border-radius:999px; padding:3px; }
+  .tabs b { font-size:12px; font-weight:520; padding:4px 12px; border-radius:999px; color:var(--muted); cursor:pointer; }
+  .tabs b.on { background:var(--surface); color:var(--ink); box-shadow:0 1px 2px var(--shadow); }
+  .stats4 { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+  .st { border:1px solid var(--hair); border-radius:12px; padding:13px 14px; }
+  .st .sn { font-family:var(--serif); font-size:26px; color:var(--ink); line-height:1; }
+  .st .sl { font-size:12px; color:var(--faint); margin-top:6px; display:flex; align-items:center; gap:6px; }
+
+  .trow { display:flex; align-items:center; gap:11px; padding:10px 0; border-bottom:1px solid var(--hair); }
+  .trow:last-child { border-bottom:0; }
+  .cbox { width:18px;height:18px;border-radius:6px;border:1.5px solid var(--hair-2);flex:none; }
+  .cbox.done { background:var(--ink); border-color:var(--ink); color:var(--canvas); display:flex; align-items:center; justify-content:center; }
+  .trow.done .tx { color:var(--faint); text-decoration:line-through; }
+  .conv { display:flex; align-items:center; gap:11px; padding:10px 0; border-bottom:1px solid var(--hair); cursor:pointer; }
+  .conv:last-child { border-bottom:0; }
+  .conv .em { font-size:20px; flex:none; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="../common.js"></script>
+<script>
+// weekly score arc (semicircle). length ≈ π*70 ≈ 219.9; 72% ≈ 158
+const body = `
+<main class="main">
+  <div style="padding:28px 40px; max-width:1000px; margin:0 auto">
+    <div class="between">
+      <div><div class="caption mono">Monday, July 6</div><h1 class="h1 mt2">Your week, at a glance.</h1></div>
+      <button class="btn sm" onclick="go('home')">${icon('home','icon-sm')} Calm home</button>
+    </div>
+
+    <div class="dgrid mt5">
+
+      <!-- weekly score -->
+      <div class="wcard">
+        <div class="wh"><span class="wt">Weekly score</span><span class="wl">Last 7 days</span></div>
+        <div class="gauge">
+          <svg viewBox="0 0 180 104">
+            <path d="M14 94 A76 76 0 0 1 166 94" fill="none" stroke="var(--surface-2)" stroke-width="12" stroke-linecap="round"/>
+            <path d="M14 94 A76 76 0 0 1 166 94" fill="none" stroke="var(--ink)" stroke-width="12" stroke-linecap="round" stroke-dasharray="172 300"/>
+          </svg>
+          <div>
+            <div class="num">72</div>
+            <div class="small mt2">5 of 9 tasks done</div>
+            <div class="caption mt1">Up from 61 last week</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- focus -->
+      <div class="wcard">
+        <div class="wh"><span class="wt">Focus</span><div class="tabs"><b class="on">Today</b><b>Total</b></div></div>
+        <div class="stats4">
+          <div class="st"><div class="sn">2h 40m</div><div class="sl">${icon('lock','icon-sm')} Focus time</div></div>
+          <div class="st"><div class="sn">38m</div><div class="sl">${icon('screen','icon-sm')} Distracted</div></div>
+          <div class="st"><div class="sn">81%</div><div class="sl">${icon('bolt','icon-sm')} Focus rate</div></div>
+          <div class="st"><div class="sn">4</div><div class="sl">${icon('clock','icon-sm')} Sessions</div></div>
+        </div>
+      </div>
+
+      <!-- goals -->
+      <div class="wcard">
+        <div class="wh"><span class="wt">Goals</span><span class="link">${icon('plus','icon-sm')} Add</span></div>
+        <div class="goal">
+          <div class="gt"><span>Grow GetEventful to $100K MRR</span><span class="gp">40%</span></div>
+          <div class="track"><i style="width:40%"></i></div>
+        </div>
+        <div class="goal">
+          <div class="gt"><span>Ship Omi messaging</span><span class="gp">70%</span></div>
+          <div class="track"><i style="width:70%"></i></div>
+        </div>
+        <div class="goal">
+          <div class="gt"><span>Get 20 pieces of app feedback</span><span class="gp">55%</span></div>
+          <div class="track"><i style="width:55%"></i></div>
+        </div>
+      </div>
+
+      <!-- today's tasks -->
+      <div class="wcard">
+        <div class="wh"><span class="wt">Today's tasks</span><span class="link" onclick="go('tasks')">View all</span></div>
+        <div class="trow"><span class="cbox"></span><span class="tx body">Ask 20 people for feedback on the app</span><span class="badge needs" style="margin-left:auto"><span class="d"></span>Due today</span></div>
+        <div class="trow"><span class="cbox"></span><span class="tx body">Send Nick the PR link for review</span></div>
+        <div class="trow done"><span class="cbox done">${icon('check','icon-sm')}</span><span class="tx body">Rebase branch on main</span></div>
+      </div>
+
+      <!-- recent conversations -->
+      <div class="wcard span2">
+        <div class="wh"><span class="wt">Recent conversations</span><span class="link" onclick="go('conversations')">View all</span></div>
+        <div class="conv" onclick="go('conversations')"><span class="em">📈</span><div><div class="body ink">Founders discuss lead outreach</div><div class="caption">23 min · Clock Out, connect William, coworking space</div></div><span class="caption mono" style="margin-left:auto">2:14 PM</span></div>
+        <div class="conv" onclick="go('conversations')"><span class="em">💻</span><div><div class="body ink">Team chooses HTML mockup approach</div><div class="caption">8 min · start from screenshots, second repo</div></div><span class="caption mono" style="margin-left:auto">12:31 PM</span></div>
+        <div class="conv" onclick="go('conversations')"><span class="em">🎨</span><div><div class="body ink">Plan design-feedback outreach</div><div class="caption">14 min · find a designer who shipped a 1M-user app</div></div><span class="caption mono" style="margin-left:auto">11:08 AM</span></div>
+      </div>
+
+    </div>
+  </div>
+</main>`;
+document.getElementById('root').innerHTML = windowShell({ active:'home', title:'omi — Dashboard', presence:'live', body });
+</script>
+<script src="../interactions.js"></script>
+</body>
+</html>

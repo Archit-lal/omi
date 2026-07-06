@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>omi iOS — Tasks</title>
+<link rel="stylesheet" href="../design-system.css">
+<link rel="stylesheet" href="ios.css">
+</head>
+<body>
+<div id="root"></div>
+<script src="../common.js"></script>
+<script src="ios-frame.js"></script>
+<script>
+const app = `
+<div class="apppad">
+  ${deviceBar('Tasks')}
+
+  <div class="sec-title" style="color:var(--danger);margin-top:14px">Overdue</div>
+  <div class="task"><span class="box"></span><div><div class="tt">Book flight to Minneapolis</div><div class="src">from your rainy-night reflection</div></div><span class="due">Fri</span></div>
+
+  <div class="sec-title">Today</div>
+  <div class="task"><span class="box"></span><div><div class="tt">Ask 20 people for feedback on the app</div><div class="src">from your design-feedback call</div></div><span class="due">Due today</span></div>
+  <div class="task"><span class="box"></span><div><div class="tt">Send Nick the PR link</div><div class="src">from your call with Nick</div></div><span class="due">Before standup</span></div>
+  <div class="task"><span class="box"></span><div><div class="tt">Merge PRs and rebase on main</div><div class="src">from the auto-reply thread</div></div></div>
+
+  <div class="sec-title">This week</div>
+  <div class="task"><span class="box"></span><div><div class="tt">Connect Will with the Clock Out contact</div><div class="src">from lead outreach</div></div></div>
+  <div class="task"><span class="box"></span><div><div class="tt">Review visa salary with the lawyer</div><div class="src">flagged — needs your call</div></div></div>
+
+  <div class="sec-title">Done</div>
+  <div class="task done"><span class="box done">${icon('check','icon-sm')}</span><div><div class="tt">Connect my memory to Claude Code</div></div></div>
+  <div class="task done"><span class="box done">${icon('check','icon-sm')}</span><div><div class="tt">Push the auto-reply fix</div></div></div>
+</div>`;
+document.getElementById('root').innerHTML = phone({ app, tab:'tasks' });
+</script>
+</body>
+</html>

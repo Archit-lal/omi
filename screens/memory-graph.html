@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>omi — Brain map</title>
+<link rel="stylesheet" href="../design-system.css">
+<style>
+  .gwrap { position:relative; width:820px; height:500px; margin:10px auto 0; }
+  .gwrap svg { position:absolute; inset:0; width:100%; height:100%; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="../common.js"></script>
+<script>
+// node: [label, xPct, yPct, dim?]
+const core = ['Archit', 50, 50];
+const nodes = [
+  ['GetEventful', 22, 22], ['Omi app', 74, 20], ['$100K MRR goal', 84, 46, 1],
+  ['Nick', 20, 52], ['David · Alaris', 15, 78, 1], ['Maher', 40, 84],
+  ['AI dinners', 70, 80, 1], ['Claude', 86, 68], ['ChatGPT', 62, 34, 1],
+];
+const lines = nodes.map(n=>`<line x1="50%" y1="50%" x2="${n[1]}%" y2="${n[2]}%" stroke="var(--brain-line)" stroke-width="1"/>`).join('');
+const dots = nodes.map(n=>`<div class="node ${n[3]?'dim':''}" style="left:${n[1]}%;top:${n[2]}%;transform:translate(-50%,-50%)">${n[0]}</div>`).join('');
+
+const body = `
+<main class="main">
+  <div class="pad" style="max-width:900px;margin:0 auto">
+    <div class="between">
+      <div><div class="eyebrow">Second brain</div><h1 class="h1 mt2">Everything I’ve learned, connected.</h1></div>
+      <button class="btn ghost" onclick="go('memory')">${icon('chev','icon-sm')} Back to memory</button>
+    </div>
+    <div class="gwrap">
+      <svg>${lines}</svg>
+      <div class="node core" style="left:50%;top:50%;transform:translate(-50%,-50%)">Archit</div>
+      ${dots}
+    </div>
+    <div class="caption center" style="margin-top:6px">Drag to explore · 1,923 memories · 11 people</div>
+  </div>
+</main>`;
+document.getElementById('root').innerHTML = windowShell({ active:'memory', title:'omi — Brain map', presence:'live', body });
+</script>
+<script src="../interactions.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>omi — You're early</title>
+<link rel="stylesheet" href="../design-system.css">
+</head>
+<body>
+<div id="root"></div>
+<script src="../common.js"></script>
+<script>
+const inner = `
+<div style="max-width:600px;margin:0 auto;padding:72px 48px">
+  <div class="member">${icon('star','icon-sm')} Member #4,120</div>
+  <div class="display mt5" style="font-size:44px">You're early.</div>
+  <div class="body mt4" style="font-size:16px;max-width:460px;line-height:1.55">
+    Bring someone in. Add a teammate and I'll remember your shared meetings, decisions,
+    and who-owes-what — for both of you.
+  </div>
+
+  <div class="card mt6" style="border-radius:16px">
+    <div class="eyebrow">Your invite link</div>
+    <div class="input mt3" style="padding-right:6px">
+      <span class="mono" style="color:var(--ink);font-size:13.5px">omi.me/i/archit-4120</span>
+      <button class="btn accent sm" style="margin-left:auto">${icon('check','icon-sm')} Copy</button>
+    </div>
+    <div class="caption mt3">3 invites left this week. I hand them out slowly on purpose.</div>
+  </div>
+
+  <div class="row gap3 mt5" style="color:var(--muted)">
+    ${icon('users','icon-sm')}
+    <span class="small">2 people you invited are already in. You climb the list when they stay.</span>
+  </div>
+</div>`;
+document.getElementById('root').innerHTML = bareWindow({ title:'omi', presence:'none', body: inner });
+</script>
+<script src="../interactions.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>omi iOS — Home</title>
+<link rel="stylesheet" href="../design-system.css">
+<link rel="stylesheet" href="ios.css">
+</head>
+<body>
+<div id="root"></div>
+<script src="../common.js"></script>
+<script src="ios-frame.js"></script>
+<script>
+const app = `
+<div class="apppad" style="padding-bottom:96px">
+  ${deviceBar()}
+
+  <div class="between" style="margin-top:10px">
+    <div>
+      <div class="m-greet-date mono">Mon, Jul 6</div>
+      <div class="m-h1" style="margin-top:3px">Good morning,<br>Archit.</div>
+    </div>
+    <div class="member" style="height:28px" onclick="iosGo('ios-settings')">${icon('star','icon-sm')} #4,120</div>
+  </div>
+
+  <!-- live capture banner (tap to open live transcript) -->
+  <div class="listgrp" style="margin-top:16px" onclick="iosGo('ios-live')">
+    <div class="lrow"><span class="rec-dot"></span><div><div style="font-weight:540">Listening — call with Nick</div><div class="caption">“…I'll send the PR link right after this.”</div></div><span class="r mono">3:42</span></div>
+  </div>
+
+  <div class="next-card m" style="margin-top:14px">
+    <div class="between">
+      <span class="kicker"><span class="dot"></span> Do this next</span>
+      <span class="caption">8 more</span>
+    </div>
+    <div class="display" style="margin-top:14px">Send Nick the PR link — he's blocked on your review.</div>
+    <div class="row gap2" style="margin-top:18px">
+      <button class="btn accent" style="flex:1" onclick="iosGo('ios-messages')">${icon('send','icon-sm')} Review draft</button>
+      <button class="btn ghost none">Snooze</button>
+    </div>
+  </div>
+
+  <div class="sec-title">Today's tasks</div>
+  <div class="task" style="border:0;padding:8px 0"><span class="box"></span><div><div class="tt" style="font-size:14.5px">Ask 20 people for feedback</div></div><span class="due">Due today</span></div>
+  <div class="task" style="border:0;padding:8px 0"><span class="box"></span><div><div class="tt" style="font-size:14.5px">Book flight to Minneapolis</div></div><span class="due">Overdue</span></div>
+
+  <div class="sec-title">Today, kept by omi</div>
+  <div class="recap">
+    <div class="display" style="font-size:17px">Lead outreach, a rainy walk, and 3 people to follow up.</div>
+    <div class="map"></div>
+  </div>
+
+  <div class="sec-title">Your mind map</div>
+  <div class="mindmap" onclick="iosGo('ios-memory')">
+    <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center">${iosBuddy('')}</div>
+    <span class="node" style="left:16px;top:18px">GetEventful</span>
+    <span class="node" style="right:20px;top:24px">Nick</span>
+    <span class="node dim" style="left:30px;bottom:16px">$100K MRR</span>
+    <span class="node dim" style="right:24px;bottom:20px">David · Alaris</span>
+  </div>
+
+  <div class="row" style="margin-top:22px;justify-content:space-between;padding:0 4px">
+    <div class="m-stat"><div class="n">1,923</div><div class="l">Remembered</div></div>
+    <div class="m-stat"><div class="n">9</div><div class="l">Tasks</div></div>
+    <div class="m-stat"><div class="n">14</div><div class="l">Today</div></div>
+  </div>
+</div>`;
+
+const float = `<div class="m-ask" onclick="iosGo('ios-ask')">${icon('ask','icon')}<span style="flex:1">Ask omi anything</span>${icon('mic','icon')}</div>`;
+document.getElementById('root').innerHTML = phone({ app, tab:'home', float });
+</script>
+</body>
+</html>

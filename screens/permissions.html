@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>omi — Permissions</title>
+<link rel="stylesheet" href="../design-system.css">
+<style>
+  .perm { display:flex; align-items:flex-start; gap:16px; padding:22px; border:1px solid var(--hair); border-radius:14px; background:var(--surface); }
+  .perm + .perm { margin-top:14px; }
+  .perm .ico { width:42px;height:42px;border-radius:11px; background:var(--surface-2); border:1px solid var(--hair); display:flex;align-items:center;justify-content:center; color:var(--body); flex:none; }
+  .perm .body2 { flex:1; }
+  .perm .t1 { font-size:15px; color:var(--ink); font-weight:520; }
+  .perm .t2 { font-size:13px; color:var(--muted); margin-top:4px; max-width:460px; }
+  .ok { display:inline-flex; align-items:center; gap:6px; color:var(--live); font-size:13px; font-weight:520; }
+  .attn { border-color: var(--warn); }
+  .attn .ico { color: var(--warn); background: rgba(232,145,58,0.10); border-color: transparent; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="../common.js"></script>
+<script>
+function perm(icn, name, why, granted){
+  return `<div class="perm ${granted?'':'attn'}">
+    <div class="ico">${icon(icn)}</div>
+    <div class="body2"><div class="t1">${name}</div><div class="t2">${why}</div></div>
+    ${granted ? `<span class="ok">${icon('check','icon-sm')} On</span>`
+              : `<button class="btn accent sm">Turn on</button>`}
+  </div>`;
+}
+const main = `
+<main class="main">
+  <div class="pad" style="max-width:760px">
+    <div class="eyebrow">Permissions</div>
+    <h1 class="h1 mt2">What I can reach — and why.</h1>
+    <div class="small mt2" style="max-width:520px">Each one unlocks something for you. Turn any of them off whenever you like; I’ll just do less.</div>
+
+    <div class="mt6">
+      ${perm('screen','Screen','So I can see what you see and act on it — draft that reply, catch that promise.', true)}
+      ${perm('mic','Microphone','So I never miss what’s said in a meeting or a call.', true)}
+      ${perm('file','Full Disk','So I can read the docs you point me at, right on your Mac.', true)}
+      ${perm('bolt','Accessibility','So I can act for you — click send, open the right app — when you ask.', false)}
+    </div>
+
+    <div class="row gap2 mt6 caption" style="color:var(--faint)">${icon('lock','icon-sm')} Everything these unlock stays on your Mac. Read the source code to see exactly what I do with it.</div>
+  </div>
+</main>`;
+document.getElementById('root').innerHTML = windowShell({ active:'settings', title:'omi — Permissions', presence:'amber', body: main });
+</script>
+<script src="../interactions.js"></script>
+</body>
+</html>

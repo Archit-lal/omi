@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>omi — Proactive ping</title>
+<link rel="stylesheet" href="../design-system.css">
+<style>
+  html,body{height:100%}
+  .desk{position:fixed;inset:0;overflow:hidden;
+    background:
+      radial-gradient(120% 90% at 80% -10%, color-mix(in srgb, var(--accent) 8%, var(--canvas)), transparent 55%),
+      linear-gradient(160deg, var(--soft), var(--canvas) 60%, var(--surface-2));}
+  .fakewin{position:absolute;border-radius:14px;background:var(--surface);border:1px solid var(--hair);opacity:.45;box-shadow:0 20px 60px -20px var(--shadow)}
+  .fakewin .bar{height:34px;border-bottom:1px solid var(--hair);border-radius:14px 14px 0 0;background:var(--soft)}
+  .fakewin .ln{height:9px;border-radius:5px;background:var(--surface-2);margin:16px 22px}
+  .scrim{position:absolute;inset:0;background:var(--scrim)}
+  .wrap{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:26px}
+  .big-toast{width:440px}
+  .big-toast .body-line{font-size:16px;color:var(--ink);line-height:1.4}
+  .cap{font-family:var(--serif);font-size:22px;color:#fff;opacity:.92;letter-spacing:-.01em}
+  :root[data-theme="light"] .cap{color:var(--ink);opacity:.8}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="../common.js"></script>
+<script>
+document.getElementById('root').innerHTML = `
+<div class="desk">
+  <div class="fakewin" style="left:90px;top:110px;width:500px;height:360px"><div class="bar"></div><div class="ln" style="width:65%"></div><div class="ln" style="width:80%"></div><div class="ln" style="width:40%"></div></div>
+  <div class="fakewin" style="right:110px;bottom:90px;width:440px;height:300px"><div class="bar"></div><div class="ln" style="width:55%"></div><div class="ln" style="width:70%"></div></div>
+  <div class="scrim"></div>
+  <div class="wrap">
+    <div class="toast big-toast">
+      <div class="from">
+        <span class="mk">omi</span>
+        <span class="live-dot amber"></span>
+        <span class="caption" style="margin-left:auto">now</span>
+      </div>
+      <div class="body-line">Send Nick the PR link — he's blocked on your review, and you said you'd have it before standup.</div>
+      <div class="row gap2" style="margin-top:14px">
+        <button class="btn accent sm" onclick="go('messages-imessage')">${icon('send','icon-sm')} Draft it</button>
+        <button class="btn ghost sm">Snooze 1 hour</button>
+        <button class="btn ghost sm" style="margin-left:auto">Not now</button>
+      </div>
+    </div>
+    <div class="cap">The "wait — how did it know?" moment.</div>
+  </div>
+</div>`;
+</script>
+<script src="../interactions.js"></script>
+</body>
+</html>

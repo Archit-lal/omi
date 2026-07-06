@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>omi iOS — Conversations</title>
+<link rel="stylesheet" href="../design-system.css">
+<link rel="stylesheet" href="ios.css">
+</head>
+<body>
+<div id="root"></div>
+<script src="../common.js"></script>
+<script src="ios-frame.js"></script>
+<script>
+const app = `
+<div class="apppad">
+  ${deviceBar('Conversations')}
+
+  <div class="m-ask" style="margin-top:12px">${icon('search','icon')}<span style="flex:1">Search everything I've heard</span></div>
+
+  <div class="recap" style="margin-top:16px">
+    <div class="between"><span class="kicker"><span class="dot"></span> Today, kept by omi</span><span class="caption">Mon, Jul 6</span></div>
+    <div class="display" style="font-size:19px;margin-top:10px">Lead outreach, a rainy walk, and 3 people to follow up.</div>
+    <div class="map"></div>
+  </div>
+
+  <div class="sec-title">Today</div>
+  <div class="crow" onclick="iosGo('ios-live')">
+    <span class="emoji">🎙️</span>
+    <div class="ct"><div class="t">In progress — call with Nick</div><div class="s"><span class="rec-dot" style="display:inline-block;vertical-align:middle"></span> Listening now</div></div>
+    <div class="meta">3:42</div>
+  </div>
+  <div class="crow"><span class="emoji">📈</span><div class="ct"><div class="t">Founders discuss lead outreach</div><div class="s">Clock Out · connect Will · coworking</div></div><div class="meta">2:14 pm<br>22m</div></div>
+  <div class="crow"><span class="emoji">💻</span><div class="ct"><div class="t">Team chooses HTML mockup approach</div><div class="s">Start from screenshots, not the codebase</div></div><div class="meta">11:03 am<br>8m</div></div>
+
+  <div class="sec-title">Yesterday</div>
+  <div class="crow"><span class="emoji">🌧️</span><div class="ct"><div class="t">Rainy night in New York</div><div class="s">Career reflections, SF vs MPLS</div></div><div class="meta">9:41 pm<br>31m</div></div>
+  <div class="crow"><span class="emoji">💼</span><div class="ct"><div class="t">Calibrating candidate profiles</div><div class="s">Looking for an ex-Superhuman designer</div></div><div class="meta">4:12 pm<br>6m</div></div>
+</div>`;
+document.getElementById('root').innerHTML = phone({ app, tab:'conversations' });
+</script>
+</body>
+</html>

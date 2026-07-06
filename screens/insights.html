@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>omi — Insights</title>
+<link rel="stylesheet" href="../design-system.css">
+<style>
+  .ins { display:flex; gap:14px; padding:20px; border:1px solid var(--hair); border-radius:14px; background:var(--surface); margin-top:12px; }
+  .ins .k { width:36px;height:36px;border-radius:10px;flex:none;display:flex;align-items:center;justify-content:center;background:var(--accent-tint);color:var(--accent-strong); }
+  .ins .t { font-size:15px; color:var(--ink); font-weight:500; }
+  .ins .s { font-size:13px; color:var(--muted); margin-top:3px; }
+  .ins .act { margin-left:auto; flex:none; align-self:center; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="../common.js"></script>
+<script>
+function ins(ic,t,s,btn,to){ return `<div class="ins">
+  <span class="k">${icon(ic)}</span>
+  <div><div class="t">${t}</div><div class="s">${s}</div></div>
+  ${btn?`<div class="act"><button class="btn sm"${to?` onclick="go('${to}')"`:''}>${btn}</button></div>`:''}
+</div>`; }
+
+const body = `
+<main class="main">
+  <div class="pad-lg" style="max-width:720px;margin:0 auto">
+    <h1 class="h1">Worth knowing</h1>
+    <div class="small mt2">Quiet things I noticed. Nothing urgent unless I say so.</div>
+
+    ${ins('bolt','You’ve pushed the auto-reply send bug 3 days running.','Want me to pull the failing cases into one summary?','Summarize','ask')}
+    ${ins('users','4 people are waiting on you today.','Nick (PR), William (intro), Jamie & Reed (LinkedIn).','Open','messages-imessage')}
+    ${ins('clock','Your best work happens before 11am.','I’ll keep guarding that window.','See focus','focus')}
+    ${ins('star','GetEventful came up in 3 conversations this week.','Mostly about pricing the AI dinners.','Show','conversations')}
+    ${ins('flag','“Ask 20 people for feedback” is due today.','You’ve reached 6 so far.','Draft a DM','messages-telegram')}
+  </div>
+</main>`;
+document.getElementById('root').innerHTML = windowShell({ active:'home', title:'omi — Insights', presence:'live', body });
+</script>
+<script src="../interactions.js"></script>
+</body>
+</html>

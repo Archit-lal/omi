@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>omi — Memory</title>
+<link rel="stylesheet" href="../design-system.css">
+<style>
+  .mem-main { display:flex; }
+  .mem-left { flex:1; min-width:0; border-right:1px solid var(--hair); display:flex; flex-direction:column; }
+  .mem-left-head { padding:20px 24px 12px; }
+  .mem-scroll { overflow:auto; padding:4px 16px 24px; }
+  .grp-label { font-size:11px; font-weight:560; text-transform:uppercase; letter-spacing:0.12em; color:var(--faint); padding:16px 8px 8px; }
+  .mem-row { padding:12px 12px; border-radius:11px; }
+  .mem-row:hover { background:var(--surface-2); }
+  .mem-fact { font-size:14px; color:var(--ink); line-height:1.4; }
+  .mem-src { font-size:12px; color:var(--faint); margin-top:5px; display:flex; align-items:center; gap:7px; }
+  .mem-right { width:392px; flex:none; display:flex; flex-direction:column; background:var(--soft); }
+  .facts-head { padding:20px 22px 8px; }
+  .facts-scroll { overflow:auto; padding:6px 16px 20px; }
+  .fact { display:flex; align-items:flex-start; gap:10px; padding:12px 12px; border-radius:11px; }
+  .fact:hover { background:var(--surface); }
+  .fact:hover .pencil { opacity:1; }
+  .fact .body-t { flex:1; }
+  .fact .t { font-size:13.5px; color:var(--ink); line-height:1.42; }
+  .fact .m { font-size:11.5px; color:var(--faint); margin-top:4px; }
+  .pencil { opacity:0; color:var(--faint); transition:opacity .12s; }
+  .fdot { width:6px; height:6px; border-radius:50%; background:var(--accent); margin-top:7px; flex:none; }
+  .map-prev { position:relative; height:120px; margin:6px 8px 0; border-radius:12px; border:1px solid var(--hair); background:var(--surface); overflow:hidden; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="../common.js"></script>
+<script>
+const memRow = (fact, src, t) => `
+  <div class="mem-row">
+    <div class="mem-fact">${fact}</div>
+    <div class="mem-src">${icon(src.i,'icon-sm')} ${src.t} · ${t}</div>
+  </div>`;
+
+const fact = (t, m) => `
+  <div class="fact">
+    <span class="fdot"></span>
+    <div class="body-t"><div class="t">${t}</div><div class="m">${m}</div></div>
+    <span class="pencil">${icon('note','icon-sm')}</span>
+  </div>`;
+
+const body = `
+<main class="main mem-main">
+
+  <div class="mem-left">
+    <div class="mem-left-head">
+      <div class="between">
+        <h2 class="h2">Memory</h2>
+        <span class="caption mono">1,923 kept</span>
+      </div>
+      <div class="input mt3" style="height:40px">
+        ${icon('search','icon-sm')}<span class="ph">Search everything I've seen and heard…</span>
+      </div>
+    </div>
+    <div class="mem-scroll">
+      <div class="grp-label">Today</div>
+      ${memRow("Nick is blocked on your PR review.", {i:'msg',t:'iMessage'}, '9:48')}
+      ${memRow("Ask 20 people for feedback on the desktop app.", {i:'mic',t:'Call'}, '1:24')}
+      ${memRow("The designer bar: shipped a 1M-user app.", {i:'mic',t:'Call'}, '1:10')}
+      <div class="grp-label">This week</div>
+      ${memRow("A founder hit 1M users in six months — Josh has his number.", {i:'mic',t:'Call'}, 'today')}
+      ${memRow("David runs Alaris Security.", {i:'mic',t:'Call'}, 'Sun')}
+      ${memRow("Deciding whether to stay in NY, go to SF, or Minneapolis.", {i:'mic',t:'Call'}, 'Sun')}
+      ${memRow("Connected Omi memory to Claude Code over MCP.", {i:'check',t:'Task'}, 'Tue')}
+    </div>
+  </div>
+
+  <div class="mem-right">
+    <div class="facts-head">
+      <div class="eyebrow">What I know about you</div>
+      <div class="small mt2" style="color:var(--body)">The profile I use to help. Correct anything — it sticks.</div>
+    </div>
+    <div class="facts-scroll">
+      ${fact("You founded GetEventful.com.", "Confirmed by you")}
+      ${fact("Goal: GetEventful to $100K MRR by summer 2026.", "You've said this often")}
+      ${fact("You're building Omi's iMessage & Telegram integration.", "Learned from your screen + calls")}
+      ${fact("You host AI-curated B2B dinners ($2–6K/mo per client).", "Learned from 30+ conversations")}
+      ${fact("You live in SF with Maher.", "Confirmed by you")}
+      ${fact("You review every AI-sent message before it goes.", "Learned from how you work")}
+
+      <div class="grp-label" style="padding-top:18px">Your brain map</div>
+      <div class="map-prev brain">
+        <div class="node core" style="left:40%;top:44%">omi</div>
+        <div class="node" style="left:6%;top:16%">GetEventful</div>
+        <div class="node dim" style="left:62%;top:12%">Nick</div>
+        <div class="node dim" style="left:70%;top:64%">Dinners</div>
+        <div class="node" style="left:10%;top:70%">Maher</div>
+      </div>
+      <button class="btn ghost sm mt3" style="margin-left:8px" onclick="go('conversations')">Open brain map ${icon('arrowR','icon-sm')}</button>
+    </div>
+  </div>
+
+</main>`;
+document.getElementById('root').innerHTML = windowShell({ active:'memory', title:'omi', presence:'listening', body });
+</script>
+<script src="../interactions.js"></script>
+</body>
+</html>

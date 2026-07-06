@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>omi — Ask</title>
+<link rel="stylesheet" href="../design-system.css">
+<style>
+  .ask-main { display:flex; flex-direction:column; }
+  .ask-head { display:flex; align-items:center; justify-content:space-between; padding:16px 24px; border-bottom:1px solid var(--hair); background:var(--soft); }
+  .ask-scroll { flex:1; overflow:auto; }
+  .ask-col { max-width:720px; margin:0 auto; padding:36px 24px 24px; }
+  .a { font-size:15px; color:var(--ink); line-height:1.62; }
+  .a p { margin-bottom:12px; }
+  .a b { font-weight:560; }
+  .src-line { font-size:13px; color:var(--muted); margin-bottom:14px; display:flex; align-items:center; gap:7px; }
+  .follow { color:var(--body); }
+  .ask-foot { border-top:1px solid var(--hair); padding:16px 24px; background:var(--soft); }
+  .ask-foot .inwrap { max-width:720px; margin:0 auto; }
+  .exchange + .exchange { margin-top:34px; padding-top:34px; border-top:1px solid var(--hair); }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="../common.js"></script>
+<script>
+const body = `
+<main class="main ask-main">
+  <div class="ask-head">
+    <div class="row gap3">
+      <span class="h3">What do I owe people right now?</span>
+      <span class="pill">${icon('clock','icon-sm')} Today, 9:14</span>
+    </div>
+    <button class="btn ghost sm">${icon('clock','icon-sm')} History</button>
+  </div>
+
+  <div class="ask-scroll">
+    <div class="ask-col">
+
+      <div class="exchange">
+        <div class="row" style="justify-content:flex-end">
+          <div class="bubble out">What do I owe people right now?</div>
+        </div>
+        <div class="mt5">
+          <div class="src-line">${icon('brain','icon-sm')} From your messages, calls, and tasks this week</div>
+          <div class="a">
+            <p>Four things people are waiting on:</p>
+            <p>• <b>Nick</b> — the PR link. He's blocked on your review.<br>
+               • <b>Will</b> — the intro to the Clock Out lead you said you'd make.<br>
+               • <b>Jamie & Reed</b> — replies on LinkedIn from Monday.<br>
+               • <b>Zening</b> — a follow-up before your Google Meet.</p>
+            <p>Nick's is the one holding someone up. Want me to send that first?</p>
+          </div>
+          <div class="row gap2 mt4" style="flex-wrap:wrap">
+            <span class="cite">${icon('msg','icon-sm')} iMessage <span class="q">· Nick · today</span></span>
+            <span class="cite">${icon('mic','icon-sm')} Call <span class="q">· lead outreach · today</span></span>
+            <span class="cite">${icon('check','icon-sm')} Tasks <span class="q">· 4 open</span></span>
+          </div>
+          <div class="row gap2 mt4">
+            <button class="btn accent sm" onclick="go('messages-imessage')">${icon('send','icon-sm')} Send Nick's first</button>
+            <button class="btn ghost sm" onclick="go('tasks')">Add all to today</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="exchange">
+        <div class="row" style="justify-content:flex-end">
+          <div class="bubble out">What did we decide about the designer?</div>
+        </div>
+        <div class="mt5">
+          <div class="src-line">${icon('mic','icon-sm')} From your design-feedback call today</div>
+          <div class="a">
+            <p>The bar is someone who's <b>shipped a mobile or desktop app to 1M+ users</b>, US-based, and can travel. Before hiring, the plan is to <b>get 20 pieces of feedback</b> on the desktop app first — reach out through Omi Summer, Discord, school, and X.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="ask-foot">
+    <div class="inwrap">
+      <div class="input" style="height:50px">
+        ${icon('ask','icon')}
+        <span class="ph">Ask a follow-up…</span>
+        <span class="kbd">↵</span>
+      </div>
+    </div>
+  </div>
+</main>`;
+document.getElementById('root').innerHTML = windowShell({ active:'ask', title:'omi', presence:'listening', body });
+</script>
+<script src="../interactions.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>omi iOS — Settings</title>
+<link rel="stylesheet" href="../design-system.css">
+<link rel="stylesheet" href="ios.css">
+</head>
+<body>
+<div id="root"></div>
+<script src="../common.js"></script>
+<script src="ios-frame.js"></script>
+<script>
+const app = `
+<div class="apppad">
+  <div class="devbar">
+    <div class="icon-btn" style="margin-left:0" onclick="iosGo('ios-home')">${icon('chevD','icon')}</div>
+    <span class="devbar-t">Settings</span>
+    <div style="width:34px"></div>
+  </div>
+
+  <div class="listgrp" style="margin-top:14px">
+    <div class="lrow"><span class="av sm fill-ink">A</span><div><div style="font-weight:540">Archit Lal</div><div class="caption">lal00020@umn.edu</div></div><span class="r">${icon('chev','icon-sm')}</span></div>
+  </div>
+
+  <div class="sec-title">omi</div>
+  <div class="listgrp">
+    <div class="lrow"><span class="li">${icon('bolt','icon')}</span><span>Device</span><span class="r">omi · 78% ${icon('chev','icon-sm')}</span></div>
+    <div class="lrow"><span class="li">${icon('brain','icon')}</span><span>Memories</span><span class="r">${icon('chev','icon-sm')}</span></div>
+    <div class="lrow"><span class="li">${icon('mic','icon')}</span><span>Transcription & language</span><span class="r">English ${icon('chev','icon-sm')}</span></div>
+    <div class="lrow"><span class="li">${icon('bell','icon')}</span><span>Notifications</span><span class="r">${icon('chev','icon-sm')}</span></div>
+  </div>
+
+  <div class="sec-title">Account</div>
+  <div class="listgrp">
+    <div class="lrow"><span class="li">${icon('star','icon')}</span><span>Plan & usage</span><span class="r">Operator ${icon('chev','icon-sm')}</span></div>
+    <div class="lrow"><span class="li">${icon('apps','icon')}</span><span>Integrations</span><span class="r">${icon('chev','icon-sm')}</span></div>
+    <div class="lrow"><span class="li">${icon('shield','icon')}</span><span>Permissions & privacy</span><span class="r">${icon('chev','icon-sm')}</span></div>
+    <div class="lrow"><span class="li">${icon('code','icon')}</span><span>Developer</span><span class="r">${icon('chev','icon-sm')}</span></div>
+  </div>
+
+  <div class="sec-title">More</div>
+  <div class="listgrp">
+    <div class="lrow"><span class="li">${icon('users','icon')}</span><span>Refer a friend</span><span class="r">You're #4,120 ${icon('chev','icon-sm')}</span></div>
+    <div class="lrow"><span class="li">${icon('home','icon')}</span><span>Get omi for Mac</span><span class="r">${icon('chev','icon-sm')}</span></div>
+    <div class="lrow"><span class="li">${icon('msg','icon')}</span><span>Help & feedback</span><span class="r">${icon('chev','icon-sm')}</span></div>
+  </div>
+
+  <div class="listgrp" style="margin-top:18px">
+    <div class="lrow" style="justify-content:center;color:var(--danger)">Sign out</div>
+  </div>
+  <div class="caption" style="text-align:center;margin-top:14px">omi · thought to action</div>
+</div>`;
+document.getElementById('root').innerHTML = phone({ app });
+</script>
+</body>
+</html>

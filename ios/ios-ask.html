@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>omi iOS — Ask</title>
+<link rel="stylesheet" href="../design-system.css">
+<link rel="stylesheet" href="ios.css">
+<style>
+  .chatwrap { height:100%; display:flex; flex-direction:column; }
+  .chat-scroll { flex:1; overflow:auto; padding:14px 20px 8px; }
+  .composer { flex:none; border-top:1px solid var(--hair); padding:12px 18px; background:var(--soft); display:flex; gap:10px; align-items:center; }
+  .composer .field { flex:1; height:44px; border-radius:22px; background:var(--surface); border:1px solid var(--hair-2); display:flex; align-items:center; padding:0 16px; color:var(--faint); font-size:15px; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="../common.js"></script>
+<script src="ios-frame.js"></script>
+<script>
+const app = `
+<div class="chatwrap">
+  <div class="chat-scroll">
+    <div class="col-center" style="margin:6px 0 18px">
+      <div class="caption mono">Today</div>
+    </div>
+
+    <div class="b-line out"><div class="bubble out m">What do I owe people right now?</div></div>
+
+    <div style="margin-top:16px">
+      <div class="caption" style="margin:0 2px 6px;display:flex;align-items:center;gap:6px">${icon('ask','icon-sm')} omi</div>
+      <div class="bubble in m" style="max-width:100%">
+        Three things. <b>Nick</b> is blocked on your PR link — you said before standup. <b>Zening Chen</b> needs a follow-up ahead of your Google Meet. And <b>Jamie</b> + <b>Reed</b> are still unread on LinkedIn.
+        <div class="row gap2" style="margin-top:12px;flex-wrap:wrap">
+          <span class="cite">${icon('msg','icon-sm')} Nick · Telegram <span class="q">8:51am</span></span>
+          <span class="cite">${icon('cal','icon-sm')} Zening <span class="q">Google Meet</span></span>
+        </div>
+      </div>
+      <div class="row gap2" style="margin-top:12px">
+        <button class="btn accent sm" onclick="iosGo('ios-messages')">${icon('send','icon-sm')} Draft Nick's reply</button>
+        <button class="btn sm">Show all 9</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="composer">
+    <div class="field">Ask about anything you saw or said…</div>
+    <button class="btn accent none" style="width:44px;height:44px;border-radius:22px;padding:0">${icon('send','icon')}</button>
+  </div>
+</div>`;
+
+document.getElementById('root').innerHTML = phone({ app, tab:'ask' });
+</script>
+</body>
+</html>

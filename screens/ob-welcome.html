@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>omi — Welcome</title>
+<link rel="stylesheet" href="../design-system.css">
+<style>
+  .ob { min-height:720px; display:flex; flex-direction:column; }
+  .ob-top { display:flex; align-items:center; justify-content:space-between; padding:22px 30px; }
+  .ob-split { flex:1; display:grid; grid-template-columns: 1fr 1fr; }
+  .ob-left { padding: 40px 56px; display:flex; flex-direction:column; justify-content:center; }
+  .ob-right { border-left:1px solid var(--hair); background: var(--soft); position:relative; overflow:hidden; }
+  .name-input { max-width: 360px; }
+  .brainwrap { position:absolute; inset:0; }
+  .brainwrap svg line { stroke: var(--brain-line); stroke-width:1; }
+  .skip { color: var(--faint); font-size:13px; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="../common.js"></script>
+<script>
+function prog(cur){let s='';for(let k=1;k<=7;k++)s+=`<i class="${k<cur?'on':''} ${k===cur?'cur':''}"></i>`;return `<div class="prog">${s}</div>`;}
+
+const nodes = [
+  {t:'omi', x:46, y:44, core:true},
+  {t:'Sarah — Q3 deck', x:16, y:20},
+  {t:'Atlas v2', x:70, y:22},
+  {t:'Deep work = mornings', x:60, y:68},
+  {t:'Mom · July 22', x:20, y:70},
+  {t:'Standup 9am', x:78, y:52},
+];
+const brain = `
+<div class="brainwrap">
+  <svg width="100%" height="100%" style="position:absolute;inset:0">
+    <line x1="46%" y1="48%" x2="20%" y2="24%"/><line x1="50%" y1="46%" x2="72%" y2="26%"/>
+    <line x1="50%" y1="50%" x2="62%" y2="68%"/><line x1="46%" y1="50%" x2="24%" y2="70%"/>
+    <line x1="52%" y1="48%" x2="78%" y2="52%"/>
+  </svg>
+  ${nodes.map(n=>`<div class="node ${n.core?'core':'dim'}" style="left:${n.x}%;top:${n.y}%;transform:translate(-50%,-50%)">${n.t}</div>`).join('')}
+</div>`;
+
+const body = `
+<div class="ob">
+  <div class="ob-top">
+    <span class="wordmark" style="font-size:20px">omi</span>
+    ${prog(1)}
+    <span class="skip">Skip</span>
+  </div>
+  <div class="ob-split">
+    <div class="ob-left">
+      <div class="eyebrow">Step 1</div>
+      <div class="display mt3" style="font-size:38px">This is your<br>second brain.</div>
+      <div class="body mt4" style="max-width:380px">It starts empty. In a minute it'll know more about your week than you remember. First — who am I working for?</div>
+      <div class="name-input mt6">
+        <div class="caption" style="margin-bottom:8px">What should I call you?</div>
+        <div class="input"><span class="ink">Archit</span><span style="width:1px;height:18px;background:var(--accent);margin-left:1px"></span></div>
+      </div>
+      <div class="row gap3 mt6">
+        <button class="btn accent lg" onclick="go('ob-promise')">Continue</button>
+      </div>
+    </div>
+    <div class="ob-right">${brain}</div>
+  </div>
+</div>`;
+
+document.getElementById('root').innerHTML = bareWindow({ title:'omi', presence:'none', body });
+</script>
+<script src="../interactions.js"></script>
+</body>
+</html>

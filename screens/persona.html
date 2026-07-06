@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>omi — Persona</title>
+<link rel="stylesheet" href="../design-system.css">
+</head>
+<body>
+<div id="root"></div>
+<script src="../common.js"></script>
+<script>
+function sw(on){ return `<div class="switch ${on?'on':''}"><i></i></div>`; }
+function tone(lab,sub,on){ return `<div class="row gap3" style="padding:13px 0;border-bottom:1px solid var(--hair)">
+  <div><div class="body ink">${lab}</div><div class="caption">${sub}</div></div>
+  <div style="margin-left:auto">${sw(on)}</div></div>`; }
+
+const body = `
+<main class="main">
+  <div class="pad-lg" style="max-width:720px;margin:0 auto">
+    <div class="eyebrow">Persona</div>
+    <h1 class="h1 mt2">How I sound as you</h1>
+    <div class="small mt2" style="max-width:520px">I learned your voice from how you actually text. This is what I copy when I draft. Tune it any time.</div>
+
+    <div class="card mt5" style="border-radius:14px">
+      <div class="caption">You usually sound like</div>
+      <div class="draft-compose mt3"><div class="txt">“sending it now — rebased on main, summary’s in the description. ping me if anything’s off 👍”</div></div>
+      <div class="caption mt4">Not like</div>
+      <div class="bubble in mt2" style="max-width:100%">“Hello, please find the pull request attached for your kind review at your earliest convenience.”</div>
+    </div>
+
+    <div class="h3 mt6">Your defaults</div>
+    <div class="mt2">
+      ${tone('Short and direct','Get to it. No filler.', true)}
+      ${tone('Warm, not formal','Friendly, lowercase-ish.', true)}
+      ${tone('An emoji now and then','Only where you’d use one.', true)}
+      ${tone('Match each person','Looser with friends, tighter with work.', true)}
+    </div>
+    <div class="caption mt5">I never send without you. <a onclick="go('messages-telegram')" style="color:var(--accent-strong);cursor:pointer">See a draft →</a></div>
+  </div>
+</main>`;
+document.getElementById('root').innerHTML = windowShell({ active:'memory', title:'omi — Persona', presence:'live', body });
+</script>
+<script src="../interactions.js"></script>
+</body>
+</html>

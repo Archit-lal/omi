@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>omi — Conversations</title>
+<link rel="stylesheet" href="../design-system.css">
+<style>
+  .cv-main { display:flex; }
+  .cv-left { width:320px; flex:none; border-right:1px solid var(--hair); display:flex; flex-direction:column; background:var(--soft); }
+  .cv-left-head { padding:18px 18px 10px; }
+  .cv-list { overflow:auto; padding:4px 10px 16px; }
+  .cv-item { padding:12px 12px; border-radius:11px; cursor:default; }
+  .cv-item:hover { background:var(--surface); }
+  .cv-item.active { background:var(--surface); box-shadow:inset 0 0 0 1px var(--hair); }
+  .cv-title { font-size:14px; color:var(--ink); font-weight:520; }
+  .cv-sub { font-size:12px; color:var(--faint); margin-top:4px; display:flex; align-items:center; gap:7px; }
+  .cv-right { flex:1; min-width:0; overflow:auto; }
+  .tx { display:flex; gap:11px; margin-bottom:16px; }
+  .sp { font-size:12px; font-weight:560; color:var(--body); margin-bottom:3px; }
+  .tx-t { font-size:14px; color:var(--ink); line-height:1.5; max-width:560px; }
+  .tx-time { font-size:11px; color:var(--faint); font-family:var(--mono); }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="../common.js"></script>
+<script>
+const item = (title, who, dur, when, active) => `
+  <div class="cv-item ${active?'active':''}">
+    <div class="cv-title">${title}</div>
+    <div class="cv-sub">${who} · ${dur} · ${when}</div>
+  </div>`;
+
+const turn = (color, initials, name, time, text) => `
+  <div class="tx">
+    <div class="av sm ${color}">${initials}</div>
+    <div>
+      <div class="sp">${name} <span class="tx-time"> · ${time}</span></div>
+      <div class="tx-t">${text}</div>
+    </div>
+  </div>`;
+
+const body = `
+<main class="main cv-main">
+  <div class="cv-left">
+    <div class="cv-left-head">
+      <h2 class="h2">Conversations</h2>
+      <div class="input mt3" style="height:38px">${icon('search','icon-sm')}<span class="ph">Search transcripts…</span></div>
+    </div>
+    <div class="cv-list">
+      ${item("📈 Founders discuss lead outreach", "You, Will, Josh", "23 min", "today 3:11", true)}
+      ${item("🎨 Team plans design-feedback outreach", "You, Nick, Josh", "14 min", "today 1:08", false)}
+      ${item("💻 Team chooses HTML mockup approach", "You, Nick", "8 min", "today 12:29", false)}
+      ${item("💼 Calibrating startup candidate profiles", "You, Josh", "5 min", "today 12:09", false)}
+      ${item("🤖 AI agents: multi-agent value", "You, David", "20 min", "Sun", false)}
+      ${item("🌧️ Rainy night in New York", "You", "31 min", "Sun", false)}
+    </div>
+  </div>
+
+  <div class="cv-right">
+    <div class="pad">
+      <div class="between">
+        <div>
+          <h1 class="h1">Founders discuss lead outreach</h1>
+          <div class="caption mt2">Monday, July 6 · 23 min · You, Will, Josh</div>
+        </div>
+        <button class="btn ghost sm">${icon('share','icon-sm')} Share</button>
+      </div>
+
+      <div class="card mt5" style="padding:18px 20px">
+        <div class="eyebrow">What I heard</div>
+        <div class="a mt2" style="color:var(--ink);font-size:14px;line-height:1.55;max-width:620px">
+          You're sourcing growth leads from your cofounder's community and a New York CSV — targeting people who've driven real growth, not just big-company names. A few are interested, so move fast: log in, follow up, and visit the coworking space.
+        </div>
+        <div class="row gap2 mt4" style="flex-wrap:wrap">
+          <span class="cite">${icon('check','icon-sm')} Task · Set up the Clock Out intro</span>
+          <span class="cite">${icon('check','icon-sm')} Task · Connect William</span>
+          <span class="cite">${icon('users','icon-sm')} Person · Will</span>
+        </div>
+      </div>
+
+      <hr class="divider mt5">
+      <div class="mt5">
+        ${turn('fill-blue','W','Will','02:14',"The Clock Out person is exactly who we want — they actually owned growth, not just a title.")}
+        ${turn('fill-clay','J','Josh','02:31',"There's a founder who hit a million users in six months. I've got his number.")}
+        ${turn('fill-ink','Y','You','02:44',"Let's move fast — a few are interested. I'll set up the intro and swing by the coworking space.")}
+        ${turn('fill-blue','W','Will','02:52',"Perfect. Connect me once you've talked to them.")}
+      </div>
+    </div>
+  </div>
+</main>`;
+document.getElementById('root').innerHTML = windowShell({ active:'memory', title:'omi', presence:'listening', body });
+</script>
+<script src="../interactions.js"></script>
+</body>
+</html>

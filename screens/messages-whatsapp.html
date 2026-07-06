@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>omi — Messages · WhatsApp</title>
+<link rel="stylesheet" href="../design-system.css">
+<style>
+  .msg { flex:1; display:flex; min-width:0; }
+  .threads { width:320px; flex:none; border-right:1px solid var(--hair); background:var(--soft); display:flex; flex-direction:column; min-height:0; }
+  .threads .th-head { padding:16px 16px 10px; }
+  .th-search { height:34px; border-radius:9px; background:var(--surface); border:1px solid var(--hair); display:flex; align-items:center; gap:8px; padding:0 11px; color:var(--faint); font-size:13px; }
+  .th-tabs { display:flex; gap:4px; padding:0 12px 8px; }
+  .th-tab { font-size:12px; color:var(--faint); padding:5px 10px; border-radius:7px; }
+  .th-tab.on { color:var(--ink); background:var(--surface); box-shadow:inset 0 0 0 1px var(--hair); }
+  .th-list { flex:1; overflow:auto; padding:4px 8px 12px; }
+  .th-row { display:flex; gap:11px; padding:10px 10px; border-radius:11px; align-items:flex-start; }
+  .th-row:hover { background:var(--surface-2); }
+  .th-row.active { background:var(--surface); box-shadow:inset 0 0 0 1px var(--hair); }
+  .th-row .who { flex:1; min-width:0; }
+  .th-row .nm { display:flex; align-items:center; gap:6px; font-size:14px; font-weight:540; color:var(--ink); }
+  .th-row .pv { font-size:12.5px; color:var(--muted); overflow:hidden; text-overflow:ellipsis; white-space:nowrap; margin-top:2px; }
+  .th-row .tm { font-size:11px; color:var(--faint); flex:none; }
+  .pdot { width:7px; height:7px; border-radius:50%; flex:none; }
+  .avwrap { position:relative; flex:none; }
+  .avwrap .pdot { position:absolute; right:-1px; bottom:-1px; border:2px solid var(--soft); width:11px; height:11px; }
+
+  .thread { flex:1; display:flex; flex-direction:column; min-width:0; min-height:0; }
+  .thread .t-head { display:flex; align-items:center; gap:12px; padding:14px 20px; border-bottom:1px solid var(--hair); }
+  .thread .t-head .sub { font-size:12px; color:var(--faint); }
+  .autoreply { margin-left:auto; display:flex; align-items:center; gap:10px; font-size:12.5px; color:var(--ink); }
+  .t-body { flex:1; overflow:auto; padding:22px 24px; display:flex; flex-direction:column; gap:6px; }
+  .day-sep { text-align:center; font-size:11px; color:var(--faint); margin:8px 0; }
+
+  /* an omi-sent bubble: outgoing, but tagged + with a quiet undo so it never feels out of your control */
+  .sent-wrap { display:flex; flex-direction:column; align-items:flex-end; gap:5px; margin-top:8px; }
+  .sent-tag { display:flex; align-items:center; gap:9px; }
+  .sent-tag .badge { }
+  .undo { font-size:12px; color:var(--faint); display:flex; align-items:center; gap:5px; }
+  .undo b { color:var(--accent-strong); font-weight:540; }
+
+  .composer { border-top:1px solid var(--hair); padding:12px 18px; background:var(--soft); }
+  .auto-note { display:flex; align-items:center; gap:10px; padding:11px 14px; border-radius:11px; background:var(--accent-tint); border:1px solid rgba(224,168,46,0.3); }
+  .auto-note .tx { font-size:13px; color:var(--body); flex:1; }
+  .auto-note .tx b { color:var(--ink); font-weight:560; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="../common.js"></script>
+<script>
+const wa = '#25D366';
+function row({fill,initials,name,preview,time,badge,active}) {
+  return `<div class="th-row ${active?'active':''}">
+    <div class="avwrap"><div class="av sm ${fill}">${initials}</div><span class="pdot" style="background:${wa}"></span></div>
+    <div class="who">
+      <div class="nm">${name}</div>
+      <div class="pv">${preview}</div>
+      ${badge?`<div style="margin-top:7px">${badge}</div>`:''}
+    </div>
+    <div class="tm">${time}</div>
+  </div>`;
+}
+const list = [
+  row({fill:'fill-slate',initials:'A',name:'Aditya',preview:'omi: On it — sending the dinner menu today',time:'9:41',active:true,
+      badge:'<span class="badge sent"><span class="d"></span>Sent by omi · handled</span>'}),
+  row({fill:'fill-clay',initials:'A',name:'Allison',preview:'can we push our call to 4?',time:'9:20',
+      badge:'<span class="badge draft"><span class="d"></span>Draft ready</span>'}),
+  row({fill:'fill-moss',initials:'M',name:'Maher',preview:'don\'t forget the rent split 🙂',time:'8:55',
+      badge:'<span class="badge hold"><span class="d"></span>Auto-reply on</span>'}),
+  row({fill:'fill-teal',initials:'S',name:'Satvik',preview:'You: sounds perfect, thank you!',time:'Tue',
+      badge:'<span class="badge sent"><span class="d"></span>Sent by omi</span>'}),
+  row({fill:'fill-blue',initials:'H',name:'Hong',preview:'👍',time:'Mon'}),
+  row({fill:'fill-ink',initials:'G',name:'Gabe',preview:'You: next week works',time:'Sun'}),
+].join('');
+
+const thread = `
+  <div class="t-head">
+    <div class="avwrap"><div class="av fill-slate">A</div><span class="pdot" style="background:${wa};position:absolute;right:-1px;bottom:-1px;border:2px solid var(--canvas);width:12px;height:12px"></span></div>
+    <div><div class="h3">Aditya</div><div class="sub">WhatsApp · online</div></div>
+    <label class="autoreply">Auto-reply <span class="switch on amber"><i></i></span></label>
+  </div>
+  <div class="t-body">
+    <div class="day-sep">Today</div>
+    <div class="b-line"><div class="bubble in">morning! can you share the menu for the August dinner before EOD?</div></div>
+    <div class="b-line"><div class="bubble in">no rush, just locking in the headcount 🙂</div></div>
+
+    <div class="sent-wrap">
+      <div class="b-line out"><div class="bubble out">On it — I'll get the menu over today. How many are we planning for this round?</div></div>
+      <div class="sent-tag">
+        <span class="badge sent"><span class="d"></span>Sent by omi · 9:41</span>
+        <span class="undo">Not right? <b>Undo &amp; edit</b></span>
+      </div>
+    </div>
+  </div>
+  <div class="composer">
+    <div class="auto-note">
+      ${icon('bolt','icon')}
+      <div class="tx"><b>Auto-reply is on for Aditya.</b> I answer the routine ones and mark them — and pull back the moment something needs a real decision.</div>
+      <button class="btn sm">Turn off</button>
+    </div>
+  </div>`;
+
+const body = `<div class="msg">
+  <aside class="threads">
+    <div class="th-head">
+      <div class="between"><div class="h2">Messages</div><div class="live-dot amber" title="drafting"></div></div>
+      <div class="th-search" style="margin-top:12px">${icon('search','icon-sm')} Search everyone</div>
+    </div>
+    <div class="th-tabs">
+      <span class="th-tab on">All</span>
+      <span class="th-tab">Needs you</span>
+      <span class="th-tab">Drafts <span style="color:var(--accent-strong)">·1</span></span>
+    </div>
+    <div class="th-list">${list}</div>
+  </aside>
+  <section class="thread">${thread}</section>
+</div>`;
+
+document.getElementById('root').innerHTML = windowShell({ active:'messages', title:'omi — Messages', presence:'amber', body });
+</script>
+<script src="../interactions.js"></script>
+</body>
+</html>

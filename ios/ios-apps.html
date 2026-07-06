@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>omi iOS — Apps</title>
+<link rel="stylesheet" href="../design-system.css">
+<link rel="stylesheet" href="ios.css">
+</head>
+<body>
+<div id="root"></div>
+<script src="../common.js"></script>
+<script src="ios-frame.js"></script>
+<script>
+const L='../assets/logos/';
+const app = `
+<div class="apppad">
+  ${deviceBar('Apps')}
+
+  <div class="catrow" style="margin-top:14px">
+    <span class="cat on">All</span><span class="cat">Productivity</span><span class="cat">Relationships</span><span class="cat">Health</span><span class="cat">Companionship</span>
+  </div>
+
+  <div class="sec-title">Where I work</div>
+  <div class="appcard"><span class="lg"><img src="${L}claude.svg"></span><div style="flex:1"><div class="nm">Claude</div><div class="ds">Your memory in every chat</div></div><span class="chip ok"><span class="d"></span>On</span></div>
+  <div class="appcard"><span class="lg"><img src="${L}openai.svg"></span><div style="flex:1"><div class="nm">ChatGPT</div><div class="ds">Context for what you're building</div></div><span class="chip ok"><span class="d"></span>On</span></div>
+  <div class="appcard"><span class="lg"><img src="${L}telegram.svg"></span><div style="flex:1"><div class="nm">Telegram</div><div class="ds">I draft your replies</div></div><span class="chip ok"><span class="d"></span>On</span></div>
+
+  <div class="sec-title">Explore</div>
+  <div class="appcard"><span class="lg"><img src="${L}notion.svg"></span><div style="flex:1"><div class="nm">Notion</div><div class="ds">Push notes and tasks</div></div><button class="btn sm">Add</button></div>
+  <div class="appcard"><span class="lg">${icon('check','icon')}</span><div style="flex:1"><div class="nm">Todoist</div><div class="ds">Send action items to your list</div></div><button class="btn sm">Add</button></div>
+  <div class="appcard"><span class="lg">${icon('users','icon')}</span><div style="flex:1"><div class="nm">Relationship coach</div><div class="ds">Nudges to keep in touch</div></div><button class="btn sm">Add</button></div>
+
+  <div class="caption" style="text-align:center;margin-top:16px">Explore the app store →</div>
+</div>`;
+document.getElementById('root').innerHTML = phone({ app, tab:'apps' });
+</script>
+</body>
+</html>

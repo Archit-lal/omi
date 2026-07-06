@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>omi — Settings</title>
+<link rel="stylesheet" href="../design-system.css">
+<style>
+  .set-wrap { display:flex; height:100%; }
+  .set-nav { width:236px; flex:none; border-right:1px solid var(--hair); padding:22px 12px; overflow:auto; background:var(--soft); }
+  .set-nav .gh { font-size:11px; font-weight:560; text-transform:uppercase; letter-spacing:.13em; color:var(--faint); padding:0 10px 10px; }
+  .set-nav a { display:flex; align-items:center; gap:10px; padding:9px 11px; border-radius:9px; font-size:13.5px; color:var(--body); cursor:pointer; }
+  .set-nav a:hover { background:var(--surface-2); color:var(--ink); }
+  .set-nav a.on { background:var(--surface); color:var(--ink); box-shadow:inset 0 0 0 1px var(--hair); font-weight:520; }
+  .set-body { flex:1; overflow:auto; padding:34px 40px; max-width:720px; }
+  .row-item { display:flex; align-items:center; gap:14px; padding:15px 0; border-bottom:1px solid var(--hair); }
+  .row-item .lab { font-size:14px; color:var(--ink); font-weight:500; }
+  .row-item .sub { font-size:12.5px; color:var(--muted); margin-top:2px; }
+  .row-item .ctl { margin-left:auto; flex:none; }
+  .sel { height:32px; padding:0 12px; border-radius:8px; border:1px solid var(--hair-2); background:var(--surface); color:var(--ink); font-size:13px; display:inline-flex; align-items:center; gap:8px; }
+  .assure { display:flex; gap:12px; padding:16px; border-radius:12px; background:var(--surface-2); border:1px solid var(--hair); margin-bottom:20px; }
+  .meter { height:8px; border-radius:99px; background:var(--surface-2); overflow:hidden; margin-top:10px; }
+  .meter i { display:block; height:100%; width:46%; background:var(--accent); border-radius:99px; }
+  .danger { color:var(--danger); }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="../common.js"></script>
+<script>
+const SECTIONS = [
+  ['general','settings','General'],
+  ['transcription','mic','Transcription'],
+  ['assistants','ask','Assistants'],
+  ['floating','cmd','Floating bar & chat'],
+  ['integrations','apps','Integrations'],
+  ['privacy','shield','Notifications & privacy'],
+  ['rewind','rewind','Rewind'],
+  ['advanced','bolt','Advanced'],
+  ['devkeys','code','Developer keys'],
+  ['plan','star','Plan & usage'],
+];
+
+function sw(on, amber){ return `<div class="switch ${on?'on':''} ${amber?'amber':''}"><i></i></div>`; }
+function item(lab, sub, ctl){ return `<div class="row-item"><div><div class="lab">${lab}</div>${sub?`<div class="sub">${sub}</div>`:''}</div><div class="ctl">${ctl}</div></div>`; }
+function sel(v){ return `<span class="sel">${v} ${icon('chevD','icon-sm')}</span>`; }
+
+const PANELS = {
+  general: `<h2 class="h2">General</h2>
+    <div class="mt4">
+    ${item('Your name','How I greet you','<span class="sel">Archit Lal</span>')}
+    ${item('Launch at login','Start omi when you turn on your Mac', sw(true))}
+    ${item('Language','', sel('English'))}
+    ${item('Appearance','', sel('Light'))}
+    ${item('Menu bar icon','Keep omi one click away', sw(true))}
+    </div>`,
+  transcription: `<h2 class="h2">Transcription</h2>
+    <div class="mt4">
+    ${item('Listen to conversations','Turn my ears on and off', sw(true))}
+    ${item('Model','Fastest, on-device when it can', sel('omi · auto'))}
+    ${item('Live captions','Show words as they’re spoken', sw(true))}
+    ${item('Label speakers','Tell people apart by voice', sw(true))}
+    ${item('Language','', sel('Auto-detect'))}
+    </div>`,
+  assistants: `<h2 class="h2">Assistants</h2>
+    <div class="mt4">
+    ${item('Draft my replies','I write, you send', sw(true,true))}
+    ${item('Auto-reply when I’m away','Only for chats you switch on', sw(false))}
+    ${item('Proactive nudges','Tell you the next move', sw(true))}
+    ${item('Daily recap','A short read on your day', sw(true))}
+    ${item('Never guess on money or legal','Always ask me first', sw(true))}
+    </div>`,
+  floating: `<h2 class="h2">Floating bar & chat</h2>
+    <div class="mt4">
+    ${item('Show the floating bar','Ask omi from anywhere', sw(true))}
+    ${item('Summon shortcut','', sel('⌘⇧Space'))}
+    ${item('Push-to-talk','Hold to speak', sel('Hold ⌥'))}
+    ${item('Answer from what’s on screen','Use the context in front of you', sw(true))}
+    </div>`,
+  integrations: `<h2 class="h2">Integrations</h2>
+    <div class="sub" style="color:var(--muted);margin:6px 0 4px">Where I learn from, and where I can work.</div>
+    <div class="mt4">
+    ${item('Gmail','lal00020@umn.edu', '<span class="badge sent"><span class="d"></span>Connected</span>')}
+    ${item('Google Calendar','12 events this week', '<span class="badge sent"><span class="d"></span>Connected</span>')}
+    ${item('iMessage · Telegram · WhatsApp','Draft and send your replies', '<span class="badge sent"><span class="d"></span>Connected</span>')}
+    ${item('Claude, ChatGPT, OpenClaw','Use your memory anywhere', `<button class="btn sm" onclick="go('apps')">Manage</button>`)}
+    </div>`,
+  privacy: `<h2 class="h2">Notifications & privacy</h2>
+    <div class="assure mt4">
+      <span style="color:var(--live)">${icon('shield')}</span>
+      <div><div class="lab">Everything I capture stays on your Mac.</div>
+      <div class="sub">Encrypted at rest. Nothing leaves unless you ask it to.</div></div>
+    </div>
+    ${item('Keep everything on-device','Never send my data to the cloud', sw(true))}
+    ${item('Consent mode','Pause capture with one click', sw(true))}
+    ${item('What I know about you','Review and correct your profile', `<button class="btn sm" onclick="go('memory')">Open</button>`)}
+    ${item('Notifications','Only the things that matter', sw(true))}
+    ${item('Export everything','Take your data with you', '<button class="btn sm">Export</button>')}
+    ${item('<span class="danger">Delete everything</span>','Erase all memories and captures', '<button class="btn sm" style="color:var(--danger);border-color:var(--danger)">Delete…</button>')}
+    <div class="caption mt5"><a onclick="window.open('https://github.com/BasedHardware/omi')" style="cursor:pointer;color:var(--accent-strong)">Read the source code ↗</a></div>`,
+  rewind: `<h2 class="h2">Rewind</h2>
+    <div class="mt4">
+    ${item('Record my screen','So I can find anything you saw', sw(true))}
+    ${item('Keep history for','', sel('30 days'))}
+    ${item('Pause in private apps','Banking, password managers…', sw(true))}
+    ${item('Blur sensitive text','Hide secrets in captures', sw(true))}
+    </div>`,
+  advanced: `<h2 class="h2">Advanced</h2>
+    <div class="mt4">
+    ${item('Bring your own keys','Use your own model provider', sw(false))}
+    ${item('Local models','Run on this Mac when it can', sw(true))}
+    ${item('Diagnostics','Share crash logs to help fix bugs', sw(true))}
+    ${item('Reset onboarding','Meet omi again', `<button class="btn sm" onclick="go('onboarding')">Reset</button>`)}
+    </div>`,
+  devkeys: `<h2 class="h2">Developer keys</h2>
+    <div class="sub" style="color:var(--muted);margin:6px 0 4px">Build on your own memory over MCP.</div>
+    <div class="mt4">
+    ${item('MCP endpoint','Connect Claude Code, Cursor, and more', '<span class="sel mono">/v1/mcp/sse</span>')}
+    ${item('API key','omi_sk_••••••••4120', '<button class="btn sm">Copy</button>')}
+    ${item('Rotate key','', '<button class="btn sm">Rotate</button>')}
+    </div>`,
+  plan: `<h2 class="h2">Plan & usage</h2>
+    <div class="card mt4" style="border-radius:14px">
+      <div class="between"><div><div class="eyebrow">Current plan</div><div class="h2 mt2">Operator</div></div>
+      <button class="btn accent" onclick="go('plan-usage')">See plan</button></div>
+      <div class="small mt4">Unlimited memory · desktop + phone · messaging auto-reply</div>
+      <div class="mt5"><div class="between"><span class="small">This month</span><span class="caption mono">46% used</span></div>
+      <div class="meter"><i></i></div></div>
+    </div>`,
+};
+
+let sec = 'general';
+function render(){
+  document.getElementById('root').innerHTML = windowShell({ active:'settings', title:'omi — Settings', presence:'live', body:`
+    <div class="set-wrap">
+      <nav class="set-nav">
+        <div class="gh">Settings</div>
+        ${SECTIONS.map(s=>`<a class="${s[0]===sec?'on':''}" onclick="pick('${s[0]}')">${icon(s[1],'icon-sm')} ${s[2]}</a>`).join('')}
+      </nav>
+      <div class="set-body">${PANELS[sec]}</div>
+    </div>`});
+}
+function pick(s){ sec = s; render(); }
+render();
+</script>
+<script src="../interactions.js"></script>
+</body>
+</html>

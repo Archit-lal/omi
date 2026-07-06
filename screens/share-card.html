@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>omi — Daily recap</title>
+<link rel="stylesheet" href="../design-system.css">
+<style>
+  html,body{height:100%}
+  .stage{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;
+    background:linear-gradient(160deg,var(--soft),var(--canvas));gap:40px}
+  .recap{width:440px}
+  .recap .hl-num{font-family:var(--serif);font-size:46px;color:var(--ink);line-height:1;letter-spacing:-.02em}
+  .recap .hl-lab{font-size:12.5px;color:var(--muted);margin-top:6px}
+  .recap .grid{display:flex;gap:26px;margin-top:26px}
+  .recap .line{font-size:15px;color:var(--body);line-height:1.5;margin-top:24px;
+    padding-top:20px;border-top:1px solid var(--hair)}
+  .recap .foot{display:flex;align-items:center;justify-content:space-between;margin-top:26px}
+  .recap .foot .wm{font-family:var(--serif);font-size:15px;color:var(--ink)}
+  .side{max-width:220px}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="../common.js"></script>
+<script>
+document.getElementById('root').innerHTML = `
+<div class="stage">
+  <div class="share-card recap">
+    <div class="eyebrow">Today, kept by omi</div>
+    <div class="display mt3" style="font-size:30px">Archit's Monday.</div>
+    <div class="grid">
+      <div><div class="hl-num">14</div><div class="hl-lab">conversations kept</div></div>
+      <div><div class="hl-num">3</div><div class="hl-lab">replies I drafted</div></div>
+      <div><div class="hl-num">9</div><div class="hl-lab">tasks caught</div></div>
+    </div>
+    <div class="line">You told 4 people you'd follow up today. I'll remind you before each one slips.</div>
+    <div class="foot">
+      <span class="wm">omi</span>
+      <button class="btn accent sm">${icon('share','icon-sm')} Share my day</button>
+    </div>
+  </div>
+  <div class="side">
+    <div class="eyebrow">Why this spreads</div>
+    <div class="small mt3">A clean, personal card people actually want to post — proof the app knows their life, not a feature list. One tap to X or Reddit.</div>
+  </div>
+</div>`;
+</script>
+<script src="../interactions.js"></script>
+</body>
+</html>

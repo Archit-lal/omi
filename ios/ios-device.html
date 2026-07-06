@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>omi iOS — Device</title>
+<link rel="stylesheet" href="../design-system.css">
+<link rel="stylesheet" href="ios.css">
+</head>
+<body>
+<div id="root"></div>
+<script src="../common.js"></script>
+<script src="ios-frame.js"></script>
+<script>
+const app = `
+<div class="apppad">
+  <div class="devbar">
+    <div class="icon-btn" style="margin-left:0" onclick="iosGo('ios-home')">${icon('chevD','icon')}</div>
+    <span class="devbar-t">Device</span>
+    <div style="width:34px"></div>
+  </div>
+
+  <div class="dev-hero">
+    <div class="chip ok"><span class="d"></span> Connected</div>
+    <img src="../assets/pendant.webp" alt="omi pendant">
+    <div class="m-h1">omi</div>
+    <div class="small" style="margin-top:4px">Listening all day · on your neck</div>
+  </div>
+
+  <div class="listgrp" style="margin-top:18px">
+    <div class="lrow">${icon('bolt','icon')} <span>Battery</span> <span class="r">78% · 2 days left</span></div>
+    <div class="lrow">${icon('clock','icon')} <span>Last synced</span> <span class="r">just now</span></div>
+  </div>
+
+  <div class="sec-title">Manage</div>
+  <div class="listgrp">
+    <div class="lrow"><span class="li">${icon('eye','icon')}</span> <span>How to use omi</span> <span class="r">${icon('chev','icon-sm')}</span></div>
+    <div class="lrow"><span class="li">${icon('bolt','icon')}</span> <span>Firmware</span> <span class="r">Up to date ${icon('chev','icon-sm')}</span></div>
+    <div class="lrow"><span class="li">${icon('rewind','icon')}</span> <span>SD-card sync</span> <span class="r">Nothing pending ${icon('chev','icon-sm')}</span></div>
+    <div class="lrow"><span class="li">${icon('x','icon')}</span> <span>Disconnect</span> <span class="r danger">Unpair</span></div>
+  </div>
+
+  <div class="sec-title">Device info</div>
+  <div class="listgrp">
+    <div class="lrow"><span>Model</span> <span class="r mono">omi DevKit 2</span></div>
+    <div class="lrow"><span>Firmware</span> <span class="r mono">v2.0.10</span></div>
+    <div class="lrow"><span>Device ID</span> <span class="r mono">OMI-4C1A-88</span></div>
+  </div>
+</div>`;
+document.getElementById('root').innerHTML = phone({ app });
+</script>
+</body>
+</html>

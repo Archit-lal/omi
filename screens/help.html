@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>omi — Help</title>
+<link rel="stylesheet" href="../design-system.css">
+</head>
+<body>
+<div id="root"></div>
+<script src="../common.js"></script>
+<script>
+const body = `
+<main class="main">
+  <div class="pad-lg" style="max-width:640px;margin:0 auto">
+    <div class="row gap3">
+      <div class="av lg fill-clay">N</div>
+      <div><div class="h2">Talk to a founder</div><div class="small">Nik usually replies within the hour.</div></div>
+    </div>
+
+    <div class="bubbles mt5">
+      <div class="b-line"><div class="bubble in">Hey Archit — saw you’re testing the iMessage auto-reply. How’s it feeling?</div></div>
+      <div class="b-line out"><div class="bubble out">honestly great. one send bug I’m chasing but the drafts are 🔥</div></div>
+      <div class="b-line"><div class="bubble in">Send me the PR — I’ll take a look tonight. And thanks for the 20-feedback push 🙏</div></div>
+    </div>
+
+    <div class="input mt5" style="height:48px">
+      ${icon('send','icon')}<span class="ph">Message the team…</span>
+    </div>
+
+    <div class="row gap3 mt5">
+      <button class="btn" onclick="window.open('https://discord.gg/omi')">Join Discord</button>
+      <button class="btn ghost" onclick="window.open('https://docs.omi.me')">Read the docs</button>
+      <button class="btn ghost" onclick="window.open('https://github.com/BasedHardware/omi')">Source code ↗</button>
+    </div>
+  </div>
+</main>`;
+document.getElementById('root').innerHTML = windowShell({ active:'settings', title:'omi — Help', presence:'live', body });
+</script>
+<script src="../interactions.js"></script>
+</body>
+</html>

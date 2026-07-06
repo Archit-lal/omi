@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>omi — Permissions</title>
+<link rel="stylesheet" href="../design-system.css">
+<style>
+  .ob { min-height:720px; display:flex; flex-direction:column; }
+  .ob-top { display:flex; align-items:center; justify-content:space-between; padding:22px 30px; }
+  .ob-mid { flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:20px 40px; }
+  .perm-col { width:560px; }
+  .perm { display:flex; align-items:center; gap:16px; padding:18px 20px; border:1px solid var(--hair); border-radius:14px; background:var(--surface); margin-top:12px; }
+  .perm .ic { width:42px; height:42px; border-radius:11px; display:flex; align-items:center; justify-content:center; background:var(--surface-2); color:var(--ink); flex:none; }
+  .perm.done .ic { background:rgba(44,198,107,0.14); color:var(--live); }
+  .perm .payoff { font-size:13px; color:var(--muted); margin-top:2px; }
+  .skip { color: var(--faint); font-size:13px; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="../common.js"></script>
+<script>
+function prog(cur){let s='';for(let k=1;k<=7;k++)s+=`<i class="${k<cur?'on':''} ${k===cur?'cur':''}"></i>`;return `<div class="prog">${s}</div>`;}
+
+function perm(ic, name, payoff, done){
+  return `<div class="perm ${done?'done':''}">
+    <div class="ic">${icon(done?'check':ic,'icon')}</div>
+    <div class="grow"><div class="h3">${name}</div><div class="payoff">${payoff}</div></div>
+    ${done ? `<span class="badge sent"><span class="d"></span>Granted</span>` : `<button class="btn sm">Grant</button>`}
+  </div>`;
+}
+
+const body = `
+<div class="ob">
+  <div class="ob-top"><span class="wordmark" style="font-size:20px">omi</span>${prog(3)}<span class="skip">Skip</span></div>
+  <div class="ob-mid">
+    <div class="perm-col">
+      <div class="eyebrow" style="text-align:center">Step 3</div>
+      <div class="display mt3" style="font-size:30px;text-align:center">A few things, so I can<br>actually help.</div>
+      <div class="small mt3" style="text-align:center">I ask for these once. You can revoke any of them anytime.</div>
+      ${perm('screen','See my screen','So I can see what you see and act on it.',false)}
+      ${perm('mic','Hear my conversations','So I never miss what was said.',true)}
+      ${perm('bolt','Act for me','So I can send and click on your behalf.',false)}
+      <div class="between mt6">
+        <span class="caption" style="display:flex;gap:7px;align-items:center">${icon('code','icon-sm')} <a style="color:var(--muted)">Read the source code ↗</a></span>
+        <button class="btn accent" onclick="go('ob-import')">Continue</button>
+      </div>
+    </div>
+  </div>
+</div>`;
+
+document.getElementById('root').innerHTML = bareWindow({ title:'omi', presence:'none', body });
+</script>
+<script src="../interactions.js"></script>
+</body>
+</html>

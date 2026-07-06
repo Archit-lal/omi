@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>omi — Rewind</title>
+<link rel="stylesheet" href="../design-system.css">
+<style>
+  .rw-grid { display:grid; grid-template-columns: 1fr 320px; gap: 22px; }
+  .frame {
+    position:relative; border-radius:14px; overflow:hidden;
+    border:1px solid var(--hair); height:288px;
+    background:
+      linear-gradient(135deg, var(--surface-2), var(--surface)),
+      var(--surface);
+  }
+  .frame .chrome { position:absolute; top:0; left:0; right:0; height:34px; background:var(--soft); border-bottom:1px solid var(--hair); display:flex; align-items:center; gap:6px; padding:0 12px; }
+  .frame .chrome i { width:9px;height:9px;border-radius:50%; }
+  .frame .canvasy { position:absolute; inset:34px 0 0 0; padding:22px; display:flex; flex-direction:column; gap:12px; }
+  .frame .bar { height:12px; border-radius:6px; background:var(--surface-2); border:1px solid var(--hair); }
+  .frame .blk { border-radius:10px; background:var(--surface-2); border:1px solid var(--hair); flex:1; }
+  .frame .tag { position:absolute; left:14px; bottom:14px; }
+  .film { display:flex; gap:10px; overflow:hidden; }
+  .thumb {
+    width:104px; height:62px; border-radius:9px; flex:none; position:relative;
+    background: linear-gradient(135deg, var(--surface-2), var(--surface));
+    border:1px solid var(--hair);
+  }
+  .thumb.on { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent-tint); }
+  .thumb .t { position:absolute; bottom:5px; left:7px; font-size:10px; }
+  .scrub { height:2px; background:var(--hair); border-radius:2px; position:relative; margin-top:14px; }
+  .scrub .fill { position:absolute; left:0; top:0; bottom:0; width:42%; background:var(--accent); border-radius:2px; }
+  .scrub .head { position:absolute; left:42%; top:50%; width:11px; height:11px; border-radius:50%; background:var(--accent); transform:translate(-50%,-50%); box-shadow:0 1px 4px var(--shadow); }
+  .pulled .item { padding:14px 0; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="../common.js"></script>
+<script>
+const main = `
+<main class="main">
+  <div style="padding:28px 48px; max-width:1040px">
+
+    <div class="between">
+      <div>
+        <div class="eyebrow">Rewind</div>
+        <h1 class="h1 mt2">Everything you saw, kept.</h1>
+      </div>
+      <div class="caption mono">Today · 2,140 frames</div>
+    </div>
+
+    <div class="input mt4" style="height:48px">
+      ${icon('search','icon')}
+      <span class="ph" style="font-size:15px">Find anything you saw — “the lead CSV”, “that merge conflict”, “the PR”</span>
+      <span class="kbd">⌘F</span>
+    </div>
+
+    <div class="rw-grid mt5">
+      <div>
+        <div class="frame">
+          <div class="chrome"><i style="background:#FF5F57"></i><i style="background:#FEBC2E"></i><i style="background:#28C840"></i></div>
+          <div class="canvasy">
+            <div class="bar" style="width:46%"></div>
+            <div style="display:flex; gap:12px; flex:1">
+              <div class="blk" style="flex:2"></div>
+              <div class="blk" style="flex:1"></div>
+            </div>
+            <div class="bar" style="width:70%"></div>
+          </div>
+          <span class="tag pill">${icon('screen','icon-sm')} VS Code — reply_scheduling.py</span>
+        </div>
+        <div class="scrub"><div class="fill"></div><div class="head"></div></div>
+        <div class="row between mt3">
+          <span class="caption mono">2:00 PM</span>
+          <span class="caption">Selected · Today 2:14 PM</span>
+          <span class="caption mono">2:30 PM</span>
+        </div>
+        <div class="film mt4">
+          <div class="thumb"><span class="t caption mono">2:03</span></div>
+          <div class="thumb"><span class="t caption mono">2:08</span></div>
+          <div class="thumb on"><span class="t caption mono">2:14</span></div>
+          <div class="thumb"><span class="t caption mono">2:19</span></div>
+          <div class="thumb"><span class="t caption mono">2:25</span></div>
+          <div class="thumb"><span class="t caption mono">2:30</span></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="eyebrow">What I pulled from this</div>
+        <div class="pulled mt3">
+          <div class="item">
+            <div class="row gap2" style="color:var(--accent-strong)">${icon('brain','icon-sm')}<span class="caption accent-text" style="font-weight:560">Saved to memory</span></div>
+            <div class="body ink mt2" style="font-weight:500">The auto-reply send bug is in reply_scheduling.py.</div>
+          </div>
+          <hr class="divider">
+          <div class="item">
+            <div class="row gap2" style="color:var(--faint)">${icon('check','icon-sm')}<span class="caption">New task</span></div>
+            <div class="body ink mt2" style="font-weight:500">Send Nick the PR link for review</div>
+            <div class="caption mt1">Due today · from this screen</div>
+          </div>
+          <hr class="divider">
+          <div class="item">
+            <div class="eyebrow">Text on screen</div>
+            <div class="small muted-ink mt2 mono" style="line-height:1.5">“retry the send once on .notConfirmed · rebase on main before merge”</div>
+          </div>
+        </div>
+        <button class="btn sm block mt4">${icon('ask','icon-sm')} Ask about this moment</button>
+      </div>
+    </div>
+
+    <div class="caption mt5 row gap2">${icon('lock','icon-sm')} Frames stay on your Mac. Deleted after 30 days unless you keep them.</div>
+  </div>
+</main>`;
+document.getElementById('root').innerHTML = windowShell({ active:'rewind', title:'omi — Rewind', presence:'live', body: main });
+</script>
+<script src="../interactions.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>omi — The promise</title>
+<link rel="stylesheet" href="../design-system.css">
+<style>
+  .ob { min-height:720px; display:flex; flex-direction:column; }
+  .ob-top { display:flex; align-items:center; justify-content:space-between; padding:22px 30px; }
+  .promise { flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:40px; position:relative; }
+  .promise::before{content:"";position:absolute;inset:0;background:radial-gradient(70% 50% at 50% 40%, rgba(224,168,46,0.05), transparent 60%);pointer-events:none;}
+  .promise .big { font-family:var(--serif); font-size:46px; color:var(--ink); font-weight:500; letter-spacing:-0.03em; line-height:1.05; max-width:620px; }
+  .promise .sub { font-size:16px; color:var(--muted); margin-top:20px; }
+  .ghost-bar { margin-top:56px; opacity:0.5; transform:scale(0.9); pointer-events:none; }
+  .skip { color: var(--faint); font-size:13px; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="../common.js"></script>
+<script>
+function prog(cur){let s='';for(let k=1;k<=7;k++)s+=`<i class="${k<cur?'on':''} ${k===cur?'cur':''}"></i>`;return `<div class="prog">${s}</div>`;}
+
+const body = `
+<div class="ob">
+  <div class="ob-top">
+    <span class="wordmark" style="font-size:20px">omi</span>
+    ${prog(2)}
+    <span class="skip">Skip</span>
+  </div>
+  <div class="promise">
+    <div class="big">From now on, nothing<br>gets past you.</div>
+    <div class="sub">I watch your back all day. You stay in flow.</div>
+    <div class="ghost-bar">
+      <div class="spotlight" style="width:520px">
+        <div class="field">${icon('ask','icon')}<span style="flex:1;font-size:17px;color:var(--faint)">Ask omi anything</span><span class="kbd">⌘⇧Space</span></div>
+      </div>
+    </div>
+    <div class="row gap3 mt7"><button class="btn accent lg" onclick="go('ob-permissions')">I'm in</button></div>
+  </div>
+</div>`;
+
+document.getElementById('root').innerHTML = bareWindow({ title:'omi', presence:'none', body });
+</script>
+<script src="../interactions.js"></script>
+</body>
+</html>

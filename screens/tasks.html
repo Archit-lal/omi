@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>omi — Today</title>
+<link rel="stylesheet" href="../design-system.css">
+<style>
+  .t-wrap { max-width:720px; margin:0 auto; }
+  .t-row { display:flex; align-items:flex-start; gap:13px; padding:14px 12px; border-radius:11px; }
+  .t-row:hover { background:var(--surface-2); }
+  .box { width:20px; height:20px; border-radius:6px; border:1.6px solid var(--hair-2); flex:none; margin-top:1px; display:flex; align-items:center; justify-content:center; color:transparent; }
+  .box.done { background:var(--live); border-color:transparent; color:#fff; }
+  .t-body { flex:1; min-width:0; }
+  .t-title { font-size:14.5px; color:var(--ink); line-height:1.4; }
+  .t-title.done { color:var(--faint); text-decoration:line-through; }
+  .t-meta { font-size:12px; color:var(--faint); margin-top:5px; display:flex; align-items:center; gap:8px; }
+  .grp { font-size:11px; font-weight:560; text-transform:uppercase; letter-spacing:0.12em; color:var(--faint); padding:22px 12px 6px; }
+  .due { color:var(--accent-strong); }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="../common.js"></script>
+<script>
+const task = (title, src, due, done) => `
+  <div class="t-row">
+    <div class="box ${done?'done':''}">${done?icon('check','icon-sm'):''}</div>
+    <div class="t-body">
+      <div class="t-title ${done?'done':''}">${title}</div>
+      <div class="t-meta">${src?`<span>${src}</span>`:''}${due?`<span class="due">${due}</span>`:''}</div>
+    </div>
+  </div>`;
+
+const body = `
+<main class="main">
+  <div class="pad" style="padding-top:40px">
+    <div class="t-wrap">
+      <div class="between">
+        <div>
+          <div class="caption mono">Monday, July 6</div>
+          <h1 class="h1 mt2">Today</h1>
+        </div>
+        <button class="btn ghost sm">${icon('plus','icon-sm')} Add</button>
+      </div>
+
+      <div class="grp">Do this next</div>
+      ${task("Ask 20 people for feedback on the desktop app.", "from your design-feedback call", "Due today", false)}
+      ${task("Send Nick the PR link for review.", "he's blocked on it", "Today", false)}
+      ${task("Prepare for in-person recruiting tomorrow.", "from the outreach call", "Tomorrow", false)}
+
+      <div class="grp">Later this week</div>
+      ${task("Book the flight to Minneapolis.", "you mentioned it Thursday", "This week", false)}
+      ${task("Review visa salary criteria with the lawyer.", "flagged as needs-you", "This week", false)}
+      ${task("Connect William with the Clock Out lead.", "from the lead-outreach call", "This week", false)}
+
+      <div class="grp">Done</div>
+      ${task("Connect Omi memory to Claude Code over MCP.", "", "", true)}
+      ${task("Merge the PRs and rebase on main.", "", "", true)}
+
+      <div class="card recessed mt6" style="text-align:center;padding:28px">
+        <div class="small" style="color:var(--body)">When you're clear, this is what you'll see —</div>
+        <div class="display mt2" style="font-size:19px">Nothing on your plate yet.</div>
+        <div class="small mt2">I'll add things as they come up.</div>
+      </div>
+    </div>
+  </div>
+</main>`;
+document.getElementById('root').innerHTML = windowShell({ active:'home', title:'omi', presence:'listening', body });
+</script>
+<script src="../interactions.js"></script>
+</body>
+</html>

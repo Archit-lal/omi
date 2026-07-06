@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>omi — Ask bar</title>
+<link rel="stylesheet" href="../design-system.css">
+<style>
+  html,body{height:100%}
+  .desk{position:fixed;inset:0;overflow:hidden;
+    background:
+      radial-gradient(120% 90% at 20% -10%, color-mix(in srgb, var(--accent) 8%, var(--canvas)), transparent 55%),
+      linear-gradient(160deg, var(--soft), var(--canvas) 60%, var(--surface-2));}
+  .fakewin{position:absolute;border-radius:14px;background:var(--surface);
+    border:1px solid var(--hair);opacity:.5;box-shadow:0 20px 60px -20px var(--shadow)}
+  .fakewin .bar{height:34px;border-bottom:1px solid var(--hair);border-radius:14px 14px 0 0;background:var(--soft)}
+  .fakewin .ln{height:9px;border-radius:5px;background:var(--surface-2);margin:16px 22px}
+  .scrim{position:absolute;inset:0;background:var(--scrim);backdrop-filter:saturate(.9) brightness(.98)}
+  .spot-wrap{position:absolute;top:120px;left:50%;transform:translateX(-50%);
+    display:flex;flex-direction:column;align-items:center;gap:18px;width:640px}
+  .hint{font-size:13px;color:#fff;opacity:.9;display:flex;align-items:center;gap:8px}
+  :root[data-theme="light"] .hint{color:var(--ink);opacity:.7}
+  .typed{flex:1;font-size:18px;color:var(--ink)}
+  .caret{display:inline-block;width:2px;height:20px;background:var(--accent);margin-left:1px;vertical-align:-3px;animation:bl 1.1s steps(1) infinite}
+  @keyframes bl{50%{opacity:0}}
+  @media (prefers-reduced-motion: reduce){.caret{animation:none}}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="../common.js"></script>
+<script>
+const sugg = [
+  ['send','Draft the PR message to Nick','he\'s blocked on your review'],
+  ['clock','What do I owe people today?','4 open follow-ups'],
+  ['brain','Summarize the lead-outreach call','today, 23 min'],
+  ['users','Who should I ask for app feedback?','need 20 by tonight'],
+];
+const rows = sugg.map((s,i)=>`
+  <div class="sg-row ${i===0?'hl':''}" onclick="go('ask')" style="cursor:pointer">
+    <span class="ico">${icon(s[0],'icon-sm')}</span>
+    <span style="color:var(--ink)">${s[1]}</span>
+    <span class="caption" style="margin-left:auto">${s[2]}</span>
+  </div>`).join('');
+
+document.getElementById('root').innerHTML = `
+<div class="desk">
+  <div class="fakewin" style="left:70px;top:90px;width:520px;height:380px"><div class="bar"></div><div class="ln" style="width:60%"></div><div class="ln" style="width:80%"></div><div class="ln" style="width:45%"></div></div>
+  <div class="fakewin" style="right:80px;top:150px;width:470px;height:430px"><div class="bar"></div><div class="ln" style="width:70%"></div><div class="ln" style="width:55%"></div><div class="ln" style="width:75%"></div></div>
+  <div class="scrim"></div>
+  <div class="spot-wrap">
+    <div class="spotlight">
+      <div class="field">
+        ${icon('ask','icon')}
+        <div class="typed">Draft the PR message to Nick<span class="caret"></span></div>
+        <span class="kbd">esc</span>
+      </div>
+      <div class="sugg">${rows}</div>
+    </div>
+    <div class="hint">${icon('cmd','icon-sm')} Press ⌘⇧Space anywhere — I already know what you're working on.</div>
+  </div>
+</div>`;
+</script>
+<script src="../interactions.js"></script>
+</body>
+</html>

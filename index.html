@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>omi — redesign mockup</title>
+<link rel="stylesheet" href="design-system.css">
+<style>
+  html,body{height:100%}
+  body{display:flex;flex-direction:column;overflow:hidden}
+  .top{
+    height:56px;flex:none;display:flex;align-items:center;gap:14px;position:relative;
+    padding:0 18px;border-bottom:1px solid var(--hair);background:var(--soft);z-index:20;
+  }
+  .top .mk{font-family:var(--serif);font-size:20px;color:var(--ink);letter-spacing:-0.03em}
+  .top .centertitle{position:absolute;left:50%;transform:translateX(-50%);font-size:13px;font-weight:560;color:var(--body);letter-spacing:-0.01em}
+  .top .sub{font-size:12.5px;color:var(--faint)}
+  .top .sp{flex:1}
+  .seg{display:flex;background:var(--surface-2);border:1px solid var(--hair);border-radius:var(--r-pill);padding:3px}
+  .seg button{height:28px;padding:0 14px;border-radius:var(--r-pill);font-size:12.5px;font-weight:520;color:var(--muted)}
+  .seg button.on{background:var(--surface);color:var(--ink);box-shadow:0 1px 3px var(--shadow)}
+  .stepper{display:flex;align-items:center;gap:10px}
+  .stepper button{width:30px;height:30px;border-radius:50%;border:1px solid var(--hair);background:var(--surface);color:var(--ink);font-size:16px;line-height:1;display:flex;align-items:center;justify-content:center}
+  .stepper button:hover{background:var(--surface-2)}
+  #stepcount{font-size:12px;color:var(--faint);min-width:120px;text-align:center}
+
+  .stage{flex:1;min-width:0;overflow:auto;background:var(--canvas);display:flex;align-items:flex-start;justify-content:center;padding:36px 36px 36px 288px;position:relative}
+  iframe{border:0;background:var(--canvas);border-radius:12px;box-shadow:0 30px 80px -24px var(--shadow)}
+  .stage.web iframe,.stage.ios iframe{box-shadow:none}
+
+  /* always-visible left switcher */
+  .sidepop{position:fixed;left:0;top:56px;bottom:0;width:252px;z-index:10;background:var(--soft);border-right:1px solid var(--hair);padding:18px 14px}
+  .edge{display:none}
+  .panel{position:static;transform:none;width:auto;margin:0;background:transparent;border:0;box-shadow:none;padding:0}
+  .panel .ph{font-size:11px;font-weight:560;text-transform:uppercase;letter-spacing:.13em;color:var(--faint);padding:6px 10px 10px}
+  .opt{display:flex;align-items:center;gap:12px;padding:12px 12px;border-radius:11px;cursor:pointer;width:100%;text-align:left}
+  .opt:hover{background:var(--surface-2)}
+  .opt.on{background:var(--surface-2);box-shadow:inset 0 0 0 1px var(--hair)}
+  .opt .ic{width:32px;height:32px;border-radius:9px;background:var(--surface-2);display:flex;align-items:center;justify-content:center;color:var(--ink);flex:none}
+  .opt.on .ic{background:var(--accent);color:var(--accent-ink)}
+  .opt .t{font-size:14px;font-weight:540;color:var(--ink)}
+  .opt .d{font-size:11.5px;color:var(--faint)}
+  .hint{font-size:11px;color:var(--faint);padding:10px 12px 4px;line-height:1.5}
+</style>
+</head>
+<body>
+<div class="top">
+  <span class="mk">omi</span>
+  <span class="sub" id="trackname">macOS App</span>
+  <span class="centertitle">Design Mockup</span>
+  <span class="sp"></span>
+  <div class="stepper">
+    <button id="prev" title="Previous (←)">‹</button>
+    <span id="stepcount" class="mono"></span>
+    <button id="next" title="Next (→)">›</button>
+  </div>
+  <div class="seg" id="theme">
+    <button data-t="light" class="on">Light</button>
+    <button data-t="dark">Dark</button>
+  </div>
+</div>
+
+<div class="stage" id="stage"><iframe id="frame" title="screen"></iframe></div>
+
+<div class="sidepop">
+  <div class="edge"><div class="grip"></div></div>
+  <div class="panel" id="panel">
+    <div class="ph">View</div>
+    <div class="opt" data-track="mac"><span class="ic"></span><div><div class="t">macOS App</div><div class="d">Onboarding → everything</div></div></div>
+    <div class="opt" data-track="ios"><span class="ic"></span><div><div class="t">iOS App</div><div class="d">The phone experience</div></div></div>
+    <div class="opt" data-track="web"><span class="ic"></span><div><div class="t">Website</div><div class="d">omi.me landing</div></div></div>
+    <div class="hint">Use ‹ › or the arrow keys to step through each screen.</div>
+  </div>
+</div>
+
+<script>
+// icons
+const IC = {
+  mac:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg>',
+  ios:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="7" y="3" width="10" height="18" rx="2.5"/><path d="M11 18h2"/></svg>',
+  web:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.5 2.4 2.5 14.6 0 17M12 3.5c-2.5 2.4-2.5 14.6 0 17"/></svg>',
+};
+document.querySelectorAll('.opt').forEach(o=>{ o.querySelector('.ic').innerHTML = IC[o.dataset.track]; o.querySelector('.ic svg').style.width='18px'; o.querySelector('.ic svg').style.height='18px'; });
+
+// three tracks — each walks its app end to end
+const TRACKS = {
+  mac: { label:'macOS App', dir:'screens', size:[1200,760], items:[
+    'onboarding','home','dashboard','ask','memory','memory-graph','persona','tasks','conversations','focus','insights',
+    'messages-imessage','messages-telegram','messages-whatsapp','notification','spotlight','more',
+    'live','rewind','apps','settings','plan-usage','permissions','help','share-card','referral','empty-states'
+  ]},
+  ios: { label:'iOS App', dir:'ios', size:[430,900], items:[
+    'ios-onboarding','ios-home','ios-live','ios-device','ios-conversations','ios-tasks',
+    'ios-apps','ios-ask','ios-memory','ios-messages','ios-settings','ios-notification'
+  ]},
+  web: { label:'Website', dir:'web', size:null, items:['index'] },
+};
+
+let theme='light', track='mac', step=0;
+const frame=document.getElementById('frame'), stage=document.getElementById('stage');
+
+function applySize(){
+  const t=TRACKS[track];
+  // reset any prior scaling
+  frame.style.transform=''; frame.style.transformOrigin=''; frame.style.marginBottom='';
+  if(track==='ios'){
+    const baseW=420, baseH=880;
+    frame.style.width=baseW+'px'; frame.style.height=baseH+'px';
+    stage.className='stage ios';
+    // scale the phone to fit the available viewport height
+    const avail = window.innerHeight - 56 - 44;   // top bar + stage padding
+    const s = Math.max(0.5, Math.min(1, avail/baseH));
+    frame.style.transform=`scale(${s})`;
+    frame.style.transformOrigin='top center';
+    frame.style.marginBottom = `-${Math.round(baseH*(1-s))}px`;
+  }
+  else if(track==='web'){ frame.style.width='100%'; frame.style.height='100%'; stage.className='stage web'; }
+  else { frame.style.width='1200px'; frame.style.height='760px'; stage.className='stage'; }
+}
+window.addEventListener('resize', ()=>{ if(track==='ios') applySize(); });
+function render(){
+  const t=TRACKS[track];
+  applySize();
+  frame.src = `${t.dir}/${t.items[step]}.html?theme=${theme}`;
+  document.getElementById('trackname').textContent = t.label;
+  document.getElementById('stepcount').textContent = t.items.length>1 ? `${step+1} / ${t.items.length}` : '';
+  document.querySelectorAll('.opt').forEach(o=>o.classList.toggle('on', o.dataset.track===track));
+}
+function stepTo(n){ const len=TRACKS[track].items.length; step=(n+len)%len; render(); }
+function selectTrack(tk){ track=tk; step=0; render(); }
+
+document.getElementById('prev').onclick=()=>stepTo(step-1);
+document.getElementById('next').onclick=()=>stepTo(step+1);
+document.addEventListener('keydown',e=>{ if(e.key==='ArrowLeft')stepTo(step-1); if(e.key==='ArrowRight')stepTo(step+1); });
+document.querySelectorAll('.opt').forEach(o=>o.onclick=()=>selectTrack(o.dataset.track));
+
+document.getElementById('theme').addEventListener('click',e=>{
+  const b=e.target.closest('button'); if(!b)return;
+  theme=b.dataset.t; document.documentElement.dataset.theme=theme;
+  document.querySelectorAll('#theme button').forEach(x=>x.classList.toggle('on',x===b));
+  render();
+});
+
+// when a screen navigates itself, keep the macOS stepper in sync
+window.addEventListener('message',e=>{
+  const dest=e.data && e.data.omiGo; if(!dest) return;
+  const file=dest.replace('.html','');
+  if(track==='mac'){ const i=TRACKS.mac.items.indexOf(file); if(i>=0){ step=i; document.getElementById('stepcount').textContent=`${step+1} / ${TRACKS.mac.items.length}`; } }
+});
+
+render();
+</script>
+</body>
+</html>

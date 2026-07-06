@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>omi — accent options</title>
+<link rel="stylesheet" href="../design-system.css">
+<style>
+  body{background:var(--canvas);padding:44px}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;max-width:1100px;margin:0 auto}
+  .sw{background:var(--surface);border:1px solid var(--hair);border-radius:16px;padding:22px}
+  .sw h3{font-size:14px;font-weight:560;color:var(--ink);margin-bottom:2px}
+  .sw .hex{font-family:var(--mono);font-size:11px;color:var(--faint);margin-bottom:16px}
+  .sw .vibe{font-size:12px;color:var(--muted);margin-bottom:16px}
+  .rowline{display:flex;align-items:center;gap:10px;margin-bottom:12px;flex-wrap:wrap}
+  .kick{display:inline-flex;align-items:center;gap:7px;font-size:11px;font-weight:560;text-transform:uppercase;letter-spacing:.12em;color:var(--accent-strong)}
+  .kick .dot{width:6px;height:6px;border-radius:50%;background:var(--accent)}
+  h1{font-family:var(--serif);font-size:30px;color:var(--ink);text-align:center;margin-bottom:6px}
+  .sub{text-align:center;color:var(--muted);font-size:14px;margin-bottom:32px}
+</style>
+</head>
+<body>
+<h1>Pick omi's one accent</h1>
+<div class="sub">Same calm design — just the single flashlight color. (Purple stays out.)</div>
+<div class="grid" id="grid"></div>
+<script>
+const opts = [
+  ['Amber (current)','#E0A82E','#C8901C','warm, editorial, hand-crafted'],
+  ['Cobalt','#2F6BFF','#1F55E0','trustworthy, techy, crisp'],
+  ['Signal green','#1FA85C','#158A49','alive / always-on'],
+  ['Terracotta','#C15F3C','#A44E2E','earthy, human, calm'],
+  ['Teal','#0E8C8C','#0B7373','fresh, distinctive, quiet'],
+  ['Coral','#F0603F','#D64A2C','friendly, energetic'],
+  ['Slate blue','#4C6EF5','#3B5BDB','soft, modern (not purple)'],
+  ['Rust','#B5673A','#96502B','warm, premium, grounded'],
+  ['Near-mono (ink)','#201F1A','#000000','most restrained / expensive'],
+];
+function tint(hex){const r=parseInt(hex.slice(1,3),16),g=parseInt(hex.slice(3,5),16),b=parseInt(hex.slice(5,7),16);return `rgba(${r},${g},${b},0.12)`;}
+document.getElementById('grid').innerHTML = opts.map(o=>`
+  <div class="sw" style="--accent:${o[1]};--accent-strong:${o[2]};--accent-tint:${tint(o[1])}">
+    <h3>${o[0]}</h3><div class="hex">${o[1]}</div><div class="vibe">${o[3]}</div>
+    <div class="rowline">
+      <span class="kick"><span class="dot"></span> Do this next</span>
+    </div>
+    <div class="rowline">
+      <button class="btn accent">Review the draft →</button>
+    </div>
+    <div class="rowline">
+      <span class="badge draft"><span class="d"></span> Draft ready</span>
+      <span class="member" style="height:26px">★ Member #4,120</span>
+    </div>
+  </div>`).join('');
+</script>
+<script src="../interactions.js"></script>
+</body>
+</html>

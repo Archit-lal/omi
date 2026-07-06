@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>omi — Brain live</title>
+<link rel="stylesheet" href="../design-system.css">
+<style>
+  .ob { min-height:720px; display:flex; flex-direction:column; }
+  .ob-top { display:flex; align-items:center; justify-content:space-between; padding:22px 30px; }
+  .ob-head { text-align:center; padding: 8px 40px 0; }
+  .brainstage { flex:1; position:relative; overflow:hidden; }
+  .brainstage svg line { stroke: var(--brain-line); stroke-width:1; }
+  .footer-cta { display:flex; align-items:center; justify-content:center; gap:14px; padding:22px; }
+  .skip { color: var(--faint); font-size:13px; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="../common.js"></script>
+<script>
+function prog(cur){let s='';for(let k=1;k<=7;k++)s+=`<i class="${k<cur?'on':''} ${k===cur?'cur':''}"></i>`;return `<div class="prog">${s}</div>`;}
+
+const nodes = [
+  {t:'omi', x:50, y:50, core:true},
+  {t:'Sarah — Q3 deck', x:24, y:24},
+  {t:'Atlas v2', x:74, y:22},
+  {t:'Dentist · Tue', x:82, y:46},
+  {t:"Mom's birthday", x:70, y:74},
+  {t:'Deep work = mornings', x:30, y:76},
+  {t:'Alex owes a reply', x:16, y:50},
+  {t:'Q3 revenue', x:60, y:34},
+  {t:'Standup · 9am', x:40, y:66},
+];
+const lines = [[24,26,50,50],[74,25,50,50],[82,48,50,50],[70,72,50,50],[30,74,50,50],[18,50,50,50],[60,36,50,50],[40,64,50,50]];
+
+const stage = `
+<div class="brainstage">
+  <svg width="100%" height="100%" style="position:absolute;inset:0">
+    ${lines.map(l=>`<line x1="${l[0]}%" y1="${l[1]}%" x2="${l[2]}%" y2="${l[3]}%"/>`).join('')}
+  </svg>
+  ${nodes.map(n=>`<div class="node ${n.core?'core':''}" style="left:${n.x}%;top:${n.y}%;transform:translate(-50%,-50%);${n.core?'padding:10px 18px;font-size:15px':''}">${n.t}</div>`).join('')}
+</div>`;
+
+const body = `
+<div class="ob">
+  <div class="ob-top"><span class="wordmark" style="font-size:20px">omi</span>${prog(5)}<span class="skip"></span></div>
+  <div class="ob-head">
+    <div class="eyebrow">Step 5</div>
+    <div class="display mt3" style="font-size:32px">Your second brain is live.</div>
+    <div class="small mt2">Everything I've learned, connected.</div>
+  </div>
+  ${stage}
+  <div class="footer-cta"><button class="btn accent lg" onclick="go('ob-ping')">See it in action</button></div>
+</div>`;
+
+document.getElementById('root').innerHTML = bareWindow({ title:'omi', presence:'live', body });
+</script>
+<script src="../interactions.js"></script>
+</body>
+</html>

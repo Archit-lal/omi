@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>omi — Reading your life</title>
+<link rel="stylesheet" href="../design-system.css">
+<style>
+  .ob { min-height:720px; display:flex; flex-direction:column; }
+  .ob-top { display:flex; align-items:center; justify-content:space-between; padding:22px 30px; }
+  .ob-mid { flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:20px 40px; position:relative; }
+  .ob-mid::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 45% at 50% 30%, rgba(224,168,46,0.06), transparent 60%);pointer-events:none;}
+  .reveal { display:flex; gap:44px; align-items:baseline; justify-content:center; margin-top:14px; }
+  .reveal .n { font-family:var(--serif); font-size:64px; font-weight:500; color:var(--ink); line-height:1; letter-spacing:-0.03em; }
+  .reveal .l { font-size:13px; color:var(--faint); margin-top:10px; text-align:center; }
+  .feed { width:520px; margin-top:36px; }
+  .feed .it { display:flex; align-items:center; gap:12px; padding:12px 14px; border-radius:11px; background:var(--surface); border:1px solid var(--hair); margin-top:8px; }
+  .feed .it .k { width:26px; height:26px; border-radius:7px; display:flex; align-items:center; justify-content:center; background:var(--surface-2); color:var(--muted); flex:none; }
+  .feed .it .tag { margin-left:auto; }
+  .skip { color: var(--faint); font-size:13px; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="../common.js"></script>
+<script>
+function prog(cur){let s='';for(let k=1;k<=7;k++)s+=`<i class="${k<cur?'on':''} ${k===cur?'cur':''}"></i>`;return `<div class="prog">${s}</div>`;}
+
+function it(ic, txt, tag){return `<div class="it"><span class="k">${icon(ic,'icon-sm')}</span><span class="ink" style="font-size:13.5px">${txt}</span><span class="tag caption">${tag}</span></div>`;}
+
+const body = `
+<div class="ob">
+  <div class="ob-top"><span class="wordmark" style="font-size:20px">omi</span>${prog(4)}<span class="skip"></span></div>
+  <div class="ob-mid">
+    <div class="eyebrow">I read your last 30 days</div>
+    <div class="display mt3" style="font-size:26px;text-align:center">Here's what I already know.</div>
+    <div class="reveal">
+      <div><div class="n">14</div><div class="l">memories</div></div>
+      <div><div class="n">6</div><div class="l">tasks</div></div>
+      <div><div class="n">3</div><div class="l">people</div></div>
+    </div>
+    <div class="feed">
+      ${it('mail','Sarah wants the Q3 deck by Friday','from Gmail')}
+      ${it('cal','Dentist — Tuesday 4:00pm','from Calendar')}
+      ${it('star','Mom’s birthday — July 22','from Contacts')}
+      ${it('note','You decided to ship Atlas v2 solo','from Notes')}
+    </div>
+    <div class="row gap3 mt6"><button class="btn accent lg" onclick="go('ob-brainlive')">This is wild — keep going</button></div>
+  </div>
+</div>`;
+
+document.getElementById('root').innerHTML = bareWindow({ title:'omi', presence:'amber', body });
+</script>
+<script src="../interactions.js"></script>
+</body>
+</html>

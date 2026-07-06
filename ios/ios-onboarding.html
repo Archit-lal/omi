@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>omi iOS — hello</title>
+<link rel="stylesheet" href="../design-system.css">
+<link rel="stylesheet" href="ios.css">
+<style>
+  .ob { height:100%; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:20px; padding:36px 26px 30px; text-align:center; }
+  .ob .buddy { --bd:150px; --dot:17px; }
+  .ob .buddy-say { opacity:0; transition:opacity .4s var(--ease); min-height:22px; }
+  .ob .buddy-say.show { opacity:1; }
+  .panel { width:100%; opacity:0; transform:translateY(8px); transition:all .45s var(--ease); }
+  .panel.show { opacity:1; transform:none; }
+  .imp { display:flex; gap:9px; align-items:center; text-align:left; font-size:14px; color:var(--body); padding:10px 0; border-bottom:1px solid var(--hair); }
+  .imp .src { margin-left:auto; font-size:11.5px; color:var(--faint); }
+  .bignum { font-family:var(--serif); font-size:46px; color:var(--ink); letter-spacing:-.02em; }
+  .cta { opacity:0; transform:translateY(8px); transition:all .4s var(--ease); width:100%; }
+  .cta.show { opacity:1; transform:none; }
+  .skip { position:absolute; bottom:26px; left:0; right:0; text-align:center; z-index:50; }
+  .skip a { color:var(--faint); font-size:13px; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="../common.js"></script>
+<script src="ios-frame.js"></script>
+<script>
+const app = `
+<div class="ob">
+  <div class="prog" style="margin-bottom:4px" id="prog"></div>
+  <div class="buddy-wrap">${iosBuddy('talking')}</div>
+  <div class="buddy-say" id="say"></div>
+  <div class="panel" id="panel"></div>
+  <div class="cta" id="cta"></div>
+  <div class="skip"><a onclick="iosGo('ios-home')">Skip</a></div>
+</div>`;
+document.getElementById('root').innerHTML = phone({ app });
+
+const bud = document.querySelector('.buddy');
+const sayEl = document.getElementById('say');
+const panel = document.getElementById('panel');
+const cta = document.getElementById('cta');
+const prog = document.getElementById('prog');
+
+const steps = [
+  { say:"Hi Archit — I'm omi.", panel:"", cta:"Let's go", act:next },
+  { say:"Let me see, hear, and act for you.", panel:permRows(), cta:"Allow all", act:cascade },
+  { say:"Read your last 30 days…", panel:importPanel(), cta:"This is wild →", act:next },
+  { say:"I'm live. I've got your back.", panel:"", cta:"Open omi", act:()=>iosGo('ios-home') },
+];
+
+function permRows(){
+  const p = [['screen','Screen','see what you see'],['mic','Microphone','never miss what’s said'],['settings','Accessibility','send & tap for you']];
+  return p.map(r=>`<div class="imp"><span style="width:30px;height:30px;border-radius:8px;background:var(--surface-2);display:inline-flex;align-items:center;justify-content:center">${icon(r[0],'icon-sm')}</span>
+    <div style="text-align:left"><div class="ink" style="font-weight:540;font-size:14px">${r[1]}</div><div class="caption">${r[2]}</div></div>
+    <span class="src" data-st>${icon('plus','icon-sm')}</span></div>`).join('');
+}
+function importPanel(){
+  const items = [['Ask 20 people for feedback','due today','flag'],['Send Nick the PR link','task','check'],['David runs Alaris Security','person','users'],['Goal: GetEventful → $100K MRR','goal','star']];
+  return `<div class="bignum">1,923</div><div class="caption">remembered · 9 tasks · 11 people</div>
+    <div style="margin-top:12px">${items.map(it=>`<div class="imp">${icon(it[2],'icon-sm')} ${it[0]} <span class="src">${it[1]}</span></div>`).join('')}</div>`;
+}
+
+let i=-1;
+function render(){
+  const s=steps[i];
+  prog.innerHTML = steps.map((_,k)=>`<i class="${k<i?'on':k===i?'cur':''}"></i>`).join('');
+  bud.classList.add('talking');
+  sayEl.classList.remove('show'); panel.classList.remove('show'); cta.classList.remove('show');
+  setTimeout(()=>{ sayEl.textContent=s.say; sayEl.classList.add('show'); },180);
+  setTimeout(()=>bud.classList.remove('talking'),1500);
+  panel.innerHTML=s.panel;
+  cta.innerHTML=s.cta?`<button class="btn accent lg block" id="cbtn">${s.cta}</button>`:'';
+  setTimeout(()=>{ if(s.panel) panel.classList.add('show'); },420);
+  setTimeout(()=>{ cta.classList.add('show'); const b=document.getElementById('cbtn'); if(b) b.onclick=s.act; }, s.panel?900:700);
+}
+function next(){ i++; if(i<steps.length) render(); }
+function cascade(){
+  panel.querySelectorAll('[data-st]').forEach((el,k)=> setTimeout(()=>{ el.innerHTML=icon('check','icon-sm'); el.style.color='var(--live)'; },160*k));
+  const b=document.getElementById('cbtn'); if(b){ b.textContent='Done ✓'; }
+  setTimeout(next, 160*3+700);
+}
+const startAt = parseInt(new URLSearchParams(location.search).get('s')||'0',10);
+i = startAt-1; next();
+</script>
+</body>
+</html>

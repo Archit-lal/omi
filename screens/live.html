@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>omi — Live</title>
+<link rel="stylesheet" href="../design-system.css">
+<style>
+  .live { display:flex; flex-direction:column; height:100%; }
+  .live-head { display:flex; align-items:center; gap:12px; padding:20px 26px 14px; border-bottom:1px solid var(--hair); flex:none; }
+  .rec-dot { width:9px; height:9px; border-radius:50%; background:#E5544B; box-shadow:0 0 0 0 rgba(229,84,75,.5); animation:recpulse 1.6s ease-out infinite; }
+  @keyframes recpulse { 0%{box-shadow:0 0 0 0 rgba(229,84,75,.5)} 70%{box-shadow:0 0 0 8px rgba(229,84,75,0)} 100%{box-shadow:0 0 0 0 rgba(229,84,75,0)} }
+  .live-body { flex:1; display:grid; grid-template-columns:1fr 316px; min-height:0; }
+  .tpane { overflow:auto; padding:22px 26px; }
+  .npane { border-left:1px solid var(--hair); background:var(--soft); display:flex; flex-direction:column; min-height:0; }
+
+  .tline { display:flex; gap:11px; margin-bottom:18px; max-width:82%; }
+  .tline.you { flex-direction:row-reverse; margin-left:auto; }
+  .tline .who { display:flex; align-items:center; gap:7px; margin-bottom:5px; }
+  .tline.you .who { flex-direction:row-reverse; }
+  .tline .nm { font-size:12.5px; font-weight:560; color:var(--ink); }
+  .tline .tm { font-family:var(--mono); font-size:11px; color:var(--faint); }
+  .tline .pen { color:var(--faint); opacity:0; transition:opacity .12s; cursor:pointer; }
+  .tline:hover .pen { opacity:1; }
+  .tbub { background:var(--surface); border:1px solid var(--hair); border-radius:14px; border-top-left-radius:5px; padding:10px 13px; font-size:14px; color:var(--ink); line-height:1.45; }
+  .tline.you .tbub { background:var(--accent); color:var(--accent-ink); border:1px solid transparent; border-top-left-radius:14px; border-top-right-radius:5px; }
+  .tbub .tr { display:block; font-style:italic; color:var(--muted); font-size:12.5px; margin-top:5px; }
+  .tline.live .tbub { border-style:dashed; }
+  .caret { display:inline-block; width:7px; height:15px; background:var(--muted); margin-left:2px; vertical-align:-2px; animation:blink 1s steps(1) infinite; }
+  @keyframes blink { 50%{opacity:0} }
+
+  /* notes */
+  .npane .nh { display:flex; align-items:center; justify-content:space-between; padding:16px 18px 12px; border-bottom:1px solid var(--hair); flex:none; }
+  .notes { flex:1; overflow:auto; padding:14px 18px; }
+  .note { display:flex; gap:9px; padding:10px 0; border-bottom:1px solid var(--hair); }
+  .note .ni { flex:none; color:var(--faint); margin-top:1px; }
+  .note.ai .ni { color:var(--accent-strong); }
+  .note .nt { font-size:13.5px; color:var(--ink); line-height:1.4; }
+  .note .nm2 { font-family:var(--mono); font-size:10.5px; color:var(--faint); margin-top:3px; }
+  .addnote { display:flex; align-items:center; gap:8px; padding:12px 18px; border-top:1px solid var(--hair); flex:none; }
+  .addnote .fld { flex:1; font-size:13.5px; color:var(--faint); }
+  .addnote .pl { width:28px;height:28px;border-radius:8px;border:1px solid var(--hair);display:flex;align-items:center;justify-content:center;color:var(--body); }
+
+  /* recording bar */
+  .recbar { flex:none; border-top:1px solid var(--hair); background:var(--surface); padding:12px 26px; display:flex; align-items:center; gap:18px; }
+  .meters { display:flex; align-items:flex-end; gap:3px; height:26px; }
+  .meters i { width:3px; border-radius:2px; background:var(--ink); opacity:.55; animation:eq 1.1s ease-in-out infinite; }
+  .meters.spk i { background:var(--body); opacity:.4; }
+  .meters i:nth-child(1){animation-delay:0s} .meters i:nth-child(2){animation-delay:.12s}
+  .meters i:nth-child(3){animation-delay:.24s} .meters i:nth-child(4){animation-delay:.36s}
+  .meters i:nth-child(5){animation-delay:.48s} .meters i:nth-child(6){animation-delay:.6s}
+  .meters i:nth-child(7){animation-delay:.72s} .meters i:nth-child(8){animation-delay:.84s}
+  @keyframes eq { 0%,100%{height:5px} 50%{height:22px} }
+  .rec-latest { flex:1; font-size:13px; color:var(--muted); overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .rec-timer { font-family:var(--mono); font-size:14px; color:var(--ink); font-variant-numeric:tabular-nums; }
+  .rec-toggle { display:flex; align-items:center; gap:9px; font-size:13px; color:var(--body); }
+  @media (prefers-reduced-motion: reduce){ .meters i,.rec-dot,.caret{animation:none} }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="../common.js"></script>
+<script>
+const body = `
+<main class="main" style="padding:0">
+  <div class="live">
+
+    <div class="live-head">
+      <span class="rec-dot"></span>
+      <div>
+        <div class="h3">Recording — with Nick</div>
+        <div class="caption">Live · started 2:14 PM · I'm saving everything on your Mac</div>
+      </div>
+      <div style="margin-left:auto" class="row gap2">
+        <button class="btn sm ghost">${icon('star','icon-sm')} Star</button>
+        <button class="btn sm">${icon('check','icon-sm')} Process now</button>
+      </div>
+    </div>
+
+    <div class="live-body">
+      <!-- transcript -->
+      <div class="tpane" id="tpane">
+        <div class="tline">
+          <div><span class="av sm fill-slate">N</span></div>
+          <div>
+            <div class="who"><span class="nm">Nick</span><span class="tm">0:02</span><span class="pen">${icon('note','icon-sm')}</span></div>
+            <div class="tbub">Did you get a chance to push the PR? I'm blocked on the review.</div>
+          </div>
+        </div>
+        <div class="tline you">
+          <div><span class="av sm fill-ink">A</span></div>
+          <div>
+            <div class="who"><span class="nm">You</span><span class="tm">0:07</span></div>
+            <div class="tbub">Yeah — rebasing on main now, I'll send the link in a sec.</div>
+          </div>
+        </div>
+        <div class="tline">
+          <div><span class="av sm fill-slate">N</span></div>
+          <div>
+            <div class="who"><span class="nm">Nick</span><span class="tm">0:12</span><span class="pen">${icon('note','icon-sm')}</span></div>
+            <div class="tbub">Perfect. Also — did we decide who's reaching out to the Clock Out contact?</div>
+          </div>
+        </div>
+        <div class="tline you">
+          <div><span class="av sm fill-ink">A</span></div>
+          <div>
+            <div class="who"><span class="nm">You</span><span class="tm">0:19</span></div>
+            <div class="tbub">I'll connect Will with them today. Let's also visit the coworking space this week.</div>
+          </div>
+        </div>
+        <div class="tline">
+          <div><span class="av sm" style="background:#8a8f98">?</span></div>
+          <div>
+            <div class="who"><span class="nm" style="color:var(--muted)">Speaker 2</span><span class="tm">0:24</span><span class="pen">${icon('note','icon-sm')}</span></div>
+            <div class="tbub">Sounds good. I'll add them to the shared doc.<span class="tr">Suena bien. Los agregaré al documento.</span></div>
+          </div>
+        </div>
+        <div class="tline live">
+          <div><span class="av sm fill-slate">N</span></div>
+          <div>
+            <div class="who"><span class="nm">Nick</span><span class="tm">0:29</span></div>
+            <div class="tbub">Okay, so for the feedback round we want people who shipped something to a million users<span class="caret"></span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- notes -->
+      <div class="npane">
+        <div class="nh">
+          <span class="h3">Notes</span>
+          <label class="rec-toggle">${icon('ask','icon-sm')} AI notes <span class="switch on"><i></i></span></label>
+        </div>
+        <div class="notes">
+          <div class="note ai">
+            <span class="ni">${icon('ask','icon-sm')}</span>
+            <div><div class="nt">Decision: Archit connects Will with the Clock Out contact today.</div><div class="nm2">2:15 PM · AI</div></div>
+          </div>
+          <div class="note ai">
+            <span class="ni">${icon('ask','icon-sm')}</span>
+            <div><div class="nt">Feedback round targets people who've shipped to 1M+ users.</div><div class="nm2">2:16 PM · AI</div></div>
+          </div>
+          <div class="note">
+            <span class="ni">${icon('note','icon-sm')}</span>
+            <div><div class="nt">Visit the coworking space this week.</div><div class="nm2">2:16 PM · You</div></div>
+          </div>
+        </div>
+        <div class="addnote">
+          <span class="fld">Add a note…</span>
+          <span class="pl">${icon('plus','icon-sm')}</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- recording bar -->
+    <div class="recbar">
+      <div class="meters">${'<i></i>'.repeat(8)}</div>
+      <div class="meters spk">${'<i></i>'.repeat(8)}</div>
+      <div class="rec-latest">"…people who shipped something to a million users"</div>
+      <span class="caption row gap1">${icon('lock','icon-sm')} Audio saved locally · 4:12</span>
+      <div class="rec-timer">04:12</div>
+      <label class="rec-toggle"><span class="switch on"><i></i></span> Audio is on — click to stop</label>
+    </div>
+
+  </div>
+</main>`;
+document.getElementById('root').innerHTML = windowShell({ active:'rewind', title:'omi — Live', presence:'listening', body });
+</script>
+<script src="../interactions.js"></script>
+</body>
+</html>

@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>omi — a second brain you trust more than your first</title>
+<link rel="stylesheet" href="../design-system.css">
+<style>
+  html, body { max-width: 100%; overflow-x: hidden; }
+  body { background: var(--canvas); }
+  .wrap { width: 100%; max-width: 1080px; margin: 0 auto; padding: 0 28px; }
+  h1,h2,h3,p { overflow-wrap: break-word; }
+  a.link { color: var(--body); font-size: 14px; font-weight: 500; transition: color .15s; }
+  a.link:hover { color: var(--ink); }
+
+  /* nav */
+  nav.top { position: sticky; top: 0; z-index: 50;
+    background: color-mix(in srgb, var(--canvas) 80%, transparent);
+    backdrop-filter: blur(16px) saturate(1.3); -webkit-backdrop-filter: blur(16px) saturate(1.3);
+    border-bottom: 1px solid transparent; }
+  nav.top.scrolled { border-bottom-color: var(--hair); }
+  nav.top .bar { display:flex; align-items:center; gap:20px; height: 62px; }
+  nav.top .mkrow { display:flex; align-items:center; gap:8px; }
+  nav.top .mk { font-family: var(--serif); font-size: 20px; color: var(--ink); font-weight: 500; letter-spacing: -0.03em; }
+  nav.top .buddy { --bd: 20px !important; --dot: 3px !important; }
+  nav.top .navlinks { display:flex; align-items:center; gap:22px; margin-left: 14px; }
+  nav.top .navr { display:flex; align-items:center; gap: 16px; margin-left:auto; }
+  .tdot { width:26px;height:26px;border-radius:50%;border:1px solid var(--hair-2);background:var(--surface);cursor:pointer;display:flex;align-items:center;justify-content:center;color:var(--faint);}
+  .tdot:hover{color:var(--ink);}
+
+  /* hero */
+  header.hero { padding: 92px 0 40px; text-align:center; }
+  .eyebrow-web { font-size:12.5px;font-weight:560;letter-spacing:0.14em;text-transform:uppercase;color:var(--faint); }
+  h1.hero-h { font-family: var(--serif); font-weight: 500; color: var(--ink);
+    font-size: clamp(40px, 6.4vw, 68px); line-height: 1.02; letter-spacing: -0.025em; margin: 20px auto 0; max-width: 15ch; }
+  .hero-sub { font-size: clamp(16px,2vw,19px); color: var(--body); max-width: 54ch; margin: 22px auto 0; line-height:1.5; }
+  .cta-row { display:flex; gap:12px; justify-content:center; align-items:center; margin-top: 32px; flex-wrap:wrap; }
+  .proof { display:flex; align-items:center; gap:12px; justify-content:center; margin-top: 24px; }
+  .proof .avs { display:flex; }
+  .proof .avs .av { width:30px;height:30px;border-radius:50%;border:2px solid var(--canvas);margin-left:-8px;font-size:11px; }
+  .proof .avs .av:first-child{margin-left:0;}
+  .proof .ptxt { font-size:13.5px;color:var(--muted); }
+  .proof .stars { color: var(--ink); letter-spacing:1px; font-size:13px; }
+  .hero-photo { position:relative; margin:56px auto 0; max-width:920px; border-radius:22px; overflow:hidden;
+    border:1px solid var(--hair); box-shadow: 0 44px 100px -34px var(--shadow), 0 8px 24px -14px var(--shadow); cursor:pointer; }
+  .hero-photo img { width:100%; display:block; }
+  .hero-photo .play { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; }
+  .hero-photo .play span { width:74px;height:74px;border-radius:50%;background:rgba(255,255,255,0.92);
+    display:flex;align-items:center;justify-content:center;box-shadow:0 8px 30px rgba(0,0,0,0.3);transition:transform .2s var(--ease); }
+  .hero-photo:hover .play span { transform:scale(1.08); }
+  .hero-photo .play svg { width:26px;height:26px;color:#111;margin-left:3px; }
+  .hero-photo .cap { position:absolute; left:20px; bottom:16px; color:#fff; font-size:13px; font-weight:500; text-shadow:0 1px 8px rgba(0,0,0,.5); }
+
+  /* trusted-by */
+  .trustedby { padding: 72px 0 76px; text-align:center; overflow:hidden; }
+  .trustedby .lbl { font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:var(--faint); }
+  .marquee { margin-top:44px; overflow:hidden;
+    -webkit-mask-image:linear-gradient(90deg,transparent,#000 9%,#000 91%,transparent);
+    mask-image:linear-gradient(90deg,transparent,#000 9%,#000 91%,transparent); }
+  .marquee .track { display:flex; gap:84px; align-items:center; width:max-content; animation: scroll-x 34s linear infinite; }
+  .marquee:hover .track { animation-play-state: paused; }
+  .marquee a { display:flex; align-items:center; opacity:.5; transition:opacity .2s; }
+  .marquee a:hover { opacity:1; }
+  .marquee img { height:31px; width:auto; display:block; }
+  :root[data-theme="dark"] .marquee img { filter: invert(1); }
+  @keyframes scroll-x { to { transform: translateX(-50%); } }
+  @media (prefers-reduced-motion: reduce){ .marquee .track{ animation:none; } }
+  /* video lightbox */
+  .vmodal{ position:fixed; inset:0; z-index:200; display:none; align-items:center; justify-content:center; background:var(--scrim); backdrop-filter:blur(8px); padding:40px; }
+  .vmodal.open{ display:flex; }
+  .vmodal .frame{ width:min(1000px,92vw); aspect-ratio:16/9; background:#000; border-radius:16px; overflow:hidden; box-shadow:0 40px 120px -20px rgba(0,0,0,.6); position:relative; }
+  .vmodal iframe{ width:100%; height:100%; border:0; }
+  .vmodal .x{ position:absolute; top:-42px; right:0; color:#fff; font-size:22px; cursor:pointer; opacity:.8; }
+  .vmodal .x:hover{ opacity:1; }
+
+  /* section rhythm */
+  section { padding: 96px 0; }
+  .sec-eyebrow{ font-size:12px;font-weight:560;letter-spacing:0.14em;text-transform:uppercase;color:var(--faint);text-align:center; }
+  .sec-h { font-family:var(--serif);font-weight:500;color:var(--ink);font-size:clamp(28px,4vw,40px);line-height:1.1;letter-spacing:-0.02em;text-align:center;margin-top:14px; }
+  .sec-sub{ text-align:center; color:var(--muted); font-size:15px; margin-top:14px; max-width:56ch; margin-left:auto; margin-right:auto; }
+  .band { background: var(--soft); border-top:1px solid var(--hair); border-bottom:1px solid var(--hair); }
+
+  /* quotable moment */
+  .ping { max-width: 560px; margin: 40px auto 0; background:var(--surface); border:1px solid var(--hair-2); border-radius:18px; padding:24px 26px; position:relative; overflow:hidden; box-shadow:0 24px 60px -24px var(--shadow); }
+  .ping::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--accent);}
+  .ping .from{display:flex;align-items:center;gap:9px;margin-bottom:12px;}
+  .ping .from .m{font-family:var(--serif);font-size:15px;color:var(--ink);}
+  .ping .from .t{margin-left:auto;font-family:var(--mono);font-size:11px;color:var(--faint);}
+  .ping .q{font-size:19px;color:var(--ink);line-height:1.35;font-weight:480;}
+  .ping .btns{display:flex;gap:10px;margin-top:18px;}
+  .moment-cap{ text-align:center;margin-top:26px;font-size:14px;color:var(--muted); }
+
+  /* triad */
+  .triad{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin-top:52px; }
+  .tri{ padding:28px 24px; border:1px solid var(--hair); border-radius:14px; background:var(--surface); }
+  .tri .ic{ width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--accent-strong);background:var(--accent-tint);margin-bottom:16px; }
+  .tri .ic svg{width:20px;height:20px;}
+  .tri h3{ font-size:16px;font-weight:560;color:var(--ink); }
+  .tri p{ font-size:14px;color:var(--muted);margin-top:7px;line-height:1.5; }
+
+  /* devices lineup */
+  .device { display:flex; align-items:center; gap:56px; margin-top:52px; flex-wrap:wrap; justify-content:center; }
+  .device .pend { flex:none; width:260px; }
+  .device .pend img { width:100%; }
+  .device .dcopy { flex:1; min-width:280px; max-width:460px; }
+  .device .dline { display:flex; gap:12px; align-items:flex-start; padding:13px 0; border-bottom:1px solid var(--hair); }
+  .device .dline:last-child{border-bottom:0;}
+  .device .dline .ic{ color:var(--ink); flex:none; margin-top:1px; }
+  .device .dline b{ font-weight:560; color:var(--ink); font-size:15px; }
+  .device .dline p{ font-size:13.5px; color:var(--muted); margin-top:3px; }
+
+  /* products / buy */
+  .products{ display:grid; grid-template-columns:repeat(4,1fr); gap:18px; margin-top:52px; }
+  .prod{ border:1px solid var(--hair); border-radius:16px; background:var(--surface); overflow:hidden; display:flex; flex-direction:column; }
+  .prod .img{ height:160px; background:#fff; display:flex; align-items:center; justify-content:center; border-bottom:1px solid var(--hair); }
+  .prod .img img{ max-height:150px; max-width:88%; object-fit:contain; }
+  .prod .img.dark{ background:#0d0d0e; }
+  .prod .img .ph{ width:64px;height:64px;border-radius:16px;background:var(--surface);border:1px solid var(--hair);display:flex;align-items:center;justify-content:center;color:var(--ink); }
+  .prod .img .ph svg{ width:28px;height:28px; }
+  .prod .body{ padding:18px 18px 20px; display:flex; flex-direction:column; flex:1; }
+  .prod .nm{ font-size:16px; font-weight:560; color:var(--ink); }
+  .prod .ln{ font-size:13px; color:var(--muted); margin-top:5px; line-height:1.45; flex:1; }
+  .prod .pr{ font-family:var(--mono); font-size:13px; color:var(--ink); margin-top:14px; }
+  .prod .btn{ margin-top:12px; width:100%; }
+
+  /* use cases + testimonials */
+  .cases{ display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:48px; }
+  .case{ border:1px solid var(--hair); border-radius:14px; background:var(--surface); padding:24px; }
+  .case .ic{ width:36px;height:36px;border-radius:10px;background:var(--accent-tint);color:var(--ink);display:flex;align-items:center;justify-content:center;margin-bottom:14px; }
+  .case h3{ font-size:15px; font-weight:560; color:var(--ink); }
+  .case p{ font-size:13.5px; color:var(--muted); margin-top:6px; line-height:1.5; }
+  .case a{ font-size:13px; color:var(--ink); font-weight:540; margin-top:12px; display:inline-block; }
+  .quotes{ display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-top:22px; }
+  .quote{ border:1px solid var(--hair); border-radius:14px; padding:24px; background:var(--soft); }
+  .quote .q{ font-family:var(--serif); font-size:18px; color:var(--ink); line-height:1.4; letter-spacing:-0.01em; }
+  .quote .by{ font-size:13px; color:var(--muted); margin-top:14px; }
+  .quote .by b{ color:var(--ink); font-weight:560; }
+
+  /* apps ecosystem */
+  .appcats{ display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin-top:34px; }
+  .appcats .cat{ font-size:13px; color:var(--body); border:1px solid var(--hair); background:var(--surface); border-radius:999px; padding:8px 16px; }
+  .applogos{ display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-top:30px; }
+  .applogos .chip{ width:52px;height:52px;border-radius:14px;background:#fff;border:1px solid var(--hair);display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px -4px var(--shadow); }
+  .applogos .chip img{ width:26px;height:26px;object-fit:contain; }
+
+  /* open source terminal */
+  .osrc{ text-align:center; }
+  .term{ max-width:720px; margin:34px auto 0; background:#0d0d0f; border:1px solid #26262b; border-radius:14px; overflow:hidden; text-align:left; box-shadow:0 30px 70px -30px rgba(0,0,0,.4); }
+  .term .tt{ height:34px; display:flex; align-items:center; gap:7px; padding:0 14px; border-bottom:1px solid #26262b; }
+  .term .tt i{ width:11px;height:11px;border-radius:50%;display:block; } .term .tt .c{background:#FF5F57}.term .tt .m{background:#FEBC2E}.term .tt .x{background:#28C840}
+  .term .tt span{ margin-left:auto;font-family:var(--mono);font-size:11px;color:#6b6b73; }
+  .term pre{ padding:20px 22px; font-family:var(--mono); font-size:13px; line-height:1.7; color:#e6e6ea; white-space:pre-wrap; word-break:break-word; }
+  .term pre .p{ color:#5f6b5f; } .term pre .g{ color:#8fce9b; }
+  .oslinks{ display:flex; gap:22px; justify-content:center; margin-top:26px; flex-wrap:wrap; }
+
+  /* cta band */
+  .cta-band{ background:var(--ink); }
+  :root[data-theme="dark"] .cta-band{ background:var(--surface-2); border-top:1px solid var(--hair); border-bottom:1px solid var(--hair); }
+  .cta-band .h{ font-family:var(--serif);font-weight:500;color:var(--canvas);font-size:clamp(30px,4.4vw,46px);line-height:1.05;letter-spacing:-0.02em;text-align:center;max-width:16ch;margin:0 auto; }
+  :root[data-theme="dark"] .cta-band .h{ color:var(--ink); }
+  .cta-band .sub{ text-align:center;color:color-mix(in srgb,var(--canvas) 66%, transparent);margin-top:16px;font-size:15px; }
+  :root[data-theme="dark"] .cta-band .sub{ color:var(--muted); }
+  .btn.solid-w{ background:#fff;color:#111;border-color:transparent;font-weight:560; }
+  .btn.solid-w:hover{ background:#f0f0ee; }
+  .btn.out-w{ background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4); }
+  .btn.out-w:hover{ background:rgba(255,255,255,0.08); }
+  :root[data-theme="dark"] .btn.out-w{ color:var(--ink); border-color:var(--hair-2); }
+
+  /* footer */
+  footer{ border-top:1px solid var(--hair); padding:56px 0 40px; background:var(--soft); }
+  .footcols{ display:grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap:32px; }
+  .footcols .brand .mk{ font-family:var(--serif);font-size:24px;color:var(--ink);letter-spacing:-0.03em; }
+  .footcols .brand .tl{ font-family:var(--serif); font-size:15px; color:var(--muted); margin-top:8px; }
+  .footcols h4{ font-size:12px;font-weight:560;letter-spacing:0.1em;text-transform:uppercase;color:var(--faint);margin-bottom:14px; }
+  .footcols a{ display:block; font-size:13.5px; color:var(--body); padding:5px 0; }
+  .footcols a:hover{ color:var(--ink); }
+  .footbottom{ display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px; margin-top:40px; padding-top:24px; border-top:1px solid var(--hair); }
+  .footbottom .social{ display:flex; gap:18px; flex-wrap:wrap; }
+  .footbottom .social a{ font-size:13px; color:var(--muted); } .footbottom .social a:hover{color:var(--ink);}
+  .footbottom .cpy{ font-size:12.5px; color:var(--faint); }
+
+  @media (max-width: 860px){
+    .products{ grid-template-columns:repeat(2,1fr); }
+    .footcols{ grid-template-columns:1fr 1fr; gap:28px; }
+  }
+  @media (max-width: 720px){
+    section{padding:68px 0;} header.hero{padding:60px 0 24px;}
+    .triad,.cases,.quotes{grid-template-columns:1fr;}
+    nav.top .navlinks{display:none;}
+    .wrap{padding:0 20px;}
+    h1.hero-h{font-size:34px;max-width:100%;} .hero-sub{font-size:16px;max-width:100%;}
+    .proof,.cta-row,.ping .btns{flex-wrap:wrap;}
+    .ping{max-width:100%;} .ping .q{font-size:17px;}
+    header.hero,section,footer{overflow:hidden;}
+    .footcols{grid-template-columns:1fr 1fr;}
+  }
+</style>
+</head>
+<body>
+<nav class="top" id="nav">
+  <div class="wrap bar">
+    <div class="mkrow"><span id="navmark"></span><span class="mk">omi</span></div>
+    <div class="navr" style="margin-left:auto">
+      <a class="link" href="#" onclick="demo();return false">Log in</a>
+      <button class="btn primary sm" style="height:34px" onclick="buy()">Get omi</button>
+      <div class="tdot" id="tt" title="Toggle theme"></div>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow-web">Thought to action</div>
+    <h1 class="hero-h">A second brain you trust more than your first.</h1>
+    <p class="hero-sub">omi captures your screen and conversations, then turns them into tasks, reminders, and the next move — on your Mac, your phone, and the omi pendant.</p>
+    <div class="cta-row">
+      <button class="btn primary lg" onclick="demo()">Download for Mac</button>
+      <button class="btn lg" onclick="buy()">Buy the device</button>
+    </div>
+    <div class="proof">
+      <div class="avs">
+        <span class="av fill-ink">A</span><span class="av fill-slate">M</span>
+        <span class="av fill-ink">R</span><span class="av fill-slate">J</span>
+      </div>
+      <span class="stars">★★★★★</span>
+      <span class="ptxt">Trusted by 300,000+ professionals</span>
+    </div>
+    <div class="hero-photo" onclick="openVideo()">
+      <img src="../assets/demo-thumb.jpg" alt="A person wearing the omi pendant">
+      <div class="play"><span id="ic-play"></span></div>
+      <div class="cap">Watch omi on your Mac · 1:12</div>
+    </div>
+  </div>
+</header>
+
+<div class="trustedby">
+  <div class="wrap">
+    <div class="lbl">Trusted by 300,000+ professionals</div>
+    <div class="marquee"><div class="track" id="track"></div></div>
+  </div>
+</div>
+
+<section class="band">
+  <div class="wrap">
+    <div class="sec-eyebrow">The wedge</div>
+    <div class="sec-h">The moment people screenshot.</div>
+    <div class="ping">
+      <div class="from"><span class="live-dot"></span><span class="m">omi</span><span class="t">now</span></div>
+      <div class="q">Send Nick the PR link — he's blocked on your review.</div>
+      <div class="btns"><button class="btn accent sm">Draft it</button><button class="btn ghost sm">Snooze</button></div>
+    </div>
+    <div class="moment-cap">You never told it. It was listening — so you don't have to.</div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-eyebrow">What it does</div>
+    <div class="sec-h">Quietly, all day.</div>
+    <div class="triad">
+      <div class="tri"><div class="ic" id="ic-brain"></div><h3>Remember everything.</h3><p>Every conversation, screen, and promise becomes searchable — and I bring it back the second it matters.</p></div>
+      <div class="tri"><div class="ic" id="ic-msg"></div><h3>Draft your replies.</h3><p>I write the message back in your voice, from what I already know. You read it, tweak it, send it.</p></div>
+      <div class="tri"><div class="ic" id="ic-bolt"></div><h3>Tell you the next move.</h3><p>No feeds, no dashboards. One clear thing to do next — the highest-leverage one.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="sec-eyebrow">Meet omi</div>
+    <div class="sec-h">Works with every device.</div>
+    <div class="device">
+      <div class="pend"><img src="../assets/pendant.webp" alt="omi pendant"></div>
+      <div class="dcopy">
+        <div class="dline"><span class="ic" id="ic-d1"></span><div><b>Mac.</b><p>Sees your screen, drafts your replies, tells you the next move.</p></div></div>
+        <div class="dline"><span class="ic" id="ic-d2"></span><div><b>iPhone.</b><p>Your second brain in your pocket. Same memory, everywhere.</p></div></div>
+        <div class="dline"><span class="ic" id="ic-d3"></span><div><b>omi pendant.</b><p>Hears the conversations your screen never sees.</p></div></div>
+        <div class="dline"><span class="ic" id="ic-d4"></span><div><b>omi Glass.</b><p>Remembers what you look at, not just what you type.</p></div></div>
+        <div class="dline"><span class="ic" id="ic-d5"></span><div><b>Web.</b><p>Search everything omi has kept, from any browser.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="products">
+  <div class="wrap">
+    <div class="sec-eyebrow">Products</div>
+    <div class="sec-h">Get the hardware.</div>
+    <div class="sec-sub">The app is free. The devices hear and see what your screen can't.</div>
+    <div class="products">
+      <div class="prod">
+        <div class="img"><img src="../assets/products/omi.png" alt="omi pendant"></div>
+        <div class="body"><div class="nm">omi</div><div class="ln">Always-listening memory you wear.</div><div class="pr">From $89</div><button class="btn primary" onclick="buy()">Pre-order</button></div>
+      </div>
+      <div class="prod">
+        <div class="img"><img src="../assets/products/glass.png" alt="omi Glass"></div>
+        <div class="body"><div class="nm">omi Glass</div><div class="ln">Memory for what you see.</div><div class="pr">From $199</div><button class="btn primary" onclick="buy()">Pre-order</button></div>
+      </div>
+      <div class="prod">
+        <div class="img dark"><img src="../assets/products/band.jpg" alt="omi Watch Band"></div>
+        <div class="body"><div class="nm">omi Watch Band</div><div class="ln">Wear omi on your wrist.</div><div class="pr">$29</div><button class="btn" onclick="buy()">Add to cart</button></div>
+      </div>
+      <div class="prod">
+        <div class="img dark"><img src="../assets/products/charger.png" alt="Wireless Charger"></div>
+        <div class="body"><div class="nm">Wireless Charger</div><div class="ln">Top up without a cable.</div><div class="pr">$39</div><button class="btn" onclick="buy()">Add to cart</button></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="usecases" class="band">
+  <div class="wrap">
+    <div class="sec-eyebrow">Use cases</div>
+    <div class="sec-h">Built for people who can't miss.</div>
+    <div class="cases">
+      <div class="case"><h3>Sales</h3><p>Every promise from every call, followed up before it slips. Your CRM fills itself.</p><a href="#">Read the story →</a></div>
+      <div class="case"><h3>Healthcare</h3><p>Walk out of each visit with the notes already written. Spend the time on the patient.</p><a href="#">Read the story →</a></div>
+      <div class="case"><h3>Field technicians</h3><p>Hands-free capture on site. Every fix logged, every part remembered.</p><a href="#">Read the story →</a></div>
+    </div>
+    <div class="quotes">
+      <div class="quote"><div class="q">"omi caught three follow-ups I'd have dropped after back-to-back calls. My close rate is up and I've stopped living in my CRM."</div><div class="by"><b>Maya R.</b> · Enterprise AE, fintech</div></div>
+      <div class="quote"><div class="q">"I leave every visit with the note already drafted. It quietly gave me my evenings back."</div><div class="by"><b>Dr. J. Okafor</b> · Family medicine</div></div>
+    </div>
+    <div class="cta-row" style="margin-top:30px"><button class="btn lg" onclick="location.hash='#usecases'">See all case studies →</button></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-eyebrow">Thousands of apps</div>
+    <div class="sec-h">omi plugs into your whole day.</div>
+    <div class="sec-sub">Connect what you already use. Take your memory into any tool over MCP.</div>
+    <div class="appcats">
+      <span class="cat">Productivity</span><span class="cat">Relationships</span><span class="cat">Health</span><span class="cat">Companionship</span>
+    </div>
+    <div class="applogos" id="applogos"></div>
+    <div class="cta-row" style="margin-top:30px"><button class="btn lg" onclick="window.open('https://h.omi.me/apps','_blank')">Explore the app store →</button></div>
+  </div>
+</section>
+
+<section class="osrc band">
+  <div class="wrap">
+    <div class="sec-eyebrow">Open source</div>
+    <div class="sec-h">On your machine. You own it all.</div>
+    <div class="sec-sub">Nothing leaves your device unless you say so. Read every line, or run it yourself in a minute.</div>
+    <div class="term">
+      <div class="tt"><i class="c"></i><i class="m"></i><i class="x"></i><span>zsh</span></div>
+      <pre><span class="p">$</span> git clone https://github.com/BasedHardware/omi.git <span class="g">&amp;&amp;</span> cd omi/desktop <span class="g">&amp;&amp;</span> ./run.sh --yolo
+<span class="p">$</span> cd app <span class="g">&amp;&amp;</span> bash setup.sh ios   <span class="p"># or: bash setup.sh android</span></pre>
+    </div>
+    <div class="oslinks">
+      <a class="link" href="https://github.com/BasedHardware/omi" target="_blank">GitHub ↗</a>
+      <a class="link" href="https://docs.omi.me" target="_blank">Docs ↗</a>
+      <a class="link" href="https://discord.omi.me" target="_blank">Discord ↗</a>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="wrap">
+    <div class="h">Never miss what matters.</div>
+    <div class="sub">Free to start. Live in two minutes.</div>
+    <div class="cta-row" style="margin-top:30px">
+      <button class="btn solid-w lg" onclick="demo()">Download for Mac</button>
+      <button class="btn out-w lg" onclick="buy()">Buy the device</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footcols">
+      <div class="brand">
+        <div class="mk">omi</div>
+        <div class="tl">thought to action.</div>
+      </div>
+      <div><h4>Products</h4>
+        <a href="#products">omi</a><a href="#products">omi Glass</a><a href="#">omi Enterprise</a>
+        <a href="#products">Watch Band</a><a href="#products">Charger</a><a href="#" onclick="demo();return false">Download</a>
+      </div>
+      <div><h4>Resources</h4>
+        <a href="https://docs.omi.me" target="_blank">Docs</a><a href="#">Help center</a><a href="https://status.omi.me" target="_blank">Status</a>
+        <a href="https://h.omi.me/apps" target="_blank">App store</a><a href="https://github.com/BasedHardware/omi" target="_blank">GitHub</a>
+        <a href="#">Ambassadors</a><a href="#">Affiliate</a><a href="#">Bounties</a><a href="https://discord.omi.me" target="_blank">Community</a>
+      </div>
+      <div><h4>Company</h4>
+        <a href="#">Careers</a><a href="#">Invest</a><a href="#">Manifesto</a>
+        <a href="#">Events</a><a href="#">Privacy</a><a href="#">Compliance</a>
+      </div>
+    </div>
+    <div class="footbottom">
+      <div class="social">
+        <a href="#">X</a><a href="#">LinkedIn</a><a href="https://github.com/BasedHardware/omi" target="_blank">GitHub</a>
+        <a href="#">TikTok</a><a href="#">Instagram</a><a href="https://discord.omi.me" target="_blank">Discord</a><a href="#">YouTube</a>
+      </div>
+      <div class="cpy">help@omi.me · Based Hardware Inc., San Francisco · © 2026</div>
+    </div>
+  </div>
+</footer>
+
+<div class="vmodal" id="vmodal" onclick="if(event.target===this)closeVideo()">
+  <div class="frame"><span class="x" onclick="closeVideo()">✕ Close</span><div class="holder"></div></div>
+</div>
+<script src="../common.js"></script>
+<script>
+  document.getElementById('ic-play').innerHTML = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>';
+  document.getElementById('ic-brain').innerHTML = icon('brain');
+  document.getElementById('ic-msg').innerHTML = icon('msg');
+  document.getElementById('ic-bolt').innerHTML = icon('bolt');
+  document.getElementById('ic-d1').innerHTML = icon('screen','icon-sm');
+  document.getElementById('ic-d2').innerHTML = icon('home','icon-sm');
+  document.getElementById('ic-d3').innerHTML = icon('mic','icon-sm');
+  document.getElementById('ic-d4').innerHTML = icon('eye','icon-sm');
+  document.getElementById('ic-d5').innerHTML = icon('search','icon-sm');
+  // app logos
+  var L='../assets/logos/';
+  var logos=['gmail_logo.png','google_calendar_logo.png','telegram.svg','whatsapp.svg','notion.svg','claude.svg','openai.svg','obsidian.svg','gemini_logo.png'];
+  document.getElementById('applogos').innerHTML = logos.map(function(f){return '<span class="chip"><img src="'+L+f+'" alt=""></span>';}).join('');
+  // ctas
+  function demo(){ location.href='../screens/onboarding.html?theme='+(document.documentElement.dataset.theme||'light'); }
+  function buy(){ window.open('https://www.omi.me','_blank'); }
+
+  // trusted-by marquee — real logos, auto-scroll, clickable (duplicated for seamless loop)
+  var B='../assets/logos/brands/';
+  var brands=[
+    ['vercel.svg','Vercel','https://vercel.com'],['notion.svg','Notion','https://notion.so'],
+    ['perplexity.svg','Perplexity','https://perplexity.ai'],['ycombinator.svg','Y Combinator','https://ycombinator.com'],
+    ['stripe.svg','Stripe','https://stripe.com'],['linear.svg','Linear','https://linear.app'],
+    ['openai.svg','OpenAI','https://openai.com'],['anthropic.svg','Anthropic','https://anthropic.com'],
+    ['figma.svg','Figma','https://figma.com'],['loom.svg','Loom','https://loom.com']
+  ];
+  var one=brands.map(function(b){return '<a href="'+b[2]+'" target="_blank" title="'+b[1]+'"><img src="'+B+b[0]+'" alt="'+b[1]+'"></a>';}).join('');
+  var tk=document.getElementById('track'); if(tk) tk.innerHTML = one+one; // twice → -50% loop is seamless
+
+  // hero video lightbox — the macOS app video
+  function openVideo(){
+    var m=document.getElementById('vmodal');
+    m.querySelector('.holder').innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/MZLzvN3vmtI?autoplay=1&rel=0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
+    m.classList.add('open');
+  }
+  function closeVideo(){ var m=document.getElementById('vmodal'); m.classList.remove('open'); m.querySelector('.holder').innerHTML=''; }
+  window.openVideo=openVideo; window.closeVideo=closeVideo;
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeVideo(); });
+  window.demo=demo; window.buy=buy;
+  // navmark ring
+  var nm=document.getElementById('navmark'); if(nm) nm.innerHTML = omiMark('sm');
+  // theme toggle
+  const tt = document.getElementById('tt');
+  function setDot(){ tt.innerHTML = (document.documentElement.dataset.theme==='dark') ? '◑' : '◐'; }
+  setDot();
+  tt.onclick = () => { document.documentElement.dataset.theme = (document.documentElement.dataset.theme==='dark'?'light':'dark'); setDot(); };
+  // nav border on scroll
+  const nav = document.getElementById('nav');
+  const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 8);
+  window.addEventListener('scroll', onScroll); onScroll();
+</script>
+</body>
+</html>
