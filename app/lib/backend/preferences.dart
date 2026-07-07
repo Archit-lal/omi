@@ -30,6 +30,17 @@ class SharedPreferencesUtil {
     _preferences = await SharedPreferences.getInstance();
   }
 
+  /// Picks up values written natively (the Dart cache doesn't see those otherwise).
+  static Future<void> reload() async {
+    await _preferences?.reload();
+  }
+
+  int get pendantPagesStored => getInt('pendantPagesStored');
+
+  bool get pendantDraining => getBool('pendantDraining');
+
+  bool get pendantStorageAlmostFull => getBool('pendantStorageAlmostFull');
+
   set uid(String value) => saveString('uid', value);
 
   String get uid => getString('uid');
@@ -78,6 +89,14 @@ class SharedPreferencesUtil {
   bool get batchMuted => getBool('batchMuted');
 
   set batchMuted(bool value) => saveBool('batchMuted', value);
+
+  // Realtime device mute (double-tap pause). Persisted so the mute survives an
+  // app kill/restart — otherwise the device silently resumes recording on the
+  // next reconnect even though the user muted it. Restored into
+  // CaptureProvider._isPaused at startup and re-applied on reconnect.
+  bool get deviceMuted => getBool('deviceMuted');
+
+  set deviceMuted(bool value) => saveBool('deviceMuted', value);
 
   // Transcribe Later: one-shot flag — when set, the native writer finalizes the
   // current file and starts a fresh one (manual "New recording" cut), then clears it.

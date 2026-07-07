@@ -1718,7 +1718,12 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String devicesFoundNearby(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'DEVICES', one: 'DEVICE');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'DEVICES',
+      one: 'DEVICE',
+    );
     return '$count $_temp0 FOUND NEARBY';
   }
 
@@ -8500,7 +8505,12 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String nConversationsCreated(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 's', one: '');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 's',
+      one: '',
+    );
     return '$count conversation$_temp0 created';
   }
 
@@ -9379,7 +9389,7 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get transcribeLaterNote =>
-      'ప్రస్తుతానికి Omi పరికరాలతో మాత్రమే పనిచేస్తుంది. మీరు అప్‌లోడ్ చేయాలని ఎంచుకునే వరకు ఆడియో మీ ఫోన్‌లోనే ఉంటుంది.';
+      'ప్రస్తుతానికి Omi మరియు Limitless పరికరాలతో పనిచేస్తుంది. మీరు అప్‌లోడ్ చేయాలని ఎంచుకునే వరకు ఆడియో మీ ఫోన్‌లోనే ఉంటుంది.';
 
   @override
   String get transcribeLaterStorageFull =>
@@ -9408,16 +9418,23 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get memoryThisDevice => 'ఈ పరికరం';
+
   @override
   String get memoryThisIphone => 'ఈ iPhone';
+
   @override
   String get memoryThisPhone => 'ఈ ఫోన్';
+
   @override
   String get memoryProvenanceMac => 'Mac';
+
   @override
   String get memoryProvenanceIphone => 'iPhone';
+
   @override
   String get memoryProvenanceAndroid => 'Android';
+
+  @override
   String get deviceTutorial => 'Omi ని ఎలా ఉపయోగించాలి';
 
   @override
@@ -9518,4 +9535,25 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get latest => 'తాజా';
+
+  @override
+  String get flashFirmware => 'ఫర్మ్‌వేర్ ఫ్లాష్ చేయండి';
+
+  @override
+  String get pendantRecordingTitle => 'పెండెంట్‌లో రికార్డింగ్ జరుగుతోంది';
+
+  @override
+  String get pendantRecordingNote =>
+      'మీ పెండెంట్ దానంతట అదే రికార్డ్ చేస్తోంది. యాప్ తెరిచి ఉన్నప్పుడు రికార్డింగ్‌లు మీ ఫోన్‌కు సింక్ అవుతాయి.';
+
+  @override
+  String get pendantSyncingRecordings => 'మీ పెండెంట్ నుండి రికార్డింగ్‌లను సింక్ చేస్తోంది…';
+
+  @override
+  String pendantMinutesStored(int minutes) {
+    return '~$minutes నిమిషాలు నిల్వ చేయబడ్డాయి';
+  }
+
+  @override
+  String get pendantStorageAlmostFull => 'పెండెంట్ నిల్వ దాదాపు నిండిపోయింది — సింక్ చేయడానికి యాప్‌ను తెరిచి ఉంచండి.';
 }

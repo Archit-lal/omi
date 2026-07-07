@@ -1703,7 +1703,12 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String devicesFoundNearby(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'DEVICES', one: 'DEVICE');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'DEVICES',
+      one: 'DEVICE',
+    );
     return '$count $_temp0 נמצאו בקרבה';
   }
 
@@ -8383,7 +8388,12 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String nConversationsCreated(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 's', one: '');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 's',
+      one: '',
+    );
     return '$count conversation$_temp0 created';
   }
 
@@ -9259,7 +9269,8 @@ class AppLocalizationsHe extends AppLocalizations {
       'הקלט אודיו עכשיו ותמלל אותו לפי דרישה במקום בזמן אמת. ההקלטות נשמרות בטלפון, ואז אתה מעלה אותן כדי ליצור שיחות.';
 
   @override
-  String get transcribeLaterNote => 'פועל עם מכשירי Omi בשלב זה. האודיו נשאר בטלפון שלך עד שתבחר להעלות אותו.';
+  String get transcribeLaterNote =>
+      'פועל עם מכשירי Omi ו-Limitless בשלב זה. האודיו נשאר בטלפון שלך עד שתבחר להעלות אותו.';
 
   @override
   String get transcribeLaterStorageFull =>
@@ -9288,16 +9299,23 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get memoryThisDevice => 'המכשיר הזה';
+
   @override
   String get memoryThisIphone => 'ה-iPhone הזה';
+
   @override
   String get memoryThisPhone => 'הטלפון הזה';
+
   @override
   String get memoryProvenanceMac => 'Mac';
+
   @override
   String get memoryProvenanceIphone => 'iPhone';
+
   @override
   String get memoryProvenanceAndroid => 'Android';
+
+  @override
   String get deviceTutorial => 'איך להשתמש ב-Omi';
 
   @override
@@ -9398,4 +9416,24 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get latest => 'האחרון';
+
+  @override
+  String get flashFirmware => 'צריבת קושחה';
+
+  @override
+  String get pendantRecordingTitle => 'מקליט על התליון';
+
+  @override
+  String get pendantRecordingNote => 'התליון שלך מקליט באופן עצמאי. ההקלטות מסתנכרנות לטלפון שלך כשהאפליקציה פתוחה.';
+
+  @override
+  String get pendantSyncingRecordings => 'מסנכרן הקלטות מהתליון שלך…';
+
+  @override
+  String pendantMinutesStored(int minutes) {
+    return '~$minutes דקות מאוחסנות';
+  }
+
+  @override
+  String get pendantStorageAlmostFull => 'אחסון התליון כמעט מלא — השאר את האפליקציה פתוחה כדי לסנכרן.';
 }

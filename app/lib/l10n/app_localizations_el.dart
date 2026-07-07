@@ -1725,7 +1725,12 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String devicesFoundNearby(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'ΣΥΣΚΕΥΕΣ', one: 'ΣΥΣΚΕΥΗ');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ΣΥΣΚΕΥΕΣ',
+      one: 'ΣΥΣΚΕΥΗ',
+    );
     return '$count $_temp0 ΒΡΕΘΗΚΑΝ ΚΟΝΤΑ';
   }
 
@@ -9401,7 +9406,7 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get transcribeLaterNote =>
-      'Προς το παρόν λειτουργεί με συσκευές Omi. Ο ήχος παραμένει στο τηλέφωνό σας μέχρι να επιλέξετε να τον ανεβάσετε.';
+      'Προς το παρόν λειτουργεί με συσκευές Omi και Limitless. Ο ήχος παραμένει στο τηλέφωνό σας μέχρι να επιλέξετε να τον ανεβάσετε.';
 
   @override
   String get transcribeLaterStorageFull =>
@@ -9430,16 +9435,23 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get memoryThisDevice => 'Αυτή η συσκευή';
+
   @override
   String get memoryThisIphone => 'Αυτό το iPhone';
+
   @override
   String get memoryThisPhone => 'Αυτό το τηλέφωνο';
+
   @override
   String get memoryProvenanceMac => 'Mac';
+
   @override
   String get memoryProvenanceIphone => 'iPhone';
+
   @override
   String get memoryProvenanceAndroid => 'Android';
+
+  @override
   String get deviceTutorial => 'Πώς να χρησιμοποιήσετε το Omi';
 
   @override
@@ -9542,4 +9554,26 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get latest => 'Πρόσφατο';
+
+  @override
+  String get flashFirmware => 'Εγκατάσταση firmware';
+
+  @override
+  String get pendantRecordingTitle => 'Εγγραφή στο μενταγιόν';
+
+  @override
+  String get pendantRecordingNote =>
+      'Το μενταγιόν σας ηχογραφεί μόνο του. Οι εγγραφές συγχρονίζονται με το τηλέφωνό σας όσο η εφαρμογή είναι ανοιχτή.';
+
+  @override
+  String get pendantSyncingRecordings => 'Συγχρονισμός εγγραφών από το μενταγιόν σας…';
+
+  @override
+  String pendantMinutesStored(int minutes) {
+    return '~$minutes λεπτά αποθηκευμένα';
+  }
+
+  @override
+  String get pendantStorageAlmostFull =>
+      'Ο αποθηκευτικός χώρος του μενταγιόν είναι σχεδόν πλήρης — κρατήστε την εφαρμογή ανοιχτή για συγχρονισμό.';
 }

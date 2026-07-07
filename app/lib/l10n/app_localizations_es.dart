@@ -1710,7 +1710,12 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String devicesFoundNearby(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'DISPOSITIVOS', one: 'DISPOSITIVO');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'DISPOSITIVOS',
+      one: 'DISPOSITIVO',
+    );
     return '$count $_temp0 ENCONTRADOS CERCA';
   }
 
@@ -9356,7 +9361,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get transcribeLaterNote =>
-      'De momento funciona con dispositivos Omi. El audio permanece en tu teléfono hasta que decidas subirlo.';
+      'De momento funciona con dispositivos Omi y Limitless. El audio permanece en tu teléfono hasta que decidas subirlo.';
 
   @override
   String get transcribeLaterStorageFull =>
@@ -9385,16 +9390,23 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get memoryThisDevice => 'Este dispositivo';
+
   @override
   String get memoryThisIphone => 'Este iPhone';
+
   @override
   String get memoryThisPhone => 'Este teléfono';
+
   @override
   String get memoryProvenanceMac => 'Mac';
+
   @override
   String get memoryProvenanceIphone => 'iPhone';
+
   @override
   String get memoryProvenanceAndroid => 'Android';
+
+  @override
   String get deviceTutorial => 'Cómo usar tu Omi';
 
   @override
@@ -9496,4 +9508,26 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get latest => 'Más reciente';
+
+  @override
+  String get flashFirmware => 'Flashear firmware';
+
+  @override
+  String get pendantRecordingTitle => 'Grabando en el colgante';
+
+  @override
+  String get pendantRecordingNote =>
+      'Tu colgante graba por sí solo. Las grabaciones se sincronizan con tu teléfono mientras la app está abierta.';
+
+  @override
+  String get pendantSyncingRecordings => 'Sincronizando grabaciones desde tu colgante…';
+
+  @override
+  String pendantMinutesStored(int minutes) {
+    return '~$minutes min almacenados';
+  }
+
+  @override
+  String get pendantStorageAlmostFull =>
+      'El almacenamiento del colgante está casi lleno: mantén la app abierta para sincronizar.';
 }

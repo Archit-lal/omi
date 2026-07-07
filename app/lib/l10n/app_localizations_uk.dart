@@ -1715,7 +1715,12 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String devicesFoundNearby(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'ПРИСТРОЇВ', one: 'ПРИСТРІЙ');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ПРИСТРОЇВ',
+      one: 'ПРИСТРІЙ',
+    );
     return '$count $_temp0 ЗНАЙДЕНО ПОБЛИЗУ';
   }
 
@@ -9353,7 +9358,7 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get transcribeLaterNote =>
-      'Наразі працює з пристроями Omi. Аудіо залишається на вашому телефоні, доки ви не вирішите його завантажити.';
+      'Наразі працює з пристроями Omi та Limitless. Аудіо залишається на вашому телефоні, доки ви не вирішите його завантажити.';
 
   @override
   String get transcribeLaterStorageFull =>
@@ -9382,16 +9387,23 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get memoryThisDevice => 'Цей пристрій';
+
   @override
   String get memoryThisIphone => 'Цей iPhone';
+
   @override
   String get memoryThisPhone => 'Цей телефон';
+
   @override
   String get memoryProvenanceMac => 'Mac';
+
   @override
   String get memoryProvenanceIphone => 'iPhone';
+
   @override
   String get memoryProvenanceAndroid => 'Android';
+
+  @override
   String get deviceTutorial => 'Як користуватися Omi';
 
   @override
@@ -9494,4 +9506,26 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get latest => 'Останнє';
+
+  @override
+  String get flashFirmware => 'Встановити прошивку';
+
+  @override
+  String get pendantRecordingTitle => 'Запис на кулоні';
+
+  @override
+  String get pendantRecordingNote =>
+      'Ваш кулон записує самостійно. Записи синхронізуються з телефоном, поки застосунок відкритий.';
+
+  @override
+  String get pendantSyncingRecordings => 'Синхронізація записів із вашого кулона…';
+
+  @override
+  String pendantMinutesStored(int minutes) {
+    return '~$minutes хв збережено';
+  }
+
+  @override
+  String get pendantStorageAlmostFull =>
+      'Пам\'ять кулона майже заповнена — тримайте застосунок відкритим для синхронізації.';
 }

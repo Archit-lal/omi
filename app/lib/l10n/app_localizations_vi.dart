@@ -1718,7 +1718,12 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String devicesFoundNearby(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'THIẾT BỊ', one: 'THIẾT BỊ');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'THIẾT BỊ',
+      one: 'THIẾT BỊ',
+    );
     return 'ĐÃ TÌM THẤY $count $_temp0 GẦN ĐÂY';
   }
 
@@ -9189,7 +9194,11 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String syncCardReadyCount(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count bản ghi sẵn sàng để đồng bộ');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count bản ghi sẵn sàng để đồng bộ',
+    );
     return '$_temp0';
   }
 
@@ -9201,7 +9210,11 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String syncCardNeedsAttention(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: '$count bản ghi cần chú ý');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count bản ghi cần chú ý',
+    );
     return '$_temp0';
   }
 
@@ -9325,7 +9338,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get transcribeLaterNote =>
-      'Hiện chỉ hoạt động với thiết bị Omi. Âm thanh được giữ trên điện thoại của bạn cho đến khi bạn chọn tải lên.';
+      'Hiện hoạt động với các thiết bị Omi và Limitless. Âm thanh được giữ trên điện thoại của bạn cho đến khi bạn chọn tải lên.';
 
   @override
   String get transcribeLaterStorageFull =>
@@ -9354,16 +9367,23 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get memoryThisDevice => 'Thiết bị này';
+
   @override
   String get memoryThisIphone => 'iPhone này';
+
   @override
   String get memoryThisPhone => 'Điện thoại này';
+
   @override
   String get memoryProvenanceMac => 'Mac';
+
   @override
   String get memoryProvenanceIphone => 'iPhone';
+
   @override
   String get memoryProvenanceAndroid => 'Android';
+
+  @override
   String get deviceTutorial => 'Cách sử dụng Omi';
 
   @override
@@ -9464,4 +9484,25 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get latest => 'Mới nhất';
+
+  @override
+  String get flashFirmware => 'Nạp firmware';
+
+  @override
+  String get pendantRecordingTitle => 'Đang ghi âm trên mặt dây chuyền';
+
+  @override
+  String get pendantRecordingNote =>
+      'Mặt dây chuyền của bạn đang tự ghi âm. Các bản ghi được đồng bộ về điện thoại khi ứng dụng đang mở.';
+
+  @override
+  String get pendantSyncingRecordings => 'Đang đồng bộ các bản ghi từ mặt dây chuyền của bạn…';
+
+  @override
+  String pendantMinutesStored(int minutes) {
+    return '~$minutes phút đã lưu';
+  }
+
+  @override
+  String get pendantStorageAlmostFull => 'Bộ nhớ của mặt dây chuyền sắp đầy — hãy giữ ứng dụng mở để đồng bộ.';
 }

@@ -51,6 +51,11 @@ struct BrowserGoogleSession: Equatable {
                 continue
             enc = bytes(enc) if not isinstance(enc, bytes) else enc
             value = None
+            # Cookie values are octet strings and are sent back verbatim in the
+            # Latin-1 HTTP Cookie header. Decode them as Latin-1 (a 1:1 byte<->char
+            # map, so value.encode('latin-1') reproduces the exact bytes). Using
+            # utf-8 with errors='replace' corrupted non-utf-8 values into U+FFFD,
+            # which then failed to encode into the Latin-1 request header.
             if enc[:3] in (b'v10', b'v11'):
                 ciphertext = enc[3:]
                 try:
@@ -64,12 +69,12 @@ struct BrowserGoogleSession: Equatable {
                         decrypted = decrypted[:-pad_len]
                     if db_version >= 24 and len(decrypted) > 32:
                         decrypted = decrypted[32:]
-                    value = decrypted.decode('utf-8', errors='replace')
+                    value = decrypted.decode('latin-1')
                 except Exception:
                     continue
             elif enc:
                 try:
-                    value = enc.decode('utf-8', errors='replace')
+                    value = enc.decode('latin-1')
                 except Exception:
                     continue
             if value:
@@ -114,8 +119,12 @@ struct BrowserGoogleSession: Equatable {
       }
       let userDataPath = target.profileRoot(homeDirectory: homeDirectory).path
       return cookiePaths(in: userDataPath).map { cookiePath in
-        let profileName = URL(fileURLWithPath: cookiePath).deletingLastPathComponent()
-          .lastPathComponent
+        let cookieURL = URL(fileURLWithPath: cookiePath)
+        let profileURL =
+          cookieURL.deletingLastPathComponent().lastPathComponent == "Network"
+          ? cookieURL.deletingLastPathComponent().deletingLastPathComponent()
+          : cookieURL.deletingLastPathComponent()
+        let profileName = profileURL.lastPathComponent
         let browserName = profileName == "Default" ? target.name : "\(target.name) (\(profileName))"
         return BrowserGoogleSession(
           browserName: browserName,
@@ -141,29 +150,37 @@ struct BrowserGoogleSession: Equatable {
     }
   }
 
-  private static func cookiePaths(in userDataPath: String) -> [String] {
+  static func cookiePaths(in userDataPath: String) -> [String] {
     let fm = FileManager.default
     guard let entries = try? fm.contentsOfDirectory(atPath: userDataPath) else { return [] }
 
     return
       entries
-      .filter { entry in
+      .compactMap { entry -> (name: String, path: String)? in
         var isDirectory: ObjCBool = false
-        let path = "\(userDataPath)/\(entry)"
-        guard fm.fileExists(atPath: path, isDirectory: &isDirectory), isDirectory.boolValue else {
-          return false
+        let profilePath = "\(userDataPath)/\(entry)"
+        guard fm.fileExists(atPath: profilePath, isDirectory: &isDirectory), isDirectory.boolValue else {
+          return nil
         }
-        return fm.fileExists(atPath: "\(path)/Cookies")
+        let networkCookies = "\(profilePath)/Network/Cookies"
+        if fm.fileExists(atPath: networkCookies) {
+          return (entry, networkCookies)
+        }
+        let legacyCookies = "\(profilePath)/Cookies"
+        if fm.fileExists(atPath: legacyCookies) {
+          return (entry, legacyCookies)
+        }
+        return nil
       }
       .sorted { lhs, rhs in
-        if lhs == "Default" { return true }
-        if rhs == "Default" { return false }
-        let lhsIsProfile = lhs.hasPrefix("Profile ")
-        let rhsIsProfile = rhs.hasPrefix("Profile ")
+        if lhs.name == "Default" { return true }
+        if rhs.name == "Default" { return false }
+        let lhsIsProfile = lhs.name.hasPrefix("Profile ")
+        let rhsIsProfile = rhs.name.hasPrefix("Profile ")
         if lhsIsProfile != rhsIsProfile { return lhsIsProfile }
-        return lhs.localizedStandardCompare(rhs) == .orderedAscending
+        return lhs.name.localizedStandardCompare(rhs.name) == .orderedAscending
       }
-      .map { "\(userDataPath)/\($0)/Cookies" }
+      .map(\.path)
       .filter { fm.fileExists(atPath: $0) }
   }
 

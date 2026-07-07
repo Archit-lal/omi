@@ -1713,7 +1713,12 @@ class AppLocalizationsNo extends AppLocalizations {
 
   @override
   String devicesFoundNearby(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'ENHETER', one: 'ENHET');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ENHETER',
+      one: 'ENHET',
+    );
     return '$count $_temp0 FUNNET I NÆRHETEN';
   }
 
@@ -9332,7 +9337,7 @@ class AppLocalizationsNo extends AppLocalizations {
 
   @override
   String get transcribeLaterNote =>
-      'Fungerer foreløpig med Omi-enheter. Lyden blir værende på telefonen til du velger å laste den opp.';
+      'Fungerer foreløpig med Omi- og Limitless-enheter. Lyden blir værende på telefonen til du velger å laste den opp.';
 
   @override
   String get transcribeLaterStorageFull =>
@@ -9361,16 +9366,23 @@ class AppLocalizationsNo extends AppLocalizations {
 
   @override
   String get memoryThisDevice => 'Denne enheten';
+
   @override
   String get memoryThisIphone => 'Denne iPhone';
+
   @override
   String get memoryThisPhone => 'Denne telefonen';
+
   @override
   String get memoryProvenanceMac => 'Mac';
+
   @override
   String get memoryProvenanceIphone => 'iPhone';
+
   @override
   String get memoryProvenanceAndroid => 'Android';
+
+  @override
   String get deviceTutorial => 'Slik bruker du Omi';
 
   @override
@@ -9472,4 +9484,26 @@ class AppLocalizationsNo extends AppLocalizations {
 
   @override
   String get latest => 'Nyeste';
+
+  @override
+  String get flashFirmware => 'Flash fastvare';
+
+  @override
+  String get pendantRecordingTitle => 'Tar opp på anhenget';
+
+  @override
+  String get pendantRecordingNote =>
+      'Anhenget ditt tar opp på egen hånd. Opptak synkroniseres til telefonen mens appen er åpen.';
+
+  @override
+  String get pendantSyncingRecordings => 'Synkroniserer opptak fra anhenget ditt…';
+
+  @override
+  String pendantMinutesStored(int minutes) {
+    return '~$minutes min lagret';
+  }
+
+  @override
+  String get pendantStorageAlmostFull =>
+      'Lagringsplassen på anhenget er nesten full — hold appen åpen for å synkronisere.';
 }

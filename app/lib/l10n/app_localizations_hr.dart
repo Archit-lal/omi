@@ -1715,7 +1715,12 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String devicesFoundNearby(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'DEVICES', one: 'DEVICE');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'DEVICES',
+      one: 'DEVICE',
+    );
     return '$count $_temp0 FOUND NEARBY';
   }
 
@@ -8480,7 +8485,12 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String nConversationsCreated(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 's', one: '');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 's',
+      one: '',
+    );
     return '$count conversation$_temp0 created';
   }
 
@@ -9362,7 +9372,7 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get transcribeLaterNote =>
-      'Za sada radi s Omi uređajima. Zvuk ostaje na tvom telefonu dok ga ne odlučiš prenijeti.';
+      'Za sada radi s Omi i Limitless uređajima. Zvuk ostaje na tvom telefonu dok ga ne odlučiš prenijeti.';
 
   @override
   String get transcribeLaterStorageFull =>
@@ -9391,16 +9401,23 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get memoryThisDevice => 'Ovaj uređaj';
+
   @override
   String get memoryThisIphone => 'Ovaj iPhone';
+
   @override
   String get memoryThisPhone => 'Ovaj telefon';
+
   @override
   String get memoryProvenanceMac => 'Mac';
+
   @override
   String get memoryProvenanceIphone => 'iPhone';
+
   @override
   String get memoryProvenanceAndroid => 'Android';
+
+  @override
   String get deviceTutorial => 'Kako koristiti Omi';
 
   @override
@@ -9503,4 +9520,26 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get latest => 'Najnovije';
+
+  @override
+  String get flashFirmware => 'Instaliraj firmver';
+
+  @override
+  String get pendantRecordingTitle => 'Snimanje na privjesku';
+
+  @override
+  String get pendantRecordingNote =>
+      'Tvoj privjesak snima samostalno. Snimke se sinkroniziraju s telefonom dok je aplikacija otvorena.';
+
+  @override
+  String get pendantSyncingRecordings => 'Sinkronizacija snimaka s tvog privjeska…';
+
+  @override
+  String pendantMinutesStored(int minutes) {
+    return '~$minutes min pohranjeno';
+  }
+
+  @override
+  String get pendantStorageAlmostFull =>
+      'Pohrana privjeska gotovo je puna — drži aplikaciju otvorenom radi sinkronizacije.';
 }

@@ -9365,7 +9365,7 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get transcribeLaterNote =>
-      'Na razie działa z urządzeniami Omi. Dźwięk pozostaje w telefonie, dopóki nie zdecydujesz się go przesłać.';
+      'Na razie działa z urządzeniami Omi i Limitless. Dźwięk pozostaje w telefonie, dopóki nie zdecydujesz się go przesłać.';
 
   @override
   String get transcribeLaterStorageFull =>
@@ -9394,16 +9394,23 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get memoryThisDevice => 'To urządzenie';
+
   @override
   String get memoryThisIphone => 'Ten iPhone';
+
   @override
   String get memoryThisPhone => 'Ten telefon';
+
   @override
   String get memoryProvenanceMac => 'Mac';
+
   @override
   String get memoryProvenanceIphone => 'iPhone';
+
   @override
   String get memoryProvenanceAndroid => 'Android';
+
+  @override
   String get deviceTutorial => 'Jak korzystać z Omi';
 
   @override
@@ -9505,4 +9512,26 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get latest => 'Najnowsza';
+
+  @override
+  String get flashFirmware => 'Wgraj oprogramowanie układowe';
+
+  @override
+  String get pendantRecordingTitle => 'Nagrywanie na zawieszce';
+
+  @override
+  String get pendantRecordingNote =>
+      'Twoja zawieszka nagrywa samodzielnie. Nagrania synchronizują się z telefonem, gdy aplikacja jest otwarta.';
+
+  @override
+  String get pendantSyncingRecordings => 'Synchronizowanie nagrań z zawieszki…';
+
+  @override
+  String pendantMinutesStored(int minutes) {
+    return '~$minutes min zapisane';
+  }
+
+  @override
+  String get pendantStorageAlmostFull =>
+      'Pamięć zawieszki jest prawie pełna — pozostaw aplikację otwartą, aby zsynchronizować.';
 }

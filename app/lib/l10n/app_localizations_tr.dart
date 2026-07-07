@@ -1718,7 +1718,12 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String devicesFoundNearby(int count) {
-    String _temp0 = intl.Intl.pluralLogic(count, locale: localeName, other: 'CİHAZ', one: 'CİHAZ');
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'CİHAZ',
+      one: 'CİHAZ',
+    );
     return '$count $_temp0 YAKINLARDA BULUNDU';
   }
 
@@ -9345,7 +9350,8 @@ class AppLocalizationsTr extends AppLocalizations {
       'Sesi anında değil, dilediğin zaman transkribe etmek üzere şimdi kaydet. Kayıtlar telefonunda saklanır; konuşma oluşturmak için onları sen yüklersin.';
 
   @override
-  String get transcribeLaterNote => 'Şimdilik Omi cihazlarıyla çalışır. Yüklemeyi seçene kadar ses telefonunda kalır.';
+  String get transcribeLaterNote =>
+      'Şimdilik Omi ve Limitless cihazlarıyla çalışır. Yüklemeyi seçene kadar ses telefonunda kalır.';
 
   @override
   String get transcribeLaterStorageFull =>
@@ -9374,16 +9380,23 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get memoryThisDevice => 'Bu cihaz';
+
   @override
   String get memoryThisIphone => 'Bu iPhone';
+
   @override
   String get memoryThisPhone => 'Bu telefon';
+
   @override
   String get memoryProvenanceMac => 'Mac';
+
   @override
   String get memoryProvenanceIphone => 'iPhone';
+
   @override
   String get memoryProvenanceAndroid => 'Android';
+
+  @override
   String get deviceTutorial => 'Omi Nasıl Kullanılır';
 
   @override
@@ -9485,4 +9498,26 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get latest => 'En son';
+
+  @override
+  String get flashFirmware => 'Donanım Yazılımını Yükle';
+
+  @override
+  String get pendantRecordingTitle => 'Pendant\'ta kayıt yapılıyor';
+
+  @override
+  String get pendantRecordingNote =>
+      'Pendant\'ın kendi kendine kayıt yapıyor. Uygulama açıkken kayıtlar telefonuna eşitlenir.';
+
+  @override
+  String get pendantSyncingRecordings => 'Pendant\'ından kayıtlar eşitleniyor…';
+
+  @override
+  String pendantMinutesStored(int minutes) {
+    return '~$minutes dk kayıtlı';
+  }
+
+  @override
+  String get pendantStorageAlmostFull =>
+      'Pendant\'ın depolama alanı neredeyse dolu — eşitleme için uygulamayı açık tut.';
 }
