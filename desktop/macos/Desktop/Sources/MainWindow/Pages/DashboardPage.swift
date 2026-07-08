@@ -1137,6 +1137,10 @@ struct DashboardPage: View {
 
     private var homeHeader: some View {
         HStack {
+            HomeMessagesButton { item in
+                navigate(to: item)
+            }
+
             Spacer()
             HStack(spacing: 10) {
                 HomeStatusButton(
@@ -3501,6 +3505,84 @@ private enum HomeStatusState {
     var isBlocked: Bool {
         if case .blocked = self { return true }
         return false
+    }
+}
+
+private struct HomeMessagesButton: View {
+    /// Called with the inbox to open: `.replies` (iMessage), `.whatsapp`, or `.telegram`.
+    let onSelect: (SidebarNavItem) -> Void
+
+    @State private var isHovering = false
+    @State private var isPresented = false
+
+    var body: some View {
+        Button {
+            isPresented.toggle()
+        } label: {
+            HStack(spacing: 8) {
+                Image(systemName: "message.fill")
+                    .scaledFont(size: 13, weight: .semibold)
+                    .frame(width: 18, height: 18)
+
+                Text("Messages")
+                    .scaledFont(size: 12, weight: .semibold)
+                    .lineLimit(1)
+
+                Image(systemName: "chevron.down")
+                    .scaledFont(size: 9, weight: .bold)
+            }
+            .foregroundStyle(isHovering ? HomePalette.ink : HomePalette.muted)
+            .padding(.horizontal, 12)
+            .padding(.vertical, 8)
+            .frame(height: 34)
+            .background(
+                Capsule(style: .continuous)
+                    .fill(isHovering ? HomePalette.tileHover : HomePalette.panel)
+            )
+            .overlay(
+                Capsule(style: .continuous)
+                    .stroke(HomePalette.hairline.opacity(isHovering ? 0.8 : 0.58), lineWidth: 1)
+            )
+            .contentShape(Capsule())
+        }
+        .buttonStyle(.plain)
+        .onHover { isHovering = $0 }
+        .popover(isPresented: $isPresented, arrowEdge: .top) {
+            VStack(alignment: .leading, spacing: 4) {
+                row(title: "iMessage", systemImage: "message.fill", item: .replies)
+                row(title: "WhatsApp", systemImage: "text.bubble.fill", item: .whatsapp)
+                row(title: "Telegram", systemImage: "paperplane.fill", item: .telegram)
+            }
+            .padding(8)
+            .frame(width: 190)
+            .background(HomePalette.panel)
+        }
+        .help("Messages")
+        .accessibilityLabel("Messages menu")
+    }
+
+    private func row(title: String, systemImage: String, item: SidebarNavItem) -> some View {
+        Button {
+            isPresented = false
+            onSelect(item)
+        } label: {
+            HStack(spacing: 10) {
+                Image(systemName: systemImage)
+                    .scaledFont(size: 13, weight: .semibold)
+                    .foregroundStyle(HomePalette.secondary)
+                    .frame(width: 18)
+
+                Text(title)
+                    .scaledFont(size: 13, weight: .medium)
+                    .foregroundStyle(HomePalette.ink)
+
+                Spacer(minLength: 0)
+            }
+            .padding(.horizontal, 9)
+            .padding(.vertical, 7)
+            .contentShape(.rect(cornerRadius: 8))
+        }
+        .buttonStyle(.plain)
     }
 }
 
