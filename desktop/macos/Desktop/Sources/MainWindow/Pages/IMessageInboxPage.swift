@@ -1,3 +1,4 @@
+import OmiTheme
 import SwiftUI
 
 /// Messages tab — a native iMessage-style view of your chats. Shows the full

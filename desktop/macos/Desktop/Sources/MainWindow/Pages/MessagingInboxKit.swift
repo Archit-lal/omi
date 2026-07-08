@@ -1,4 +1,5 @@
 import AppKit
+import OmiTheme
 import SwiftUI
 
 /// Shared UI building blocks for the messaging inboxes (iMessage, WhatsApp,

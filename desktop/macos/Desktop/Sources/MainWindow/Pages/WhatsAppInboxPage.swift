@@ -1,3 +1,4 @@
+import OmiTheme
 import SwiftUI
 
 /// WhatsApp tab — a native WhatsApp-style view of your chats. Shows the full
