@@ -1,4 +1,5 @@
 import AppKit
+import MarkdownUI
 import OmiTheme
 import SwiftUI
 
@@ -52,7 +53,7 @@ struct SBOnboardingView: View {
               messageRow(msg)
             }
             if let streaming = model.streamingText {
-              omiRow(streaming)
+              omiRow(streaming, streaming: true)
             }
             if model.typing {
               HStack(spacing: 10) {
@@ -92,11 +93,20 @@ struct SBOnboardingView: View {
     if msg.isOmi { omiRow(msg.text) } else { meRow(msg.text) }
   }
 
-  private func omiRow(_ text: String) -> some View {
+  /// Omi's messages. Committed messages render Markdown (the live wow / screen-peek
+  /// answers stream real Markdown — headings, bold, tables, rules); the word-by-word
+  /// typewriter stays plain Text so the ▍ cursor reads correctly.
+  private func omiRow(_ text: String, streaming: Bool = false) -> some View {
     HStack(alignment: .top, spacing: 10) {
       SBLogo(size: 16, opacity: 0.9)
-      Text(text).geist(size: 15.5).foregroundStyle(sb.ink(.w88)).lineSpacing(3)
-        .frame(maxWidth: 380, alignment: .leading)
+      Group {
+        if streaming {
+          Text(text).geist(size: 15.5).foregroundStyle(sb.ink(.w88)).lineSpacing(3)
+        } else {
+          SBMarkdownText(text)
+        }
+      }
+      .frame(maxWidth: 380, alignment: .leading)
       Spacer(minLength: 0)
     }
   }
@@ -135,6 +145,7 @@ struct SBOnboardingView: View {
     case .launch: launchWidget
     case .calendar: calendarWidget
     case .wow: wowWidget
+    case .screenPeek: screenPeekWidget
     case .capture: captureWidget
     }
   }
@@ -375,6 +386,34 @@ struct SBOnboardingView: View {
     .frame(maxWidth: 380, alignment: .leading)
   }
 
+  private var screenPeekWidget: some View {
+    VStack(alignment: .leading, spacing: 10) {
+      if !model.screenPeekDone {
+        Button { model.askScreenPeek() } label: {
+          HStack(spacing: 7) {
+            Image(systemName: "eye").font(.system(size: 13))
+            Text(model.screenPeeking ? "Looking…" : "Show me what you see")
+              .geist(size: 14, weight: .semibold)
+          }
+          .foregroundStyle(sb.inkInverted)
+          .frame(maxWidth: .infinity).padding(.vertical, 11)
+          .background(RoundedRectangle(cornerRadius: 11).fill(sb.ink))
+        }
+        .buttonStyle(.plain)
+        .disabled(model.screenPeeking)
+        .opacity(model.screenPeeking ? 0.6 : 1)
+        Button { model.answerScreenPeek() } label: {
+          Text("Skip").geist(size: 13).foregroundStyle(sb.ink(.w35))
+        }
+        .buttonStyle(.plain)
+        .disabled(model.screenPeeking)
+      } else {
+        SBInkButton(title: "Continue") { model.answerScreenPeek() }
+      }
+    }
+    .frame(maxWidth: 340, alignment: .leading)
+  }
+
   private var captureWidget: some View {
     VStack(spacing: 8) {
       Button { model.captureContinuous() } label: {
@@ -424,4 +463,63 @@ private struct FlowChips: View {
     }
     .frame(maxWidth: 380, alignment: .leading)
   }
+}
+
+/// Renders an Omi message as Markdown, styled for the dark glass onboarding panel.
+/// The live wow / screen-peek answers arrive as real Markdown (headings, **bold**,
+/// `---` rules, and GFM tables); plain `Text` would show the raw syntax.
+private struct SBMarkdownText: View {
+  let text: String
+  init(_ text: String) { self.text = text }
+
+  var body: some View {
+    Markdown(text)
+      .markdownTheme(Self.theme)
+      .textSelection(.enabled)
+  }
+
+  @MainActor static let theme: Theme =
+    Theme()
+    .text {
+      ForegroundColor(.white.opacity(0.88))
+      FontSize(15)
+    }
+    .strong { FontWeight(.semibold) }
+    .link { ForegroundColor(.white) }
+    .code {
+      FontFamilyVariant(.monospaced)
+      FontSize(13)
+      ForegroundColor(.white.opacity(0.9))
+      BackgroundColor(.white.opacity(0.08))
+    }
+    .heading1 { c in
+      c.label.markdownMargin(top: 10, bottom: 4)
+        .markdownTextStyle { FontWeight(.semibold); FontSize(19); ForegroundColor(.white) }
+    }
+    .heading2 { c in
+      c.label.markdownMargin(top: 10, bottom: 4)
+        .markdownTextStyle { FontWeight(.semibold); FontSize(16.5); ForegroundColor(.white) }
+    }
+    .heading3 { c in
+      c.label.markdownMargin(top: 8, bottom: 3)
+        .markdownTextStyle { FontWeight(.semibold); FontSize(14.5); ForegroundColor(.white.opacity(0.95)) }
+    }
+    .thematicBreak {
+      Divider().overlay(Color.white.opacity(0.14)).markdownMargin(top: 8, bottom: 8)
+    }
+    .table { c in
+      ScrollView(.horizontal, showsIndicators: false) {
+        c.label
+          .fixedSize(horizontal: true, vertical: true)
+          .markdownTableBorderStyle(.init(color: .white.opacity(0.14)))
+          .markdownTableBackgroundStyle(
+            .alternatingRows(.white.opacity(0.05), .white.opacity(0.02)))
+      }
+      .markdownMargin(top: 2, bottom: 8)
+    }
+    .tableCell { c in
+      c.label
+        .markdownTextStyle { if c.row == 0 { FontWeight(.semibold) } }
+        .padding(.vertical, 3).padding(.horizontal, 8)
+    }
 }
