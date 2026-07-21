@@ -9,7 +9,7 @@ import Foundation
 @MainActor
 final class SBOnboardingModel: ObservableObject {
   enum Step: Int, CaseIterable {
-    case promise, name, role, meet, perm, files, ptt, launch, calendar, wow, capture
+    case promise, name, role, meet, perm, files, ptt, launch, calendar, wow, screenPeek, capture
   }
 
   struct Msg: Identifiable {
@@ -95,6 +95,9 @@ final class SBOnboardingModel: ObservableObject {
         "Now your calendar. Then I know when meetings start, prepare beforehand, and capture automatically."
     case .wow:
       return "From day one I can answer things like:"
+    case .screenPeek:
+      return
+        "And here's what most tools can't do — I can see what's on your screen and jump in on my own. Want a taste? I'll take one look right now: one frame, read on the spot, nothing stored."
     case .capture:
       return
         "You're set, \(name). ⌘⇧O opens me anywhere; hold fn to talk. Last choice — I can listen all the time (pause anytime from the notch), or only when your calendar says you're in a meeting:"
@@ -367,6 +370,96 @@ final class SBOnboardingModel: ObservableObject {
   func answerWow() {
     wowCancellable = nil
     wowAsking = false
+    advance(userAnswer: "Continue", to: .screenPeek)
+  }
+
+  // MARK: screen peek — the live "Omi sees your screen" wow moment
+
+  /// Convincing example used when a real capture isn't possible (screen-recording
+  /// not granted, capture fails, or the vision call errors/times out) so the demo
+  /// never stalls.
+  static let screenPeekFallback =
+    "Say you had a pull request open past its deadline — I'd flag it and offer to draft the follow-up. Or a stale number in a deck before you send it. Grant Screen Recording later and I'll do that live, on my own."
+
+  @Published private(set) var screenPeeking = false
+  @Published private(set) var screenPeekDone = false
+  private var screenPeekTask: Task<Void, Never>?
+  private var screenPeekTimeout: Task<Void, Never>?
+
+  /// Actually capture the screen and let Omi proactively call out one useful
+  /// thing — a live demo, with a graceful canned fallback that never traps the user.
+  func askScreenPeek() {
+    guard !screenPeeking, !screenPeekDone else { return }
+    screenPeeking = true
+    thread.append(Msg(isOmi: false, text: "Show me what you see"))
+    typing = true
+    // Keep the widget (and Continue) reachable the whole time.
+    showWidget = true
+    screenPeekTask = Task { [weak self] in
+      let reply = await self?.generateScreenPeek() ?? SBOnboardingModel.screenPeekFallback
+      guard let self, !Task.isCancelled else { return }
+      self.commitScreenPeek(reply)
+    }
+    // Hard ceiling: never let a slow/hung vision call strand the step.
+    screenPeekTimeout = Task { [weak self] in
+      try? await Task.sleep(nanoseconds: 15_000_000_000)
+      guard let self, !Task.isCancelled else { return }
+      self.commitScreenPeek(SBOnboardingModel.screenPeekFallback)
+    }
+  }
+
+  private func commitScreenPeek(_ text: String) {
+    guard screenPeeking, !screenPeekDone else { return }
+    screenPeekTask?.cancel()
+    screenPeekTimeout?.cancel()
+    typing = false
+    thread.append(Msg(isOmi: true, text: text))
+    screenPeeking = false
+    screenPeekDone = true
+    showWidget = true
+  }
+
+  private func generateScreenPeek() async -> String {
+    guard appState.hasScreenRecordingPermission, let imageData = ScreenCaptureManager.captureScreenData() else {
+      return Self.screenPeekFallback
+    }
+    do {
+      let gemini = try GeminiClient()
+      let systemPrompt =
+        "You are Omi, a proactive Mac copilot demoing your screen awareness during onboarding. You are looking at one screenshot of the user's screen. Point out ONE specific, genuinely useful thing you notice — something only possible because you can actually see their screen. Warm, concrete, 1–2 sentences. No preamble; never say 'screenshot' or 'image'."
+      let prompt = "Look at my screen and proactively tell me the single most useful thing you notice."
+      let schema = GeminiRequest.GenerationConfig.ResponseSchema(
+        type: "object",
+        properties: [
+          "observation": .init(
+            type: "string", description: "1-2 sentence proactive observation about what's on the user's screen")
+        ],
+        required: ["observation"]
+      )
+      let json = try await gemini.sendRequest(
+        prompt: prompt, imageData: imageData, systemPrompt: systemPrompt, responseSchema: schema)
+      return Self.parseScreenPeekObservation(json) ?? Self.screenPeekFallback
+    } catch {
+      log("SBOnboarding: screen peek vision call failed: \(error.localizedDescription)")
+      return Self.screenPeekFallback
+    }
+  }
+
+  /// Extract the `observation` field from the vision model's JSON reply.
+  /// Returns nil for malformed/empty responses so the caller falls back — pure and
+  /// hermetically testable.
+  static func parseScreenPeekObservation(_ json: String) -> String? {
+    guard let data = json.data(using: .utf8),
+      let obj = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
+      let obs = obj["observation"] as? String
+    else { return nil }
+    let trimmed = obs.trimmingCharacters(in: .whitespacesAndNewlines)
+    return trimmed.isEmpty ? nil : trimmed
+  }
+
+  func answerScreenPeek() {
+    screenPeekTask?.cancel()
+    screenPeekTimeout?.cancel()
     advance(userAnswer: "Continue", to: .capture)
   }
 
@@ -386,6 +479,8 @@ final class SBOnboardingModel: ObservableObject {
   private func complete(startListening: Bool) {
     streamTask?.cancel()
     pollTask?.cancel()
+    screenPeekTask?.cancel()
+    screenPeekTimeout?.cancel()
     AnalyticsManager.shared.onboardingCompleted()
     chatProvider.stopAgent(owner: .mainChat)
     UserDefaults.standard.set(true, forKey: "onboardingJustCompleted")
