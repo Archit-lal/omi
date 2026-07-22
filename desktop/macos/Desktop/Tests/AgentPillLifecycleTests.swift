@@ -71,9 +71,9 @@ import XCTest
   }
 
   func testMainChatSpawnReceiptProjectsTheExistingFloatingPill() throws {
+    let pillSource = try agentPillSource()
     let providerSource = try chatProviderSource()
     let viewSource = try floatingControlBarViewSource()
-    let pillSource = try agentPillSource()
 
     XCTAssertTrue(providerSource.contains("AgentPillsManager.shared.upsertSpawnedPill("))
     XCTAssertTrue(providerSource.contains("producingJournalSurface: mainChatSurfaceReference()"))
@@ -373,7 +373,9 @@ import XCTest
     XCTAssertFalse(windowSource.contains("resolveDelegationAndDispatch"))
     XCTAssertTrue(windowSource.contains("await dispatchChatQuery("))
     XCTAssertFalse(source.contains("AgentPillFollowUpRoutingPolicy"))
-    XCTAssertTrue(source.contains("manager.continueAgent(from: pill, text: trimmed, attachments: staged)"))
+    // The bar's typed follow-up composer was retired (#10181): its "Continue
+    // in Omi" affordance routes to the main chat instead of spawning.
+    XCTAssertTrue(source.contains("openMainAppChat()"))
   }
 
   func testSubagentChatRendersMarkdownAndLargeBackHitTarget() throws {
@@ -470,12 +472,16 @@ import XCTest
     }
     let rowSource = String(source[rowRange.lowerBound..<heightRange.lowerBound])
 
-    XCTAssertTrue(rowSource.contains("Text(\"Omi Chat\")"))
+    // The notch is a voice-first surface now (typed chat moved to the main-window
+    // ask bar), but the hover row must still reach Omi: tapping opens chat, it's
+    // labeled "Omi Chat" for accessibility, and it shows the push-to-talk hint.
+    XCTAssertTrue(rowSource.contains("Text(\"Talk to Omi\")"))
     XCTAssertTrue(rowSource.contains("openOmiChatFromNotchRow()"))
     XCTAssertTrue(rowSource.contains("private var notchOmiChatOverlayHitTarget: some View"))
     XCTAssertTrue(rowSource.contains(".accessibilityLabel(\"Omi Chat\")"))
-    XCTAssertTrue(rowSource.contains("notchShortcutHint(\"Ask\""))
     XCTAssertTrue(rowSource.contains("notchShortcutHint(systemImage: \"mic.fill\""))
+    // Typed chat was removed from the notch — no text-entry "Ask" hint remains.
+    XCTAssertFalse(rowSource.contains("notchShortcutHint(\"Ask\""))
     XCTAssertFalse(rowSource.contains("notchShortcutHint(\"PTT\""))
   }
 
@@ -490,18 +496,17 @@ import XCTest
       source.contains(
         "notchAgentLogoHitTarget\n                            .frame(width: notchChromeLayoutWidth, height: notchChromeHeight + notchHoverMenuHeight)"
       ))
-    XCTAssertTrue(source.contains("@State private var notchSettingsHovering = false"))
-    XCTAssertTrue(source.contains("if !state.isVoicePresentationActive && notchSettingsHovering"))
-    XCTAssertTrue(source.contains("private var notchSettingsButton: some View"))
-    XCTAssertTrue(source.contains(".frame(width: 44, height: 44)"))
-    XCTAssertTrue(source.contains(".accessibilityIdentifier(\"notch_floating_bar_settings\")"))
+    // Settings is a hover-only gear in the bar chrome (not a notch chat row),
+    // gated so it never shows during voice, and it opens the floating-bar
+    // settings. The notch logo opens the agent chats.
+    XCTAssertTrue(source.contains("if isHovering && !state.isVoiceListening"))
+    XCTAssertTrue(source.contains("Image(systemName: \"gearshape.fill\")"))
+    XCTAssertTrue(source.contains("openFloatingBarSettings()"))
+    XCTAssertTrue(source.contains("openAgentChatsFromNotchLogo()"))
     XCTAssertFalse(
       source.contains(
         ".background(Color.white.opacity(0.12))\n                .clipShape(RoundedRectangle(cornerRadius: 6, style: .continuous))"
       ))
-    XCTAssertTrue(source.contains("notchSettingsHovering = showsHoverChrome"))
-    XCTAssertTrue(source.contains("openFloatingBarSettings()"))
-    XCTAssertTrue(source.contains("openAgentChatsFromNotchLogo()"))
     XCTAssertFalse(
       source.contains(
         ".onHover { hovering in\n            withAnimation(.easeInOut(duration: 0.12)) {\n                notchSettingsHovering = hovering"
@@ -832,11 +837,15 @@ import XCTest
     XCTAssertFalse(body.contains("FloatingControlBarGeometry.targetFrame("))
   }
 
-  func testSubagentComposerOnlyContinuesItsCanonicalSession() throws {
+  func testSubagentFollowUpsOnlyContinueTheCanonicalSession() throws {
+    // omi-test-quality: source-inspection -- static contract: the bar's typed composer is gone; the pill's only affordance opens the main chat.
     let viewSource = try floatingControlBarViewSource()
 
     XCTAssertFalse(viewSource.contains("AgentPillFollowUpRoutingPolicy"))
-    XCTAssertTrue(viewSource.contains("manager.continueAgent(from: pill, text: trimmed, attachments: staged)"))
+    // Typed steering from the pill was retired (#10181): the composer's only
+    // affordance opens the main chat, so no second send path can exist.
+    XCTAssertFalse(viewSource.contains("manager.continueAgent(from:"))
+    XCTAssertTrue(viewSource.contains("openMainAppChat()"))
   }
 
   func testSpawnAgentToolCallOpensSubagentChat() throws {
@@ -921,7 +930,10 @@ import XCTest
     let inputSource = String(viewSource[inputRange.lowerBound..<inputEnd.lowerBound])
 
     XCTAssertTrue(inputSource.contains(".beginVisibleMainQuery(message, fromVoice: false, animated: true)"))
-    XCTAssertTrue(viewSource.contains("state.archiveCurrentExchange(using: floatingChatProvider)"))
+    // Archiving moved with the retired typed follow-up (#10181): the window's
+    // query paths own it now; the view must not archive on its own.
+    XCTAssertTrue(windowSource.contains("state.archiveCurrentExchange(using:"))
+    XCTAssertFalse(viewSource.contains("archiveCurrentExchange"))
     XCTAssertTrue(viewSource.contains(".beginVisibleMainQuery(message, fromVoice: false, animated: true)"))
     XCTAssertFalse(inputSource.contains("state.showingAIResponse = true"))
     XCTAssertFalse(viewSource.contains("state.conversationSurface == .mainResponse || state.showingAIResponse"))

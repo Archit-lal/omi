@@ -724,6 +724,13 @@ class SafeModulateSocket(STTSocket):
         with self._lock:
             if self._dead or self._closed:
                 return False
+            if not data:
+                # b'' is this socket's shutdown sentinel: _send_loop breaks on it and finish()
+                # uses it to stop the loop. Enqueuing an empty audio frame would therefore end
+                # the send loop mid-session while the socket still reports itself alive, so every
+                # later frame would be queued and never sent. The Parakeet sockets guard the same
+                # way. The header stays pending because _header_sent is only set once it is queued.
+                return True
             prepend_header = not self._header_sent and self._wav_header is not None
             queued_data = (self._wav_header or b'') + data if prepend_header else data
 
@@ -844,6 +851,14 @@ class SafeModulateSocket(STTSocket):
                 elif msg_type == 'utterance':
                     utt = msg.get('utterance', msg)
                     self._handle_utterance(utt)
+            # A clean async-for exhaustion means the provider closed the upstream
+            # WebSocket without raising. A local drain (self._closed) or an
+            # explicit provider 'done' (self._done_event) is expected
+            # finalization; any other clean close is unexpected provider death and
+            # must latch terminal so the listen loop propagates it without waiting
+            # for another client audio frame (#10028).
+            if not self._closed and not self._done_event.is_set():
+                self._mark_dead('modulate ws closed cleanly without terminal frame')
         except websockets.exceptions.ConnectionClosed as e:
             self._mark_dead(f'ws recv closed: {e}')
         except Exception as e:
@@ -1369,6 +1384,13 @@ class ParakeetWebSocketSocket(STTSocket):
                                 self._stream_transcript([seg])
                     except json.JSONDecodeError:
                         pass
+            # A clean async-for exhaustion means the provider closed the upstream
+            # WebSocket without raising. Unless this is a local drain/finalization
+            # (self._closed, set by drain_and_close and the _run finally), it is an
+            # unexpected clean provider close and must latch terminal so the listen
+            # loop propagates it without waiting for another client audio frame (#10028).
+            if not self._closed:
+                self._mark_dead('parakeet ws closed cleanly by provider')
         except Exception as e:
             if not self._closed:
                 logger.error(f"Parakeet WS recv error: {e}")

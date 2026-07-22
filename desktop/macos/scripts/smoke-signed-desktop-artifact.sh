@@ -9,11 +9,11 @@ SOURCE_APP_BUNDLE=""
 SPARKLE_ZIP=""
 DMG_PATH=""
 RELEASE_TAG=""
+SOURCE_SHA=""
 EXPECTED_CHANNEL="${OMI_SIGNED_ARTIFACT_SMOKE_CHANNEL:-beta}"
 EXPECTED_TEAM_ID="${OMI_SIGNED_ARTIFACT_SMOKE_TEAM_ID:-9536L8KLMP}"
 EXPECTED_BUNDLE_ID="${OMI_SIGNED_ARTIFACT_SMOKE_BUNDLE_ID:-com.omi.computer-macos}"
 EXPECTED_URL_SCHEME="${OMI_SIGNED_ARTIFACT_SMOKE_URL_SCHEME:-omi-computer}"
-EXPECTED_FEED_URL="${OMI_SIGNED_ARTIFACT_SMOKE_FEED_URL:-https://api.omi.me/v2/desktop/appcast.xml}"
 EXPECTED_PYTHON_API_URL="${OMI_SIGNED_ARTIFACT_SMOKE_PYTHON_API_URL:-https://api.omi.me}"
 EXPECTED_DESKTOP_API_URL="${OMI_SIGNED_ARTIFACT_SMOKE_DESKTOP_API_URL:-https://desktop-backend-hhibjajaja-uc.a.run.app/}"
 IS_EXTERNAL_PREVIEW=false
@@ -52,11 +52,10 @@ Options:
   --zip PATH                 Sparkle ZIP containing the app bundle
   --dmg PATH                 DMG artifact to verify/mount when available
   --tag TAG                  Expected release tag, vX.Y.Z+BUILD-macos
+  --source-sha SHA           Exact source commit used to build this artifact
   --expected-channel NAME    Expected channel label for result metadata (default: beta)
   --expected-bundle-id ID    Expected app bundle identifier
   --expected-url-scheme URL  Expected app URL scheme
-  --expected-feed-url URL    Expected SUFeedURL (default: plain shared appcast;
-                             the Omi Beta variant passes its identity-scoped feed)
   --expected-python-api-url URL
                              Expected OMI_PYTHON_API_URL in the artifact
   --expected-desktop-api-url URL
@@ -152,10 +151,10 @@ parse_args() {
       --zip) require_option_value "$1" "${2:-}"; SPARKLE_ZIP="$2"; shift 2 ;;
       --dmg) require_option_value "$1" "${2:-}"; DMG_PATH="$2"; shift 2 ;;
       --tag) require_option_value "$1" "${2:-}"; RELEASE_TAG="$2"; shift 2 ;;
+      --source-sha) require_option_value "$1" "${2:-}"; SOURCE_SHA="$2"; shift 2 ;;
       --expected-channel) require_option_value "$1" "${2:-}"; EXPECTED_CHANNEL="$2"; shift 2 ;;
       --expected-bundle-id) require_option_value "$1" "${2:-}"; EXPECTED_BUNDLE_ID="$2"; shift 2 ;;
       --expected-url-scheme) require_option_value "$1" "${2:-}"; EXPECTED_URL_SCHEME="$2"; shift 2 ;;
-      --expected-feed-url) require_option_value "$1" "${2:-}"; EXPECTED_FEED_URL="$2"; shift 2 ;;
       --expected-python-api-url) require_option_value "$1" "${2:-}"; EXPECTED_PYTHON_API_URL="$2"; shift 2 ;;
       --expected-desktop-api-url) require_option_value "$1" "${2:-}"; EXPECTED_DESKTOP_API_URL="$2"; shift 2 ;;
       --preview) IS_EXTERNAL_PREVIEW=true; shift ;;
@@ -305,6 +304,7 @@ write_result_json() {
   CHECKS_JOINED="$(printf '%s\n' "${SMOKE_CHECKS[@]}")" \
     ARTIFACTS_JOINED="$(printf '%s\n' "${SMOKE_ARTIFACTS[@]}")" \
     RESULT_TAG="$RELEASE_TAG" \
+    RESULT_SOURCE_SHA="$SOURCE_SHA" \
     RESULT_CHANNEL="$EXPECTED_CHANNEL" \
     RESULT_BUNDLE_ID="$bundle_id" \
     RESULT_VERSION="$version" \
@@ -338,6 +338,7 @@ print(json.dumps({
     "ok": True,
     "finished_at": datetime.now(timezone.utc).isoformat(),
     "release_tag": os.environ.get("RESULT_TAG") or None,
+    "source_sha": os.environ.get("RESULT_SOURCE_SHA") or None,
     "expected_channel": os.environ.get("RESULT_CHANNEL") or None,
     "bundle_id": os.environ.get("RESULT_BUNDLE_ID") or None,
     "version": os.environ.get("RESULT_VERSION") or None,
@@ -377,10 +378,8 @@ assert_bundle_identity() {
     [[ "$automatic_checks" == "false" || "$automatic_checks" == "0" ]] \
       || fail "external preview must disable automatic update checks"
   else
-    # The Omi Beta variant carries an identity-scoped feed; the expected URL is
-    # passed per artifact (default: the plain shared feed).
-    [[ "$feed_url" == "$EXPECTED_FEED_URL" ]] \
-      || fail "SUFeedURL mismatch: expected $EXPECTED_FEED_URL, got ${feed_url:-missing}"
+    [[ "$feed_url" == "https://api.omi.me/v2/desktop/appcast.xml" ]] \
+      || fail "SUFeedURL mismatch: ${feed_url:-missing}"
   fi
   [[ -n "$executable" && -x "$APP_BUNDLE/Contents/MacOS/$executable" ]] || fail "main executable missing or not executable"
 
@@ -488,8 +487,10 @@ assert_sparkle_and_artifacts() {
     hdiutil attach "$DMG_PATH" -nobrowse -readonly -mountpoint "$DMG_MOUNTPOINT" -quiet \
       || fail "DMG attach failed"
     local dmg_app
-    dmg_app="$(find "$DMG_MOUNTPOINT" -maxdepth 2 -type d -name "*.app" | head -1)"
-    [[ -n "$dmg_app" ]] || fail "DMG does not contain an app bundle"
+    dmg_app="$DMG_MOUNTPOINT/Omi.app"
+    [[ -d "$dmg_app/Contents" ]] || fail "DMG must contain canonical Omi.app"
+    codesign --verify --deep --strict --verbose=2 "$dmg_app" >/dev/null 2>&1 \
+      || fail "DMG-contained Omi.app failed deep strict codesign verification"
     assert_bundle_matches_current "$dmg_app" "DMG"
     record_artifact "dmg" "$DMG_PATH"
   fi
@@ -512,6 +513,19 @@ assert_helper_runtime_integrity() {
   [[ -f "$resources/agent/src/runtime/omi-tool-manifest.ts" ]] || fail "agent tool manifest missing"
   [[ -d "$resources/pi-mono-extension" ]] || fail "pi-mono-extension missing"
   [[ -x "$resources/Omi Computer_Omi Computer.bundle/node" ]] || fail "bundled node missing"
+  local sharp_arch expected_arch sharp_native libvips_native
+  for sharp_arch in arm64 x64; do
+    expected_arch="$sharp_arch"
+    [[ "$sharp_arch" == "x64" ]] && expected_arch="x86_64"
+    sharp_native="$resources/agent/node_modules/@img/sharp-darwin-$sharp_arch/lib/sharp-darwin-$sharp_arch.node"
+    libvips_native="$resources/agent/node_modules/@img/sharp-libvips-darwin-$sharp_arch/lib/libvips-cpp.42.dylib"
+    [[ -f "$sharp_native" && -f "$libvips_native" ]] \
+      || fail "agent runtime missing Sharp/libvips darwin-$sharp_arch pair"
+    file "$sharp_native" | grep -q "$expected_arch" \
+      || fail "Sharp darwin-$sharp_arch binary has the wrong architecture"
+    file "$libvips_native" | grep -q "$expected_arch" \
+      || fail "libvips darwin-$sharp_arch binary has the wrong architecture"
+  done
   strings "$APP_BUNDLE/Contents/MacOS/$(plist_read CFBundleExecutable)" 2>/dev/null | grep -q "LocalAgentAPIServer" \
     || warn "could not find LocalAgentAPIServer marker in executable; release builds may strip Swift symbols"
 

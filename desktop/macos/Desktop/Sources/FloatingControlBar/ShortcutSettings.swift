@@ -276,6 +276,13 @@ class ShortcutSettings: ObservableObject {
     modifiers: [.command, .shift]
   )
   static let askOmiCommandJShortcut = KeyboardShortcut(keyCode: 38, keyDisplay: "J", modifiers: .command)
+  // ⌘O is the default open hotkey again: it registers reliably via the
+  // dedicated Carbon hotkey (GlobalShortcutManager.registerCommandO), so it no
+  // longer collides with the universal "Open" shortcut the way a plain global
+  // registration did. ⌃⌥O stays defined as a conflict-free alternative users can
+  // bind, but is no longer the default or a preset.
+  static let askOmiControlOptionOShortcut = KeyboardShortcut(
+    keyCode: 31, keyDisplay: "O", modifiers: [.control, .option])
   static let defaultAskOmiShortcut = askOmiCommandOShortcut
 
   static let askOmiPresets: [KeyboardShortcut] = [
@@ -301,15 +308,28 @@ class ShortcutSettings: ObservableObject {
   @Published var askOmiShortcut: KeyboardShortcut {
     didSet {
       persistShortcut(askOmiShortcut, forKey: Self.askOmiShortcutDefaultsKey)
-      NotificationCenter.default.post(name: Self.askOmiShortcutChanged, object: nil)
+      postAskOmiShortcutChangedIfNeeded()
     }
   }
 
   @Published var askOmiEnabled: Bool {
     didSet {
       UserDefaults.standard.set(askOmiEnabled, forKey: "shortcut_askOmiEnabled")
+      postAskOmiShortcutChangedIfNeeded()
+    }
+  }
+
+  /// Keeps the registration owner from observing a half-applied Ask Omi selection.
+  /// The individual published values still update for SwiftUI, but the hotkey owner
+  /// receives one notification only after both persisted values are final.
+  func updateAskOmiRegistration(enabled: Bool, shortcut: KeyboardShortcut) {
+    isUpdatingAskOmiRegistration = true
+    defer {
+      isUpdatingAskOmiRegistration = false
       NotificationCenter.default.post(name: Self.askOmiShortcutChanged, object: nil)
     }
+    askOmiShortcut = shortcut
+    askOmiEnabled = enabled
   }
 
   @Published var pttEnabled: Bool {
@@ -535,6 +555,13 @@ class ShortcutSettings: ObservableObject {
     !Self.pttPresets.contains(pttShortcut)
   }
 
+  private var isUpdatingAskOmiRegistration = false
+
+  private func postAskOmiShortcutChangedIfNeeded() {
+    guard !isUpdatingAskOmiRegistration else { return }
+    NotificationCenter.default.post(name: Self.askOmiShortcutChanged, object: nil)
+  }
+
   private static let askOmiShortcutDefaultsKey = "shortcut_askOmiKey"
   private static let pttShortcutDefaultsKey = "shortcut_pttKey"
 
@@ -545,6 +572,9 @@ class ShortcutSettings: ObservableObject {
         legacyMapper: Self.legacyPTTShortcut
       ) ?? Self.pttPresets[0]
 
+    // ⌘O registers reliably now via the dedicated Carbon hotkey
+    // (GlobalShortcutManager.registerCommandO), so a saved ⌘O binding is honored
+    // as-is — no ⌘O → ⌃⌥O migration.
     self.askOmiShortcut =
       Self.loadShortcut(
         forKey: Self.askOmiShortcutDefaultsKey,

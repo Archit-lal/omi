@@ -65,12 +65,12 @@ struct ExportsSection: View {
         .scaledFont(size: OmiType.heading, weight: .semibold)
         .foregroundColor(OmiColors.textPrimary)
 
-      VStack(spacing: 0) {
-        ForEach(Array(entries.enumerated()), id: \.element.destination.id) { index, entry in
-          if index > 0 {
-            Divider()
-              .background(OmiColors.backgroundTertiary)
-          }
+      LazyVGrid(
+        columns: [GridItem(.adaptive(minimum: 260), spacing: OmiSpacing.md)],
+        alignment: .leading,
+        spacing: OmiSpacing.md
+      ) {
+        ForEach(entries, id: \.destination.id) { entry in
           MemoryExportRow(
             destination: entry.destination,
             titleOverride: entry.title,
@@ -137,9 +137,15 @@ private struct MemoryExportRow: View {
         ImportConnectorActionButton(
           title: actionTitle, isConnected: showsConnectedState)
       }
-      .padding(.horizontal, OmiSpacing.md)
-      .padding(.vertical, OmiSpacing.md)
-      .background(isHovering ? OmiColors.backgroundSecondary : Color.clear)
+      .padding(OmiSpacing.md)
+      .background(
+        RoundedRectangle(cornerRadius: OmiChrome.smallControlRadius)
+          .fill(isHovering ? OmiColors.backgroundSecondary : OmiColors.backgroundPrimary)
+      )
+      .overlay(
+        RoundedRectangle(cornerRadius: OmiChrome.smallControlRadius)
+          .stroke(OmiColors.backgroundTertiary, lineWidth: 1)
+      )
       .contentShape(Rectangle())
     }
     .buttonStyle(.plain)
@@ -281,13 +287,15 @@ final class MemoryExportDestinationSheetModel: ObservableObject {
     do {
       switch destination {
       case .notion:
-        let result = try await MemoryExportService.shared.prepareManualExport(for: destination)
+        if !NotionMCPConnector.shared.isConnected {
+          statusMessage = "Approve Omi in your browser…"
+          try await NotionMCPConnector.shared.connect()
+        }
+        let result = try await MemoryExportService.shared.exportToNotion()
         await MainActor.run {
-          applyClipboard(from: result)
-          revealExportFile(from: result)
           openDestination(for: destination, url: result.destinationURL)
         }
-        statusMessage = "Copied \(result.memoryCount.formatted()) memories for Notion."
+        statusMessage = "Wrote \(result.memoryCount.formatted()) memories into Notion."
 
       case .obsidian:
         let vaultURL: URL
@@ -743,10 +751,14 @@ struct MemoryExportDestinationSheet: View {
         Text(completion.title)
           .scaledFont(size: OmiType.subheading, weight: .semibold)
           .foregroundColor(OmiColors.textPrimary)
-        Text(completion.subtitle)
-          .scaledFont(size: OmiType.caption)
-          .foregroundColor(OmiColors.textTertiary)
-          .fixedSize(horizontal: false, vertical: true)
+        if destination == .claudeCode {
+          ClaudeCodeRestartSubtitle()
+        } else {
+          Text(completion.subtitle)
+            .scaledFont(size: OmiType.caption)
+            .foregroundColor(OmiColors.textTertiary)
+            .fixedSize(horizontal: false, vertical: true)
+        }
       }
     }
     .padding(OmiSpacing.md)
@@ -988,15 +1000,53 @@ struct MemoryExportDestinationSheet: View {
   private var packSection: some View {
     switch destination {
     case .notion:
+      let notionConnected = NotionMCPConnector.shared.isConnected
+      let notionSteps = [
+        "Click Connect and approve Omi in your browser",
+        "Omi creates an Omi Memories page in your workspace. Hit Sync anytime to refresh",
+        "Find the page in your Notion sidebar or search",
+      ]
       VStack(alignment: .leading, spacing: OmiSpacing.md) {
-        Text(
-          "Omi copies a ready-to-paste Markdown page, saves a local backup, and opens Notion so you can drop it where you want."
+        selectedLocationCard(
+          title: notionConnected ? "Connected to Notion" : "Not connected yet",
+          value: notionConnected
+            ? (NotionMCPConnector.shared.memoriesPageURL?.absoluteString
+              ?? "First Sync creates your Omi Memories page.")
+            : "One browser approval connects your workspace."
         )
-        .scaledFont(size: OmiType.caption)
-        .foregroundColor(OmiColors.textTertiary)
+
+        if notionConnected {
+          Button("Disconnect") {
+            NotionMCPConnector.shared.disconnect()
+            statuses[.notion] = nil
+          }
+          .buttonStyle(.plain)
+          .foregroundColor(OmiColors.textSecondary)
+          .scaledFont(size: OmiType.caption, weight: .medium)
+        }
+
+        VStack(alignment: .leading, spacing: OmiSpacing.xs) {
+          ForEach(Array(notionSteps.enumerated()), id: \.offset) { index, step in
+            HStack(alignment: .top, spacing: OmiSpacing.sm) {
+              Text("\(index + 1).")
+                .scaledFont(size: OmiType.caption, weight: .semibold)
+                .foregroundColor(OmiColors.textTertiary)
+              Text(step)
+                .scaledFont(size: OmiType.caption)
+                .foregroundColor(OmiColors.textSecondary)
+                .fixedSize(horizontal: false, vertical: true)
+            }
+          }
+        }
+        .padding(.top, OmiSpacing.hairline)
       }
 
     case .obsidian:
+      let obsidianSteps = [
+        "Choose your vault folder",
+        "Omi writes your memories to Omi/Memories.md and opens Obsidian. Hit Sync anytime to refresh",
+        "If Obsidian asks “Do you trust the author of this vault?”, pick either option. Omi only adds a Markdown note",
+      ]
       VStack(alignment: .leading, spacing: OmiSpacing.md) {
         selectedLocationCard(
           title: model.obsidianVaultPath.isEmpty ? "No vault selected yet" : "Selected vault",
@@ -1012,9 +1062,20 @@ struct MemoryExportDestinationSheet: View {
         .foregroundColor(OmiColors.textSecondary)
         .scaledFont(size: OmiType.caption, weight: .medium)
 
-        Text("Omi writes a refreshed `Omi/Memories.md` file inside the selected vault.")
-          .scaledFont(size: OmiType.caption)
-          .foregroundColor(OmiColors.textTertiary)
+        VStack(alignment: .leading, spacing: OmiSpacing.xs) {
+          ForEach(Array(obsidianSteps.enumerated()), id: \.offset) { index, step in
+            HStack(alignment: .top, spacing: OmiSpacing.sm) {
+              Text("\(index + 1).")
+                .scaledFont(size: OmiType.caption, weight: .semibold)
+                .foregroundColor(OmiColors.textTertiary)
+              Text(step)
+                .scaledFont(size: OmiType.caption)
+                .foregroundColor(OmiColors.textSecondary)
+                .fixedSize(horizontal: false, vertical: true)
+            }
+          }
+        }
+        .padding(.top, OmiSpacing.hairline)
       }
 
     case .chatgpt, .claude, .gemini:
@@ -1060,7 +1121,8 @@ struct MemoryExportDestinationSheet: View {
   private var actionTitle: (idle: String, running: String) {
     switch destination {
     case .notion:
-      return ("Copy & open", "Preparing…")
+      return NotionMCPConnector.shared.isConnected
+        ? ("Sync", "Syncing…") : ("Connect", "Connecting…")
     case .obsidian:
       return (model.obsidianVaultPath.isEmpty ? "Choose vault" : "Export", "Exporting…")
     case .chatgpt, .claude, .gemini:
