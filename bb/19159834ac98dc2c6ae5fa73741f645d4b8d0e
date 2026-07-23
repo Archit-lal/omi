@@ -1,0 +1,22 @@
+desktop/macos/changelog/unreleased/20260723-home-chat-top-gap.json
+  s_486b48869beee4::t_ba87b44fe31030 1-3
+desktop/macos/Desktop/Sources/MainWindow/Pages/DashboardPage.swift
+  s_486b48869beee4::t_e2de513f0ffc17 757
+  s_486b48869beee4::t_f5dcadaba3f102 291-295
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "bb19159834ac98dc2c6ae5fa73741f645d4b8d0e",
+  "prompts": {},
+  "sessions": {
+    "s_486b48869beee4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2edcb25e-2a81-4121-9227-695e27206120",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Archit Lal <architdraftid@gmail.com>"
+    }
+  }
+}
