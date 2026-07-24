@@ -1,0 +1,35 @@
+desktop/macos/changelog/unreleased/20260723-onboarding-google-connect-persist.json
+  s_526bc59879ff08::t_e95c7bcba395f1 1-3
+desktop/macos/Desktop/Sources/MainWindow/Pages/ConnectorImportRunner.swift
+  s_526bc59879ff08::t_ad0e4a987f16f1 124-140,142-143,145-160
+  s_526bc59879ff08::t_727c6342d2f8fa 141,144
+desktop/macos/Desktop/Sources/MainWindow/Pages/AppsPage.swift
+  s_526bc59879ff08::t_d86f115f1b2ceb 1681-1690
+desktop/macos/Desktop/Sources/Onboarding/SecondBrain/SBOnboardingModel+Steps.swift
+  s_526bc59879ff08::t_e79fb24c1a16fb 608-636,638-649
+  s_526bc59879ff08::t_d24e21fdb23865 662-666,673-677
+  s_526bc59879ff08::t_71b404fdd7cbe3 579-591
+desktop/macos/Desktop/Tests/OnboardingGoogleConnectTests.swift
+  s_526bc59879ff08::t_140f98cc4296cc 42-43,45,66-67,69
+  s_526bc59879ff08::t_c97ee88ec79f2b 1-41,44,46-65,68,70-79
+.github/scripts/product_file_line_count_ratchet_baseline/desktop-swift-mainwindow.json
+  s_526bc59879ff08::t_f8b1119a4f76cf 4
+desktop/macos/Desktop/Sources/Onboarding/SecondBrain/SBOnboardingModel.swift
+  s_526bc59879ff08::t_1cddc54c7dd246 87-90
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "25ccd13770cc683de44def44ce6e2f2df17aadb9",
+  "prompts": {},
+  "sessions": {
+    "s_526bc59879ff08": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ad63e603-49be-4825-886a-7c88e42cadd3",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": null
+    }
+  }
+}
