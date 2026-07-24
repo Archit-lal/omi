@@ -1,0 +1,26 @@
+web/app/src/hooks/useMemories.ts
+  s_526bc59879ff08::t_d63f7ebea26c5d 385,408,458,479
+  s_526bc59879ff08::t_3495a220e2988f 72,76,92,113-123,164,198,311-312,356-374,377-384,386-392,395-407,443-457,459-461,464-478,482-494
+web/app/src/app/api/proxy/[...path]/route.ts
+  s_526bc59879ff08::t_695b8b604158a4 11,18,25,32,37-40,52,62,85,109-110,144,163-166
+web/app/src/components/memories/MemoriesPage.tsx
+  s_526bc59879ff08::t_0b3c5d26fc41e0 3,5,20-21,72-73,86,213,216,219,262-263,326,331-334,364,377,390,407,433,437-438,459,494,509,545,593,649,673,694,731,748,755
+web/app/src/lib/api.ts
+  s_526bc59879ff08::t_769deca962aa2a 455
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "e7320cc58de6d4ad0d121dc435cc2c6f97a1152e",
+  "prompts": {},
+  "sessions": {
+    "s_526bc59879ff08": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ad63e603-49be-4825-886a-7c88e42cadd3",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": null
+    }
+  }
+}

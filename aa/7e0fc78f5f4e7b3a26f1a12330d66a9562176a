@@ -1,0 +1,19 @@
+desktop/macos/Desktop/Tests/AgentRuntimeProcessTests.swift
+  s_526bc59879ff08::t_336a7451bbc1f5 1032-1038
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "aa7e0fc78f5f4e7b3a26f1a12330d66a9562176a",
+  "prompts": {},
+  "sessions": {
+    "s_526bc59879ff08": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ad63e603-49be-4825-886a-7c88e42cadd3",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Archit Lal <architdraftid@gmail.com>"
+    }
+  }
+}
