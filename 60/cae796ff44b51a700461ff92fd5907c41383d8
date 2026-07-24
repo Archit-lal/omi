@@ -1,0 +1,19 @@
+desktop/macos/Desktop/Sources/Providers/ChatProvider+QuerySurface.swift
+  s_526bc59879ff08::t_13e9e967f83a1a 1-23
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "60cae796ff44b51a700461ff92fd5907c41383d8",
+  "prompts": {},
+  "sessions": {
+    "s_526bc59879ff08": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ad63e603-49be-4825-886a-7c88e42cadd3",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Archit Lal <architdraftid@gmail.com>"
+    }
+  }
+}
