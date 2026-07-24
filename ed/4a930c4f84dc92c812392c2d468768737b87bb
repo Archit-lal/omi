@@ -1,0 +1,28 @@
+desktop/macos/Desktop/Sources/CloudConnectorGuidanceOverlay.swift
+  s_526bc59879ff08::t_9ff3d3fc542da2 343-354
+  s_526bc59879ff08::t_6bcab052027643 832,835-836,839-843,855,858,863
+  s_526bc59879ff08::t_e62443ac1e2d52 313-314
+  s_526bc59879ff08::t_40bf2438eb9ee2 229-232
+  s_526bc59879ff08::t_46d950570a5250 701,703-705,707,709
+  s_526bc59879ff08::t_147d14443181fd 355-356
+desktop/macos/Desktop/Sources/ScreenCaptureService.swift
+  s_526bc59879ff08::t_fe4c2df2173a20 291-318
+desktop/macos/Desktop/Sources/Onboarding/PermissionDragGuidance.swift
+  s_526bc59879ff08::t_606a8c27200d6e 25-38,40,42
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "ed4a930c4f84dc92c812392c2d468768737b87bb",
+  "prompts": {},
+  "sessions": {
+    "s_526bc59879ff08": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ad63e603-49be-4825-886a-7c88e42cadd3",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Archit Lal <architdraftid@gmail.com>"
+    }
+  }
+}
