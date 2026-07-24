@@ -1,0 +1,37 @@
+desktop/macos/Desktop/Sources/Onboarding/SecondBrain/SBOnboardingView.swift
+  s_526bc59879ff08::t_fcdb9c3efcc3e8 198
+  s_526bc59879ff08::t_569e0c270aa095 298
+  s_526bc59879ff08::t_d27964adc19c0a 172
+  s_526bc59879ff08::t_9d5d34f0cdc137 467
+  s_526bc59879ff08::t_3139a19950da83 471-473,481-484
+desktop/macos/Desktop/Sources/Onboarding/SecondBrain/SBOnboardingModel.swift
+  s_526bc59879ff08::t_75a3319c4d0027 165-166
+  s_526bc59879ff08::t_0c959255bf0811 170
+  s_526bc59879ff08::t_cdb406cb6b8daa 466-469
+  s_526bc59879ff08::t_8f68c84a58253c 425-431
+  s_526bc59879ff08::t_6175692dd36f3a 59-63
+desktop/macos/Desktop/Sources/Providers/ChatProvider.swift
+  s_526bc59879ff08::t_14bc2a1c350ac1 1747
+  s_526bc59879ff08::t_fb0cd84a75e156 1737-1746,1748-1755,1761-1768
+desktop/macos/Desktop/Sources/Onboarding/SecondBrain/SBOnboardingModel+Steps.swift
+  s_526bc59879ff08::t_4ce992e19afb76 284-285
+  s_526bc59879ff08::t_7d45ae602bebb6 140-152
+  s_526bc59879ff08::t_2dfb578b7d35f6 430-442
+  s_526bc59879ff08::t_7eda8f28e984b3 168-175
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "e014ae19c7c025a695d25df54808dfe021b22acd",
+  "prompts": {},
+  "sessions": {
+    "s_526bc59879ff08": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ad63e603-49be-4825-886a-7c88e42cadd3",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Archit Lal <architdraftid@gmail.com>"
+    }
+  }
+}
