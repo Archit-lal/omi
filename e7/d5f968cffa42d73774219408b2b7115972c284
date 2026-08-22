@@ -1,0 +1,21 @@
+desktop/context-for-claude/docs/analytics.md
+  s_227233afb3b7ff::t_2a57b734484b66 185-200
+  s_227233afb3b7ff::t_c1a5c0fb0d230c 273-306
+  s_227233afb3b7ff::t_993c59ccbace3e 307
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "e7d5f968cffa42d73774219408b2b7115972c284",
+  "prompts": {},
+  "sessions": {
+    "s_227233afb3b7ff": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2d72fbee-85a2-445b-a86d-7f95bf574311",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Archit Lal <architdraftid@gmail.com>"
+    }
+  }
+}
