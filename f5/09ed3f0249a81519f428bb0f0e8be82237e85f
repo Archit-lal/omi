@@ -1,0 +1,19 @@
+desktop/context-for-claude/Tests/ContextAppTests/AnalyticsTests.swift
+  s_227233afb3b7ff::t_068c0126f8f2bf 96,100-148
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "f509ed3f0249a81519f428bb0f0e8be82237e85f",
+  "prompts": {},
+  "sessions": {
+    "s_227233afb3b7ff": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2d72fbee-85a2-445b-a86d-7f95bf574311",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Archit Lal <architdraftid@gmail.com>"
+    }
+  }
+}
