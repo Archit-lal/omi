@@ -1,0 +1,75 @@
+desktop/macos/Desktop/Sources/MainWindow/Components/ConversationSummarySections.swift
+  s_5799d664feb3c5::t_40214b5c9b5bcd 32-35
+desktop/macos/Desktop/Tests/MemoryGraphRevisitTests.swift
+  s_5799d664feb3c5::t_326132c1f354aa 42-44,66-68
+desktop/macos/Desktop/Sources/MainWindow/MemoryHubDestination.swift
+  s_5799d664feb3c5::t_10cef2a55bd64a 7-10
+app/test/widgets/conversation_summary_sections_test.dart
+  s_5799d664feb3c5::t_8c3a4eebab1811 3,5,10,12,14,20-25,93-113
+desktop/macos/Desktop/Sources/MainWindow/Pages/ConversationDetailView.swift
+  s_5799d664feb3c5::t_b266caad890459 605-613
+desktop/macos/Desktop/Tests/MemoryHubSidebarRoutingTests.swift
+  s_5799d664feb3c5::t_480725c5dbab5e 6-9,11-12
+desktop/macos/e2e/flows/home.yaml
+  s_5799d664feb3c5::t_f22fa04abae223 68
+desktop/macos/Desktop/Sources/MainWindow/QueryShell/ActivityHubTab.swift
+  s_5799d664feb3c5::t_b041c36bf4aadf 81
+desktop/macos/Desktop/Sources/MainWindow/QueryShell/ActivityDestinationChip.swift
+  s_5799d664feb3c5::t_f0195a14661c1c 41-48,59
+desktop/macos/Desktop/Sources/MainWindow/DesktopTopBar.swift
+  s_5799d664feb3c5::t_d91cc401d46868 7,13,19-23
+desktop/macos/Desktop/Tests/ChatFirstDestinationParityTests.swift
+  s_5799d664feb3c5::t_ad39dbcfe21583 27,57-84
+desktop/macos/Desktop/Sources/MainWindow/TopNavigationDestinations.swift
+  s_5799d664feb3c5::t_401c1a470ab730 12-17,143,152-154,186,215-217,225-226,259-261
+desktop/macos/Desktop/Sources/MainWindow/Components/ActivityBackButton.swift
+  s_5799d664feb3c5::t_5c9f7d14a79e35 1-43
+desktop/macos/Desktop/Sources/MainWindow/ChatFirst/ChatFirstShell.swift
+  s_5799d664feb3c5::t_6f0b7c0d7e79aa 164-179,217,268-274
+app/test/providers/conversation_detail_summary_selection_test.dart
+  s_5799d664feb3c5::t_d06f13af6e8951 1-76
+app/lib/backend/schema/structured.dart
+  s_5799d664feb3c5::t_45ca7f2236e8fe 54-67
+desktop/macos/Desktop/Tests/TopNavigationBarLayoutTests.swift
+  s_5799d664feb3c5::t_9ae879e37146c4 391,402-404
+desktop/macos/Desktop/Sources/MainWindow/ChatFirst/CaptureArchivePage.swift
+  s_5799d664feb3c5::t_e42e938c0bc858 159-160
+desktop/macos/Desktop/Sources/MainWindow/MemoryHubPage.swift
+  s_5799d664feb3c5::t_eabd702b20c256 71-89,131,135-140,142-145,147-155
+desktop/macos/Desktop/Tests/PageGlassLaneTests.swift
+  s_5799d664feb3c5::t_596de4111fb9a5 49-57,59-61,63-72
+desktop/macos/e2e/flows/memories.yaml
+  s_5799d664feb3c5::t_381b4b63ec68c8 9-11,13-14,16-17,47-52,55,62,85-88,104,111
+desktop/macos/Desktop/Sources/MainWindow/PageGlassLane.swift
+  s_5799d664feb3c5::t_e8cbf973c89d23 58-69
+app/lib/pages/conversation_detail/conversation_detail_provider.dart
+  s_5799d664feb3c5::t_1aaaad778566a7 408-413,415-417
+  s_5799d664feb3c5::t_5006c75b45291c 419-420
+desktop/macos/e2e/flows/navigation.yaml
+  s_5799d664feb3c5::t_6260e92f450587 4,18,32,37,43,45-54,57,64,155,175
+desktop/macos/e2e/flows/home-spine.yaml
+  s_5799d664feb3c5::t_3f137ab59e86a2 79-80
+app/test/backend/structured_sections_test.dart
+  s_5799d664feb3c5::t_3b3b59db446b56 80-97,105,107-111
+  s_5799d664feb3c5::t_f2dca21fbf08a3 98-104,106
+desktop/macos/Desktop/Tests/QueryShellTests.swift
+  s_5799d664feb3c5::t_5973c16851ca5a 493-494
+desktop/macos/Desktop/Sources/MainWindow/QueryShell/QueryResultsPanel.swift
+  s_5799d664feb3c5::t_3479455b501199 72-75,153,237-255
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "24b0fb9f35d498cb01116e4cdfb0ade450a426ec",
+  "prompts": {},
+  "sessions": {
+    "s_5799d664feb3c5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "7a560635-5b6c-4f58-8252-1717f103fd11",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Archit Lal <architdraftid@gmail.com>"
+    }
+  }
+}
