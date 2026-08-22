@@ -1,0 +1,19 @@
+.github/failure-classes/FC-mirrored-model-omits-new-member.json
+  s_5799d664feb3c5::t_d534ad651317d1 1-19
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "99423422660d61e18c46c8d61d1e51233d2ca79f",
+  "prompts": {},
+  "sessions": {
+    "s_5799d664feb3c5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "7a560635-5b6c-4f58-8252-1717f103fd11",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Archit Lal <architdraftid@gmail.com>"
+    }
+  }
+}
