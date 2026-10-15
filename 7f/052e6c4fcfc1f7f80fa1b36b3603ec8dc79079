@@ -1,0 +1,44 @@
+backend/utils/messaging/adapters/runtime.py
+  s_34ff7f78492131::t_41b6fa043b0718 15,19
+  s_34ff7f78492131::t_6963543b66b718 55-68
+backend/testing/messaging/local_demo.py
+  s_34ff7f78492131::t_d19b7eda4fb0cc 24-38
+  s_34ff7f78492131::t_9a3c8df0f0c399 153
+  s_34ff7f78492131::t_2a3a89244d16d7 1-23,39-152,154-200
+  s_34ff7f78492131::t_f5d9a0be5cbbe6 201-202
+backend/config/messaging.py
+  s_34ff7f78492131::t_e5f52919a7348b 39
+backend/docs/messaging-adapters.md
+  s_34ff7f78492131::t_8ad02eb4072c66 36-57
+  s_34ff7f78492131::t_3092f21c0d4aa6 79-81
+  s_34ff7f78492131::t_adcd7c51eff68f 74-77
+backend/utils/messaging/adapters/whatsapp.py
+  s_34ff7f78492131::t_8bf6b76597b8b1 1-212
+backend/routers/messaging.py
+  s_34ff7f78492131::t_ef1c0d50e864d5 51
+backend/.env.template
+  s_34ff7f78492131::t_fd591b6e0f246b 132-139
+backend/tests/unit/test_messaging_whatsapp.py
+  s_34ff7f78492131::t_9b5d7817be8619 1-57,59-210
+  s_34ff7f78492131::t_dac0ef4fd105d0 58
+backend/tests/unit/test_messaging_channels.py
+  s_34ff7f78492131::t_6b7aec5df59c74 451
+backend/.env.dev.template
+  s_34ff7f78492131::t_6ed4f99f361779 106-111
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "7f052e6c4fcfc1f7f80fa1b36b3603ec8dc79079",
+  "prompts": {},
+  "sessions": {
+    "s_34ff7f78492131": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5072624e-c5e8-4020-8be9-cfd65fb27aab",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Archit Lal <architdraftid@gmail.com>"
+    }
+  }
+}
