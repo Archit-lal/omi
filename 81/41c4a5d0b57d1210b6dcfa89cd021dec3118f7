@@ -1,0 +1,31 @@
+backend/utils/messaging/adapters/transport.py
+  s_34ff7f78492131::t_54461a6079d1fa 30
+  s_34ff7f78492131::t_3e2a0561882434 99
+backend/database/messaging.py
+  s_34ff7f78492131::t_be427a2f52c724 705
+backend/tests/unit/test_messaging_whatsapp.py
+  s_34ff7f78492131::t_c74fe4fa2510fb 117-119,131-133
+backend/docs/messaging-adapters.md
+  s_34ff7f78492131::t_0abd692290c5fa 49-54
+  s_34ff7f78492131::t_21daba2228061d 40
+backend/utils/messaging/adapters/whatsapp.py
+  s_34ff7f78492131::t_d48596780d3052 169-171
+  s_34ff7f78492131::t_c009686ac0ed41 87-94
+  s_34ff7f78492131::t_e1818f7ce1c6e7 13
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "8141c4a5d0b57d1210b6dcfa89cd021dec3118f7",
+  "prompts": {},
+  "sessions": {
+    "s_34ff7f78492131": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5072624e-c5e8-4020-8be9-cfd65fb27aab",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Archit Lal <architdraftid@gmail.com>"
+    }
+  }
+}
