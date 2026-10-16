@@ -1,0 +1,133 @@
+app/lib/l10n/app_localizations_mk.dart
+  s_34ff7f78492131::t_e1163c909074fc 11-16
+app/lib/l10n/app_localizations_ko.dart
+  s_34ff7f78492131::t_a839de0daa1a33 11-16
+app/lib/l10n/app_localizations_en.dart
+  s_34ff7f78492131::t_3d322f5857be29 11-16
+app/lib/l10n/app_localizations_fi.dart
+  s_34ff7f78492131::t_ccdc67c14409d4 11-16
+app/lib/l10n/app_localizations_tr.dart
+  s_34ff7f78492131::t_1262a94dc08509 11-16
+app/lib/l10n/app_localizations_ur.dart
+  s_34ff7f78492131::t_6de20124a8f91a 11-16
+app/lib/l10n/app_localizations_hr.dart
+  s_34ff7f78492131::t_addd8dbb09d592 11-16
+app/lib/l10n/app_localizations_pl.dart
+  s_34ff7f78492131::t_d8e7c6bcb2fcc8 11-16
+app/lib/l10n/app_localizations_uk.dart
+  s_34ff7f78492131::t_35e35cbe96ec88 11-16
+app/lib/l10n/app_localizations_es.dart
+  s_34ff7f78492131::t_66cabba781769c 11-16
+app/lib/l10n/app_localizations_ro.dart
+  s_34ff7f78492131::t_474df0bf4cbc04 11-16
+app/lib/l10n/app_localizations_bg.dart
+  s_34ff7f78492131::t_4f5897de2d600e 11-16
+app/lib/l10n/app_localizations_ms.dart
+  s_34ff7f78492131::t_293d847555b0b9 11-16
+app/lib/l10n/app_localizations_hu.dart
+  s_34ff7f78492131::t_6a03e8ea51f7c7 11-16
+app/lib/l10n/app_localizations_nl.dart
+  s_34ff7f78492131::t_3dc8f1d8be977e 11-16
+app/lib/l10n/app_localizations_ja.dart
+  s_34ff7f78492131::t_0dbdf94ba43bbb 11-16
+app/lib/l10n/app_localizations_sv.dart
+  s_34ff7f78492131::t_081890661f39fb 11-16
+app/lib/l10n/app_localizations_te.dart
+  s_34ff7f78492131::t_416906d358b965 11-16
+app/lib/l10n/app_localizations_de.dart
+  s_34ff7f78492131::t_aeea6620ff0117 11-16
+app/lib/l10n/app_en.arb
+  s_1cf550b8808455::t_cea92ddd162854 3-10
+app/lib/l10n/app_localizations_he.dart
+  s_34ff7f78492131::t_39e1506a115184 11-16
+app/lib/pages/onboarding/wrapper.dart
+  s_34ff7f78492131::t_11d1d9c8bc90e8 16,35,278-311,692
+app/lib/l10n/app_localizations_no.dart
+  s_34ff7f78492131::t_2f3f66b155e286 11-16
+app/lib/l10n/app_localizations_kn.dart
+  s_34ff7f78492131::t_e718c12a5c74f6 11-16
+app/lib/l10n/app_localizations_hi.dart
+  s_34ff7f78492131::t_94202ce0f49eab 11-16
+app/lib/l10n/app_localizations_id.dart
+  s_34ff7f78492131::t_7662e2f4e0fa53 11-16
+app/lib/l10n/app_localizations_zh.dart
+  s_34ff7f78492131::t_edb157fc194709 11-16
+app/lib/l10n/app_localizations_fa.dart
+  s_34ff7f78492131::t_2aab74fbbc2f36 11-16
+app/lib/l10n/app_localizations_th.dart
+  s_34ff7f78492131::t_5d3ad9d986bf41 11-16
+app/lib/l10n/app_localizations_sk.dart
+  s_34ff7f78492131::t_11a491d6bb2940 11-16
+app/lib/l10n/app_localizations_ta.dart
+  s_34ff7f78492131::t_70eca6b842aad3 11-16
+app/lib/l10n/app_localizations_da.dart
+  s_34ff7f78492131::t_9c26620f44cb9c 11-16
+app/lib/l10n/app_localizations_et.dart
+  s_34ff7f78492131::t_f2e3179831bb3b 11-16
+app/lib/l10n/app_localizations.dart
+  s_34ff7f78492131::t_0fbcaef8edbd57 192-203
+app/lib/l10n/app_localizations_fr.dart
+  s_34ff7f78492131::t_d9ceb49542b7ca 11-16
+app/lib/l10n/app_localizations_ca.dart
+  s_34ff7f78492131::t_54f1818b400136 11-16
+app/lib/l10n/app_localizations_vi.dart
+  s_34ff7f78492131::t_96b47c88f03ace 11-16
+app/lib/l10n/app_localizations_bs.dart
+  s_34ff7f78492131::t_3a6c9a278f8d76 11-16
+app/lib/l10n/app_localizations_ru.dart
+  s_34ff7f78492131::t_f2aa04da203e9e 11-16
+app/lib/l10n/app_localizations_lt.dart
+  s_34ff7f78492131::t_049ffd90761d43 11-16
+app/lib/l10n/app_localizations_bn.dart
+  s_34ff7f78492131::t_2420c487188a7d 11-16
+app/lib/l10n/app_localizations_be.dart
+  s_34ff7f78492131::t_b52956edee8735 11-16
+app/lib/l10n/app_localizations_pt.dart
+  s_34ff7f78492131::t_582b9732853e86 11-16
+app/lib/l10n/app_localizations_sl.dart
+  s_34ff7f78492131::t_9363b8c09deb1a 11-16
+app/lib/l10n/app_localizations_el.dart
+  s_34ff7f78492131::t_73bdbfdc264dcf 11-16
+app/lib/l10n/app_localizations_lv.dart
+  s_34ff7f78492131::t_6383534dd900d8 11-16
+app/lib/l10n/app_localizations_ar.dart
+  s_34ff7f78492131::t_ff926b7322f6d8 11-16
+app/changelog/unreleased/20261016-telegram-onboarding-connect.json
+  s_34ff7f78492131::t_bc155f0d40782a 1-3
+app/lib/l10n/app_localizations_it.dart
+  s_34ff7f78492131::t_4d5e2423c5baad 11-16
+app/lib/l10n/app_localizations_mr.dart
+  s_34ff7f78492131::t_b569492126d38a 11-16
+app/lib/l10n/app_localizations_sr.dart
+  s_34ff7f78492131::t_c68a307afc8e02 11-16
+app/lib/pages/onboarding/chat_on_telegram_step.dart
+  s_34ff7f78492131::t_f4f1732cd5438c 1-76
+app/lib/l10n/app_localizations_cs.dart
+  s_34ff7f78492131::t_3f678754e3f464 11-16
+app/lib/l10n/app_localizations_tl.dart
+  s_34ff7f78492131::t_cea0e28840fe40 11-16
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "e612ee636813dee501376a96e18f7a76f230ff2b",
+  "prompts": {},
+  "sessions": {
+    "s_1cf550b8808455": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ce3fc5a0-ee71-4cbe-a4ac-c18d93e3c3fe",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Archit Lal <architdraftid@gmail.com>"
+    },
+    "s_34ff7f78492131": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5072624e-c5e8-4020-8be9-cfd65fb27aab",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": null
+    }
+  }
+}
