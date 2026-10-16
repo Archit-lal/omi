@@ -1,0 +1,231 @@
+app/lib/l10n/app_localizations_ms.dart
+  s_1cf550b8808455::t_6a56658ace9bdd 13533-13538
+app/lib/l10n/app_ms.arb
+  s_34ff7f78492131::t_732ba95dfa3e99 4142-4144
+app/lib/l10n/app_he.arb
+  s_34ff7f78492131::t_41cb88560f0535 11565-11567
+app/lib/l10n/app_et.arb
+  s_34ff7f78492131::t_06b17f1f811518 4142-4144
+app/lib/l10n/app_mr.arb
+  s_34ff7f78492131::t_edf714abcf74a0 11565-11567
+app/lib/l10n/app_bg.arb
+  s_34ff7f78492131::t_91f783f9966cc2 4142-4144
+app/lib/l10n/app_localizations_pt.dart
+  s_1cf550b8808455::t_d93a733cb6c835 13526-13531
+app/lib/l10n/app_localizations_fr.dart
+  s_1cf550b8808455::t_3da95c636466dd 13608-13613
+app/lib/l10n/app_localizations_de.dart
+  s_1cf550b8808455::t_51620fec8c63c9 13601-13606
+app/lib/l10n/app_hi.arb
+  s_34ff7f78492131::t_acf083c945e725 4142-4144
+app/lib/l10n/app_id.arb
+  s_34ff7f78492131::t_1ce66481cf66f5 4177-4179
+app/lib/l10n/app_localizations_id.dart
+  s_1cf550b8808455::t_dd6e599d74b21f 13512-13517
+app/lib/l10n/app_fi.arb
+  s_34ff7f78492131::t_f2fdd11c9efeff 4142-4144
+app/lib/l10n/app_localizations_kn.dart
+  s_1cf550b8808455::t_7e8546e929c740 13541-13546
+app/lib/l10n/app_lt.arb
+  s_34ff7f78492131::t_f2aa9bd495d4f8 4142-4144
+app/lib/l10n/app_localizations_hi.dart
+  s_1cf550b8808455::t_948c06ce166094 13483-13488
+app/lib/l10n/app_ru.arb
+  s_34ff7f78492131::t_c7c5d15a41cba6 4177-4179
+app/lib/l10n/app_sv.arb
+  s_34ff7f78492131::t_c2ee5bf5446764 4142-4144
+app/lib/l10n/app_localizations_zh.dart
+  s_1cf550b8808455::t_d414d1775f8397 13295-13300
+app/lib/l10n/app_localizations_sk.dart
+  s_1cf550b8808455::t_b945a55ac0da57 13498-13503
+app/lib/l10n/app_localizations_mk.dart
+  s_1cf550b8808455::t_d6759e3a9a962a 13563-13568
+app/lib/l10n/app_localizations_mr.dart
+  s_1cf550b8808455::t_1c51fb4c55b1b3 13508-13513
+app/lib/l10n/app_localizations_ar.dart
+  s_1cf550b8808455::t_844b0d0755954e 13429-13434
+app/lib/l10n/app_localizations_bs.dart
+  s_1cf550b8808455::t_82857d83bc0bc2 13532-13537
+app/lib/l10n/app_localizations_et.dart
+  s_1cf550b8808455::t_7d191fab92b1de 13496-13501
+app/lib/l10n/app_localizations_es.dart
+  s_1cf550b8808455::t_c2382362639dcf 13542-13547
+app/lib/l10n/app_localizations_hu.dart
+  s_1cf550b8808455::t_56ebd6e1352dad 13554-13559
+app/lib/l10n/app_fa.arb
+  s_34ff7f78492131::t_535f67a0f900fa 11565-11567
+app/lib/l10n/app_localizations_cs.dart
+  s_1cf550b8808455::t_d65f4f7cec4302 13504-13509
+app/lib/l10n/app_localizations_ru.dart
+  s_1cf550b8808455::t_74d4b2ecddd571 13548-13553
+app/lib/l10n/app_bs.arb
+  s_34ff7f78492131::t_ae5fa592e5cd08 11565-11567
+app/lib/l10n/app_lv.arb
+  s_34ff7f78492131::t_15818233403241 4142-4144
+app/lib/l10n/app_ja.arb
+  s_34ff7f78492131::t_92ebaeb1f5f17e 4142-4144
+app/lib/l10n/app_ko.arb
+  s_34ff7f78492131::t_329dc8df1bbbd4 4142-4144
+app/lib/l10n/app_uk.arb
+  s_34ff7f78492131::t_7e7b4661d4fd4b 4142-4144
+app/lib/l10n/app_localizations_sr.dart
+  s_1cf550b8808455::t_488cb42156395d 13511-13516
+app/lib/l10n/app_localizations_pl.dart
+  s_1cf550b8808455::t_15bd269ee2785f 13541-13546
+app/lib/l10n/app_localizations_be.dart
+  s_1cf550b8808455::t_8080190df371ec 13537-13542
+app/lib/l10n/app_localizations_no.dart
+  s_1cf550b8808455::t_1d8cdccc424902 13504-13509
+app/lib/l10n/app_localizations_it.dart
+  s_1cf550b8808455::t_31732b325a078e 13573-13578
+app/lib/l10n/app_localizations_ja.dart
+  s_1cf550b8808455::t_286ae371e20a4f 13314-13319
+app/lib/l10n/app_nl.arb
+  s_34ff7f78492131::t_11849abe399176 4142-4144
+app/lib/l10n/app_ur.arb
+  s_34ff7f78492131::t_628ab3899d6b15 11565-11567
+app/lib/l10n/app_localizations_tl.dart
+  s_1cf550b8808455::t_87a88016011b0a 13607-13612
+app/lib/l10n/app_localizations_ca.dart
+  s_1cf550b8808455::t_d0c12448147c05 13571-13576
+app/lib/l10n/app_th.arb
+  s_34ff7f78492131::t_51f0aa7580a4e0 4142-4144
+app/changelog/unreleased/20261016-telegram-onboarding-connect.json
+  s_34ff7f78492131::t_bc155f0d40782a 1-3
+app/lib/l10n/app_pl.arb
+  s_34ff7f78492131::t_06b526bb44f003 4177-4179
+app/lib/l10n/app_zh.arb
+  s_34ff7f78492131::t_da658f977f41e6 4142-4144
+app/lib/l10n/app_hr.arb
+  s_34ff7f78492131::t_093e6115e5947b 11565-11567
+app/lib/l10n/app_kn.arb
+  s_34ff7f78492131::t_4db707f48b2269 11565-11567
+app/lib/l10n/app_localizations_vi.dart
+  s_1cf550b8808455::t_541b2da634eaba 13500-13505
+app/lib/l10n/app_sk.arb
+  s_34ff7f78492131::t_b3ea7c427cdb0a 4142-4144
+app/lib/l10n/app_localizations_fa.dart
+  s_1cf550b8808455::t_66dc15f65e829b 13497-13502
+app/lib/l10n/app_localizations_el.dart
+  s_1cf550b8808455::t_4ccec900ef188e 13586-13591
+app/lib/l10n/app_ro.arb
+  s_34ff7f78492131::t_71d7f0babb4990 4142-4144
+app/lib/pages/onboarding/wrapper.dart
+  s_34ff7f78492131::t_11d1d9c8bc90e8 16,35,278-311,692
+app/lib/l10n/app_localizations_lv.dart
+  s_1cf550b8808455::t_e1f870e53d4770 13531-13536
+app/lib/l10n/app_localizations_bn.dart
+  s_1cf550b8808455::t_53a84f5cfba219 13499-13504
+app/lib/l10n/app_localizations_en.dart
+  s_1cf550b8808455::t_fa4f321d74bd35 13487-13492
+app/lib/l10n/app_bn.arb
+  s_34ff7f78492131::t_6609df99772428 11565-11567
+app/lib/l10n/app_localizations_ro.dart
+  s_1cf550b8808455::t_816b51f9e175dc 13557-13562
+app/lib/pages/onboarding/chat_on_telegram_step.dart
+  s_34ff7f78492131::t_f4f1732cd5438c 1-18,20-75
+  s_34ff7f78492131::t_b295eb1cebc584 19
+app/lib/l10n/app_ca.arb
+  s_34ff7f78492131::t_75a4246d105cd8 4142-4144
+app/lib/l10n/app_sr.arb
+  s_34ff7f78492131::t_f0fc46cc576d99 11565-11567
+app/lib/l10n/app_localizations_sl.dart
+  s_1cf550b8808455::t_a662aa414a5539 13533-13538
+app/lib/l10n/app_te.arb
+  s_34ff7f78492131::t_6b0dc404e48429 11565-11567
+app/lib/l10n/app_en.arb
+  s_1cf550b8808455::t_cea92ddd162854 16280-16287
+app/lib/l10n/app_ta.arb
+  s_34ff7f78492131::t_de433a06a8fcdb 11565-11567
+app/lib/l10n/app_localizations_nl.dart
+  s_1cf550b8808455::t_ec1a6b6bb99647 13538-13543
+app/lib/l10n/app_localizations_da.dart
+  s_1cf550b8808455::t_157c2611485a77 13489-13494
+app/lib/l10n/app_localizations_ta.dart
+  s_1cf550b8808455::t_327bd2421398db 13594-13599
+app/lib/l10n/app_it.arb
+  s_34ff7f78492131::t_30ccd681f5f871 4142-4144
+app/lib/l10n/app_hu.arb
+  s_34ff7f78492131::t_47a6e9245f1eb6 4238-4240
+app/lib/l10n/app_localizations_te.dart
+  s_1cf550b8808455::t_f8bc7c5a187d91 13554-13559
+app/lib/l10n/app_localizations_tr.dart
+  s_1cf550b8808455::t_b9b000d0eb96fa 13515-13520
+app/lib/l10n/app_es.arb
+  s_34ff7f78492131::t_e6e207780bc15f 4142-4144
+app/lib/l10n/app_da.arb
+  s_34ff7f78492131::t_33b5a00126379b 4184-4186
+app/lib/l10n/app_localizations_fi.dart
+  s_1cf550b8808455::t_90de466cbbaa57 13507-13512
+app/lib/l10n/app_ar.arb
+  s_34ff7f78492131::t_aedbf458398a64 4142-4144
+app/lib/l10n/app_localizations_sv.dart
+  s_1cf550b8808455::t_bc0b397556478a 13507-13512
+app/lib/l10n/app_localizations_ur.dart
+  s_1cf550b8808455::t_c64dd3180d5c9f 13516-13521
+app/lib/l10n/app_localizations_hr.dart
+  s_1cf550b8808455::t_a1bda82cf5f7d8 13536-13541
+app/lib/l10n/app_mk.arb
+  s_34ff7f78492131::t_d10665de61444d 11565-11567
+app/lib/l10n/app_localizations_ko.dart
+  s_1cf550b8808455::t_01383b62416012 13320-13325
+app/lib/l10n/app_be.arb
+  s_34ff7f78492131::t_6794807327bd43 11565-11567
+app/lib/l10n/app_localizations_lt.dart
+  s_1cf550b8808455::t_61cd68b82265b8 13526-13531
+app/lib/l10n/app_tl.arb
+  s_34ff7f78492131::t_44fc860bbfe3c7 11565-11567
+app/lib/l10n/app_localizations_th.dart
+  s_1cf550b8808455::t_d2a79059479a8c 13436-13441
+app/lib/l10n/app_fr.arb
+  s_34ff7f78492131::t_073ddf447587ad 4177-4179
+app/lib/l10n/app_pt.arb
+  s_34ff7f78492131::t_aed6e47ad0d502 4177-4179
+app/lib/l10n/app_localizations.dart
+  s_34ff7f78492131::t_0fbcaef8edbd57 24030-24040
+  s_1cf550b8808455::t_c7f867249c7a18 24029
+app/lib/l10n/app_vi.arb
+  s_34ff7f78492131::t_940c2de0ea0cda 4142-4144
+app/lib/l10n/app_localizations_he.dart
+  s_1cf550b8808455::t_21a6a6b92731dd 13409-13414
+app/lib/l10n/app_cs.arb
+  s_34ff7f78492131::t_098ec2e009eeab 4142-4144
+app/lib/l10n/app_sl.arb
+  s_34ff7f78492131::t_0deb6cab84b93c 11565-11567
+app/lib/l10n/app_tr.arb
+  s_34ff7f78492131::t_c5e45f0ce3d764 4177-4179
+app/lib/l10n/app_no.arb
+  s_34ff7f78492131::t_6569e21f2df402 4142-4144
+app/lib/l10n/app_el.arb
+  s_34ff7f78492131::t_9d85f55d505683 4142-4144
+app/lib/l10n/app_localizations_uk.dart
+  s_1cf550b8808455::t_16106dcbc2043d 13532-13537
+app/lib/l10n/app_localizations_bg.dart
+  s_1cf550b8808455::t_3cbd2afa09b882 13550-13555
+app/lib/l10n/app_de.arb
+  s_34ff7f78492131::t_a3ee08b6212093 4142-4144
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "fc32638234db7c15cb5c9b6353724b12cc10cff4",
+  "prompts": {},
+  "sessions": {
+    "s_1cf550b8808455": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ce3fc5a0-ee71-4cbe-a4ac-c18d93e3c3fe",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Archit Lal <architdraftid@gmail.com>"
+    },
+    "s_34ff7f78492131": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5072624e-c5e8-4020-8be9-cfd65fb27aab",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": null
+    }
+  }
+}
