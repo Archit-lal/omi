@@ -1,0 +1,641 @@
+.agent-artifacts/ui-evidence/lane-summary-ux/evidence.json
+  s_34ff7f78492131::t_16f2a4c3b6e364 1-82
+.github/actions/detect-changes/action.yml
+  s_34ff7f78492131::t_7c596fe221ff09 85-86
+.github/checks-manifest.yaml
+  s_34ff7f78492131::t_085f6719d1959c 876,901,906
+.github/ci-budget.yaml
+  s_34ff7f78492131::t_25f0923885581a 1415,1424,2773,2809,4268,4277
+.github/failure-classes/FC-empty-asr-without-evidenced-disposition.json
+  s_34ff7f78492131::t_6ea8c02d802e78 6-13,15-19
+.github/failure-classes/FC-split-mutation-authority.json
+  s_34ff7f78492131::t_99021180849ca4 19-21
+.github/workflows/gcp_frontend.yml
+  s_34ff7f78492131::t_6b40de97eb53f8 8
+app/changelog/unreleased/20261017-posthog-sampling-docs.json
+  s_34ff7f78492131::t_b77d503e3f8882 1-3
+app/changelog/unreleased/20261017-summary-generation-reliability.json
+  s_34ff7f78492131::t_590e7f34320697 1-3
+app/docs/ux-contract.md
+  s_34ff7f78492131::t_d7472a7d5875c8 91
+app/integration_test/visual_audit/scenarios/speaker_labels.dart
+  s_34ff7f78492131::t_eefad687a21606 27,81
+app/lib/backend/http/api/conversations.dart
+  s_34ff7f78492131::t_4272b107a9cddd 145-191,196,201-202,204-253,1256-1258,1266-1269,1274-1276
+app/lib/l10n/app_localizations.dart
+  s_34ff7f78492131::t_97c7e3ec920d07 24360-24521
+app/lib/l10n/app_localizations_ar.dart
+  s_34ff7f78492131::t_b13abaee6160a7 13616-13702
+app/lib/l10n/app_localizations_be.dart
+  s_34ff7f78492131::t_765e82608c329f 13725-13811
+app/lib/l10n/app_localizations_bg.dart
+  s_34ff7f78492131::t_59b5a90bbc6a4c 13739-13825
+app/lib/l10n/app_localizations_bn.dart
+  s_34ff7f78492131::t_c49edf3b60b547 13688-13774
+app/lib/l10n/app_localizations_bs.dart
+  s_34ff7f78492131::t_60b0e67b454f26 13720-13807
+app/lib/l10n/app_localizations_ca.dart
+  s_34ff7f78492131::t_e9cd1e7778b8a6 13761-13848
+app/lib/l10n/app_localizations_cs.dart
+  s_34ff7f78492131::t_9fa0e3834e060b 13692-13779
+app/lib/l10n/app_localizations_da.dart
+  s_34ff7f78492131::t_96c3be0a172e50 13678-13766
+app/lib/l10n/app_localizations_de.dart
+  s_34ff7f78492131::t_42de2238297088 13792-13882
+app/lib/l10n/app_localizations_el.dart
+  s_34ff7f78492131::t_0ae5611d064bde 13778-13867
+app/lib/l10n/app_localizations_en.dart
+  s_34ff7f78492131::t_fd4ad6d4b26c7a 13676-13763
+app/lib/l10n/app_localizations_es.dart
+  s_34ff7f78492131::t_3158a57a1573de 13731-13819
+app/lib/l10n/app_localizations_et.dart
+  s_34ff7f78492131::t_dee8adf581db98 13684-13770
+app/lib/l10n/app_localizations_fa.dart
+  s_34ff7f78492131::t_f6c166d3a0d699 13686-13774
+app/lib/l10n/app_localizations_fi.dart
+  s_34ff7f78492131::t_0f5eab2769419f 13696-13783
+app/lib/l10n/app_localizations_fr.dart
+  s_34ff7f78492131::t_d0ca7afb593dcc 13798-13886
+app/lib/l10n/app_localizations_he.dart
+  s_34ff7f78492131::t_fe3c2495bc51d0 13596-13682
+app/lib/l10n/app_localizations_hi.dart
+  s_34ff7f78492131::t_755a17a854c0bf 13672-13758
+app/lib/l10n/app_localizations_hr.dart
+  s_34ff7f78492131::t_ed1ebcbc6f963a 13725-13812
+app/lib/l10n/app_localizations_hu.dart
+  s_34ff7f78492131::t_7146355dac1cb7 13746-13833
+app/lib/l10n/app_localizations_id.dart
+  s_34ff7f78492131::t_b4f868476adda1 13703-13791
+app/lib/l10n/app_localizations_it.dart
+  s_34ff7f78492131::t_9a16fa1ee371d3 13764-13851
+app/lib/l10n/app_localizations_ja.dart
+  s_34ff7f78492131::t_a1593d9d38dda5 13499-13585
+app/lib/l10n/app_localizations_kn.dart
+  s_34ff7f78492131::t_8fbe2e626fbb13 13731-13819
+app/lib/l10n/app_localizations_ko.dart
+  s_34ff7f78492131::t_48bf56d0f6fe21 13505-13591
+app/lib/l10n/app_localizations_lt.dart
+  s_34ff7f78492131::t_e882b13915fdfe 13716-13803
+app/lib/l10n/app_localizations_lv.dart
+  s_34ff7f78492131::t_381b1d39c0f48f 13720-13808
+app/lib/l10n/app_localizations_mk.dart
+  s_34ff7f78492131::t_2267743d4689f2 13753-13840
+app/lib/l10n/app_localizations_mr.dart
+  s_34ff7f78492131::t_b03cc63b7ef962 13699-13786
+app/lib/l10n/app_localizations_ms.dart
+  s_34ff7f78492131::t_0104642cf0aaa2 13722-13810
+app/lib/l10n/app_localizations_nl.dart
+  s_34ff7f78492131::t_59b35706eb6abc 13726-13813
+app/lib/l10n/app_localizations_no.dart
+  s_34ff7f78492131::t_e20fc905756896 13694-13780
+app/lib/l10n/app_localizations_pl.dart
+  s_34ff7f78492131::t_a04ea57fc17b17 13731-13818
+app/lib/l10n/app_localizations_pt.dart
+  s_34ff7f78492131::t_3b89ba6a5613a8 13715-13802
+app/lib/l10n/app_localizations_ro.dart
+  s_34ff7f78492131::t_d14247c7062b53 13748-13836
+app/lib/l10n/app_localizations_ru.dart
+  s_34ff7f78492131::t_3f271dca671e6e 13738-13824
+app/lib/l10n/app_localizations_sk.dart
+  s_34ff7f78492131::t_b190394f4fedd4 13686-13773
+app/lib/l10n/app_localizations_sl.dart
+  s_34ff7f78492131::t_0f1cf4c7586116 13721-13807
+app/lib/l10n/app_localizations_sr.dart
+  s_34ff7f78492131::t_2df1d550097ec7 13699-13786
+app/lib/l10n/app_localizations_sv.dart
+  s_34ff7f78492131::t_53a1ce77a2194e 13696-13783
+app/lib/l10n/app_localizations_ta.dart
+  s_34ff7f78492131::t_ad0566bdc7128d 13786-13875
+app/lib/l10n/app_localizations_te.dart
+  s_34ff7f78492131::t_b95883eacd90cb 13744-13831
+app/lib/l10n/app_localizations_th.dart
+  s_34ff7f78492131::t_c0a69d65763ab0 13624-13710
+app/lib/l10n/app_localizations_tl.dart
+  s_34ff7f78492131::t_5c578aa298d094 13798-13885
+app/lib/l10n/app_localizations_tr.dart
+  s_34ff7f78492131::t_90ed666c421ba9 13703-13789
+app/lib/l10n/app_localizations_uk.dart
+  s_34ff7f78492131::t_18095559704d4f 13721-13807
+app/lib/l10n/app_localizations_ur.dart
+  s_34ff7f78492131::t_c0284f72610f38 13705-13791
+app/lib/l10n/app_localizations_vi.dart
+  s_34ff7f78492131::t_992261d0c6d56c 13691-13778
+app/lib/l10n/app_localizations_zh.dart
+  s_34ff7f78492131::t_e132ff523c5a9a 13479-13565
+app/lib/pages/conversation_detail/conversation_detail_provider.dart
+  s_34ff7f78492131::t_a67c467d5e643a 25,27-28,34,42,50-51,55-57,60-63,654,684-686,711,748,919,1035-1041,1056-1060,1062,1064-1076,1092-1095,1098-1099,1112-1121,1126-1155,1189,1200,1202,1216,1219,1232-1234,1405-1407
+app/lib/pages/conversation_detail/conversation_summary_generation.dart
+  s_34ff7f78492131::t_d7916a397c5054 1-326
+app/lib/pages/conversation_detail/conversation_summary_selection.dart
+  s_34ff7f78492131::t_e417f9a570f1fe 59-60,62-80,82-83,112-127
+app/lib/pages/conversation_detail/page.dart
+  s_34ff7f78492131::t_ae926a6f3d7b76 27,238-251,279,590-592,606-608,1117-1118,1130-1131,1178,1207
+app/lib/pages/conversation_detail/widgets.dart
+  s_34ff7f78492131::t_a4cc27ff83586f 18-19,37-38,67,77-80,86,90-93,95,115-141,425-427,437,442-448,450,452-473,476-503,656-680
+app/lib/pages/conversation_detail/widgets/conversation_activity_strip.dart
+  s_34ff7f78492131::t_46132758af3aba 9,13-18,24-29,34-36,87-91
+app/lib/pages/conversation_detail/widgets/summarized_apps_sheet.dart
+  s_34ff7f78492131::t_8722df0d5adad7 16-17,24-25,27,44-45,53,60-66,71-75,190,245,248,271,280,290,319-320,342,348,390,639,647-670,691
+app/lib/pages/conversation_detail/widgets/summary_generation.dart
+  s_34ff7f78492131::t_6f6d73bedf3933 1-419
+app/lib/pages/conversation_detail/widgets/summary_tab.dart
+  s_34ff7f78492131::t_674dabc0f9fab7 32-34,41-42,70-72,100,119
+app/lib/pages/conversation_detail/widgets/summary_template_sheet.dart
+  s_34ff7f78492131::t_fbd6084d8dd1bf 1-554
+app/lib/pages/conversations/widgets/conversation_list_item.dart
+  s_34ff7f78492131::t_0d2a944a1a2996 128
+app/lib/pages/conversations/widgets/synced_conversation_list_item.dart
+  s_34ff7f78492131::t_80147c121154e3 103
+app/lib/services/experiments/summary_generation_gate.dart
+  s_34ff7f78492131::t_66c7d4c187c43d 1-52
+app/lib/services/telemetry/EMISSION.md
+  s_34ff7f78492131::t_25c7d7a4db9f1d 7-10
+app/lib/ui/components/omi_filter_chip.dart
+  s_34ff7f78492131::t_b87779ab735463 10-12,85-86
+app/test/helpers/reprocess_fakes.dart
+  s_34ff7f78492131::t_3dc20bebf988ab 1-12
+app/test/helpers/summary_fixtures.dart
+  s_34ff7f78492131::t_fdd268727fbeed 1-136
+app/test/providers/conversation_detail_displayed_summary_test.dart
+  s_34ff7f78492131::t_ab99d93b0cb52d 1-50
+app/test/providers/conversation_detail_reprocess_outcome_test.dart
+  s_34ff7f78492131::t_b2ba79f3af09f3 1-266
+app/test/providers/optimistic_speaker_assignment_test.dart
+  s_34ff7f78492131::t_391c92ddf87799 17
+app/test/providers/speaker_summary_refresh_test.dart
+  s_34ff7f78492131::t_b022855105bf12 14,64,70,93,96,114,117,140,143,178,181,205,208,229,233,265,272,296,300,319,323,344,347,374,377,402,405,427,430,443,467,470,501,549,553,726,754,758,793,796
+app/test/services/summary_generation_gate_test.dart
+  s_34ff7f78492131::t_1ca567e2af5918 1-55
+app/test/widgets/conversation_activity_strip_reprocess_test.dart
+  s_34ff7f78492131::t_924b7c6c1223dd 1-108
+app/test/widgets/conversation_detail_status_test.dart
+  s_34ff7f78492131::t_ff2f0097923ef7 20,141,144,163-164,168,177-180,223,234-235,305
+app/test/widgets/conversation_detail_summary_retry_test.dart
+  s_34ff7f78492131::t_3503c814280684 19,80,83,97
+app/test/widgets/speaker_labeling_session_test.dart
+  s_34ff7f78492131::t_042f3502224740 23,115,118
+app/test/widgets/summary_generation_render_test.dart
+  s_34ff7f78492131::t_0baa70aca52069 1-292
+app/test/widgets/summary_generation_v2_test.dart
+  s_34ff7f78492131::t_2d5f99240e9278 1-381
+app/test/widgets/summary_template_sheet_selection_test.dart
+  s_34ff7f78492131::t_dc1f48f929f79b 1-133
+b2-briefs/B2S1-prompt.md
+  s_34ff7f78492131::t_25fccd9173bec1 1-10
+b2-briefs/B2S1-sol-historical-scan-memo.md
+  s_34ff7f78492131::t_b12bd368369ddc 1-61
+b2-briefs/B2S2-prompt.md
+  s_34ff7f78492131::t_01efc8e646b73f 1-10
+b2-briefs/B2S2-sol-ledger-purge-coalesce.md
+  s_34ff7f78492131::t_1e90b26916f417 1-58
+b2-briefs/B2S3-prompt.md
+  s_34ff7f78492131::t_00ebef652ba623 1-10
+b2-briefs/B2S3-sol-people-scan-dedupe.md
+  s_34ff7f78492131::t_99d04a8637ea5e 1-55
+b2-briefs/SOL-COMMON.md
+  s_34ff7f78492131::t_39b475697f1c8f 1-41
+backend/charts/backend-listen/dev_omi_backend_listen_values.yaml
+  s_34ff7f78492131::t_149281f490e18a 153-154,158-161
+backend/charts/backend-listen/prod_omi_backend_listen_values.yaml
+  s_34ff7f78492131::t_9454c3425cbb91 138-139,144-147
+backend/charts/pusher/dev_omi_pusher_values.yaml
+  s_34ff7f78492131::t_6c181e2a4386b4 119-120
+backend/charts/pusher/prod_omi_pusher_values.yaml
+  s_34ff7f78492131::t_9cafd63b45f477 117-118
+backend/config/batch_pipeline.py
+  s_34ff7f78492131::t_5394657fe38f31 8,20-23,57-77,145-154
+backend/config/firestore_read_levers.py
+  s_34ff7f78492131::t_276e353a4840dc 37-39
+backend/config/rate_card.py
+  s_34ff7f78492131::t_09b7fd4e95b96b 1,7,20-41,43,48-52,56,66-71,73,81,83-87,89-93,97,99-100,104,107,123-128,137-140,144,151,156,158,160,210,221-226,228-229,233,236,241,245,248-252,255,257,266-268,270-271,276-278,281-282,289,293,296-304,308,313,321,323-334,338-344,347-348
+backend/config/rate_card_v2.json
+  s_34ff7f78492131::t_4c4903f935890b 1-358
+backend/config/rate_card_versions.py
+  s_34ff7f78492131::t_3b166cbcb01dfd 4,11
+backend/config/summary_guarantee.py
+  s_34ff7f78492131::t_aa6e0bc3518da8 1-27
+backend/database/batch_pipeline_intake.py
+  s_34ff7f78492131::t_81b531fab0b667 49-56,58-67
+backend/database/batch_pipeline_privacy.py
+  s_34ff7f78492131::t_e4d95dd591318f 33,51-52,86-93
+backend/database/batch_pipeline_projection.py
+  s_34ff7f78492131::t_a0bfc02f6b40f5 120,216-217,250,260-261,308,310-311
+backend/database/batch_pipeline_quarantine_recovery.py
+  s_34ff7f78492131::t_ef745029f57217 18-26,59-72,110,125-127,170-172,246
+backend/database/batch_pipeline_speech_redrive.py
+  s_34ff7f78492131::t_1fa80f9b95fb75 1-156
+backend/database/batch_pipeline_store.py
+  s_34ff7f78492131::t_a9bf8bae31c407 25,47,50-52,68,71-72,75-79,96,118-119,204,206-211
+backend/database/batch_pipeline_terminal_empty.py
+  s_34ff7f78492131::t_38355e21d28e64 1-168
+backend/database/chat_context.py
+  s_34ff7f78492131::t_87245cbcbdc88f 12,19-24
+backend/database/chat_context_prefetch.py
+  s_34ff7f78492131::t_1d4bf416706cb6 1-112
+backend/database/chat_context_reads.py
+  s_34ff7f78492131::t_89467a15a0b54f 6-8,64-66
+backend/database/conversation_finalization_jobs.py
+  s_34ff7f78492131::t_a3abc88ca11e23 789,1099,1101-1102,1109,1119-1125,1139,1152
+backend/database/conversations.py
+  s_34ff7f78492131::t_6deb534750338a 2,14,334-335,348-349,948,952-953,960-963,1003-1004,1009-1010,1014-1015,1055,1059-1060,1075-1081,1188-1189,1200-1202,1237-1238,1246,1765-1767,1785-1788,1812-1842,3302-3305,4149
+backend/database/firestore_index_registry.py
+  s_34ff7f78492131::t_ff9285728585da 2065-2067
+backend/database/llm_gateway_accounting.py
+  s_34ff7f78492131::t_e16b5f4c20dfff 52-53
+backend/database/memories.py
+  s_34ff7f78492131::t_0fb03c5d36c8b4 1,5-9,12-13,29,56-194,208-212,283,789-808,840-862,946,975,1016,1026,1086,1161,1174,1184,1200,1234,1272,1301,1378,1433,1442,1468,1489,1689,1752
+backend/database/person_aliases.py
+  s_34ff7f78492131::t_990592d0bfc973 3-4,6-10,18-101,149,162-168,183,199-203,207-212,214-240,252-270
+backend/database/summary_debt_queries.py
+  s_34ff7f78492131::t_a53e483476117a 1-20
+backend/database/summary_processing.py
+  s_34ff7f78492131::t_336744dee4e58a 1-87
+backend/database/usage_units.py
+  s_34ff7f78492131::t_c09811c9f0bdff 17-18,24,78-82,85-99,108-114,120,135-139,156,164,168-175,179-184,201,206-211,214-232,263-268,278-281,294,317,319-326,329,333,347,351-355,372,385-386
+backend/deploy/messaging/alert-policies.json
+  s_34ff7f78492131::t_4255c40e404f54 171,185
+backend/deploy/runtime_env.yaml
+  s_34ff7f78492131::t_446b4393900a4c 323,326-327,361,940,942,945-946,1237,1240-1241,1513,1516-1517,1733,1736-1737,2564,2567-2568,2681,3215,3217,3220-3221,3262,3595,3598-3599,3630,3919,3922-3923,4187,4190-4191
+backend/deploy/runtime_env/_base.yaml
+  s_34ff7f78492131::t_b6faa2dbe872b4 540-542,547-548,583,1334-1336,1340-1342,1347-1348,1757-1759,1764-1765,2139-2141,2146-2147,2455-2457,2462-2463
+backend/deploy/runtime_env/prod.overlay.yaml
+  s_34ff7f78492131::t_900882c436eecb 607,855
+backend/diarizer/batch_pipeline.py
+  s_34ff7f78492131::t_5ac974eddcedbd 305
+backend/diarizer/pylock.batch-pipeline.toml
+  s_34ff7f78492131::t_aece9ed556fb82 5,826-830
+backend/diarizer/requirements-batch-pipeline.txt
+  s_34ff7f78492131::t_04e9dfaa040002 14-16
+backend/docs/batch-pipeline-serving.md
+  s_34ff7f78492131::t_33e7cd75d972c4 332-444
+backend/docs/feature-flag-registry.md
+  s_34ff7f78492131::t_54e846dd196c52 1,111,175,184-185,197,210-211,287,337,425,517-519,567
+backend/docs/listen_pusher_pipeline.mdx
+  s_34ff7f78492131::t_dad2579d7dda91 4966-4991,5209-5218,5263-5421
+backend/docs/messaging-channels.md
+  s_34ff7f78492131::t_de96ae97d767fd 187-196,205-207
+backend/docs/runbooks/messaging-channels.md
+  s_34ff7f78492131::t_979ee9d4c6bd02 389-398,424-429,607-639,829-836,861-863,912,915-953
+backend/docs/runbooks/summary-guarantee.md
+  s_34ff7f78492131::t_261b5ca58fc9b1 1-153
+backend/docs/shadow-usage-units.md
+  s_34ff7f78492131::t_a5c96b01bc2bad 5-18,74-83
+backend/docs/vertex-reservation-lane-audit.md
+  s_34ff7f78492131::t_a32a7400b8cb83 3-4,15,34-35
+backend/models/conversation.py
+  s_34ff7f78492131::t_f36dc29d2e0cdc 470-471
+backend/models/structured.py
+  s_34ff7f78492131::t_b1b7cad7fcd927 6,32,165
+backend/routers/conversation_finalization.py
+  s_34ff7f78492131::t_921ae7c27ff090 290-293
+backend/routers/conversations.py
+  s_34ff7f78492131::t_2815a32a1b8a05 25-29,58,760-764,811-814,831,835-855,2237-2238,2241-2245,2247-2249,2251-2252,2254,2257-2279
+backend/routers/desktop_chat.py
+  s_34ff7f78492131::t_9d06ee509cf80d 851-856,871-872
+backend/routers/pusher.py
+  s_34ff7f78492131::t_19ea812cd3ee6c 7,234-244,255,277,298,300-301,324,377,454,460-466,469-472,493,521-524,529-541,647,663,667,788-789,849-855,980,986-987,1049-1050
+backend/routers/sync.py
+  s_34ff7f78492131::t_785638d56d45d1 18-19,183,1019,1027,1173-1189,1217,1928-1938
+backend/scripts/batch_pipeline_speech_redrive.py
+  s_34ff7f78492131::t_ed1a2b5ffac1a9 1-235
+backend/scripts/batch_pipeline_terminal_empty.py
+  s_34ff7f78492131::t_52ff85f21e14e8 1-316
+backend/scripts/finops/README.md
+  s_34ff7f78492131::t_3169e08e2f194c 40-41,223,230-232,239-347
+backend/scripts/finops/assemble_unit_cost.py
+  s_34ff7f78492131::t_dfa7148636a7ed 35-37,713-715
+backend/scripts/finops/cloudrun.py
+  s_34ff7f78492131::t_3b43375ac88843 53-54
+backend/scripts/finops/gcp_cost_reconciliation.py
+  s_34ff7f78492131::t_409b1bc4e466a2 137-188
+backend/scripts/finops/pull_providers.py
+  s_34ff7f78492131::t_377b9df39508cd 2,153-156
+backend/scripts/finops/pull_stt_costs.py
+  s_34ff7f78492131::t_86340bc9db42c0 1-151
+backend/scripts/finops/run_unit_cost.py
+  s_34ff7f78492131::t_560ea757328817 132-133,247-254
+backend/scripts/messaging_operations.py
+  s_34ff7f78492131::t_298d0cf940e866 109-118,191,222
+backend/scripts/provision_monitoring_alerts.py
+  s_34ff7f78492131::t_ecbb29f037ce56 11,15,63-77,84-107,175-176,284,317
+backend/scripts/retire_paused_loki_alerts.py
+  s_34ff7f78492131::t_d4e4deddcd2608 18-28,57-58
+backend/scripts/run_firestore_index_guard.py
+  s_34ff7f78492131::t_b31fd933cca275 50
+backend/scripts/verify_pusher_cohost_env_diff.py
+  s_34ff7f78492131::t_78a3755c499983 112-113
+backend/services/summary_debt_repair.py
+  s_34ff7f78492131::t_dd61a922a779bd 1-165
+backend/tests/integration/test_batch_pipeline_live_firestore.py
+  s_34ff7f78492131::t_b0ca22b2441dbc 1-420
+backend/tests/integration/test_summary_debt_repair_firestore.py
+  s_34ff7f78492131::t_8d810eec23671c 1-288
+backend/tests/support/firestore_batch_pipeline_drivers.py
+  s_34ff7f78492131::t_3d6565a8c719e4 111
+backend/tests/support/firestore_query_driver_registry.py
+  s_34ff7f78492131::t_8de2eb2265b571 2484-2485,3000-3008
+backend/tests/support/firestore_usage_units_driver.py
+  s_34ff7f78492131::t_e11128be1e017c 8-11
+backend/tests/unit/fixtures/finops/deepgram_billing.json
+  s_34ff7f78492131::t_ed4f1312551276 1-10
+backend/tests/unit/fixtures/finops/soniox_summary.json
+  s_34ff7f78492131::t_4ccf306f5f59fe 1-22
+backend/tests/unit/test_backend_runtime_env_validator.py
+  s_34ff7f78492131::t_041b65d599bd33 76,79-80,1367,1829,2158,2243
+backend/tests/unit/test_batch_pipeline_audio.py
+  s_34ff7f78492131::t_d3f8f063478114 10,22,36,42,50-52,63,68,73,81,97
+backend/tests/unit/test_batch_pipeline_empty_disposition.py
+  s_34ff7f78492131::t_4a936dcbe5623d 237
+backend/tests/unit/test_batch_pipeline_live.py
+  s_34ff7f78492131::t_117a2bb1d1d0e8 1-313
+backend/tests/unit/test_batch_pipeline_projection.py
+  s_34ff7f78492131::t_18ea49d02d63e6 158
+backend/tests/unit/test_batch_pipeline_quarantine_recovery.py
+  s_34ff7f78492131::t_2f43ca7a475975 164-165
+backend/tests/unit/test_batch_pipeline_scheduler.py
+  s_34ff7f78492131::t_b3417e28390595 25-27
+backend/tests/unit/test_batch_pipeline_speech_redrive.py
+  s_34ff7f78492131::t_78e64e6cc1fc3d 1-260
+backend/tests/unit/test_batch_pipeline_terminal_empty.py
+  s_34ff7f78492131::t_9fa3e5f60d27a4 1-375
+backend/tests/unit/test_batch_pipeline_worker.py
+  s_34ff7f78492131::t_252475ca57cd8c 858
+backend/tests/unit/test_client_processing_trust_boundary.py
+  s_34ff7f78492131::t_08f1972fba4a67 615-616
+backend/tests/unit/test_conversation_archive_filter_contract.py
+  s_34ff7f78492131::t_09b633b83b2bca 160,178,229
+backend/tests/unit/test_conversation_finalization_jobs.py
+  s_34ff7f78492131::t_ac1de42b7c09de 524-544
+backend/tests/unit/test_conversation_finalizer_failure_logging.py
+  s_34ff7f78492131::t_a566ea1c5d2527 36,41-43
+backend/tests/unit/test_conversation_llm_input_dedupe.py
+  s_34ff7f78492131::t_4f5cb80a2c71ff 293-326
+backend/tests/unit/test_conversation_smart_merge_finalizer.py
+  s_34ff7f78492131::t_b9a99630d57df8 50,54,56-59,103-123
+backend/tests/unit/test_desktop_chat.py
+  s_34ff7f78492131::t_5b220ca8b4c8c2 60-82
+backend/tests/unit/test_episode_evidence.py
+  s_34ff7f78492131::t_ccd27019fad5cf 137,147,155
+backend/tests/unit/test_finops_stt_costs.py
+  s_34ff7f78492131::t_e68106208677e7 1-251
+backend/tests/unit/test_firestore_field_indexes.py
+  s_34ff7f78492131::t_dd707a959f254d 74-75
+backend/tests/unit/test_fsr_historical_scan_memo.py
+  s_34ff7f78492131::t_b4af18dbf52d83 1-536
+backend/tests/unit/test_fsr_ledger_purge_coalesce.py
+  s_34ff7f78492131::t_f7022ca421b18c 1-393
+backend/tests/unit/test_fsr_people_scan_dedupe.py
+  s_34ff7f78492131::t_c4b20ec1e03c08 1-313
+backend/tests/unit/test_jit_qa_firestore_index_operator.py
+  s_34ff7f78492131::t_ae031a34e608c3 111-112
+backend/tests/unit/test_listen_audio_timeline_stack.py
+  s_34ff7f78492131::t_881e7a2e4d5d90 349
+backend/tests/unit/test_listen_finalization_cloud_tasks.py
+  s_34ff7f78492131::t_7cee6cad49dda8 584-628
+backend/tests/unit/test_meeting_evidence_admission.py
+  s_34ff7f78492131::t_584c589d7b3dd4 46,239-240,334-335
+backend/tests/unit/test_messaging_operations.py
+  s_34ff7f78492131::t_2fd24cc81b4db3 160-168,304-325
+backend/tests/unit/test_messaging_review_fixes.py
+  s_34ff7f78492131::t_ead665d9272518 24,38-44,50,53-54,56,65,74-78,104,126-132,140,142,150-153,155-157,172-174
+backend/tests/unit/test_owner_recognition_late_limits.py
+  s_34ff7f78492131::t_b244cb06f50e15 22-30
+backend/tests/unit/test_process_conversation_usage_context.py
+  s_34ff7f78492131::t_fea323a9cd8215 1133-1276
+backend/tests/unit/test_provision_monitoring_alerts.py
+  s_34ff7f78492131::t_81ee1ea56a1c99 280-307
+backend/tests/unit/test_pusher_audio_timeline.py
+  s_34ff7f78492131::t_91902a3eb41dc7 495-576
+backend/tests/unit/test_pusher_deleted_conversation_sync.py
+  s_34ff7f78492131::t_fe49b178b22798 101-105
+backend/tests/unit/test_pusher_finalization_failure_severity.py
+  s_34ff7f78492131::t_05b2a365397137 30,54-84
+backend/tests/unit/test_rate_card.py
+  s_34ff7f78492131::t_52f9bca3f05340 12,33-34,40-41,49-101,192-193,196,199-202
+backend/tests/unit/test_rate_limiting.py
+  s_34ff7f78492131::t_95e1783229c33d 126,131-138
+backend/tests/unit/test_record_admission_review_fixes.py
+  s_34ff7f78492131::t_eba14f6125f950 1-207
+backend/tests/unit/test_reprocess_app_selection.py
+  s_34ff7f78492131::t_32eff65465ce33 216-319
+backend/tests/unit/test_reprocess_tombstone_guard.py
+  s_34ff7f78492131::t_edb4ccffc7536a 144-151
+backend/tests/unit/test_retire_paused_loki_alerts.py
+  s_34ff7f78492131::t_9b28eac78c9a90 112-122
+backend/tests/unit/test_shaped_chat_context.py
+  s_34ff7f78492131::t_61b625c6001b98 105-107,357,371
+backend/tests/unit/test_shaped_context_prefetch.py
+  s_34ff7f78492131::t_15be7aa14619f3 1-351
+backend/tests/unit/test_shaped_context_prefetch_safety.py
+  s_34ff7f78492131::t_bc24fe060e3e89 1-265
+backend/tests/unit/test_summary_delivery.py
+  s_34ff7f78492131::t_924dbea5c2efe5 1-180
+backend/tests/unit/test_summary_persistence.py
+  s_34ff7f78492131::t_11f3c3a3f4454e 1-144
+backend/tests/unit/test_sync_cloud_tasks.py
+  s_34ff7f78492131::t_f065c8ef7a0919 34,38-39,1192-1193,3686-3725
+backend/tests/unit/test_sync_reprocess_coalesce.py
+  s_34ff7f78492131::t_8009ac370c912f 31-43,622-903
+backend/tests/unit/test_sync_silent_failure.py
+  s_34ff7f78492131::t_4f6611098f6166 823-825
+backend/tests/unit/test_sync_v2.py
+  s_34ff7f78492131::t_85cf95fbb8019b 39-40,1334-1337
+backend/tests/unit/test_transcription_shadow.py
+  s_34ff7f78492131::t_185f61125a8f27 271-275
+backend/tests/unit/test_update_conversation_delete_race.py
+  s_34ff7f78492131::t_4959f53b252a02 321-325
+backend/tests/unit/test_usage_units.py
+  s_34ff7f78492131::t_3fcc48829f7ce7 4,17,38-39,154,175,186-261,266,277
+backend/tests/unit/test_verify_pusher_cohost_env_diff.py
+  s_34ff7f78492131::t_62bef659573ffd 324
+backend/tests/unit/test_verify_pusher_config_references.py
+  s_34ff7f78492131::t_6890b9a87c1d3c 191
+backend/tests/unit/test_vertex_pt_routing.py
+  s_34ff7f78492131::t_4f48c6c0f56b2f 115-130
+backend/utils/batch_pipeline/artifacts.py
+  s_34ff7f78492131::t_2a3d2b0ab729e5 24,62,178-196
+backend/utils/batch_pipeline/audio.py
+  s_34ff7f78492131::t_7b7b72dec2d306 1,21
+backend/utils/batch_pipeline/capture_decode.py
+  s_34ff7f78492131::t_47473f4d42e713 1-89
+backend/utils/batch_pipeline/context.py
+  s_34ff7f78492131::t_c3a025aa8b49c3 47-48
+backend/utils/batch_pipeline/contracts.py
+  s_34ff7f78492131::t_7eacacfda35a5d 106-107,123,155-156
+backend/utils/batch_pipeline/correctness_metrics.py
+  s_34ff7f78492131::t_d9a6b93eb534da 28-36
+backend/utils/batch_pipeline/enrichment.py
+  s_34ff7f78492131::t_9776146b189178 54
+backend/utils/batch_pipeline/intake.py
+  s_34ff7f78492131::t_6c1ad85a43d7c0 12,14,21-22,28,99,123,133,153,177-216,270-271,295
+backend/utils/batch_pipeline/live.py
+  s_34ff7f78492131::t_da6cc45fbcde73 1-331
+backend/utils/batch_pipeline/live_projection.py
+  s_34ff7f78492131::t_f78b69c5d6a55f 1-122
+backend/utils/batch_pipeline/live_upload.py
+  s_34ff7f78492131::t_b28025e8645324 1-232
+backend/utils/batch_pipeline/projection.py
+  s_34ff7f78492131::t_c63dfcaaa8bf59 22-23,25,52,128-129,186-194,196-199,241-261,263,278-280,313-318,335,364-369
+backend/utils/batch_pipeline/pump.py
+  s_34ff7f78492131::t_8d14710da2fd1f 231-235
+backend/utils/batch_pipeline/quarantine_recovery.py
+  s_34ff7f78492131::t_c7ca4984aa9d75 12,18-19,25-34,47-52,56-58,73-86,96-97,170-173,181,192-196,203,215-222,239-240
+backend/utils/batch_pipeline/recovery_disposition.py
+  s_34ff7f78492131::t_8433bafe989f4e 105-116,120-150
+backend/utils/batch_pipeline/retention.py
+  s_34ff7f78492131::t_0d1a5607fc5e7f 18,120-148,201-211,248,254,261,263-266
+backend/utils/batch_pipeline/scheduler.py
+  s_34ff7f78492131::t_d4b1fff1b38b7f 84-90,313-315,335-336
+backend/utils/batch_pipeline/serving.py
+  s_34ff7f78492131::t_4188edaae0722e 10,14,129-130
+backend/utils/batch_pipeline/source_audio.py
+  s_34ff7f78492131::t_74617db0fcaf2f 1-104
+backend/utils/batch_pipeline/speech_redrive.py
+  s_34ff7f78492131::t_35a4387599e54c 1-136
+backend/utils/conversations/deterministic_minimum.py
+  s_34ff7f78492131::t_4cf1aea9c73025 20,148,150
+backend/utils/conversations/final_pass_remap.py
+  s_34ff7f78492131::t_cf6e50c308445b 4,25,50
+backend/utils/conversations/finalizer.py
+  s_34ff7f78492131::t_843025f0a3cc8b 15,54,111,272-276,556-585,587-588
+backend/utils/conversations/lifecycle.py
+  s_34ff7f78492131::t_a57131573e77b9 12,104-105
+backend/utils/conversations/llm_input_dedupe.py
+  s_34ff7f78492131::t_b092165374c82e 22,24-25,154-156
+backend/utils/conversations/process_conversation.py
+  s_34ff7f78492131::t_9bdad6fbe5da5a 99,319-325,760,843-850,852,889-897,940-947,3253,3323,3408-3412
+backend/utils/conversations/reprocess_contract.py
+  s_34ff7f78492131::t_af2cd4f7b870a5 1-30
+backend/utils/conversations/smart_merge.py
+  s_34ff7f78492131::t_d884bf758f17aa 135-136
+backend/utils/conversations/summary_delivery.py
+  s_34ff7f78492131::t_f0214ab5e8f2d9 1-224
+backend/utils/conversations/transcription_shadow.py
+  s_34ff7f78492131::t_0aa96686e0a4e3 26,109-110,144-151,465-487,497-501,553-556
+backend/utils/executors.py
+  s_34ff7f78492131::t_a98b7af9e96282 7-8,143-156
+backend/utils/llm/vertex_pt_routing.py
+  s_34ff7f78492131::t_65784be0edc57e 11-16,20,22,26-27,58-59,68-70,74,81
+backend/utils/memory/canonical_memory_adapter.py
+  s_34ff7f78492131::t_8ff45a388465e8 12-13,16,21,3748-3779,3793,3816-3818,3828-3837
+backend/utils/memory/memory_service.py
+  s_34ff7f78492131::t_ad1d501b21e111 35,85,4463-4481,4499-4500,4506-4513,4521,4531-4541
+backend/utils/messaging/ARCHITECTURE.md
+  s_34ff7f78492131::t_b6a75204bc4654 49-52
+backend/utils/messaging/context.py
+  s_34ff7f78492131::t_9ea1cdcd08f9d6 9-10,14-20,24,31-34,38,114-116,159-161,163-173,177-178,182-303
+backend/utils/messaging/metrics.py
+  s_34ff7f78492131::t_3efd50e9e3d904 28-33
+backend/utils/other/storage.py
+  s_34ff7f78492131::t_6e39b66adfb718 844-845,878
+backend/utils/overage.py
+  s_34ff7f78492131::t_5c739f7e4a8e1a 32-33,40-41
+backend/utils/pusher_finalization.py
+  s_34ff7f78492131::t_4f876e5d22c7c0 213-215
+backend/utils/rate_limit_config.py
+  s_34ff7f78492131::t_47f235c033f946 101-106
+backend/utils/retrieval/graph.py
+  s_34ff7f78492131::t_4fd0bc9956a67a 13,24-26,250-254,256-257,259-296
+backend/utils/retrieval/shaped_chat.py
+  s_34ff7f78492131::t_93efd317e6ef49 34,49-56
+backend/utils/sync/assignment.py
+  s_34ff7f78492131::t_e33a1f81c5787b 31,226,272-280
+backend/utils/sync/fsr_metadata.py
+  s_34ff7f78492131::t_c44ce6599b7658 30-39
+backend/utils/sync/pipeline.py
+  s_34ff7f78492131::t_5874e267839efe 32,42-49,1063-1071,1100-1104,1127,1154
+backend/utils/sync/provenance.py
+  s_34ff7f78492131::t_ec80db6c4c25ee 16-17,23-24
+backend/utils/sync/reprocess.py
+  s_34ff7f78492131::t_24c3fcdb7518cf 15,18-19,27-28,32,41-42,173-177,222-223,225,232,234-245,256-257,262-263,266-270,276,278,282-322,333,341-344,356-359,365-408,413-427,429-445,448-453,464,472,481,490-502
+config/deployment-setting-classification.json
+  s_34ff7f78492131::t_f91d3175b2f206 432,434-435,476-480
+config/feature-flags.yaml
+  s_34ff7f78492131::t_fd00b40ff75dd2 2-4,6-7,341-345,394
+desktop/windows/src/renderer/src/lib/omiApi.generated.ts
+  s_34ff7f78492131::t_047ec37c0161bc 8316
+docs/api-reference/app-client-openapi.json
+  s_34ff7f78492131::t_ad079d7ba767fa 49871,49882-49884
+firestore.indexes.json
+  s_34ff7f78492131::t_02bd68a3200098 4132-4154
+plugins/omi-plugin-sdk/src/omi_plugin_sdk/models.py
+  s_34ff7f78492131::t_f23c524cf58382 5,15,193-195,199
+scripts/run-web-frontend-tests.sh
+  s_34ff7f78492131::t_d721ddb88d75cb 4-8
+scripts/run-web-share-http-tests.sh
+  s_34ff7f78492131::t_1e0be632843c5e 4
+web/admin/docs/posthog-events.md
+  s_34ff7f78492131::t_4c9c3a6f17c101 142-192
+web/admin/grafana/build_wall_dashboard.py
+  s_34ff7f78492131::t_738b309df4b863 40-49,250-252,330-332,336,346-347,380-437,449
+web/admin/grafana/dashboards/omi-tv-v2.json
+  s_34ff7f78492131::t_b2f162cb97ebdc 3416,3445,3450,3455,3512,3517,3531,3536,3550,3555,3588-5067,5072,5075-5107,5109-5111,5119,5124,5127-5159,5161-5163,5187-5189,5192-5211,5218,5222,5224,5226,5229-5231,5236,5248,5252,5255-5257,5266,5268,5270,5273-5278,5280-5283,5285-5286,5288,5290,5293,5295,5297,5302,5432,5541,5546,5896,6072,6143
+web/admin/grafana/test_build_dashboards.py
+  s_34ff7f78492131::t_aed47bfeb5f7c1 725-779
+web/admin/lib/__tests__/wall-cost.test.ts
+  s_34ff7f78492131::t_eefaeb1db7e04b 2,5,85-161
+web/admin/lib/__tests__/wall-series.test.ts
+  s_34ff7f78492131::t_083f1465de4cc2 11,122,457-578
+web/admin/lib/services/omi-api/omiApi.generated.ts
+  s_34ff7f78492131::t_cfef177a1d97c1 8316
+web/admin/lib/wall-cost.ts
+  s_34ff7f78492131::t_dd5724b8c86a51 6-7,9-10,16,22-25,44-45,93-120,123-124,147-148,150,157-158
+web/admin/lib/wall-finops.ts
+  s_34ff7f78492131::t_5e15cc3e19b073 52-135
+web/admin/lib/wall-metrics.ts
+  s_34ff7f78492131::t_59c23e89f7c833 30,634
+web/admin/lib/wall-series.ts
+  s_34ff7f78492131::t_17eb3da48b22e2 41-46,49,139,157,178-179,195,331,707-708,710-712,727,729,731-732,767-870
+web/app/Dockerfile
+  s_34ff7f78492131::t_6cdff6730e6753 13-14,21,68-69
+web/app/bun.lock
+  s_34ff7f78492131::t_57ee2409c12bdb 8,263-264
+web/app/package.json
+  s_34ff7f78492131::t_ece766a419245c 18
+web/app/src/components/conversations/ConversationDetailPanel.tsx
+  s_34ff7f78492131::t_9c98bed249bad4 26
+web/app/src/components/conversations/NoteInsights.tsx
+  s_34ff7f78492131::t_8d80d92af73c25 3
+web/app/src/components/conversations/NoteSections.tsx
+  s_34ff7f78492131::t_cf6dae77addeb8 4,6
+web/app/src/lib/__tests__/note-citations.test.ts
+  s_34ff7f78492131::t_49352e7f2289b6 3
+web/app/src/lib/omiApi.generated.ts
+  s_34ff7f78492131::t_1946382fd3fe78 8316
+web/frontend/.npmrc
+  s_34ff7f78492131::t_8ec1bdf795d593 1
+web/frontend/Dockerfile
+  s_34ff7f78492131::t_1966c2af100c42 12-14
+web/frontend/package-lock.json
+  s_34ff7f78492131::t_6ec15902dfe3b7 11,37,42,65,1900-1903
+web/frontend/package.json
+  s_34ff7f78492131::t_b915f208649144 16
+web/frontend/src/__tests__/note-citations.test.mjs
+  s_34ff7f78492131::t_8026ff1d7e8dd4 4
+web/frontend/src/__tests__/note-sources.test.mjs
+  s_34ff7f78492131::t_c6de407b4968ee 3-4
+web/frontend/src/components/memories/summary/sumary.tsx
+  s_34ff7f78492131::t_892d90a2fe24e1 8-9
+web/packages/note-shared/README.md
+  s_34ff7f78492131::t_9211479659cdc1 1-19
+web/packages/note-shared/package.json
+  s_34ff7f78492131::t_04ead9c704748a 1-16
+web/personas-open-source/src/lib/omiApi.generated.ts
+  s_34ff7f78492131::t_1441304de53b09 8316
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "c920a5c38dd83c7b1094bf675e49573dd347db12",
+  "prompts": {},
+  "sessions": {
+    "s_34ff7f78492131": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5072624e-c5e8-4020-8be9-cfd65fb27aab",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Archit Lal <architdraftid@gmail.com>"
+    }
+  }
+}
