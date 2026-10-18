@@ -1,0 +1,1250 @@
+.agent-artifacts/ui-evidence/lane-sub-ladder-clients/evidence.json
+  h_1f8b55eef4fb84 1-33
+.agent-artifacts/ui-evidence/ondevice-overflow-ux/evidence.json
+  h_1f8b55eef4fb84 1-173
+.agent-artifacts/ui-evidence/pr-21488-halt-at-cap/evidence.json
+  h_1f8b55eef4fb84 1-124
+.agent-artifacts/ui-evidence/pr-21488-integrated/evidence.json
+  h_1f8b55eef4fb84 1-110
+.github/actions/deploy-backend-stack/action.yml
+  h_1f8b55eef4fb84 849-876
+.github/failure-classes/FC-retry-resume-behind-own-fence.json
+  h_1f8b55eef4fb84 9-11
+.github/workflows/mobile-app-checks.yml
+  h_1f8b55eef4fb84 624-637,644-652
+app/android/app/build.gradle
+  h_1f8b55eef4fb84 158
+app/android/app/src/main/kotlin/com/example/my_project/MainActivity.kt
+  h_1f8b55eef4fb84 39,49
+app/android/app/src/main/kotlin/com/friend/ios/batch/BaseBatchAudioWriter.kt
+  h_1f8b55eef4fb84 244
+app/android/app/src/main/kotlin/com/friend/ios/batch/OmiBatchAudioWriter.kt
+  h_1f8b55eef4fb84 133-134,188
+app/android/app/src/main/kotlin/com/friend/ios/ble/OmiBleForegroundService.kt
+  h_1f8b55eef4fb84 93
+app/android/app/src/main/kotlin/com/friend/ios/ondevice/OnDeviceBackgroundWorker.kt
+  h_1f8b55eef4fb84 1-108
+app/android/app/src/main/kotlin/com/friend/ios/ondevice/PhoneBatteryChannel.kt
+  h_1f8b55eef4fb84 1-61
+app/android/app/src/test/kotlin/com/friend/ios/ondevice/OnDeviceBackgroundWorkerTest.kt
+  h_1f8b55eef4fb84 1-23
+app/changelog/unreleased/20261014-ladder-cutover-contract-goldens.json
+  h_1f8b55eef4fb84 1-3
+app/changelog/unreleased/20261014-ladder-integrated-choices.json
+  h_1f8b55eef4fb84 1
+app/changelog/unreleased/20261014-on-device-overflow-draft.json
+  h_1f8b55eef4fb84 1
+app/changelog/unreleased/20261014-on-device-overflow-ui-flagged.json
+  h_1f8b55eef4fb84 1
+app/changelog/unreleased/20261015-chat-budget-pause.json
+  h_1f8b55eef4fb84 1
+app/changelog/unreleased/20261018-processing-backlog-choice.json
+  h_1f8b55eef4fb84 1
+app/docs/ux-contract.md
+  h_1f8b55eef4fb84 223
+app/ios/OnDeviceParakeet/ParakeetBridge.swift
+  h_1f8b55eef4fb84 1-49
+app/ios/Runner.xcodeproj/project.pbxproj
+  h_1f8b55eef4fb84 11,22,25,28-29,31,34,36,40,57-58,62,66-67,72,77,80-81,83,86-88,97,100-104,108,113,117-118,120-123,127,132-135,158,161-165,174-178,180,183-185,187,189-197,217-230,256-266,273,281,283,290-291,296,319,321-322,324,333-334,337-339,347,361,364-366,370,372,394,397-398,403-406,408,411-414,438-446,478-487,518-526,544-552,591,634,645,692,762-768,770,772,785,790,821-841,859,881,884-886,920,922,933,1005-1011,1187-1194,1263,1335,1357-1368,1519-1569,1822-1851,2213,2457-2514,2543-2572,2650-2679,2779-2804,3199-3227,3299-3358,3419-3448,3748-3766,3785-3791,3793-3800,3812-3820
+app/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved
+  h_1f8b55eef4fb84 3-10,21
+app/ios/Runner/AppDelegate.swift
+  h_1f8b55eef4fb84 452
+app/ios/Runner/Batch/BaseBatchAudioWriter.swift
+  h_1f8b55eef4fb84 443
+app/ios/Runner/Batch/BatchAudioWriter.swift
+  h_1f8b55eef4fb84 144-145,201
+app/ios/Runner/Info.plist
+  h_1f8b55eef4fb84 29
+app/ios/Runner/OnDeviceOverflowPlugin.swift
+  h_1f8b55eef4fb84 1-340
+app/ios/test/batch_audio_energy_test.swift
+  h_1f8b55eef4fb84 21-23,244-247,250,271-274,277
+app/lib/backend/http/api/users.dart
+  h_1f8b55eef4fb84 696-712
+app/lib/backend/http/budget_choice_api.dart
+  h_1f8b55eef4fb84 1-31
+app/lib/backend/http/plan_storefront_api.dart
+  h_1f8b55eef4fb84 22
+app/lib/backend/schema/conversation.dart
+  h_1f8b55eef4fb84 369-370,418,429-430,457,498-501,511,513-514,519-520,558,566-567,597
+app/lib/backend/schema/gen/conversation_wire.g.dart
+  h_1f8b55eef4fb84 982,1037,1094,1152,1399,1455,1513,1572
+app/lib/backend/schema/gen/storefront_wire.g.dart
+  h_1f8b55eef4fb84 5-92,143,155,169,184,198,200,210,212,224,226,239,241,318,320,322,330,332,334,344,346,348,359,361,363
+app/lib/backend/schema/gen/subscription_usage_wire.g.dart
+  h_1f8b55eef4fb84 258-385,394,398,415,419,438,442,462,466
+app/lib/backend/schema/message_event.dart
+  h_1f8b55eef4fb84 35-36,288-307
+app/lib/backend/schema/transcript_segment.dart
+  h_1f8b55eef4fb84 209-211
+app/lib/l10n/app_ar.arb
+  h_1f8b55eef4fb84 4025,4027-4030,4232-4340
+app/lib/l10n/app_be.arb
+  h_1f8b55eef4fb84 11448,11450-11453,11655-11766
+app/lib/l10n/app_bg.arb
+  h_1f8b55eef4fb84 4025,4027-4030,4232-4340
+app/lib/l10n/app_bn.arb
+  h_1f8b55eef4fb84 11448,11450-11453,11655-11766
+app/lib/l10n/app_bs.arb
+  h_1f8b55eef4fb84 11448,11450-11453,11655-11766
+app/lib/l10n/app_ca.arb
+  h_1f8b55eef4fb84 4025,4027-4030,4232-4340
+app/lib/l10n/app_cs.arb
+  h_1f8b55eef4fb84 4025,4027-4030,4232-4340
+app/lib/l10n/app_da.arb
+  h_1f8b55eef4fb84 4067,4069-4072,4274-4382
+app/lib/l10n/app_de.arb
+  h_1f8b55eef4fb84 4025,4027-4030,4232-4340
+app/lib/l10n/app_el.arb
+  h_1f8b55eef4fb84 4025,4027-4030,4232-4340
+app/lib/l10n/app_en.arb
+  h_1f8b55eef4fb84 16733-17293
+app/lib/l10n/app_es.arb
+  h_1f8b55eef4fb84 4025,4027-4030,4232-4340
+app/lib/l10n/app_et.arb
+  h_1f8b55eef4fb84 4025,4027-4030,4232-4340
+app/lib/l10n/app_fa.arb
+  h_1f8b55eef4fb84 11448,11450-11453,11655-11766
+app/lib/l10n/app_fi.arb
+  h_1f8b55eef4fb84 4025,4027-4030,4232-4340
+app/lib/l10n/app_fr.arb
+  h_1f8b55eef4fb84 4060,4062-4065,4267-4375
+app/lib/l10n/app_he.arb
+  h_1f8b55eef4fb84 11448,11450-11453,11655-11766
+app/lib/l10n/app_hi.arb
+  h_1f8b55eef4fb84 4025,4027-4030,4232-4340
+app/lib/l10n/app_hr.arb
+  h_1f8b55eef4fb84 11448,11450-11453,11655-11766
+app/lib/l10n/app_hu.arb
+  h_1f8b55eef4fb84 4121,4123-4126,4328-4436
+app/lib/l10n/app_id.arb
+  h_1f8b55eef4fb84 4060,4062-4065,4267-4375
+app/lib/l10n/app_it.arb
+  h_1f8b55eef4fb84 4025,4027-4030,4232-4340
+app/lib/l10n/app_ja.arb
+  h_1f8b55eef4fb84 4025,4027-4030,4232-4340
+app/lib/l10n/app_kn.arb
+  h_1f8b55eef4fb84 11448,11450-11453,11655-11766
+app/lib/l10n/app_ko.arb
+  h_1f8b55eef4fb84 4025,4027-4030,4232-4340
+app/lib/l10n/app_localizations.dart
+  h_1f8b55eef4fb84 24564-25211
+app/lib/l10n/app_localizations_ar.dart
+  h_1f8b55eef4fb84 13054,13060,13063,13066,13069,13750-14146
+app/lib/l10n/app_localizations_be.dart
+  h_1f8b55eef4fb84 13162,13168,13171,13174,13177,13859-14261
+app/lib/l10n/app_localizations_bg.dart
+  h_1f8b55eef4fb84 13175,13181,13184,13187,13190,13873-14277
+app/lib/l10n/app_localizations_bn.dart
+  h_1f8b55eef4fb84 13124,13130,13133,13136,13139,13822-14221
+app/lib/l10n/app_localizations_bs.dart
+  h_1f8b55eef4fb84 13157,13163,13166,13169,13172,13855-14255
+app/lib/l10n/app_localizations_ca.dart
+  h_1f8b55eef4fb84 13195,13201,13204,13207,13210,13896-14299
+app/lib/l10n/app_localizations_cs.dart
+  h_1f8b55eef4fb84 13129,13135,13138,13141,13144,13827-14226
+app/lib/l10n/app_localizations_da.dart
+  h_1f8b55eef4fb84 13114,13120,13123,13126,13129,13814-14216
+app/lib/l10n/app_localizations_de.dart
+  h_1f8b55eef4fb84 13226,13232,13235,13238,13241,13930-14333
+app/lib/l10n/app_localizations_el.dart
+  h_1f8b55eef4fb84 13210,13216,13219,13222,13225,13915-14319
+app/lib/l10n/app_localizations_en.dart
+  h_1f8b55eef4fb84 13811-14211
+app/lib/l10n/app_localizations_es.dart
+  h_1f8b55eef4fb84 13166,13172,13175,13178,13181,13867-14270
+app/lib/l10n/app_localizations_et.dart
+  h_1f8b55eef4fb84 13121,13127,13130,13133,13136,13818-14219
+app/lib/l10n/app_localizations_fa.dart
+  h_1f8b55eef4fb84 13122,13128,13131,13134,13137,13822-14220
+app/lib/l10n/app_localizations_fi.dart
+  h_1f8b55eef4fb84 13132,13138,13141,13144,13147,13831-14231
+app/lib/l10n/app_localizations_fr.dart
+  h_1f8b55eef4fb84 13230,13236,13239,13242,13245,13934-14339
+app/lib/l10n/app_localizations_he.dart
+  h_1f8b55eef4fb84 13034,13040,13043,13046,13049,13730-14125
+app/lib/l10n/app_localizations_hi.dart
+  h_1f8b55eef4fb84 13108,13114,13117,13120,13123,13806-14209
+app/lib/l10n/app_localizations_hr.dart
+  h_1f8b55eef4fb84 13161,13167,13170,13173,13176,13860-14262
+app/lib/l10n/app_localizations_hu.dart
+  h_1f8b55eef4fb84 13179,13185,13188,13191,13194,13881-14284
+app/lib/l10n/app_localizations_id.dart
+  h_1f8b55eef4fb84 13137,13143,13146,13149,13152,13839-14239
+app/lib/l10n/app_localizations_it.dart
+  h_1f8b55eef4fb84 13197,13203,13206,13209,13212,13899-14301
+app/lib/l10n/app_localizations_ja.dart
+  h_1f8b55eef4fb84 12941,12947,12950,12953,12956,13633-14023
+app/lib/l10n/app_localizations_kn.dart
+  h_1f8b55eef4fb84 13166,13172,13175,13178,13181,13867-14272
+app/lib/l10n/app_localizations_ko.dart
+  h_1f8b55eef4fb84 12946,12952,12955,12958,12961,13639-14029
+app/lib/l10n/app_localizations_lt.dart
+  h_1f8b55eef4fb84 13151,13157,13160,13163,13166,13851-14249
+app/lib/l10n/app_localizations_lv.dart
+  h_1f8b55eef4fb84 13156,13162,13165,13168,13171,13856-14256
+app/lib/l10n/app_localizations_mk.dart
+  h_1f8b55eef4fb84 13188,13194,13197,13200,13203,13888-14290
+app/lib/l10n/app_localizations_mr.dart
+  h_1f8b55eef4fb84 13133,13139,13142,13145,13148,13834-14237
+app/lib/l10n/app_localizations_ms.dart
+  h_1f8b55eef4fb84 13158,13164,13167,13170,13173,13858-14261
+app/lib/l10n/app_localizations_nl.dart
+  h_1f8b55eef4fb84 13163,13169,13172,13175,13178,13861-14265
+app/lib/l10n/app_localizations_no.dart
+  h_1f8b55eef4fb84 13128,13134,13137,13140,13143,13828-14230
+app/lib/l10n/app_localizations_pl.dart
+  h_1f8b55eef4fb84 13166,13172,13175,13178,13181,13866-14268
+app/lib/l10n/app_localizations_pt.dart
+  h_1f8b55eef4fb84 13150,13156,13159,13162,13165,13850-14253
+app/lib/l10n/app_localizations_ro.dart
+  h_1f8b55eef4fb84 13182,13188,13191,13194,13197,13884-14287
+app/lib/l10n/app_localizations_ru.dart
+  h_1f8b55eef4fb84 13173,13179,13182,13185,13188,13872-14274
+app/lib/l10n/app_localizations_sk.dart
+  h_1f8b55eef4fb84 13123,13129,13132,13135,13138,13821-14221
+app/lib/l10n/app_localizations_sl.dart
+  h_1f8b55eef4fb84 13157,13163,13166,13169,13172,13855-14255
+app/lib/l10n/app_localizations_sr.dart
+  h_1f8b55eef4fb84 13136,13142,13145,13148,13151,13834-14233
+app/lib/l10n/app_localizations_sv.dart
+  h_1f8b55eef4fb84 13132,13138,13141,13144,13147,13831-14233
+app/lib/l10n/app_localizations_ta.dart
+  h_1f8b55eef4fb84 13217,13223,13226,13229,13232,13923-14323
+app/lib/l10n/app_localizations_te.dart
+  h_1f8b55eef4fb84 13179,13185,13188,13191,13194,13879-14284
+app/lib/l10n/app_localizations_th.dart
+  h_1f8b55eef4fb84 13061,13067,13070,13073,13076,13758-14155
+app/lib/l10n/app_localizations_tl.dart
+  h_1f8b55eef4fb84 13232,13238,13241,13244,13247,13933-14339
+app/lib/l10n/app_localizations_tr.dart
+  h_1f8b55eef4fb84 13140,13146,13149,13152,13155,13837-14238
+app/lib/l10n/app_localizations_uk.dart
+  h_1f8b55eef4fb84 13157,13163,13166,13169,13172,13855-14255
+app/lib/l10n/app_localizations_ur.dart
+  h_1f8b55eef4fb84 13141,13147,13150,13153,13156,13839-14239
+app/lib/l10n/app_localizations_vi.dart
+  h_1f8b55eef4fb84 13125,13131,13134,13137,13140,13826-14226
+app/lib/l10n/app_localizations_zh.dart
+  h_1f8b55eef4fb84 12922,12928,12931,12934,12937,13613-14003
+app/lib/l10n/app_lt.arb
+  h_1f8b55eef4fb84 4025,4027-4030,4232-4340
+app/lib/l10n/app_lv.arb
+  h_1f8b55eef4fb84 4025,4027-4030,4232-4340
+app/lib/l10n/app_mk.arb
+  h_1f8b55eef4fb84 11448,11450-11453,11655-11766
+app/lib/l10n/app_mr.arb
+  h_1f8b55eef4fb84 11448,11450-11453,11655-11766
+app/lib/l10n/app_ms.arb
+  h_1f8b55eef4fb84 4025,4027-4030,4232-4340
+app/lib/l10n/app_nl.arb
+  h_1f8b55eef4fb84 4025,4027-4030,4232-4340
+app/lib/l10n/app_no.arb
+  h_1f8b55eef4fb84 4025,4027-4030,4232-4340
+app/lib/l10n/app_pl.arb
+  h_1f8b55eef4fb84 4060,4062-4065,4267-4375
+app/lib/l10n/app_pt.arb
+  h_1f8b55eef4fb84 4060,4062-4065,4267-4375
+app/lib/l10n/app_ro.arb
+  h_1f8b55eef4fb84 4025,4027-4030,4232-4340
+app/lib/l10n/app_ru.arb
+  h_1f8b55eef4fb84 4060,4062-4065,4267-4375
+app/lib/l10n/app_sk.arb
+  h_1f8b55eef4fb84 4025,4027-4030,4232-4340
+app/lib/l10n/app_sl.arb
+  h_1f8b55eef4fb84 11448,11450-11453,11655-11766
+app/lib/l10n/app_sr.arb
+  h_1f8b55eef4fb84 11448,11450-11453,11655-11766
+app/lib/l10n/app_sv.arb
+  h_1f8b55eef4fb84 4025,4027-4030,4232-4340
+app/lib/l10n/app_ta.arb
+  h_1f8b55eef4fb84 11448,11450-11453,11655-11766
+app/lib/l10n/app_te.arb
+  h_1f8b55eef4fb84 11448,11450-11453,11655-11766
+app/lib/l10n/app_th.arb
+  h_1f8b55eef4fb84 4025,4027-4030,4232-4340
+app/lib/l10n/app_tl.arb
+  h_1f8b55eef4fb84 11448,11450-11453,11655-11766
+app/lib/l10n/app_tr.arb
+  h_1f8b55eef4fb84 4060,4062-4065,4267-4375
+app/lib/l10n/app_uk.arb
+  h_1f8b55eef4fb84 4025,4027-4030,4232-4340
+app/lib/l10n/app_ur.arb
+  h_1f8b55eef4fb84 11448,11450-11453,11655-11766
+app/lib/l10n/app_vi.arb
+  h_1f8b55eef4fb84 4025,4027-4030,4232-4340
+app/lib/l10n/app_zh.arb
+  h_1f8b55eef4fb84 4025,4027-4030,4232-4340
+app/lib/main.dart
+  h_1f8b55eef4fb84 1,139-145,316-318
+app/lib/models/plan_storefront.dart
+  h_1f8b55eef4fb84 2,14-15,25-26,64-65,275,287,310-311,372,374,376,384,386-387,410,412-413,418-430,452-458,469-489
+app/lib/models/stt_result.dart
+  h_1f8b55eef4fb84 74,85,98,215
+app/lib/models/subscription.dart
+  h_1f8b55eef4fb84 332-455,474-475,494-495,498-499,504-505,523,530,546-560,564-567
+app/lib/pages/chat/page.dart
+  h_1f8b55eef4fb84 1,180,313,404
+app/lib/pages/chat/widgets/chat_budget_pause.dart
+  h_1f8b55eef4fb84 1-94
+app/lib/pages/conversation_capturing/page.dart
+  h_1f8b55eef4fb84 19,185
+app/lib/pages/conversation_detail/conversation_detail_provider.dart
+  h_1f8b55eef4fb84 1,1044,1204-1208,1217-1219
+app/lib/pages/conversation_detail/page.dart
+  h_1f8b55eef4fb84 58,83,1179-1180
+app/lib/pages/conversation_detail/widgets/summary_tab.dart
+  h_1f8b55eef4fb84 10,114-117
+app/lib/pages/conversation_detail/widgets/transcript_tab.dart
+  h_1f8b55eef4fb84 480-482,490-492,535
+app/lib/pages/conversations/conversations_page.dart
+  h_1f8b55eef4fb84 13-14,622-624
+app/lib/pages/conversations/widgets/conversation_list_item.dart
+  h_1f8b55eef4fb84 18,20,118,474-475,518-519
+app/lib/pages/conversations/widgets/recording_list_item.dart
+  h_1f8b55eef4fb84 5,8-9,96-103,129-151
+app/lib/pages/held_audio/held_audio_views.dart
+  h_1f8b55eef4fb84 1-526
+app/lib/pages/held_audio/processing_backlog_view.dart
+  h_1f8b55eef4fb84 1-205
+app/lib/pages/home/page.dart
+  h_1f8b55eef4fb84 1-5,161-163,709-744,1136-1137
+app/lib/pages/on_device/on_device_at_cap_sheet.dart
+  h_1f8b55eef4fb84 1-114
+app/lib/pages/on_device/on_device_components.dart
+  h_1f8b55eef4fb84 1-259
+app/lib/pages/on_device/on_device_provenance_section.dart
+  h_1f8b55eef4fb84 1-159
+app/lib/pages/on_device/on_device_queue_banner.dart
+  h_1f8b55eef4fb84 1-421
+app/lib/pages/on_device/on_device_schedule_page.dart
+  h_1f8b55eef4fb84 1-96
+app/lib/pages/on_device/on_device_settings_page.dart
+  h_1f8b55eef4fb84 1-340
+app/lib/pages/on_device/on_device_setup_page.dart
+  h_1f8b55eef4fb84 1-236
+app/lib/pages/settings/developer_mcp_section.dart
+  h_1f8b55eef4fb84 2,67
+app/lib/pages/settings/transcription_settings_page.dart
+  h_1f8b55eef4fb84 25,708-709
+app/lib/pages/settings/usage_page.dart
+  h_1f8b55eef4fb84 22,731
+app/lib/pages/settings/widgets/plans/contextual_plans.dart
+  h_1f8b55eef4fb84 27,131,154,160-188,191,194-196,202-219,229,290-335
+app/lib/pages/settings/widgets/plans_sheet.dart
+  h_1f8b55eef4fb84 398-400,407-427,433-438,460,470,501
+app/lib/providers/conversation_provider.dart
+  h_1f8b55eef4fb84 1,302,932-935,1512,1514-1515,1683-1686,1710
+app/lib/providers/local_recordings_provider.dart
+  h_1f8b55eef4fb84 1,186,282-285
+app/lib/providers/message_provider.dart
+  h_1f8b55eef4fb84 1,142-147,501-502,618,770,773-774,823,945,949-950,1033-1038
+app/lib/providers/usage_provider.dart
+  h_1f8b55eef4fb84 1-2,5,18-19,25,30,37-96,192,242-245,288,295,311
+app/lib/services/capture/capture_controller.dart
+  h_1f8b55eef4fb84 1,46,95-96,391-400,527-528,711-712,1246,1715,2152-2153,2190-2192,2506,2623-2624,2883-2884,3241,3408,3425,3721-3725,4209-4210,4349-4350
+app/lib/services/capture/live_held_audio_state.dart
+  h_1f8b55eef4fb84 1-27
+app/lib/services/experiments/on_device_overflow_gate.dart
+  h_1f8b55eef4fb84 1-28
+app/lib/services/on_device/README.md
+  h_1f8b55eef4fb84 1-52
+app/lib/services/on_device/on_device_background.dart
+  h_1f8b55eef4fb84 1-98
+app/lib/services/on_device/on_device_engine.dart
+  h_1f8b55eef4fb84 1-70
+app/lib/services/on_device/on_device_model.dart
+  h_1f8b55eef4fb84 1-346
+app/lib/services/on_device/on_device_projection.dart
+  h_1f8b55eef4fb84 1-47
+app/lib/services/on_device/on_device_provenance.dart
+  h_1f8b55eef4fb84 1-67
+app/lib/services/on_device/on_device_runner.dart
+  h_1f8b55eef4fb84 1-390
+app/lib/services/on_device/on_device_schedule_policy.dart
+  h_1f8b55eef4fb84 1-143
+app/lib/services/on_device/on_device_settings.dart
+  h_1f8b55eef4fb84 1-116
+app/lib/services/on_device/on_device_transcription_controller.dart
+  h_1f8b55eef4fb84 1-226
+app/lib/services/on_device/on_device_tuning.dart
+  h_1f8b55eef4fb84 1-21
+app/lib/services/on_device/phone_power_source.dart
+  h_1f8b55eef4fb84 1-50
+app/lib/services/sockets/on_device_apple_provider.dart
+  h_1f8b55eef4fb84 9-10,35,53-61,64,83-107,157-160
+app/lib/services/sockets/on_device_whisper_provider.dart
+  h_1f8b55eef4fb84 10,21,26,69,76-77,164,175,204-221
+app/lib/services/wals/local_wal_sync.dart
+  h_1f8b55eef4fb84 30,518-527,984-986,1765-1774,1830
+app/lib/services/wals/wal.dart
+  h_1f8b55eef4fb84 179,188,359,400-401,444
+app/lib/ui/components/omi_button.dart
+  h_1f8b55eef4fb84 58,60-61,185-197,228
+app/lib/ui/format/speaker_names.dart
+  h_1f8b55eef4fb84 58
+app/lib/widgets/freemium_switch_dialog.dart
+  h_1f8b55eef4fb84 2-8,12-15,21,23,45,70-71,88-139
+app/lib/widgets/transcript.dart
+  h_1f8b55eef4fb84 1029
+app/scripts/android_fgs_probe.py
+  h_1f8b55eef4fb84 131-135
+app/test/backend/budget_choice_api_test.dart
+  h_1f8b55eef4fb84 1-35
+app/test/backend/plan_storefront_api_context_test.dart
+  h_1f8b55eef4fb84 1-24
+app/test/backend/storefront_wire_test.dart
+  h_1f8b55eef4fb84 26-34
+app/test/fixtures/storefront_v2/architect_settings.json
+  h_1f8b55eef4fb84 3,127-131
+app/test/fixtures/storefront_v2/cancel_scheduled_plus.json
+  h_1f8b55eef4fb84 3
+app/test/fixtures/storefront_v2/cancel_scheduled_pro.json
+  h_1f8b55eef4fb84 3
+app/test/fixtures/storefront_v2/free_budget80.json
+  h_1f8b55eef4fb84 3,22,24
+app/test/fixtures/storefront_v2/free_mcp_cap.json
+  h_1f8b55eef4fb84 3
+app/test/fixtures/storefront_v2/free_pro_gate_proactive.json
+  h_1f8b55eef4fb84 3
+app/test/fixtures/storefront_v2/free_pro_gate_screen.json
+  h_1f8b55eef4fb84 3
+app/test/fixtures/storefront_v2/free_settings.json
+  h_1f8b55eef4fb84 3
+app/test/fixtures/storefront_v2/legacy_neo.json
+  h_1f8b55eef4fb84 3
+app/test/fixtures/storefront_v2/legacy_unlimited.json
+  h_1f8b55eef4fb84 3
+app/test/fixtures/storefront_v2/plus_annual_current.json
+  h_1f8b55eef4fb84 3
+app/test/fixtures/storefront_v2/plus_budget80.json
+  h_1f8b55eef4fb84 3,22,24,91-95
+app/test/fixtures/storefront_v2/plus_monthly_yearly_toggle.json
+  h_1f8b55eef4fb84 3,89-93
+app/test/fixtures/storefront_v2/pro_budget80.json
+  h_1f8b55eef4fb84 1-102
+app/test/fixtures/storefront_v2/pro_budget_cap.json
+  h_1f8b55eef4fb84 3,21,23,127-131
+app/test/fixtures/storefront_v2/pro_settings.json
+  h_1f8b55eef4fb84 3,89-93
+app/test/models/plan_storefront_test.dart
+  h_1f8b55eef4fb84 16,695
+app/test/providers/capture_provider_test.dart
+  h_1f8b55eef4fb84 400-439
+app/test/providers/message_provider_chat_reliability_test.dart
+  h_1f8b55eef4fb84 198-232
+app/test/providers/processing_backlog_test.dart
+  h_1f8b55eef4fb84 1-189
+app/test/providers/usage_provider_test.dart
+  h_1f8b55eef4fb84 4,32-46
+app/test/services/sockets/on_device_whisper_provider_test.dart
+  h_1f8b55eef4fb84 1,39,58,64,69
+app/test/services/wals/mobile_standard_batch_test.dart
+  h_1f8b55eef4fb84 16-17,351-379
+app/test/support/on_device_fakes.dart
+  h_1f8b55eef4fb84 1-67
+app/test/unit/conversation_detail_initial_tab_test.dart
+  h_1f8b55eef4fb84 37-38,43,92-118
+app/test/unit/live_held_audio_state_test.dart
+  h_1f8b55eef4fb84 1-44
+app/test/unit/local_wal_sync_test.dart
+  h_1f8b55eef4fb84 151-164
+app/test/unit/on_device_runner_test.dart
+  h_1f8b55eef4fb84 1-291
+app/test/unit/on_device_schedule_policy_test.dart
+  h_1f8b55eef4fb84 1-125
+app/test/unit/on_device_settings_test.dart
+  h_1f8b55eef4fb84 1-141
+app/test/unit/overflow_apple_readiness_test.dart
+  h_1f8b55eef4fb84 1-36
+app/test/unit/ui_format/speaker_names_test.dart
+  h_1f8b55eef4fb84 37-43
+app/test/widgets/chat_budget_pause_test.dart
+  h_1f8b55eef4fb84 1-54
+app/test/widgets/conversation_list_item_performance_test.dart
+  h_1f8b55eef4fb84 10,21-52
+app/test/widgets/held_audio_ui_test.dart
+  h_1f8b55eef4fb84 1-661
+app/test/widgets/on_device_copy_render_test.dart
+  h_1f8b55eef4fb84 1-876
+app/test/widgets/on_device_free_tier_trigger_test.dart
+  h_1f8b55eef4fb84 1-64
+app/test/widgets/on_device_overflow_test.dart
+  h_1f8b55eef4fb84 1-758
+app/test/widgets/storefront_checkout_handoff_test.dart
+  h_1f8b55eef4fb84 19,272,280,312-321,328-334,337
+app/test/widgets/storefront_l10n_render_test.dart
+  h_1f8b55eef4fb84 1-274
+app/test/widgets/storefront_plans_content_test.dart
+  h_1f8b55eef4fb84 30,33-35
+backend/charts/backend-listen/prod_omi_backend_listen_values.yaml
+  h_1f8b55eef4fb84 599
+backend/config/ladder_v1.py
+  h_1f8b55eef4fb84 1-33
+backend/config/plan_catalog.json
+  h_1f8b55eef4fb84 3,800-811,815-847
+backend/config/plan_catalog.py
+  h_1f8b55eef4fb84 23,151-201,221-222,232-234,295-300,312,314,338-342,354-356
+backend/config/plan_catalog_generated.py
+  h_1f8b55eef4fb84 8,22-23,31-32,56-68,437
+backend/config/rate_card.py
+  h_1f8b55eef4fb84 353-388
+backend/config/rate_card_v2.json
+  h_1f8b55eef4fb84 357-366
+backend/config/rate_card_versions.py
+  h_1f8b55eef4fb84 11
+backend/config/storefront_copy_v1.json
+  h_1f8b55eef4fb84 7,98-103,107-6024,6026-6030
+backend/config/stt_cap_dispatch.py
+  h_1f8b55eef4fb84 8-12
+backend/config/sync_telemetry.py
+  h_1f8b55eef4fb84 93-94
+backend/database/_client.py
+  h_1f8b55eef4fb84 113-125
+backend/database/action_item_completion_backfill.py
+  h_1f8b55eef4fb84 1-58
+backend/database/action_item_versions.py
+  h_1f8b55eef4fb84 1-96
+backend/database/action_item_write_fence.py
+  h_1f8b55eef4fb84 1-79
+backend/database/conversations.py
+  h_1f8b55eef4fb84 1,940-950,966,970,972,1024-1026,1033-1035,1039-1040,1083,1087-1088,1219-1221,1232-1233,1273,1275-1292,1365,1368-1377,1381-1382,2247-2250
+backend/database/firestore_document_probe.py
+  h_1f8b55eef4fb84 75,569
+backend/database/firestore_index_registry.py
+  h_1f8b55eef4fb84 792-799
+backend/database/fsr_read_cache.py
+  h_1f8b55eef4fb84 153-162
+backend/database/funded_usage_session.py
+  h_1f8b55eef4fb84 1-98
+backend/database/ladder_v1.py
+  h_1f8b55eef4fb84 1-81
+backend/database/legal_holds.py
+  h_1f8b55eef4fb84 46,464-466,469-471,483-492,494,496,504,507-515
+backend/database/memories.py
+  h_1f8b55eef4fb84 436,441-442,486,508-515,517-533,539
+backend/database/processing_backlog.py
+  h_1f8b55eef4fb84 1-293
+backend/database/redis_connection.py
+  h_1f8b55eef4fb84 1-24
+backend/database/redis_db.py
+  h_1f8b55eef4fb84 21-24
+backend/database/staged_promote_cache.py
+  h_1f8b55eef4fb84 20,151,163-166,181-182,188
+backend/database/usage_units.py
+  h_1f8b55eef4fb84 15,24-25,81,85,88,99,104-105,154-159,162-174,176-184,211-214,219,234,269-276,278-310,318-323,331-341,348-368,376-377,379-380,384-390,392,395,401-457,460,462-469,478-485,489-490,492-584
+backend/database/usage_units_session.py
+  h_1f8b55eef4fb84 1-104
+backend/dependencies.py
+  h_1f8b55eef4fb84 4,18-19,103,127,141,171,278,304,728-741
+backend/deploy/runtime_env.yaml
+  h_1f8b55eef4fb84 2467,4364-4366
+backend/deploy/runtime_env/prod.overlay.yaml
+  h_1f8b55eef4fb84 80,1499-1502
+backend/diarizer/batch_pipeline.py
+  h_1f8b55eef4fb84 15
+backend/diarizer/batch_pipeline_runtime.md
+  h_1f8b55eef4fb84 273-279
+backend/diarizer/pylock.batch-pipeline.toml
+  h_1f8b55eef4fb84 81-87,1115-1120
+backend/diarizer/requirements-batch-pipeline.txt
+  h_1f8b55eef4fb84 20-22
+backend/docs/feature-flag-registry.md
+  h_1f8b55eef4fb84 226-231,300,342-343,348,362-363,398,400-401,408-410,566-571,589,591-592,599,604-605
+backend/docs/ladder-v1-cutover.md
+  h_1f8b55eef4fb84 1-226
+backend/docs/listen_pusher_pipeline.mdx
+  h_1f8b55eef4fb84 34-80,4820-4845,5794-5802,5882-5897
+backend/docs/llm/model_endpoint_inventory.yaml
+  h_1f8b55eef4fb84 3-5,7-8,92,107,122,168,187,202,211,217,235,252,278,293,296,312,328,345,360,375,390,408,423,438,453,469,483,502,514,517,529,532,544,547,559,562,576,579,591,594,608,623,640,654,668
+backend/docs/runbooks/devapi-reads-r2.md
+  h_1f8b55eef4fb84 1-206
+backend/docs/runbooks/external-list-reads.md
+  h_1f8b55eef4fb84 3-4,6,12,23,25,47,56-57,137-138,185,190,199-201,227,250
+backend/docs/runbooks/live-stt-routing.md
+  h_1f8b55eef4fb84 330,365-366,395-441,443-489
+backend/docs/runbooks/sync-enrichment-custody.md
+  h_1f8b55eef4fb84 1-36
+backend/docs/storefront-contract.md
+  h_1f8b55eef4fb84 22-39,50-54,136-137,174-175,189-226
+backend/docs/stt-cap-dispatch.md
+  h_1f8b55eef4fb84 7-9,17-19,22-23,31-34,82-90,133,135,163,166-167,174-198,210-386,388-391
+backend/migrations/004_migrate_action_items_to_collection.py
+  h_1f8b55eef4fb84 30-34
+backend/models/conversation.py
+  h_1f8b55eef4fb84 562-563,625-626
+backend/models/message_event.py
+  h_1f8b55eef4fb84 210-225
+backend/models/storefront.py
+  h_1f8b55eef4fb84 17,26-27,67-70,72-73,75-106,118-128
+backend/models/users.py
+  h_1f8b55eef4fb84 1,4,6,107-108,123-131,208-244,272-285
+backend/openapi-requirements.txt
+  h_1f8b55eef4fb84 12
+backend/pylock.macos-x86_64.toml
+  h_1f8b55eef4fb84 129-134
+backend/pylock.macos.toml
+  h_1f8b55eef4fb84 129-134
+backend/pylock.runtime.toml
+  h_1f8b55eef4fb84 120-125
+backend/pylock.toml
+  h_1f8b55eef4fb84 126-131
+backend/pylock.windows.toml
+  h_1f8b55eef4fb84 126-131
+backend/requirements.txt
+  h_1f8b55eef4fb84 18
+backend/route_policy_manifest.yaml
+  h_1f8b55eef4fb84 9-22
+backend/routers/apps.py
+  h_1f8b55eef4fb84 1,929-930,985-991,1073-1074,1550,1573,1600-1601,1658-1659,1708-1709,1818,1876-1879
+backend/routers/batch_pipeline.py
+  h_1f8b55eef4fb84 217-218,222-228
+backend/routers/budget_choice.py
+  h_1f8b55eef4fb84 57,78
+backend/routers/chat_sessions.py
+  h_1f8b55eef4fb84 9-10,365
+backend/routers/conversations.py
+  h_1f8b55eef4fb84 1,288-289,1089,2323,2325-2328
+backend/routers/desktop_proxy.py
+  h_1f8b55eef4fb84 1412-1417
+backend/routers/desktop_realtime.py
+  h_1f8b55eef4fb84 16,153-154
+backend/routers/desktop_tts_updates.py
+  h_1f8b55eef4fb84 2,227-235
+backend/routers/developer.py
+  h_1f8b55eef4fb84 11,1149-1156,1174,1755,1857,2311
+backend/routers/goals.py
+  h_1f8b55eef4fb84 6-7,282,291,341
+backend/routers/integrations.py
+  h_1f8b55eef4fb84 1-2,263-264
+backend/routers/knowledge_graph.py
+  h_1f8b55eef4fb84 1,255-256,272,301-302
+backend/routers/listen/receiver.py
+  h_1f8b55eef4fb84 12,17,39,63-67,215,270-272,276-277,1259-1267,1271,1314,1358,1885-1898,1901-1921,1931,1933-1936,2061,2155-2195,2392-2396,2548-2562
+backend/routers/listen/runtime.py
+  h_1f8b55eef4fb84 16-17,809-815,817,820-826,837-843,852-853,858,906,936-943,951
+backend/routers/memories.py
+  h_1f8b55eef4fb84 1,456-457
+backend/routers/omni_relay.py
+  h_1f8b55eef4fb84 20,299-303,392-395
+backend/routers/payment.py
+  h_1f8b55eef4fb84 1,33,615-619,798-807,1071-1076,1285-1292
+backend/routers/public_shared_conversation_chat.py
+  h_1f8b55eef4fb84 4,305-312
+backend/routers/storefront.py
+  h_1f8b55eef4fb84 10,37-39,61-63,115-116,128-148,157
+backend/routers/sync.py
+  h_1f8b55eef4fb84 68,612-613,620-623,693-694,1125-1128
+backend/routers/task_recommendations.py
+  h_1f8b55eef4fb84 3-4,133,138-144,157,161-167
+backend/routers/tts.py
+  h_1f8b55eef4fb84 13-14,110-111
+backend/routers/users.py
+  h_1f8b55eef4fb84 59-62,1234-1247,1255-1268,1272-1290,1322-1327,1407-1412,1565-1571,1613-1615,1767,2036,2152,2585-2586
+backend/routers/wrapped.py
+  h_1f8b55eef4fb84 7-8,121,135
+backend/scripts/backfill_action_item_completion.py
+  h_1f8b55eef4fb84 1-25
+backend/scripts/dart_model_groups.py
+  h_1f8b55eef4fb84 516-518
+backend/scripts/dart_schema_groups.py
+  h_1f8b55eef4fb84 23-24
+backend/scripts/entitlement_catalog_validation.py
+  h_1f8b55eef4fb84 14-20,24-39
+backend/scripts/generate_plan_catalog.py
+  h_1f8b55eef4fb84 379,834,843-844,858,894,963-977,982-990
+backend/scripts/held_audio_live_cost_emulator_test.py
+  h_1f8b55eef4fb84 1-373
+backend/scripts/held_audio_summary_emulator_test.py
+  h_1f8b55eef4fb84 1-169
+backend/scripts/processing_backlog_emulator_test.py
+  h_1f8b55eef4fb84 1-133
+backend/scripts/select_backend_unit_tests.py
+  h_1f8b55eef4fb84 518-532
+backend/tests/fast_unit_duration_allowlist.txt
+  h_1f8b55eef4fb84 462-473
+backend/tests/fixtures/chat_at_cap_architect.json
+  h_1f8b55eef4fb84 1-10
+backend/tests/fixtures/chat_at_cap_basic.json
+  h_1f8b55eef4fb84 1-10
+backend/tests/fixtures/chat_at_cap_operator.json
+  h_1f8b55eef4fb84 1-10
+backend/tests/fixtures/chat_at_cap_plus.json
+  h_1f8b55eef4fb84 1-10
+backend/tests/fixtures/ladder_v1_at_cap.json
+  h_1f8b55eef4fb84 1-8
+backend/tests/fixtures/storefront_v2/architect_settings.json
+  h_1f8b55eef4fb84 3,127-131
+backend/tests/fixtures/storefront_v2/cancel_scheduled_plus.json
+  h_1f8b55eef4fb84 3
+backend/tests/fixtures/storefront_v2/cancel_scheduled_pro.json
+  h_1f8b55eef4fb84 3
+backend/tests/fixtures/storefront_v2/free_budget80.json
+  h_1f8b55eef4fb84 3,22,24
+backend/tests/fixtures/storefront_v2/free_mcp_cap.json
+  h_1f8b55eef4fb84 3
+backend/tests/fixtures/storefront_v2/free_pro_gate_proactive.json
+  h_1f8b55eef4fb84 3
+backend/tests/fixtures/storefront_v2/free_pro_gate_screen.json
+  h_1f8b55eef4fb84 3
+backend/tests/fixtures/storefront_v2/free_settings.json
+  h_1f8b55eef4fb84 3
+backend/tests/fixtures/storefront_v2/legacy_neo.json
+  h_1f8b55eef4fb84 3
+backend/tests/fixtures/storefront_v2/legacy_unlimited.json
+  h_1f8b55eef4fb84 3
+backend/tests/fixtures/storefront_v2/plus_annual_current.json
+  h_1f8b55eef4fb84 3
+backend/tests/fixtures/storefront_v2/plus_budget80.json
+  h_1f8b55eef4fb84 3,22,24,91-95
+backend/tests/fixtures/storefront_v2/plus_monthly_yearly_toggle.json
+  h_1f8b55eef4fb84 3,89-93
+backend/tests/fixtures/storefront_v2/pro_budget80.json
+  h_1f8b55eef4fb84 1-102
+backend/tests/fixtures/storefront_v2/pro_budget_cap.json
+  h_1f8b55eef4fb84 3,21,23,127-131
+backend/tests/fixtures/storefront_v2/pro_settings.json
+  h_1f8b55eef4fb84 3,89-93
+backend/tests/fixtures/storefront_v2_l10n/ar_cancel_scheduled_plus.json
+  h_1f8b55eef4fb84 1-154
+backend/tests/fixtures/storefront_v2_l10n/ar_free_settings.json
+  h_1f8b55eef4fb84 1-168
+backend/tests/fixtures/storefront_v2_l10n/ar_plus_budget80.json
+  h_1f8b55eef4fb84 1-139
+backend/tests/fixtures/storefront_v2_l10n/ar_pro_budget_cap.json
+  h_1f8b55eef4fb84 1-138
+backend/tests/fixtures/storefront_v2_l10n/de_cancel_scheduled_plus.json
+  h_1f8b55eef4fb84 1-154
+backend/tests/fixtures/storefront_v2_l10n/de_free_settings.json
+  h_1f8b55eef4fb84 1-168
+backend/tests/fixtures/storefront_v2_l10n/de_plus_budget80.json
+  h_1f8b55eef4fb84 1-139
+backend/tests/fixtures/storefront_v2_l10n/de_pro_budget_cap.json
+  h_1f8b55eef4fb84 1-138
+backend/tests/fixtures/storefront_v2_l10n/es_cancel_scheduled_plus.json
+  h_1f8b55eef4fb84 1-154
+backend/tests/fixtures/storefront_v2_l10n/es_free_settings.json
+  h_1f8b55eef4fb84 1-168
+backend/tests/fixtures/storefront_v2_l10n/es_plus_budget80.json
+  h_1f8b55eef4fb84 1-139
+backend/tests/fixtures/storefront_v2_l10n/es_pro_budget_cap.json
+  h_1f8b55eef4fb84 1-138
+backend/tests/fixtures/storefront_v2_l10n/ja_cancel_scheduled_plus.json
+  h_1f8b55eef4fb84 1-154
+backend/tests/fixtures/storefront_v2_l10n/ja_free_settings.json
+  h_1f8b55eef4fb84 1-168
+backend/tests/fixtures/storefront_v2_l10n/ja_plus_budget80.json
+  h_1f8b55eef4fb84 1-139
+backend/tests/fixtures/storefront_v2_l10n/ja_pro_budget_cap.json
+  h_1f8b55eef4fb84 1-138
+backend/tests/fixtures/storefront_v2_l10n/ko_plus_budget80.json
+  h_1f8b55eef4fb84 1-139
+backend/tests/fixtures/storefront_v2_l10n/zh_cancel_scheduled_plus.json
+  h_1f8b55eef4fb84 1-154
+backend/tests/fixtures/storefront_v2_l10n/zh_free_settings.json
+  h_1f8b55eef4fb84 1-168
+backend/tests/fixtures/storefront_v2_l10n/zh_plus_budget80.json
+  h_1f8b55eef4fb84 1-139
+backend/tests/fixtures/storefront_v2_l10n/zh_pro_budget_cap.json
+  h_1f8b55eef4fb84 1-138
+backend/tests/integration/test_sync_enrichment_custody_emulator.py
+  h_1f8b55eef4fb84 1-338
+backend/tests/integration/test_sync_reprocess_emulator.py
+  h_1f8b55eef4fb84 41,43,45-47,60,64-65
+backend/tests/support/firestore_query_driver_registry.py
+  h_1f8b55eef4fb84 60,1707-1727,1732,1742-1749,2558-2564,3052-3095,3168-3187
+backend/tests/support/firestore_usage_units_driver.py
+  h_1f8b55eef4fb84 10-13
+backend/tests/unit/conftest.py
+  h_1f8b55eef4fb84 262-275
+backend/tests/unit/fixtures/shadow_usage_firestore.py
+  h_1f8b55eef4fb84 119-122
+backend/tests/unit/test_advice_read_boundary.py
+  h_1f8b55eef4fb84 79-90,97-113
+backend/tests/unit/test_advice_update_missing_doc_guard.py
+  h_1f8b55eef4fb84 73-74,85,153
+backend/tests/unit/test_authorize_managed_compute.py
+  h_1f8b55eef4fb84 595-604,615-617,770-778
+backend/tests/unit/test_batch_pipeline_admission.py
+  h_1f8b55eef4fb84 135-157
+backend/tests/unit/test_batch_pipeline_pump.py
+  h_1f8b55eef4fb84 240-241,244-245
+backend/tests/unit/test_batch_pipeline_quarantine_recovery.py
+  h_1f8b55eef4fb84 539-540,546-548,557,564-568
+backend/tests/unit/test_batch_pipeline_recovery_runtime_contract.py
+  h_1f8b55eef4fb84 4-5,34-36,58-62,66-116
+backend/tests/unit/test_batch_pipeline_serving.py
+  h_1f8b55eef4fb84 206,414-433
+backend/tests/unit/test_batch_pipeline_worker.py
+  h_1f8b55eef4fb84 753-754,757-758
+backend/tests/unit/test_cap_hold_summary_rebuild.py
+  h_1f8b55eef4fb84 1-118
+backend/tests/unit/test_chat_funded_cap_boundary.py
+  h_1f8b55eef4fb84 1-265
+backend/tests/unit/test_chat_quota.py
+  h_1f8b55eef4fb84 454-509
+backend/tests/unit/test_client_processing_trust_boundary.py
+  h_1f8b55eef4fb84 224-228,312-313,532-533,636-637
+backend/tests/unit/test_compute_admission_import_purity.py
+  h_1f8b55eef4fb84 1-91
+backend/tests/unit/test_conversation_relevance.py
+  h_1f8b55eef4fb84 74-75,82
+backend/tests/unit/test_dev_api_memories_pagination.py
+  h_1f8b55eef4fb84 184,262-271,381,388,402,407,431,438-440,454
+backend/tests/unit/test_devapi_action_item_versions.py
+  h_1f8b55eef4fb84 1-236
+backend/tests/unit/test_devapi_read_costs_r2.py
+  h_1f8b55eef4fb84 1-205
+backend/tests/unit/test_developer_memory_adapter.py
+  h_1f8b55eef4fb84 106
+backend/tests/unit/test_external_list_nested_budget.py
+  h_1f8b55eef4fb84 131,144-179,244,249,251-252
+backend/tests/unit/test_external_list_request_reads.py
+  h_1f8b55eef4fb84 1-66
+backend/tests/unit/test_external_list_routes.py
+  h_1f8b55eef4fb84 28
+backend/tests/unit/test_funded_dispatch_recheck.py
+  h_1f8b55eef4fb84 1-173
+backend/tests/unit/test_funded_processing.py
+  h_1f8b55eef4fb84 1-110
+backend/tests/unit/test_generated_compute_caps.py
+  h_1f8b55eef4fb84 1-366
+backend/tests/unit/test_generated_compute_inventory_guardrails.py
+  h_1f8b55eef4fb84 1-89
+backend/tests/unit/test_held_audio_summary.py
+  h_1f8b55eef4fb84 1-399
+backend/tests/unit/test_ladder_ambiguous_http.py
+  h_1f8b55eef4fb84 1-102
+backend/tests/unit/test_ladder_shadow_speech.py
+  h_1f8b55eef4fb84 1-51
+backend/tests/unit/test_ladder_v1_cutover.py
+  h_1f8b55eef4fb84 1-675
+backend/tests/unit/test_listen_parity_runtime.py
+  h_1f8b55eef4fb84 184-202,206,209,252
+backend/tests/unit/test_listen_persistence.py
+  h_1f8b55eef4fb84 157-276
+backend/tests/unit/test_live_cap_codec.py
+  h_1f8b55eef4fb84 1-32
+backend/tests/unit/test_live_cap_hold.py
+  h_1f8b55eef4fb84 1-410
+backend/tests/unit/test_local_storage.py
+  h_1f8b55eef4fb84 92-123
+backend/tests/unit/test_locked_content_reset_recovery.py
+  h_1f8b55eef4fb84 300-301,306-307,312
+backend/tests/unit/test_log_sanitizer.py
+  h_1f8b55eef4fb84 157,163,172,177,221,248,920-936
+backend/tests/unit/test_mcp_streamable_http.py
+  h_1f8b55eef4fb84 814-851
+backend/tests/unit/test_memories_error_sanitization.py
+  h_1f8b55eef4fb84 8,79-82
+backend/tests/unit/test_memories_user_review.py
+  h_1f8b55eef4fb84 267,274-276
+backend/tests/unit/test_owned_paths.py
+  h_1f8b55eef4fb84 1-28
+backend/tests/unit/test_parakeet_window_live.py
+  h_1f8b55eef4fb84 12,30,202-203,207-211,219-224,233-238,255-263
+backend/tests/unit/test_plan_catalog_contract.py
+  h_1f8b55eef4fb84 280-299
+backend/tests/unit/test_processing_backlog.py
+  h_1f8b55eef4fb84 1-538
+backend/tests/unit/test_processing_backlog_worker_review.py
+  h_1f8b55eef4fb84 1-712
+backend/tests/unit/test_rate_card.py
+  h_1f8b55eef4fb84 51,386-399
+backend/tests/unit/test_redis_db_client_factories.py
+  h_1f8b55eef4fb84 37-63
+backend/tests/unit/test_screen_activity_tool_result_bound.py
+  h_1f8b55eef4fb84 54
+backend/tests/unit/test_shared_budget_cache.py
+  h_1f8b55eef4fb84 1-307
+backend/tests/unit/test_staged_promote_empty_cache.py
+  h_1f8b55eef4fb84 286,289,295,298,354,365-366,368,377,516-546
+backend/tests/unit/test_storefront.py
+  h_1f8b55eef4fb84 18-23,476-497
+backend/tests/unit/test_storefront_presentation.py
+  h_1f8b55eef4fb84 5,26-29,32,34,168-205,777-778,824,849,882-887,891-892,905-906,957-960,968-969,975-1206
+backend/tests/unit/test_stt_cap_dispatch.py
+  h_1f8b55eef4fb84 9,130-131,134-138,234-418
+backend/tests/unit/test_stt_cap_dispatch_http.py
+  h_1f8b55eef4fb84 153-204
+backend/tests/unit/test_stt_routing_cohort.py
+  h_1f8b55eef4fb84 8,10,194-197,202-219
+backend/tests/unit/test_sync_cap_coordinator.py
+  h_1f8b55eef4fb84 3-4,54-55,59-60,69
+backend/tests/unit/test_sync_cap_hold.py
+  h_1f8b55eef4fb84 14-19,21,23,29,58,186-213,222,251-276,312,329
+backend/tests/unit/test_sync_cap_hold_recovery.py
+  h_1f8b55eef4fb84 17,263,441-490
+backend/tests/unit/test_sync_cap_recovery_audio.py
+  h_1f8b55eef4fb84 60-103
+backend/tests/unit/test_sync_cap_recovery_plan.py
+  h_1f8b55eef4fb84 79-144
+backend/tests/unit/test_sync_cloud_tasks.py
+  h_1f8b55eef4fb84 10
+backend/tests/unit/test_sync_donor_tombstone_visibility.py
+  h_1f8b55eef4fb84 332-357
+backend/tests/unit/test_sync_enrichment_custody.py
+  h_1f8b55eef4fb84 1-149
+backend/tests/unit/test_sync_enrichment_task_probe.py
+  h_1f8b55eef4fb84 1-38
+backend/tests/unit/test_sync_opus_decode.py
+  h_1f8b55eef4fb84 15-16
+backend/tests/unit/test_sync_reprocess_coalesce.py
+  h_1f8b55eef4fb84 18-19,33-35,721,737-738,1015
+backend/tests/unit/test_sync_v2.py
+  h_1f8b55eef4fb84 11-12,57-65
+backend/tests/unit/test_transcript_hash.py
+  h_1f8b55eef4fb84 646-675
+backend/tests/unit/test_usage_units.py
+  h_1f8b55eef4fb84 59-65,103,429,534-808
+backend/tests/unit/test_usage_units_session.py
+  h_1f8b55eef4fb84 1-245
+backend/tests/unit/test_user_subscription_wire_contract.py
+  h_1f8b55eef4fb84 5,34-46,85-134
+backend/tests/unit/test_workflow_contracts.py
+  h_1f8b55eef4fb84 1469-1473
+backend/tests/unit/test_wrapped_update_missing_doc_guard.py
+  h_1f8b55eef4fb84 46
+backend/utils/app_integrations.py
+  h_1f8b55eef4fb84 1,439-440,673-674,770-771
+backend/utils/apps.py
+  h_1f8b55eef4fb84 1,940-941,969-972
+backend/utils/batch_pipeline/admission.py
+  h_1f8b55eef4fb84 6
+backend/utils/batch_pipeline/enrichment.py
+  h_1f8b55eef4fb84 8,20,24-32
+backend/utils/batch_pipeline/projection.py
+  h_1f8b55eef4fb84 7
+backend/utils/batch_pipeline/pump.py
+  h_1f8b55eef4fb84 9
+backend/utils/batch_pipeline/quarantine_recovery.py
+  h_1f8b55eef4fb84 13,318
+backend/utils/cloud_tasks.py
+  h_1f8b55eef4fb84 299-322
+backend/utils/conversations/process_conversation.py
+  h_1f8b55eef4fb84 1-2,17-18,678-679,2449-2472,2854-2896,2924,2984-3002,3048,3125,3576-3577
+backend/utils/conversations/processing_trigger.py
+  h_1f8b55eef4fb84 27,65
+backend/utils/conversations/transcript_hash.py
+  h_1f8b55eef4fb84 238-240
+backend/utils/dream_agent.py
+  h_1f8b55eef4fb84 3-4,607-610
+backend/utils/dream_harness_transport.py
+  h_1f8b55eef4fb84 3-4,20,220-223
+backend/utils/external_list_reads.py
+  h_1f8b55eef4fb84 18,29,73-74,84,93-94,107,112,139-146,148,160,163,169-171
+backend/utils/funded_processing.py
+  h_1f8b55eef4fb84 1-171
+backend/utils/generated_compute.py
+  h_1f8b55eef4fb84 1-138
+backend/utils/ladder_v1.py
+  h_1f8b55eef4fb84 1-185
+backend/utils/llm/app_generator.py
+  h_1f8b55eef4fb84 6-7,15,167-168
+backend/utils/llm/clients.py
+  h_1f8b55eef4fb84 145-146,154-160,222,245,298,387,404-405,410,428,446-447,453,463-468,472-473,479,489-494,644,699-700,794-795,894,961,1028
+backend/utils/llm/external_integrations.py
+  h_1f8b55eef4fb84 1,281,350
+backend/utils/llm/goals.py
+  h_1f8b55eef4fb84 6-7,261-262
+backend/utils/llm/jev_client.py
+  h_1f8b55eef4fb84 18,104-105
+backend/utils/llm/knowledge_graph.py
+  h_1f8b55eef4fb84 1,316-317,420,475
+backend/utils/llm/proactive_notification.py
+  h_1f8b55eef4fb84 1,613-614
+backend/utils/llm/trends.py
+  h_1f8b55eef4fb84 1,38-39
+backend/utils/locked_content_recovery.py
+  h_1f8b55eef4fb84 42-43
+backend/utils/log_sanitizer.py
+  h_1f8b55eef4fb84 26-28
+backend/utils/managed_compute.py
+  h_1f8b55eef4fb84 41-42,84-86,191-192,381-395,434-444,460-516
+backend/utils/mcp_server/transport.py
+  h_1f8b55eef4fb84 71,210,213-215,220-228,354-357
+backend/utils/memory/category_reads.py
+  h_1f8b55eef4fb84 1-45
+backend/utils/memory/developer_memory_list.py
+  h_1f8b55eef4fb84 5,45-58
+backend/utils/memory/memory_service.py
+  h_1f8b55eef4fb84 121,2648-2686
+backend/utils/observability/external_lists.py
+  h_1f8b55eef4fb84 6-12,23-29,68-79,89-90,96-97
+backend/utils/observability/firestore_request_reads.py
+  h_1f8b55eef4fb84 1-37
+backend/utils/observability/ladder_v1.py
+  h_1f8b55eef4fb84 1-44
+backend/utils/observability/routing_cohort.py
+  h_1f8b55eef4fb84 11,23-28,37,54-62
+backend/utils/onboarding.py
+  h_1f8b55eef4fb84 1,9,251-254
+backend/utils/other/chat_file.py
+  h_1f8b55eef4fb84 1,340-341,400
+backend/utils/other/local_storage.py
+  h_1f8b55eef4fb84 12,84,86,91
+backend/utils/other/notifications.py
+  h_1f8b55eef4fb84 1-2,145,166-167,856-857
+backend/utils/other/owned_paths.py
+  h_1f8b55eef4fb84 1-23
+backend/utils/overage.py
+  h_1f8b55eef4fb84 27-28,112-113
+backend/utils/plan_wire_capabilities.py
+  h_1f8b55eef4fb84 30-38
+backend/utils/proactivity.py
+  h_1f8b55eef4fb84 4,16,26-27,31-33
+backend/utils/processing_backlog.py
+  h_1f8b55eef4fb84 1-145
+backend/utils/processing_backlog_worker.py
+  h_1f8b55eef4fb84 1-247
+backend/utils/retrieval/tools/perplexity_tools.py
+  h_1f8b55eef4fb84 5-6,13,151-152
+backend/utils/retrieval/tools/screen_activity_tools.py
+  h_1f8b55eef4fb84 627-633
+backend/utils/storefront.py
+  h_1f8b55eef4fb84 8,10-11,20-23,361-370,473-490,492-493
+backend/utils/storefront_copy.py
+  h_1f8b55eef4fb84 1,10-12,51-77,82-83,85-113,126-128,161-168,184-186,199-202,224,261,277-287,290,292,335-338,377,381,387,395-399,488-490,516,520-521,523-530,532-534,536-565
+backend/utils/stt/live_session.py
+  h_1f8b55eef4fb84 15,879,957,1110
+backend/utils/stt/owner_profile.py
+  h_1f8b55eef4fb84 11,28
+backend/utils/stt/parakeet_window.py
+  h_1f8b55eef4fb84 25,295-297,855,859,862-864
+backend/utils/stt/vad_gate.py
+  h_1f8b55eef4fb84 15,799,804,825,839,843,895
+backend/utils/stt_cap_dispatch.py
+  h_1f8b55eef4fb84 5-6,8,12-13,29-32,35-36,38-63,67,69-72,79-85,89-91,101-146,148-155,172,174-186,190,195-196,200-207,213-221,298-304,312,325,345,389,392-397
+backend/utils/subscription.py
+  h_1f8b55eef4fb84 20,39-40,75-77,152-154,826-829,841-843,874-875,1112-1120,1124,1144-1146,1167,1175-1185,1199-1201,1204-1205,1211-1218,1220-1226,1229-1235,1564-1566,1747,1796-1807,1913-1917,2060-2064
+backend/utils/sync/cap_hold.py
+  h_1f8b55eef4fb84 22,24-25,28,35,44-54,63-64,72,88-91,100,102-115,118-124,129-130,134-313,316-318,320-321,323-329,331,334,348,352,358,362,373,384,411-467,546,551-552,555-559,561-563,567-569
+backend/utils/sync/cap_hold_recovery.py
+  h_1f8b55eef4fb84 13,16,37-42,47-51,59-70,260-264,361-380,382-397
+backend/utils/sync/cap_recovery_audio.py
+  h_1f8b55eef4fb84 16-30
+backend/utils/sync/cap_recovery_plan.py
+  h_1f8b55eef4fb84 8,17-18,21-30,58-94
+backend/utils/sync/capture.py
+  h_1f8b55eef4fb84 7-9,11-14
+backend/utils/sync/enrichment_custody.py
+  h_1f8b55eef4fb84 1-107
+backend/utils/sync/enrichment_scan.py
+  h_1f8b55eef4fb84 1-46
+backend/utils/sync/held_audio_summary.py
+  h_1f8b55eef4fb84 1-124
+backend/utils/sync/live_cap_capacity.py
+  h_1f8b55eef4fb84 1-86
+backend/utils/sync/live_cap_codec.py
+  h_1f8b55eef4fb84 1-77
+backend/utils/sync/live_cap_hold.py
+  h_1f8b55eef4fb84 1-398
+backend/utils/sync/live_cap_manifest.py
+  h_1f8b55eef4fb84 1-69
+backend/utils/sync/live_cap_publication.py
+  h_1f8b55eef4fb84 1-29
+backend/utils/sync/pipeline.py
+  h_1f8b55eef4fb84 20,148,999,1022-1026,1048-1053,1078-1087,1089-1094,1110-1111,1671-1682,3497-3500
+backend/utils/sync/reprocess.py
+  h_1f8b55eef4fb84 22,51-52,164-177,199,386,419-422,446-476,535-536,546-575,581-582,590-595,600-622,631-633
+backend/utils/transcription_allowance.py
+  h_1f8b55eef4fb84 26-29
+backend/utils/wrapped/generate_2025.py
+  h_1f8b55eef4fb84 7-8,748,756-757
+config/deployment-setting-classification.json
+  h_1f8b55eef4fb84 357
+config/feature-flags.yaml
+  h_1f8b55eef4fb84 3,91-94,359-366,380,383-388,439
+desktop/macos/AGENTS.md
+  h_1f8b55eef4fb84 236
+desktop/macos/CHANGELOG.json
+  h_1f8b55eef4fb84 4-12
+desktop/macos/Desktop/Sources/ConversationFinalizationService.swift
+  h_1f8b55eef4fb84 404-408
+desktop/macos/Desktop/Sources/DefaultsKey.swift
+  h_1f8b55eef4fb84 20-21,174,176,187-190
+desktop/macos/Desktop/Sources/FloatingControlBar/FloatingBarUsageLimiter.swift
+  h_1f8b55eef4fb84 45,47-49,123-124
+desktop/macos/Desktop/Sources/Generated/OmiApi.generated.swift
+  h_1f8b55eef4fb84 1497-1542,1721,1776,1833,1856,1889,5104-5141,5190,5202,5216,5227,5229,5243,5245,5255,5257,5269,5271,5281-5282,5284,5359,5361,5363,5371,5373,5375,5385,5387,5389,5397-5398,5400,5402,17859-17883,20189
+desktop/macos/Desktop/Sources/LocalInference/ARCHITECTURE.md
+  h_1f8b55eef4fb84 3-27,29-152
+desktop/macos/Desktop/Sources/LocalInference/FreeTierLocalProcessingFlag.swift
+  h_1f8b55eef4fb84 3-5,13-14,16,26
+desktop/macos/Desktop/Sources/LocalInference/LocalCapabilityRemoteKill.swift
+  h_1f8b55eef4fb84 1-16
+desktop/macos/Desktop/Sources/LocalInference/LocalEmbeddingKillSwitches.swift
+  h_1f8b55eef4fb84 18-19,39-40
+desktop/macos/Desktop/Sources/LocalInference/LocalEmbeddingRuntime.swift
+  h_1f8b55eef4fb84 24,29-30,107-122
+desktop/macos/Desktop/Sources/LocalInference/LocalProjectionFinalization.swift
+  h_1f8b55eef4fb84 23-24,34-61
+desktop/macos/Desktop/Sources/LocalInference/ScreenCloudEntitlementService.swift
+  h_1f8b55eef4fb84 1-114
+desktop/macos/Desktop/Sources/LocalInference/ScreenEmbeddingPolicy.swift
+  h_1f8b55eef4fb84 1-103
+desktop/macos/Desktop/Sources/MainWindow/Components/ChatBudgetPauseView.swift
+  h_1f8b55eef4fb84 1-87
+desktop/macos/Desktop/Sources/MainWindow/Components/ChatQuotaBannerView.swift
+  h_1f8b55eef4fb84 46-47
+desktop/macos/Desktop/Sources/MainWindow/Pages/Settings/Components/SettingsContentView+BillingHelpers.swift
+  h_1f8b55eef4fb84 946-951,1068-1070,1086,1257-1262
+desktop/macos/Desktop/Sources/MainWindow/Pages/Settings/Sections/SettingsContentView+AccountBilling.swift
+  h_1f8b55eef4fb84 269-277,279-282,284-287,289,291-309,313-314,316-319,321-325,327-332,334-338,342-354,356-362,364-370,375-387
+desktop/macos/Desktop/Sources/MainWindow/Pages/Settings/Sections/SettingsContentView+General.swift
+  h_1f8b55eef4fb84 23
+desktop/macos/Desktop/Sources/MainWindow/Pages/Settings/Sections/SettingsContentView+Integrations.swift
+  h_1f8b55eef4fb84 380
+desktop/macos/Desktop/Sources/MainWindow/Pages/Settings/Sections/SettingsContentView+NotificationsPrivacy.swift
+  h_1f8b55eef4fb84 11
+desktop/macos/Desktop/Sources/MainWindow/Pages/Settings/Sections/SettingsContentView+Storefront.swift
+  h_1f8b55eef4fb84 1-37
+desktop/macos/Desktop/Sources/MainWindow/Pages/Settings/Storefront/PlanStorefront.swift
+  h_1f8b55eef4fb84 1-281
+desktop/macos/Desktop/Sources/MainWindow/Pages/Settings/Storefront/StorefrontPlansSection.swift
+  h_1f8b55eef4fb84 1-182
+desktop/macos/Desktop/Sources/MainWindow/Pages/Settings/Storefront/StorefrontPlansView.swift
+  h_1f8b55eef4fb84 1-328
+desktop/macos/Desktop/Sources/MainWindow/QueryShell/QueryShellHome.swift
+  h_1f8b55eef4fb84 42,154-156
+desktop/macos/Desktop/Sources/ProactiveAssistants/Core/GeminiProxyRequestHeaders.swift
+  h_1f8b55eef4fb84 7-8,13
+desktop/macos/Desktop/Sources/ProactiveAssistants/Services/EmbeddingService.swift
+  h_1f8b55eef4fb84 60,62,66-69,71,80,86,89-95,104,108,136,163-167,194-195,197,201-204,335,363,367,372-377
+desktop/macos/Desktop/Sources/Providers/ChatToolExecutor.swift
+  h_1f8b55eef4fb84 1856,1891-1892,2066-2068,2095
+desktop/macos/Desktop/Sources/Rewind/Core/RewindDatabase+Embeddings.swift
+  h_1f8b55eef4fb84 40-53,55-59,70-71,73-77,104-108,123,220,226-260
+desktop/macos/Desktop/Sources/Rewind/Core/StagedTaskStorage.swift
+  h_1f8b55eef4fb84 536,815-818,820-827
+desktop/macos/Desktop/Sources/Rewind/Services/LocalEmbeddingIndexer.swift
+  h_1f8b55eef4fb84 10-11,15,80-102
+desktop/macos/Desktop/Sources/Rewind/Services/LocalHybridSearch.swift
+  h_1f8b55eef4fb84 126,130-131,135-146
+desktop/macos/Desktop/Sources/Rewind/Services/OCREmbeddingService.swift
+  h_1f8b55eef4fb84 21,31-33,50-56,72-74,77,80,82,85-86,89-93,98,102,107-110,116-118,121,123,125-129,131-133,136,141,144-145,159,195,197-199,205-207,218,292-296,299-305,314,316-321,324-326,337-338,341,366,368-387,392-393,402,412-415,419-420,438,445,465-466,473-486,505-522,524-536,538-546,548-552,554,557-558,561-567,569-576,578-579,581-582,584-609,612,615,617-618,620,622,624,650-652,656-658,660,662-666,681-683,704-706
+desktop/macos/Desktop/Sources/Rewind/Services/RewindIndexer.swift
+  h_1f8b55eef4fb84 68-97,373,494
+desktop/macos/Desktop/Sources/Rewind/Services/RewindScreenSearch.swift
+  h_1f8b55eef4fb84 1-74
+desktop/macos/Desktop/Sources/Rewind/Services/ScreenActivityCursorStore.swift
+  h_1f8b55eef4fb84 1-34
+desktop/macos/Desktop/Sources/Rewind/UI/RewindViewModel.swift
+  h_1f8b55eef4fb84 444-447
+desktop/macos/Desktop/Sources/ScreenActivitySyncService.swift
+  h_1f8b55eef4fb84 89,94,116,160-169,171-181,183,185,189-206,208-211,214-236,261,300,323,326-333,439-456,502,521,532,631,670-677,679,687,713,723,741,744,760,776,779,798-799,817-819,825,855,869,883-885,888-892
+desktop/macos/Desktop/Sources/Services/APIClient/APIClient+People.swift
+  h_1f8b55eef4fb84 59-62,292-312,314-315,340-341
+desktop/macos/Desktop/Sources/Services/SubscriptionEntitlementService.swift
+  h_1f8b55eef4fb84 67-72
+desktop/macos/Desktop/Tests/ChatBudgetPauseTests.swift
+  h_1f8b55eef4fb84 1-61
+desktop/macos/Desktop/Tests/LadderLocalCapabilitiesTests.swift
+  h_1f8b55eef4fb84 1-257
+desktop/macos/Desktop/Tests/LocalEmbeddingFoundationTests.swift
+  h_1f8b55eef4fb84 156-157,171-172
+desktop/macos/Desktop/Tests/LocalEmbeddingRuntimeTests.swift
+  h_1f8b55eef4fb84 227-228,231,233,237,240
+desktop/macos/Desktop/Tests/LocalProjectionFinalizationTests.swift
+  h_1f8b55eef4fb84 8,12
+desktop/macos/Desktop/Tests/OCREmbeddingDispatchCoordinationTests.swift
+  h_1f8b55eef4fb84 1-154
+desktop/macos/Desktop/Tests/OCREmbeddingLosslessTests.swift
+  h_1f8b55eef4fb84 9,42,45,72,74
+desktop/macos/Desktop/Tests/OCREmbeddingServiceFlushTimerTests.swift
+  h_1f8b55eef4fb84 119-120,125
+desktop/macos/Desktop/Tests/OCREmbeddingServiceOwnerResetTests.swift
+  h_1f8b55eef4fb84 13,15-17,19-28,32-34,37-38,40,42,45-46,51,53,56,59-61,64,66-67,87-88,97
+desktop/macos/Desktop/Tests/PlanStorefrontTests.swift
+  h_1f8b55eef4fb84 1-245
+desktop/macos/Desktop/Tests/RewindScreenEmbeddingPolicyTests.swift
+  h_1f8b55eef4fb84 1-214
+desktop/macos/Desktop/Tests/RewindScreenSearchTests.swift
+  h_1f8b55eef4fb84 1-99
+desktop/macos/Desktop/Tests/ScreenActivityCursorStoreTests.swift
+  h_1f8b55eef4fb84 1-66
+desktop/macos/Desktop/Tests/ScreenActivityProjectionDeliveryTests.swift
+  h_1f8b55eef4fb84 1-184
+desktop/macos/Desktop/Tests/ScreenCloudEntitlementTests.swift
+  h_1f8b55eef4fb84 1-177
+desktop/macos/Desktop/Tests/ScreenEmbeddingPolicyTests.swift
+  h_1f8b55eef4fb84 1-112
+desktop/macos/Desktop/Tests/ScreenEmbeddingRecoveryTests.swift
+  h_1f8b55eef4fb84 1-230
+desktop/macos/Desktop/Tests/ScreenTaskRampBoundaryTests.swift
+  h_1f8b55eef4fb84 498,529
+desktop/macos/Desktop/Tests/Support/EmbeddingTestAuthorization.swift
+  h_1f8b55eef4fb84 1-21
+desktop/macos/Desktop/Tests/Support/RewindStorageTestIsolation.swift
+  h_1f8b55eef4fb84 102-104
+desktop/macos/changelog/releases/0.12.503.json
+  h_1f8b55eef4fb84 1-9
+desktop/macos/changelog/unreleased/20261018-ladder-local-capabilities.json
+  h_1f8b55eef4fb84 1-3
+desktop/macos/e2e/flows/chat-quota-banner.yaml
+  h_1f8b55eef4fb84 11-12,17
+desktop/macos/e2e/flows/local-hybrid-search.yaml
+  h_1f8b55eef4fb84 4
+desktop/macos/e2e/flows/plan-usage.yaml
+  h_1f8b55eef4fb84 12-15
+desktop/macos/e2e/flows/rewind.yaml
+  h_1f8b55eef4fb84 5,7-12,96
+desktop/windows/src/renderer/src/lib/omiApi.generated.ts
+  h_1f8b55eef4fb84 1187-1197,1266,1275,1407,1491,1608,1772,2926-2940,3999,4003,4119-4132,5170-5178,5192,5204,5206,5232,5234,5236,6000,6004,6405,6623-6624,6787,6930,11468-11477,20875-20894,22618
+docs/api-reference/app-client-openapi.json
+  h_1f8b55eef4fb84 7505-7566,8019-8028,8075-8079,8896-8900,9384-9388,10162-10166,11246-11257,18196-18265,24742-24751,24770-24779,25397-25471,31452-31489,31566-31579,31663-31672,31677-31686,31840-31850,31861-31865,31877-31887,36758-36767,36786-36795,76428-76515
+docs/api-reference/openapi.json
+  h_1f8b55eef4fb84 246-250,654-665
+docs/doc/developer/api/conversations.mdx
+  h_1f8b55eef4fb84 32-47
+firestore.indexes.json
+  h_1f8b55eef4fb84 3047-3064
+scripts/feature_flag_registry.py
+  h_1f8b55eef4fb84 37-38,289
+scripts/test_check_feature_flag_registry.py
+  h_1f8b55eef4fb84 99,102
+web/admin/lib/services/omi-api/omiApi.generated.ts
+  h_1f8b55eef4fb84 1187-1197,1266,1275,1407,1491,1608,1772,2926-2940,3999,4003,4119-4132,5170-5178,5192,5204,5206,5232,5234,5236,6000,6004,6405,6623-6624,6787,6930,11468-11477,20875-20894,22618
+web/app/src/components/chat/ChatBudgetPause.tsx
+  h_1f8b55eef4fb84 1-104
+web/app/src/components/chat/ChatComposer.tsx
+  h_1f8b55eef4fb84 3,72-73,172,201,218,225,238,254-257,279
+web/app/src/components/chat/ChatPanel.tsx
+  h_1f8b55eef4fb84 3,56,190-191,232,329,461,469,479-482,515,529
+web/app/src/components/chat/__tests__/ChatBudgetPause.test.tsx
+  h_1f8b55eef4fb84 1-25
+web/app/src/components/settings/SettingsPage.tsx
+  h_1f8b55eef4fb84 7-8,872-880,1096-1110
+web/app/src/components/settings/__tests__/StorefrontPlans.test.tsx
+  h_1f8b55eef4fb84 1-233
+web/app/src/components/settings/storefront/StorefrontHost.tsx
+  h_1f8b55eef4fb84 1-387
+web/app/src/components/settings/storefront/StorefrontPlans.tsx
+  h_1f8b55eef4fb84 1-340
+web/app/src/lib/__tests__/planStorefront.test.ts
+  h_1f8b55eef4fb84 1-215
+web/app/src/lib/analytics/posthog.ts
+  h_1f8b55eef4fb84 49-77
+web/app/src/lib/api.ts
+  h_1f8b55eef4fb84 4-8,1135-1145,1996-2011
+web/app/src/lib/omiApi.generated.ts
+  h_1f8b55eef4fb84 1187-1197,1266,1275,1407,1491,1608,1772,2926-2940,3999,4003,4119-4132,5170-5178,5192,5204,5206,5232,5234,5236,6000,6004,6405,6623-6624,6787,6930,11468-11477,20875-20894,22618
+web/app/src/lib/planStorefront.ts
+  h_1f8b55eef4fb84 1-400
+web/app/src/lib/planStorefrontGate.ts
+  h_1f8b55eef4fb84 1-32
+web/personas-open-source/src/lib/omiApi.generated.ts
+  h_1f8b55eef4fb84 1187-1197,1266,1275,1407,1491,1608,1772,2926-2940,3999,4003,4119-4132,5170-5178,5192,5204,5206,5232,5234,5236,6000,6004,6405,6623-6624,6787,6930,11468-11477,20875-20894,22618
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "322a1992fcabe86cc8872081ddd0a256df3b80b7",
+  "prompts": {},
+  "humans": {
+    "h_1f8b55eef4fb84": {
+      "author": "Archit Lal <architdraftid@gmail.com>"
+    }
+  }
+}
