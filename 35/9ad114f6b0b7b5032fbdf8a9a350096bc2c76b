@@ -1,0 +1,38 @@
+app/lib/pages/onboarding/wrapper.dart
+  s_34ff7f78492131::t_8f34e5f0c73f6a 292
+app/lib/pages/onboarding/chat_on_telegram_step.dart
+  s_34ff7f78492131::t_639e87db458fea 35-46
+  s_34ff7f78492131::t_915d17334ca193 5,9-15
+  s_34ff7f78492131::t_7df2e56c3ea212 16
+  s_34ff7f78492131::t_c74700f38472c2 47-49
+  s_745643fc4e1f54::t_56684f2405c027 50-64,66-82,84-85
+app/test/widgets/onboarding_chat_on_telegram_step_test.dart
+  s_34ff7f78492131::t_942a4bd5d664d2 1-5,7-71
+  s_34ff7f78492131::t_1f1d9c35dc0bd4 6
+app/test/pages/onboarding/onboarding_telegram_gate_test.dart
+  s_34ff7f78492131::t_3139aa4ddd16f6 1-47
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "359ad114f6b0b7b5032fbdf8a9a350096bc2c76b",
+  "prompts": {},
+  "sessions": {
+    "s_34ff7f78492131": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5072624e-c5e8-4020-8be9-cfd65fb27aab",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Archit Lal <architdraftid@gmail.com>"
+    },
+    "s_745643fc4e1f54": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "agent-a079831468a0adda6",
+        "model": "unknown"
+      },
+      "human_author": "Archit Lal <architdraftid@gmail.com>"
+    }
+  }
+}
