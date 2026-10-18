@@ -1,0 +1,1311 @@
+.agent-artifacts/ui-evidence/desktop-claude-reconnect/evidence.json
+  s_34ff7f78492131::t_66d081b49e2e6f 1-12
+.agent-artifacts/ui-evidence/fix-19243-partial-audio-hint/evidence.json
+  s_34ff7f78492131::t_ab187f921f4c3f 1-19
+.agent-artifacts/ui-evidence/fix-review-speaker-picker-unify/evidence.json
+  s_34ff7f78492131::t_c8144859c9ed5e 1-19
+.agent-artifacts/ui-evidence/lane-opus-on-the-way-a/evidence.json
+  s_34ff7f78492131::t_eb773895770183 1-47
+.dockerignore
+  s_34ff7f78492131::t_7d7468de52782d 2-9
+.github/actions/deploy-backend-stack/action.yml
+  s_34ff7f78492131::t_688591fd84af6a 259-291,680,864,896-897,977-987
+.github/actions/public-build-candidate-promotion/action.yml
+  s_34ff7f78492131::t_a56219d857b595 136-161
+.github/agent-docs/mobile-release-process.md
+  s_34ff7f78492131::t_3c412d9e931973 86-125,139-141,152-159,165-169,171-175,179,182-184
+.github/checks-manifest.yaml
+  s_34ff7f78492131::t_8eb5c00ce64300 540,542,548-552,891,895,898
+.github/ci-budget.yaml
+  s_34ff7f78492131::t_117d5941114256 1126-1143,2253-2270,4493,4495,4498,4500,5006-5017
+.github/failure-classes/FC-dashboard-reads-key-no-writer-maintains.json
+  s_34ff7f78492131::t_60bfdb49b685d2 7-8
+.github/failure-classes/FC-delete-suppression-retired-before-acknowledgement.json
+  s_34ff7f78492131::t_b454e647793138 1-15
+.github/failure-classes/FC-empty-asr-without-evidenced-disposition.json
+  s_34ff7f78492131::t_dd49de688fdbb5 12-14
+.github/failure-classes/FC-first-party-oauth-client-requests-narrower-scope-than-product-contract.json
+  s_34ff7f78492131::t_5ed7f003359ad9 1-11
+.github/failure-classes/FC-gate-hides-its-operator-prerequisite.json
+  s_34ff7f78492131::t_72e9d7cf9d6d2a 12-17
+.github/failure-classes/FC-gke-configmap-entry-schema.json
+  s_34ff7f78492131::t_37fedd45a44513 1-14
+.github/failure-classes/FC-hermetic-unit-suite-reaches-machine-local-service.json
+  s_34ff7f78492131::t_2d6cf6c0eb3c0f 1-19
+.github/failure-classes/FC-listen-neg-zone-not-attached.json
+  s_34ff7f78492131::t_de19c02cdcaca0 1-17
+.github/failure-classes/FC-memories-reconcile-skipped-on-truncation.json
+  s_34ff7f78492131::t_efe941b495d848 1-14
+.github/failure-classes/FC-paid-intent-outlives-idle-process.json
+  s_34ff7f78492131::t_98e9b0180c5465 1-16
+.github/failure-classes/FC-persisted-intake-fails-on-derived-refresh.json
+  s_34ff7f78492131::t_72481248e22f69 1-17
+.github/failure-classes/FC-privacy-denial-treated-as-transient.json
+  s_34ff7f78492131::t_a12b8f45c2d63d 1-18
+.github/failure-classes/FC-saved-device-launch-failure-revokes-reconnect.json
+  s_34ff7f78492131::t_376b31a894f1ea 1-22
+.github/failure-classes/FC-superseded-connection-mutates-live-session.json
+  s_34ff7f78492131::t_52cc25251d3fef 6-8
+.github/failure-classes/FC-temporal-sync-admission-publishes-live-twin.json
+  s_34ff7f78492131::t_3f60be5220b7bb 1-10
+.github/failure-classes/FC-vertex-gemini-cache-handle-rejected.json
+  s_34ff7f78492131::t_7c803dd64d95f6 1-15
+.github/scripts/check-direct-backend-production-admission.py
+  s_34ff7f78492131::t_7f9b83a20721f8 29-30,144-145,147-148
+.github/scripts/check_public_build_contract.py
+  s_34ff7f78492131::t_f0d7588ba13e18 145-180
+.github/scripts/dispatch_mobile_rollout_watch.py
+  s_34ff7f78492131::t_bdb81a2835fb54 2-12,17,19,21,23,26-35,38-43,46-51,53-61
+.github/scripts/fixtures/codemagic_workflow_contract/v1.json
+  s_34ff7f78492131::t_12efa32bfd1618 2-3,13
+.github/scripts/public_build_acceptance_route.py
+  s_34ff7f78492131::t_45fab5899ab028 22-23,34-40,65-69,71-84
+.github/scripts/smoke_public_build_browser.py
+  s_34ff7f78492131::t_98bb9e090d57c1 10,26,62-73,90,92-94
+.github/scripts/test_check_direct_backend_production_admission.py
+  s_34ff7f78492131::t_870d7052274489 24-41
+.github/scripts/test_check_public_build_contract.py
+  s_34ff7f78492131::t_b3ac1a2e75056f 11,17,1127-1227,1388-1431
+.github/scripts/test_dispatch_mobile_rollout_watch.py
+  s_34ff7f78492131::t_3386a4712ebbc2 1-48
+.github/workflows/gcp_backend_listen_helm.yml
+  s_34ff7f78492131::t_5d94dcc1d64c56 83-84,94-96,120,135,176,218,412-428,439-455,460-535
+.github/workflows/gcp_backend_pusher.yml
+  s_34ff7f78492131::t_bc2a683d847bc5 294
+.github/workflows/gcp_backend_pusher_auto_deploy.yml
+  s_34ff7f78492131::t_4e81ca96cfd508 152
+.github/workflows/gcp_finops_unit_cost_job.yml
+  s_34ff7f78492131::t_3260ab4534da92 147-148
+.github/workflows/gcp_nllb_translation.yml
+  s_34ff7f78492131::t_254c1809a1424b 133
+.github/workflows/grafana_dashboard_provisioning.yml
+  s_34ff7f78492131::t_4fe5083c568783 81-82
+.github/workflows/mobile_daily_train.yml
+  s_34ff7f78492131::t_714f47123a72e7 7-10
+.github/workflows/mobile_rollout_watch.yml
+  s_34ff7f78492131::t_abaa958a6c45d2 1-50
+app/android/app/src/main/kotlin/com/friend/ios/PigeonCommunicator.g.kt
+  s_34ff7f78492131::t_379e1228efa338 1081-1082,1172-1190,1532-1548
+app/android/app/src/main/kotlin/com/friend/ios/ble/BleCompanionService.kt
+  s_34ff7f78492131::t_fdf30163ca6295 51
+app/android/app/src/main/kotlin/com/friend/ios/ble/BleHostApiImpl.kt
+  s_34ff7f78492131::t_794dd6f3ef8edc 54-58,62-65,68-71
+app/android/app/src/main/kotlin/com/friend/ios/ble/BleSavedReconnect.kt
+  s_34ff7f78492131::t_4a3aeb4ce85dfc 1-51
+app/android/app/src/main/kotlin/com/friend/ios/ble/OmiBleForegroundService.kt
+  s_34ff7f78492131::t_61609796d8a8e6 100-104,106-108,119,125-126,152-153,160,343,404,424,458,468,477,490-494,655-662,667-669,674-679,681,877-886
+app/android/app/src/main/kotlin/com/friend/ios/ble/OmiBleManager.kt
+  s_34ff7f78492131::t_e6a7760064fe42 38-39
+app/android/app/src/test/kotlin/com/friend/ios/ble/BleSavedReconnectTest.kt
+  s_34ff7f78492131::t_18c6eaf7771f01 1-56
+app/changelog/unreleased/2026-10-17-mobile-rollout-12h-ladder.json
+  s_34ff7f78492131::t_305d8c48524cbb 1
+app/changelog/unreleased/20261016-limitless-late-ready-audio.json
+  s_34ff7f78492131::t_12dd496b49f620 1
+app/changelog/unreleased/20261017-task-delete-refresh.json
+  s_34ff7f78492131::t_7949e945d7dad4 1
+app/changelog/unreleased/20261018-capture-reconnect-recovery.json
+  s_34ff7f78492131::t_3fbd491be1d51b 1-3
+app/changelog/unreleased/20261018-mcp-readonly-keys.json
+  s_34ff7f78492131::t_dcfd08f1ea6da0 1-3
+app/changelog/unreleased/20261018-offline-device-diagnostics.json
+  s_34ff7f78492131::t_78e2c09d843d9e 1
+app/changelog/unreleased/20261018-on-the-way-days.json
+  s_34ff7f78492131::t_30d06ef9475f22 1-3
+app/changelog/unreleased/20261018-pendant-reconnect-after-restart.json
+  s_34ff7f78492131::t_2fd7166bbd2360 1-3
+app/changelog/unreleased/20261018-plaud-firmware-note.json
+  s_34ff7f78492131::t_711e1ba38792c6 1-3
+app/changelog/unreleased/20261018-player-partial-audio-saved.json
+  s_34ff7f78492131::t_3daf4d79f2cf57 1-3
+app/changelog/unreleased/20261018-review-speaker-picker.json
+  s_34ff7f78492131::t_3559a14e65df70 1-3
+app/changelog/unreleased/20261018-summary-quote-timestamps.json
+  s_34ff7f78492131::t_96319bfb76cab0 1
+app/changelog/unreleased/20261018-sync-status-privacy-contract-tests.json
+  s_34ff7f78492131::t_234f3e5a7edffd 1-3
+app/docs/task-list-reconciliation.md
+  s_34ff7f78492131::t_be301c026f4a88 1-43
+app/integration_test/visual_audit/compat/pre-ui-program/fakes.dart
+  s_34ff7f78492131::t_a4702b28d9dd62 111-112
+app/integration_test/visual_audit/fakes.dart
+  s_34ff7f78492131::t_efbd5f4c703894 119-120
+app/integration_test/visual_audit/scenarios/conversation_detail.dart
+  s_34ff7f78492131::t_9cdf75a915d930 161-211
+app/integration_test/visual_audit/scenarios/review.dart
+  s_34ff7f78492131::t_50c36c34d5d3b0 11,28,190-196,586-600,602-603
+app/ios/Runner/Ble/BleHostApiImpl.swift
+  s_34ff7f78492131::t_97b1318bd23d1b 23-26
+app/ios/Runner/Ble/OmiBleConnectionPolicy.swift
+  s_34ff7f78492131::t_7cd43541623c4b 6-13,82-91
+app/ios/Runner/Ble/OmiBleManager.swift
+  s_34ff7f78492131::t_2a4df6bacaaa7c 93-138,293-297,370-374,481-485,504-505,540-543,1416-1421,1487-1489,1571-1576,1581-1582,1625-1630,1635-1636
+app/ios/Runner/PigeonCommunicator.g.swift
+  s_34ff7f78492131::t_68ae6a1c2108a9 1006-1007,1084-1100,1389,1421-1438
+app/ios/test/omi_ble_connection_policy_test.rb
+  s_34ff7f78492131::t_0e802a94b99ad2 21-34
+app/lib/backend/http/api/mcp_api.dart
+  s_34ff7f78492131::t_6c766471917be1 8-16,29-32,36
+app/lib/backend/preferences.dart
+  s_34ff7f78492131::t_dece695d777d94 32-33,1520-1525
+app/lib/backend/schema/bt_device/bt_device.dart
+  s_34ff7f78492131::t_0ce5ad447e4579 665-682,688,701,704,707
+app/lib/gen/pigeon_communicator.g.dart
+  s_34ff7f78492131::t_524c5f734427f1 1131-1149,1478-1479,1522-1545
+app/lib/l10n/app_localizations.dart
+  s_34ff7f78492131::t_78986529ddf9f9 17382-17393,24000-24029,24564-24569
+app/lib/l10n/app_localizations_ar.dart
+  s_34ff7f78492131::t_7f91ce3d9f0461 9265-9274,13419-13455,13750-13754
+app/lib/l10n/app_localizations_be.dart
+  s_34ff7f78492131::t_fed24967b970ec 9351-9360,13527-13563,13859-13863
+app/lib/l10n/app_localizations_bg.dart
+  s_34ff7f78492131::t_4756297ab60e7c 9359-9368,13540-13576,13873-13877
+app/lib/l10n/app_localizations_bn.dart
+  s_34ff7f78492131::t_2252f8d166ad4d 9326-9335,13489-13525,13822-13826
+app/lib/l10n/app_localizations_bs.dart
+  s_34ff7f78492131::t_0987c0f665eed8 9346-9355,13522-13558,13855-13859
+app/lib/l10n/app_localizations_ca.dart
+  s_34ff7f78492131::t_c737c43ce416ce 9375-9384,13561-13597,13896-13900
+app/lib/l10n/app_localizations_cs.dart
+  s_34ff7f78492131::t_6b27ad8aa3b416 9324-9333,13494-13530,13827-13831
+app/lib/l10n/app_localizations_da.dart
+  s_34ff7f78492131::t_c10bfbeadca15b 9313-9322,13479-13515,13814-13818
+app/lib/l10n/app_localizations_de.dart
+  s_34ff7f78492131::t_9a18b2162086de 9400-9409,13591-13627,13930-13934
+app/lib/l10n/app_localizations_el.dart
+  s_34ff7f78492131::t_200e98da7f85c1 9389-9398,13576-13612,13915-13919
+app/lib/l10n/app_localizations_en.dart
+  s_34ff7f78492131::t_0a237068a099ff 9316-9325,13477-13513,13811-13815
+app/lib/l10n/app_localizations_es.dart
+  s_34ff7f78492131::t_a1eff4b7b55b7f 9350-9359,13532-13568,13867-13871
+app/lib/l10n/app_localizations_et.dart
+  s_34ff7f78492131::t_08126587504c55 9317-9326,13486-13522,13818-13822
+app/lib/l10n/app_localizations_fa.dart
+  s_34ff7f78492131::t_321cfb3b57a027 9321-9330,13487-13523,13822-13826
+app/lib/l10n/app_localizations_fi.dart
+  s_34ff7f78492131::t_cc54a7a2e75b90 9325-9334,13497-13533,13831-13835
+app/lib/l10n/app_localizations_fr.dart
+  s_34ff7f78492131::t_97ba822fea6efc 9406-9415,13598-13634,13934-13938
+app/lib/l10n/app_localizations_he.dart
+  s_34ff7f78492131::t_a91daeeb136bf2 9253-9262,13399-13435,13730-13734
+app/lib/l10n/app_localizations_hi.dart
+  s_34ff7f78492131::t_6bc1d71fb219f9 9303-9312,13473-13509,13806-13810
+app/lib/l10n/app_localizations_hr.dart
+  s_34ff7f78492131::t_9978d0e2c18bcb 9355-9364,13526-13562,13860-13864
+app/lib/l10n/app_localizations_hu.dart
+  s_34ff7f78492131::t_05ac688b532d37 9364-9373,13544-13580,13881-13885
+app/lib/l10n/app_localizations_id.dart
+  s_34ff7f78492131::t_d9ac74804dad67 9326-9335,13502-13538,13839-13843
+app/lib/l10n/app_localizations_it.dart
+  s_34ff7f78492131::t_70b3cc6d73238a 9376-9385,13563-13599,13899-13903
+app/lib/l10n/app_localizations_ja.dart
+  s_34ff7f78492131::t_061ed2cb5cd350 9186-9195,13304-13340,13633-13637
+app/lib/l10n/app_localizations_kn.dart
+  s_34ff7f78492131::t_d0036d7b4ce110 9354-9363,13531-13567,13867-13871
+app/lib/l10n/app_localizations_ko.dart
+  s_34ff7f78492131::t_78f9f624110920 9187-9196,13310-13346,13639-13643
+app/lib/l10n/app_localizations_lt.dart
+  s_34ff7f78492131::t_7e772b6f5fd7c3 9338-9347,13516-13552,13851-13855
+app/lib/l10n/app_localizations_lv.dart
+  s_34ff7f78492131::t_5848a5e37f2bf5 9347-9356,13521-13557,13856-13860
+app/lib/l10n/app_localizations_mk.dart
+  s_34ff7f78492131::t_fd88c8a114a834 9369-9378,13553-13589,13888-13892
+app/lib/l10n/app_localizations_mr.dart
+  s_34ff7f78492131::t_a181c1e75fdc69 9332-9341,13498-13534,13834-13838
+app/lib/l10n/app_localizations_ms.dart
+  s_34ff7f78492131::t_0071dd470c4f7c 9343-9352,13523-13559,13858-13862
+app/lib/l10n/app_localizations_nl.dart
+  s_34ff7f78492131::t_9b10bf8c1c2e75 9345-9354,13528-13564,13861-13865
+app/lib/l10n/app_localizations_no.dart
+  s_34ff7f78492131::t_536a2c1e9db592 9322-9331,13494-13530,13828-13832
+app/lib/l10n/app_localizations_pl.dart
+  s_34ff7f78492131::t_0bf6f3d0bc86c2 9349-9358,13531-13567,13866-13870
+app/lib/l10n/app_localizations_pt.dart
+  s_34ff7f78492131::t_ae56ae3946362e 9334-9343,13516-13552,13850-13854
+app/lib/l10n/app_localizations_ro.dart
+  s_34ff7f78492131::t_0846fbfd3e7d6c 9368-9377,13547-13583,13884-13888
+app/lib/l10n/app_localizations_ru.dart
+  s_34ff7f78492131::t_b81dddb5d4b395 9359-9368,13538-13574,13872-13876
+app/lib/l10n/app_localizations_sk.dart
+  s_34ff7f78492131::t_89270ecf136c78 9314-9323,13488-13524,13821-13825
+app/lib/l10n/app_localizations_sl.dart
+  s_34ff7f78492131::t_3ec7134ef74dae 9349-9358,13523-13559,13855-13859
+app/lib/l10n/app_localizations_sr.dart
+  s_34ff7f78492131::t_887480fbc87b26 9330-9339,13501-13537,13834-13838
+app/lib/l10n/app_localizations_sv.dart
+  s_34ff7f78492131::t_d7dff19a7bb241 9326-9335,13497-13533,13831-13835
+app/lib/l10n/app_localizations_ta.dart
+  s_34ff7f78492131::t_df8c3271caab09 9395-9404,13584-13620,13923-13927
+app/lib/l10n/app_localizations_te.dart
+  s_34ff7f78492131::t_54d37bbdbb0abf 9371-9380,13544-13580,13879-13883
+app/lib/l10n/app_localizations_th.dart
+  s_34ff7f78492131::t_570adab3bdf4e7 9270-9279,13426-13462,13758-13762
+app/lib/l10n/app_localizations_tl.dart
+  s_34ff7f78492131::t_e37f5c9e812ec5 9407-9416,13597-13633,13933-13937
+app/lib/l10n/app_localizations_tr.dart
+  s_34ff7f78492131::t_ef2f36909f8b01 9333-9342,13505-13541,13837-13841
+app/lib/l10n/app_localizations_uk.dart
+  s_34ff7f78492131::t_5d478f4c95379e 9343-9352,13522-13558,13855-13859
+app/lib/l10n/app_localizations_ur.dart
+  s_34ff7f78492131::t_c26b6b3e818d81 9338-9347,13506-13542,13839-13843
+app/lib/l10n/app_localizations_vi.dart
+  s_34ff7f78492131::t_5a1df4b86dbe9f 9324-9333,13490-13526,13826-13830
+app/lib/l10n/app_localizations_zh.dart
+  s_34ff7f78492131::t_13a958351892a1 9174-9183,13285-13321,13613-13617
+app/lib/pages/conversation_detail/widgets.dart
+  s_34ff7f78492131::t_912377e72776d0 627
+app/lib/pages/conversation_detail/widgets/conversation_quote_timestamps.dart
+  s_34ff7f78492131::t_c5c85c39b721f3 1-99
+app/lib/pages/conversation_detail/widgets/note_sections_sliver.dart
+  s_34ff7f78492131::t_fed9988371c343 5-6,12,16-17,31-35
+app/lib/pages/conversations/on_the_way_page.dart
+  s_34ff7f78492131::t_0e85d3b3ea2020 17-22,30-46,52,55,74,76,79-83,85,88,96,98-100,103-139,142-185,201-212,237,239-240,243-245,247-283,287-289,291-353,361,364-367,372-375,382,389-416,418-423
+app/lib/pages/conversations/widgets/speaker_tag_prompt_card.dart
+  s_34ff7f78492131::t_ade372ef25cbe1 19-21,238-242
+app/lib/pages/onboarding/find_device/found_devices.dart
+  s_34ff7f78492131::t_5174a26ab704d2 223,264
+app/lib/pages/review/review_item_sheet.dart
+  s_34ff7f78492131::t_04368121f79e12 5,10,14,125-127,136-159,167,169-177,180,192,277-287,289,293,298-299
+app/lib/pages/settings/device_diagnostics.dart
+  s_34ff7f78492131::t_f385fc84517e23 160-163
+app/lib/pages/settings/device_settings.dart
+  s_34ff7f78492131::t_2185109337eb79 109-110,274-276,463-465,529-531
+app/lib/pages/settings/settings_drawer.dart
+  s_34ff7f78492131::t_afe9963fb78dd0 81
+app/lib/pages/settings/settings_groups.dart
+  s_34ff7f78492131::t_ef49fa3c428799 103,116-120,127
+app/lib/pages/settings/settings_search_index.dart
+  s_34ff7f78492131::t_8feff456f2041a 52-57,62-65,109,136
+app/lib/pigeon_interfaces.dart
+  s_34ff7f78492131::t_306d8df208b36a 180-183,258-259
+app/lib/providers/action_items_provider.dart
+  s_34ff7f78492131::t_ee810910481431 116-122,280-281,301-302,385-390,403-405,407,414,416-420,426,450-454,465-466,472-482,501-502,545,800,872,1205-1207,1244-1249,1259,1272,1280
+app/lib/providers/device_provider.dart
+  s_34ff7f78492131::t_45a3cd1036a059 24,68-72,225,755-760,873,1259,1262,1601-1602,1609
+app/lib/providers/native_link_reconciler.dart
+  s_34ff7f78492131::t_c7911a21496e35 38
+app/lib/services/bridges/ble_bridge.dart
+  s_34ff7f78492131::t_99ec3f675cd211 10,33-37
+app/lib/services/capture/CAPTURE_ARCHITECTURE.md
+  s_34ff7f78492131::t_0fca088962a01e 229-238
+app/lib/services/capture/capture_composition.dart
+  s_34ff7f78492131::t_80803b2fc4f1c1 189
+app/lib/services/capture/capture_controller.dart
+  s_34ff7f78492131::t_bcde661a6ee9c4 976,2721
+app/lib/services/capture/capture_uplink_policy.dart
+  s_34ff7f78492131::t_d5f48f32f18d94 5-49
+app/lib/services/capture/capture_wedge_monitor.dart
+  s_34ff7f78492131::t_4f21b44f65a93c 29-30,73-74,113-114,166-173,218-228,604-606,662-663,674,692-700,747
+app/lib/services/devices.dart
+  s_34ff7f78492131::t_5e5a08ae5410c2 4-7,51-101,239-242,250-254,309,344-346,368,372-375,402-405,419,437-438,451-458,460-463,475-476,492,494-498
+app/lib/services/devices/ARCHITECTURE.md
+  s_34ff7f78492131::t_a83e3eaac30583 1-66
+app/lib/services/devices/connectors/limitless_connection.dart
+  s_34ff7f78492131::t_91a165cdb9e305 9,44-45,80-81,83-86,89-119,121,123,130,132,136-140,152-154,162,171-195,201,204,213,215,220-221,234,237-238,242-243,255,312,314,322,324,330,332-341,351,359,2075,2079-2081
+app/lib/services/devices/saved_pendant_reconnect.dart
+  s_34ff7f78492131::t_f464fe26bc131a 1-271
+app/lib/services/devices/transports/native_ble_transport.dart
+  s_34ff7f78492131::t_1c3b70a6802a28 25-28,98-101,143-145,368,402
+app/lib/utils/analytics/adapters/posthog_adapter.dart
+  s_34ff7f78492131::t_ef2d9d2277e109 13-18,185-195
+app/lib/utils/analytics/analytics_adapter.dart
+  s_34ff7f78492131::t_d9d7bb5242b574 71-76
+app/lib/utils/analytics/analytics_manager.dart
+  s_34ff7f78492131::t_245a36fb3b6c5d 569-570,577,585-607
+app/lib/utils/analytics/registry/events.g.dart
+  s_34ff7f78492131::t_47e2e5eac30bb1 9-49
+app/lib/utils/audio/partial_audio_coverage.dart
+  s_34ff7f78492131::t_4424a587603f03 1-21
+app/lib/widgets/conversation_bottom_bar.dart
+  s_34ff7f78492131::t_ab461fb2e03bda 16,21,841-853,1104,1146-1148,1180,1185
+app/lib/widgets/speaker_picker.dart
+  s_34ff7f78492131::t_232d76da3dae0b 1-336
+app/scripts/mobile_daily_train.py
+  s_34ff7f78492131::t_cd537ad9c1c80b 10-17,20-24,48,73-74,80-87,90-125,389-390,395,410,417,420-582,787,795-810,812-827,864-875,878,973-975,978,1023-1042,1087,1100,1109-1116,1142-1145,1178,1202-1210,1212,1221-1223
+app/scripts/mobile_daily_train_test.py
+  s_34ff7f78492131::t_951412cda948d8 22,188-190,198-200,209-210,234-235,237-239,244-245,345-347,353,362,398-400,405-409,418-422,425-427,430-551,792,833,836,841,897,900,917,933,935-936,942-943,948-949,955-956,959,962,973,975-976,993,995,1011,1014,1106,1109-1123,1227-1229,1240-1243
+app/test/pages/review/review_speaker_sheet_test.dart
+  s_34ff7f78492131::t_22e8e4e5fb6424 1-290
+app/test/providers/action_items_delete_refresh_race_test.dart
+  s_34ff7f78492131::t_86fc643ec1d629 1-324
+app/test/providers/device_provider_late_ready_test.dart
+  s_34ff7f78492131::t_d6eba3241874e4 6,45-46,80-82,87-88,91-95,151-248,281,305
+app/test/services/capture/capture_socket_generation_test.dart
+  s_34ff7f78492131::t_389f3e8da4fb2e 186-319
+app/test/services/capture/capture_wedge_monitor_test.dart
+  s_34ff7f78492131::t_3ef14c69070cfb 55-214
+app/test/services/devices/saved_pendant_launch_timeout_reconnect_test.dart
+  s_34ff7f78492131::t_334ae3d4df1bae 2-3,17,19,45,66,118-330
+app/test/services/devices/saved_pendant_reconnect_test.dart
+  s_34ff7f78492131::t_efc31d5aa87ff2 1-109
+app/test/services/devices/saved_reconnect_review_test.dart
+  s_34ff7f78492131::t_bc0bca9ccb4d13 1-223
+app/test/services/devices/stale_bond_recovery_test.dart
+  s_34ff7f78492131::t_61b90b42e4e3a9 3-5,8-16
+app/test/unit/agent_connect/agent_connections_test.dart
+  s_34ff7f78492131::t_381fd7482e730b 1-3,7,11-19,36-69,172-192,195-198
+app/test/unit/limitless_golden_test.dart
+  s_34ff7f78492131::t_5bdfc2b20c7120 32,876
+app/test/unit/posthog_adapter_flags_test.dart
+  s_34ff7f78492131::t_624eaa4d74e9d2 37-55
+app/test/unit/settings_search_index_test.dart
+  s_34ff7f78492131::t_3970395897461e 85-100
+app/test/unit/sync_status_privacy_contract_test.dart
+  s_34ff7f78492131::t_99695f63f97f24 1-152
+app/test/unit/third_party_firmware_note_test.dart
+  s_34ff7f78492131::t_775de024ceb766 1-33
+app/test/widgets/conversation_partial_audio_hint_test.dart
+  s_34ff7f78492131::t_ea2425a29e12f7 1-126
+app/test/widgets/conversation_summary_sections_test.dart
+  s_34ff7f78492131::t_2d26da5c4f0184 74-170,188-190
+app/test/widgets/device_page_forget_test.dart
+  s_34ff7f78492131::t_668fd191bedc75 16,19-26,33-36,39,125-160
+app/test/widgets/home_pending_row_test.dart
+  s_34ff7f78492131::t_b9c071a21186b7 170-175,296,329,343,418,505,529,549,568,572
+app/test/widgets/on_the_way_days_test.dart
+  s_34ff7f78492131::t_887c00e687d9dc 1-209
+app/test/widgets/settings/settings_structure_test.dart
+  s_34ff7f78492131::t_87d01ec6db24f3 9,31-47,49,138,145,364-408
+backend/.env.template
+  s_34ff7f78492131::t_b277f4d6868154 193-195
+backend/charts/backend-listen/dev_omi_backend_listen_values.yaml
+  s_34ff7f78492131::t_83ecd9ba8d0b76 125-130,175-182,217,246-247,499-500
+backend/charts/backend-listen/prod_omi_backend_listen_values.yaml
+  s_34ff7f78492131::t_f6edb7075bdc91 108-113,158-165,200,248-249,568-569
+backend/charts/batch-pipeline-worker/dev_omi_batch-pipeline-worker_values.yaml
+  s_34ff7f78492131::t_71a5276bf3b009 28-29
+backend/charts/batch-pipeline-worker/prod_omi_batch-pipeline-worker_values.yaml
+  s_34ff7f78492131::t_40ed093ae3e715 32-36
+backend/charts/batch-pipeline-worker/templates/deployment.yaml
+  s_34ff7f78492131::t_f7770484cb5a24 62-63,67
+backend/charts/batch-pipeline-worker/values.yaml
+  s_34ff7f78492131::t_9f2efdc13039b9 37-39
+backend/charts/monitoring/README.md
+  s_34ff7f78492131::t_2f9ada5ec68522 114,670,674,678,692,696,716,721,735,766,769,780,786,825-826,1048-1062,1383-1385
+backend/charts/monitoring/alert-rules.json
+  s_34ff7f78492131::t_4a3564bdfd2389 1698,2590,2603,2613,2676,2715,4902-5111,5935,11864,11884,15505,15512,15521,15532,15541,15561,15611,15614,15618,15620,15624-15626,15638-15643,18063-18966
+backend/charts/monitoring/alerts/backend-sync.json
+  s_34ff7f78492131::t_b6ea07103b87a6 360,373,383,446,485
+backend/charts/monitoring/alerts/backend.json
+  s_34ff7f78492131::t_da5aa50ac382c4 151
+backend/charts/monitoring/alerts/cloud-armor.json
+  s_34ff7f78492131::t_ac0c9af66c57fd 141
+backend/charts/monitoring/alerts/live-stt.json
+  s_34ff7f78492131::t_e15e3b4f791766 3213,3220,3229,3240,3249,3269,3319,3322,3326,3328,3332-3334,3346-3498
+backend/charts/monitoring/alerts/resilience.json
+  s_34ff7f78492131::t_5015e82b753051 2465-2762
+backend/charts/monitoring/alerts/transcription-services.json
+  s_34ff7f78492131::t_df6ed68d3c5155 910,930,1276-1944
+backend/charts/monitoring/dashboards/general/omi-core-features.json
+  s_34ff7f78492131::t_a1c547a1caf510 15,843
+backend/charts/monitoring/dashboards/omi-services/resilience-fallbacks.json
+  s_34ff7f78492131::t_49debe8b666f4f 1162-1284
+backend/charts/monitoring/gmp-query-migration-inventory.json
+  s_34ff7f78492131::t_fb784b8e7d9f44 660,666,673,682,688-716,1181,1197,1237-1290,2847-2900,2905
+backend/charts/monitoring/live-alert-gate.json
+  s_34ff7f78492131::t_95d4494bbe1844 8,34
+backend/charts/monitoring/metric-inventory.prod.json
+  s_34ff7f78492131::t_e1eb3596450f59 926,1489,1491,2004-2011
+backend/charts/monitoring/neg-coverage-exporter/Chart.yaml
+  s_34ff7f78492131::t_481433c2afa9cd 1-6
+backend/charts/monitoring/neg-coverage-exporter/README.md
+  s_34ff7f78492131::t_d7e009da9d180e 1-21
+backend/charts/monitoring/neg-coverage-exporter/bootstrap-rbac.yaml
+  s_34ff7f78492131::t_e8227956771ef8 1-48
+backend/charts/monitoring/neg-coverage-exporter/prod-values.yaml
+  s_34ff7f78492131::t_3ca73449a2ddf6 1-25
+backend/charts/monitoring/neg-coverage-exporter/templates/deployment.yaml
+  s_34ff7f78492131::t_aa99efd31c6ace 1-90
+backend/charts/monitoring/neg-coverage-exporter/templates/service-monitor.yaml
+  s_34ff7f78492131::t_7c44528fc4d864 1-16
+backend/charts/monitoring/neg-coverage-exporter/templates/serviceaccount.yaml
+  s_34ff7f78492131::t_e9a0a706bf37db 1-10
+backend/charts/nllb-translation/prod_omi_nllb_translation_values.yaml
+  s_34ff7f78492131::t_31e3765c3e6418 124-126
+backend/charts/parakeet/prod_omi_parakeet_values.yaml
+  s_34ff7f78492131::t_63467d059e7cd3 193-195
+backend/charts/parakeet/templates/hpa.yaml
+  s_34ff7f78492131::t_013a643e031dea 63
+backend/charts/parakeet/values.yaml
+  s_34ff7f78492131::t_bb598dea2105e2 174-176
+backend/charts/pusher/dev_omi_pusher_values.yaml
+  s_34ff7f78492131::t_f62d30eebfd9ac 119-130,183
+backend/charts/pusher/prod_omi_pusher_values.yaml
+  s_34ff7f78492131::t_8746f1c0ad12ed 117-128,192
+backend/config/batch_live_preview.py
+  s_34ff7f78492131::t_245b4a8aa6773a 1-68
+backend/config/batch_pipeline.py
+  s_34ff7f78492131::t_6212d3183e1403 34-40,42,162-198
+backend/config/mcp_scopes.py
+  s_34ff7f78492131::t_de71f1a2ebf23f 31-38
+backend/config/rate_card_v2.json
+  s_34ff7f78492131::t_71053d2331fb8c 108-112
+backend/config/rate_card_versions.py
+  s_34ff7f78492131::t_5501e3c1e26e33 11
+backend/config/summary_guarantee.py
+  s_34ff7f78492131::t_1adb284c3dd84a 3-5,7,9,11-14,17-18,20-28,46-67
+backend/config/sync_finalize.py
+  s_34ff7f78492131::t_f1371175ee7d6a 1-8
+backend/config/sync_lineage.py
+  s_34ff7f78492131::t_9989fe7d847c7f 16-19
+backend/config/sync_owner_concurrency.py
+  s_34ff7f78492131::t_740044d3e24da7 1-19
+backend/config/sync_telemetry.py
+  s_34ff7f78492131::t_37d965c3ea2bc4 95
+backend/database/action_item_refresh.py
+  s_34ff7f78492131::t_189534a0950892 23-30,57-58
+backend/database/action_items.py
+  s_34ff7f78492131::t_907af4bf998978 22,32,123-125,132-138,144-146,153,177,206,524,601
+backend/database/announcements.py
+  s_34ff7f78492131::t_ce23adaef06a42 1,10-29,38-40,46-50,53,55-65,69-71,77-78,83-88,109-111,117-121,126-131,154-156,161-162,169-174,192,196-197,204-209,218-220,227-228,233-238,270-271,280-281,290-295,310,312-313,318-320,322-326,332,335,337-341,350,352-356,458,460-469,472-474,479-487,497,499-513,528-529,532-535,547,550-557,616-618
+backend/database/batch_pipeline_privacy.py
+  s_34ff7f78492131::t_ef27ccb4a68ee1 9,17-30,34-41
+backend/database/batch_pipeline_speech_redrive.py
+  s_34ff7f78492131::t_d5baf83aaa0bea 16,74-75
+backend/database/batch_pipeline_terminal_empty.py
+  s_34ff7f78492131::t_4e80fa2b15e4a3 112-115
+backend/database/conversations.py
+  s_34ff7f78492131::t_d9802807cb5b2f 46-47,60-65,1641,1655-1676,3429,3433-3435,4008-4011,4058
+backend/database/durable_queue_age.py
+  s_34ff7f78492131::t_3da78e41cb4962 7-11,16,18,28-61,169,203-209,211-224,233,247-248,281-307,314-323,336,345-350,357-365
+backend/database/firestore_index_registry.py
+  s_34ff7f78492131::t_6c16e6900e78a0 983-1026,1945-1946
+backend/database/firestore_retry.py
+  s_34ff7f78492131::t_94dd316bdf0c75 1-13
+backend/database/jev_shadow.py
+  s_34ff7f78492131::t_d513396e438475 15,70,74,98
+backend/database/mcp_api_key.py
+  s_34ff7f78492131::t_415d2cd4a049e9 5,40,46,53-64,71-72,74-76,92-93,95,116-117,119,131-132,137,139,142,146-153,182,190,218-220,224,227,238-239,241-247,285-286,401,444-445,459-468
+backend/database/mcp_conversation_pages.py
+  s_34ff7f78492131::t_888d96421d0433 12-13,56,80-93
+backend/database/mcp_oauth.py
+  s_34ff7f78492131::t_4a1027115740a5 63-69,441-445,455-464
+backend/database/memory_ledger.py
+  s_34ff7f78492131::t_9cbd8daed5de3d 96-137,162-167
+backend/database/notifications.py
+  s_34ff7f78492131::t_1917c9fb3e5971 96-97,116-119,160-161
+backend/database/s5_candidates_cache.py
+  s_34ff7f78492131::t_08e5f0ac60a822 19-23,63-75,79-81
+backend/database/screen_frames.py
+  s_34ff7f78492131::t_29c49bbe949a1a 32,258
+backend/database/staged_promote_cache.py
+  s_34ff7f78492131::t_e19b4bcac8abef 1-193
+backend/database/staged_tasks.py
+  s_34ff7f78492131::t_f58a22d8dbb078 19,45,157,166,184,199,226,373,395
+backend/database/sync_backfill_sequencer.py
+  s_34ff7f78492131::t_3f3d0cff2a52a2 21-22,24,308-344,376,387,402-418,433-434
+backend/database/sync_empty_recovery.py
+  s_34ff7f78492131::t_f3210a4bae0727 1-35
+backend/database/sync_live_overlap.py
+  s_34ff7f78492131::t_6cb97ba0365813 1-58
+backend/database/sync_redrive.py
+  s_34ff7f78492131::t_d776777a12b592 1-126
+backend/database/user_data_deletion.py
+  s_34ff7f78492131::t_2307a0be6b2ff9 7-8,12
+backend/database/users.py
+  s_34ff7f78492131::t_127e7a8d6e5e92 24,252-254
+backend/database/vector_db.py
+  s_34ff7f78492131::t_a55584789b2bbb 17-38,641-737
+backend/database/workstreams.py
+  s_34ff7f78492131::t_4db7ae6bb1f9a4 14,844
+backend/deploy/cloud_run_gmp_sync.yaml
+  s_34ff7f78492131::t_f89fa6013ecfa0 1-37
+backend/deploy/runtime_env.yaml
+  s_34ff7f78492131::t_469305cd416905 25,38-40,87-89,140,336-337,339-340,344-345,373-377,383,613-615,680,761-763,804,838-840,889,975-976,978-979,983-984,1049-1051,1098,1131-1133,1167,1282-1283,1285-1286,1290-1291,1346-1354,1361-1363,1404,1437-1439,1474,1579-1580,1582-1583,1587-1588,1620-1621,1647-1649,1690,1723-1725,1761,1813-1814,1816-1817,1821-1825,1876,1943,2019,2086,2139,2215,2266,2352,2365-2367,2414-2416,2463,2659-2660,2662-2663,2773-2777,2783,2934-2936,3008,3119-3121,3162,3196-3198,3244,3329-3331,3333-3334,3369,3424,3428,3453-3457,3493,3495-3497,3544,3577-3579,3602,3604,3610,3724-3726,3728-3729,3754,3805,3809,3817-3845,3869-3877,3882,3884-3886,3927,3960-3962,3986,3988,3994,4098-4100,4102-4103,4170,4174,4184-4212,4223-4224,4247-4249,4290,4323-4325,4358,4402,4404-4407,4409-4414,4418-4420,4450,4457,4461,4467-4468,4499,4561,4635,4702,4756,4834,4885
+backend/deploy/runtime_env/_base.yaml
+  s_34ff7f78492131::t_3da98c363f9d08 30,65-67,154-156,251,560-561,565-570,596-600,607,814,885,984-986,1051,1132-1134,1240,1379-1380,1384-1389,1434-1436,1506,1590-1592,1642,1809-1810,1814-1819,1844-1846,1855-1857,1923,2007-2009,2061,2207-2208,2212-2217,2229-2230,2255-2257,2322,2406-2408,2461,2538-2539,2543-2548,2580,2659,2742,2832,2900,2990,3056
+backend/deploy/runtime_env/dev.overlay.yaml
+  s_34ff7f78492131::t_eed21dbfafd41d 677-679
+backend/deploy/runtime_env/prod.overlay.yaml
+  s_34ff7f78492131::t_2749f1e24a7daa 38-43,489,492-493,601,676,679,683,687,722-800,823,826-827,829-830,832-833,850-851,854,863,866,871,874,877,938,1011,1014,1018,1022,1044-1184,1203,1206-1207,1226-1227,1230,1239,1242,1247,1250,1253,1356,1359,1363,1367,1393-1533,1544-1546,1555,1559-1565,1567-1568,1630,1633,1637,1640,1644,1648,1660,1663-1737
+backend/diarizer/batch_pipeline.py
+  s_34ff7f78492131::t_780af06cbc0abe 16-22,27,136-145,259,287,322-335,367-382,392,474,482-490,495-505,517,521-537,572-573,582-583,588-599,606-610,619,628-635
+backend/diarizer/batch_pipeline_models.py
+  s_34ff7f78492131::t_3898f9c1834825 25-32,105-109
+backend/diarizer/batch_pipeline_runtime.md
+  s_34ff7f78492131::t_f297d4de7b32d2 170-171,178-211,259-304
+backend/diarizer/pylock.batch-pipeline.toml
+  s_34ff7f78492131::t_8842af3b91e33f 139-144,252-256,378-383,777-781
+backend/diarizer/requirements-batch-pipeline.txt
+  s_34ff7f78492131::t_3db636e5989af5 17-19
+backend/docs/batch-pipeline-serving.md
+  s_34ff7f78492131::t_8809639a942c2e 386-396,451-513
+backend/docs/feature-flag-registry.md
+  s_34ff7f78492131::t_8bd5f3907b10f5 170-174,177,180-182,186,189-192,207-211,216-219,254,269,300-301,303-308,314,360,362,386-388,393-394,401-404,447,473,491-492,501,523,527-528,546,567-569,572,574,577,604
+backend/docs/listen_pusher_pipeline.mdx
+  s_34ff7f78492131::t_4652dcc9886339 9-17,302-306,3646-3673,4855-4858,5023-5037,5305-5325,5489-5496,5506-5702
+backend/docs/mcp-analytics.md
+  s_34ff7f78492131::t_3fc514daa69071 9,104-105,108-118
+backend/docs/runbooks/audio-fleet.md
+  s_34ff7f78492131::t_9036e8cd70cab5 220-264
+backend/docs/runbooks/backend-deploy-rollout-safety.md
+  s_34ff7f78492131::t_1312b8dc66b525 89-104
+backend/docs/runbooks/cloud-run-metrics-ingestion.md
+  s_34ff7f78492131::t_e6f7c2214d8f25 10,37,54-117,212,245
+backend/docs/runbooks/external-list-reads.md
+  s_34ff7f78492131::t_539995336263a1 1-263
+backend/docs/runbooks/list-read-serving.md
+  s_34ff7f78492131::t_dd1693f0cf827d 1-125
+backend/docs/runbooks/real-traffic-journeys.md
+  s_34ff7f78492131::t_192eef0a48dd4c 197
+backend/docs/runbooks/summary-guarantee.md
+  s_34ff7f78492131::t_9257a17bbdbb64 14-20,143-144
+backend/docs/runbooks/sync-owner-concurrency.md
+  s_34ff7f78492131::t_2ae2ded1d83394 1-91
+backend/docs/runbooks/sync-status-reconciliation.md
+  s_34ff7f78492131::t_dec3c6e53f0fa2 1-39
+backend/docs/runbooks/sync-two-lane.md
+  s_34ff7f78492131::t_747aa7b0b07ef5 399-431
+backend/docs/shadow-usage-units.md
+  s_34ff7f78492131::t_0f735f3e955d87 13-16
+backend/docs/vertex-reservation-lane-audit.md
+  s_34ff7f78492131::t_eb5ca587fd1b93 3-5,17,36
+backend/evals/dream_verifier/test_benchmark.py
+  s_34ff7f78492131::t_ec1e98002b1ee6 268-269,271
+backend/llm_gateway/config/README.md
+  s_34ff7f78492131::t_69aa748d223eaf 138-139
+backend/llm_gateway/config/cache_policies.yaml
+  s_34ff7f78492131::t_b7ec625ab57e30 5-9,11-12
+backend/llm_gateway/config/cost_rate_cards.yaml
+  s_34ff7f78492131::t_ce91d7fcf77d41 99,103,106-108,118-130
+backend/llm_gateway/gateway/accounting.py
+  s_34ff7f78492131::t_5f06cedf4b2a18 1188-1197,1199-1200
+backend/llm_gateway/gateway/cache_policy.py
+  s_34ff7f78492131::t_7b4e3532f96a09 25-29,35,37-42,88
+backend/main.py
+  s_34ff7f78492131::t_31a6902431a5fc 33,363,390,408-413,689-692
+backend/route_policy_manifest.yaml
+  s_34ff7f78492131::t_52811dee043ff0 4770
+backend/routers/action_items.py
+  s_34ff7f78492131::t_d1b1724c74b7a9 43,700-701,717,719-726
+backend/routers/api_key_management.py
+  s_34ff7f78492131::t_dc561162035264 16,49
+backend/routers/batch_pipeline.py
+  s_34ff7f78492131::t_1cabf156e968bd 4,14,23-24,30-34,37-38,134-154,172-175,182-187,211-214
+backend/routers/conversation_finalization.py
+  s_34ff7f78492131::t_41c676eadef7d8 121-124
+backend/routers/conversations.py
+  s_34ff7f78492131::t_4e361f9a0a44cd 1000
+backend/routers/desktop_chat.py
+  s_34ff7f78492131::t_d535f77f0fdaaf 577-578,812-826,840-873,881-889,914-923,928-936,946
+backend/routers/developer.py
+  s_34ff7f78492131::t_562dd5676e1ff9 51,72-75,116,371,399-402,822,829-830,844-848,857,860-861,1555,1563-1569,1584,1605,1609-1611,1616
+backend/routers/listen/batch_preview.py
+  s_34ff7f78492131::t_9c6ddfc8d3b3ef 1-65
+backend/routers/listen/conversations.py
+  s_34ff7f78492131::t_ad63c0957e50ee 10,147,493-495,498,599,605,695,717
+backend/routers/listen/demand_routing.py
+  s_34ff7f78492131::t_cc9d84e5fcfb61 198
+backend/routers/listen/parity_capture.py
+  s_34ff7f78492131::t_fb9f703cb61967 7,15,82,161-176,217-218
+backend/routers/listen/receiver.py
+  s_34ff7f78492131::t_e9ac39f8581d4d 27,1249,1258
+backend/routers/listen/runtime.py
+  s_34ff7f78492131::t_62728a57a61649 158-159
+backend/routers/mcp.py
+  s_34ff7f78492131::t_05b1fef3c1aa51 4-5,71,403,455-463,482,486-487
+backend/routers/staged_tasks.py
+  s_34ff7f78492131::t_7b77d2fe29a3b3 22,437-441
+backend/routers/sync.py
+  s_34ff7f78492131::t_e6f543a066d3bc 1-2,36,196-197,1743-1762,2188-2192,2253-2261,2291-2304,2325-2351
+backend/scripts/alert_backtest.py
+  s_34ff7f78492131::t_a9870ac5895b76 471-475,580
+backend/scripts/attach_cloud_run_gmp_sidecar.py
+  s_34ff7f78492131::t_36ce6e7926d48f 56-65,112-119,124-132,136-137,142,145-168,392,423-428,457-463,478-511,765,810-814,825,1072,1082-1092,1115-1137
+backend/scripts/backfill_mcp_key_full_access.py
+  s_34ff7f78492131::t_74f91397619e55 95,102-104
+backend/scripts/batch_pipeline_terminal_empty.py
+  s_34ff7f78492131::t_0ffcf1bbea2fdc 102-106,108,110
+backend/scripts/check_cloud_run_env_drift.py
+  s_34ff7f78492131::t_d03a58bd246407 2-9,14-15,18-72,76-164,167-249,252-280,282-332,335-369,371-388,390-394,396-403,405-407,410-411
+backend/scripts/finops/README.md
+  s_34ff7f78492131::t_3d8d0c47a2c15c 348-513
+backend/scripts/finops/cloudrun.py
+  s_34ff7f78492131::t_48b246cbf05449 55
+backend/scripts/finops/cloudrun_entry.py
+  s_34ff7f78492131::t_1200c459ce65c6 260-263
+backend/scripts/finops/gcp_cost_reconciliation.py
+  s_34ff7f78492131::t_682e6be3e90699 30-41
+backend/scripts/finops/load_bigquery.py
+  s_34ff7f78492131::t_428c47654cc8b7 31,105-107,325
+backend/scripts/finops/load_mercury.py
+  s_34ff7f78492131::t_886ab6d3b128b4 1-115
+backend/scripts/finops/mercury_costs.py
+  s_34ff7f78492131::t_609058eca9eac2 1-233
+backend/scripts/finops/mercury_vendor_map.json
+  s_34ff7f78492131::t_3b50c98f601462 1-100
+backend/scripts/finops/pull_mercury.py
+  s_34ff7f78492131::t_fc5e51f6153262 1-134
+backend/scripts/finops/run_unit_cost.py
+  s_34ff7f78492131::t_3773f8dcb6aa0b 195-197,237-238,259-262
+backend/scripts/firestore_workflow_policy.py
+  s_34ff7f78492131::t_05135d568be402 242,997,1044-1046,1080-1085
+backend/scripts/neg_coverage_exporter.py
+  s_34ff7f78492131::t_4124d64d3288cc 1-425
+backend/scripts/ops/reconcile_listen_neg_zones.md
+  s_34ff7f78492131::t_a1053469e0227e 1-35
+backend/scripts/ops/reconcile_listen_neg_zones.py
+  s_34ff7f78492131::t_a818ec37c49591 1-385
+backend/scripts/pre-deploy-check.sh
+  s_34ff7f78492131::t_4db29c6f610c10 55
+backend/scripts/preflight-cloud-run-deploy.py
+  s_34ff7f78492131::t_9189ae44bb9f2c 70-84
+backend/scripts/render_backend_runtime_env.py
+  s_34ff7f78492131::t_aac1f58623b337 220,374
+backend/scripts/run-emulator-proofs.sh
+  s_34ff7f78492131::t_9bbe84715513a0 67-68
+backend/scripts/runtime_env_validation/cloud_run.py
+  s_34ff7f78492131::t_be81d10e135ade 85-88,147
+backend/scripts/runtime_env_validation/workflows.py
+  s_34ff7f78492131::t_63b6ac8cbabed8 348,502
+backend/scripts/scan_async_blockers.py
+  s_34ff7f78492131::t_99487aca31da04 342-404,412,425-432,448-450,523,544,604,614,661,677,685,715
+backend/scripts/sync_live_overlap_contention_emulator_test.py
+  s_34ff7f78492131::t_5a1dfa377a70cb 1-152
+backend/scripts/verify_pusher_cohost_env_diff.py
+  s_34ff7f78492131::t_4fe81b8494ca6f 111-114,160,275,336
+backend/scripts/verify_pusher_live_alert_route.py
+  s_34ff7f78492131::t_aba65d620471ff 61,81-88,715,718-735,773-778,787-792,813-814,820,827
+backend/services/conversation_finalization.py
+  s_34ff7f78492131::t_7dfd1e560984aa 13,34,37,461-462
+backend/services/conversation_selfheal.py
+  s_34ff7f78492131::t_a500413e286735 33,203-207,210-215
+backend/testing/hermetic_network.py
+  s_34ff7f78492131::t_0a72350dbc7313 6,8,101-286
+backend/testing/import_isolation.py
+  s_34ff7f78492131::t_d97aabc564aba3 36,60-71,94-99,149-189,191-199
+backend/testing/workflow_contracts.json
+  s_34ff7f78492131::t_1d6196469933eb 593,614
+backend/tests/conftest.py
+  s_34ff7f78492131::t_a8a05c78e933ec 39,51,106-115,165,185-187
+backend/tests/fast_unit_duration_allowlist.txt
+  s_34ff7f78492131::t_1d61561d88d4e2 460-467
+backend/tests/fixtures/sync_status_privacy_cases.json
+  s_34ff7f78492131::t_3054201f5111a5 1-62
+backend/tests/integration/test_batch_pipeline_firestore.py
+  s_34ff7f78492131::t_7e87e044a6224c 324-356
+backend/tests/integration/test_batch_pipeline_projection_firestore.py
+  s_34ff7f78492131::t_0251ef8c4d6a0b 1121
+backend/tests/integration/test_batch_pipeline_projection_followup_firestore.py
+  s_34ff7f78492131::t_f545dffecafc58 1-173
+backend/tests/integration/test_mcp_success_marker_redis.py
+  s_34ff7f78492131::t_e4c30b48af4869 66-80
+backend/tests/integration/test_staged_promote_cache_redis.py
+  s_34ff7f78492131::t_5eda60dbb5735e 1-287
+backend/tests/integration/test_summary_debt_repair_firestore.py
+  s_34ff7f78492131::t_a15722903084b0 19
+backend/tests/integration/test_sync_backfill_retirement_emulator.py
+  s_34ff7f78492131::t_9b6f4d02fe20a7 234-240,281-308
+backend/tests/support/firestore_memory_ledger_drivers.py
+  s_34ff7f78492131::t_f5254380a258d1 1-103
+backend/tests/support/firestore_outside_caller_witnesses.py
+  s_34ff7f78492131::t_cdfbef090e1e16 19,30,87-93,97-104
+backend/tests/support/firestore_outside_query_drivers.py
+  s_34ff7f78492131::t_024c7970d46f73 4,439-448,711-722
+backend/tests/support/firestore_query_driver_registry.py
+  s_34ff7f78492131::t_8f1db704783eda 44,149,158-160,291,343-346,902-910,945-950,1042-1050,1497,2132-2135,2148-2172,2707
+backend/tests/unit/fixtures/finops/mercury_transactions_page1.json
+  s_34ff7f78492131::t_b23283c713a40c 1-172
+backend/tests/unit/fixtures/finops/mercury_transactions_page2.json
+  s_34ff7f78492131::t_fe60fb9b37bcc2 1-40
+backend/tests/unit/test_action_item_ids_endpoint.py
+  s_34ff7f78492131::t_0de85cbf0f05d6 112,117,124,136,300-332
+backend/tests/unit/test_announcements_resilience.py
+  s_34ff7f78492131::t_8741550c5e00e6 1-288
+backend/tests/unit/test_api_key_route_contract.py
+  s_34ff7f78492131::t_a21ae0c62db2ff 167-174
+backend/tests/unit/test_attach_cloud_run_gmp_sidecar.py
+  s_34ff7f78492131::t_5fcf7e34725d51 5,7,58-59,63-144,148-252,255-270,273-278,281-294,697,915-916,976-979,985-989,1003,1308-1437
+backend/tests/unit/test_backend_runtime_env_validator.py
+  s_34ff7f78492131::t_a6b6ee4dc5c3e7 74-75,86-90,129,356,450-457,630-637
+backend/tests/unit/test_batch_live_preview.py
+  s_34ff7f78492131::t_3f2ff086511d74 1-427
+backend/tests/unit/test_batch_pipeline_chart.py
+  s_34ff7f78492131::t_dbcef3a3b03245 58-59,91,182-185,270-286
+backend/tests/unit/test_batch_pipeline_cohort_config.py
+  s_34ff7f78492131::t_f399d148c629b4 8,48,51,53-58,63,65-98,165-179,186-187
+backend/tests/unit/test_batch_pipeline_empty_disposition.py
+  s_34ff7f78492131::t_675aa19aac0279 4,14,20-21,234
+backend/tests/unit/test_batch_pipeline_projection.py
+  s_34ff7f78492131::t_24610553716fb0 4,12-13,325-355
+backend/tests/unit/test_batch_pipeline_projection_followup.py
+  s_34ff7f78492131::t_a85c778ff24126 1-399
+backend/tests/unit/test_batch_pipeline_quarantine_recovery.py
+  s_34ff7f78492131::t_6520a826e7f3da 305,527-768
+backend/tests/unit/test_batch_pipeline_recovery_runtime_contract.py
+  s_34ff7f78492131::t_50aa0ec4e9a8d8 1-55
+backend/tests/unit/test_batch_pipeline_scheduler.py
+  s_34ff7f78492131::t_0477b7ce69296e 474-623
+backend/tests/unit/test_batch_pipeline_serving.py
+  s_34ff7f78492131::t_9dc0aba0343b05 3,5-10,21,204-205,211,214-217,254-378
+backend/tests/unit/test_batch_pipeline_terminal_empty.py
+  s_34ff7f78492131::t_44ad3cc81582e0 376-516
+backend/tests/unit/test_batch_pipeline_validation_disposition.py
+  s_34ff7f78492131::t_b47ecb953a05e8 1-172
+backend/tests/unit/test_batch_pipeline_worker.py
+  s_34ff7f78492131::t_37a73f3fc62677 6,14,27-33,143-145,223,295-296,313-315,332-333,377-379,535-536,830,857-858,874-878,891-1042
+backend/tests/unit/test_capture_evidence_admission.py
+  s_34ff7f78492131::t_3f001c05b1ed75 20-24,41
+backend/tests/unit/test_chat_quota_counting_router.py
+  s_34ff7f78492131::t_4911e55161f67a 12,174,183-216
+backend/tests/unit/test_check_cloud_run_env_drift.py
+  s_34ff7f78492131::t_2e4729e25a2554 1-268
+backend/tests/unit/test_cloud_run_job_identity.py
+  s_34ff7f78492131::t_10ed9dc365558f 15-16
+backend/tests/unit/test_cloud_run_service_identity.py
+  s_34ff7f78492131::t_4cae4d87804aff 17-21,101
+backend/tests/unit/test_conversation_archive_filter_contract.py
+  s_34ff7f78492131::t_38b0d283f4e888 161-162,221-224
+backend/tests/unit/test_conversation_llm_input_dedupe.py
+  s_34ff7f78492131::t_8201a4696d5c66 304
+backend/tests/unit/test_conversation_notes_v2.py
+  s_34ff7f78492131::t_2aa53377af4dd9 16-20
+backend/tests/unit/test_conversation_notes_v2_beta_rollout.py
+  s_34ff7f78492131::t_162d5baec178f6 42-47
+backend/tests/unit/test_conversation_relevance_jev.py
+  s_34ff7f78492131::t_18aa041fcc6e04 4-7,37-42,86-130
+backend/tests/unit/test_conversation_speaker_resolution_stage.py
+  s_34ff7f78492131::t_170fbba39f453d 1309
+backend/tests/unit/test_daily_summary_schedule_fields.py
+  s_34ff7f78492131::t_26cc200d9a5686 141-175
+backend/tests/unit/test_desktop_chat.py
+  s_34ff7f78492131::t_ec83681cccc9bf 33,57,84-327
+backend/tests/unit/test_desktop_migration.py
+  s_34ff7f78492131::t_543497a5d73139 21-24
+backend/tests/unit/test_desktop_proxy_lifetime.py
+  s_34ff7f78492131::t_081541a3588ecb 33
+backend/tests/unit/test_dev_api_action_items_poison.py
+  s_34ff7f78492131::t_451637bcb70bc4 157-158,167-168,349-362
+backend/tests/unit/test_developer_error_sanitization.py
+  s_34ff7f78492131::t_ba198c83552e30 162,219
+backend/tests/unit/test_dream_provider_isolation.py
+  s_34ff7f78492131::t_c6bd5e01d4d05e 65-78,210,229-284,297-302
+backend/tests/unit/test_dream_real_cost.py
+  s_34ff7f78492131::t_2f7fad7e0525bc 50,58-60
+backend/tests/unit/test_external_list_budget_resolver.py
+  s_34ff7f78492131::t_2871d3c6b9b83c 1-42
+backend/tests/unit/test_external_list_cache.py
+  s_34ff7f78492131::t_a6d7ed56838491 1-379
+backend/tests/unit/test_external_list_nested_budget.py
+  s_34ff7f78492131::t_74d9030d3e8ed9 1-393
+backend/tests/unit/test_external_list_routes.py
+  s_34ff7f78492131::t_39ceedae8cb03e 1-364
+backend/tests/unit/test_final_pass_vad_compaction.py
+  s_34ff7f78492131::t_50ffd4df0d3eed 5,162
+backend/tests/unit/test_finops_mercury.py
+  s_34ff7f78492131::t_9dcac8f840d367 1-479
+backend/tests/unit/test_firestore_deadline_retry.py
+  s_34ff7f78492131::t_ce349e50e577d2 1-300
+backend/tests/unit/test_firestore_document_probe.py
+  s_34ff7f78492131::t_f0b14f93b5187f 1297-1326
+backend/tests/unit/test_fleet_deployment.py
+  s_34ff7f78492131::t_d3378a9820404b 5-8,95-102,159-243
+backend/tests/unit/test_fsr_f1_redis_timeouts.py
+  s_34ff7f78492131::t_4930c5b102ffea 10,29-31,157-182
+backend/tests/unit/test_fsr_s2_singleton_loops.py
+  s_34ff7f78492131::t_9c60ae674c63f5 55-58,64-67,82-83,140,145,147,173,176,179,182,186-191,220-221
+backend/tests/unit/test_fsr_s5_candidates.py
+  s_34ff7f78492131::t_c93e1fb0d01bd4 197,229-231
+backend/tests/unit/test_fsr_scope_opener.py
+  s_34ff7f78492131::t_f7f1e4d60efd91 1-238
+backend/tests/unit/test_fsr_wq1_lease_lua.py
+  s_34ff7f78492131::t_5b9626e8ba1a73 1-90
+backend/tests/unit/test_fsr_wq1_lease_recovery.py
+  s_34ff7f78492131::t_f2fd7ed7bcb673 1-182
+backend/tests/unit/test_fsr_wq3_queue_age_budget.py
+  s_34ff7f78492131::t_85fee9ed14bc00 1-312
+backend/tests/unit/test_gateway_cache_policy.py
+  s_34ff7f78492131::t_c8bba8ca0ae4c4 14-15,17,23-48
+backend/tests/unit/test_hermetic_network.py
+  s_34ff7f78492131::t_6ee167b4b217ec 44-247
+backend/tests/unit/test_import_isolation.py
+  s_34ff7f78492131::t_8336fa7f3f6022 3-4,52-288
+backend/tests/unit/test_indexed_list_read_path.py
+  s_34ff7f78492131::t_58b462626605ad 1-332
+backend/tests/unit/test_jev_population_shadow.py
+  s_34ff7f78492131::t_cf8425b207c1ea 16,338-339,401,830
+backend/tests/unit/test_journey_observability.py
+  s_34ff7f78492131::t_ec049e793b0487 7,81-85,90-105,109-110,121-124
+backend/tests/unit/test_list_read_budget_contract.py
+  s_34ff7f78492131::t_0b68b812439253 37,44,181-183,236-248
+backend/tests/unit/test_listen_finalization_cloud_tasks.py
+  s_34ff7f78492131::t_ed970e57543181 584-606
+backend/tests/unit/test_listen_lifecycle_rollover_isolation.py
+  s_34ff7f78492131::t_ce687ab9656f7d 70-180
+backend/tests/unit/test_live_cost_router.py
+  s_34ff7f78492131::t_e7035c5e9e77f9 52,374,1119,1242,1502
+backend/tests/unit/test_live_recovery_matrix.py
+  s_34ff7f78492131::t_0f3073f76b7c58 436,512,906,964,1029,1109
+backend/tests/unit/test_live_router_hardening.py
+  s_34ff7f78492131::t_b84ae436374878 27,144,682-684,735,1278-1281,1285,1554,2237
+backend/tests/unit/test_live_routing_health.py
+  s_34ff7f78492131::t_dbedc9330d260d 16,21-25,144-145,183,188,198
+backend/tests/unit/test_live_stt_chain.py
+  s_34ff7f78492131::t_da59b3de948bc9 1027-1062
+backend/tests/unit/test_live_stt_fleet_health_write_metrics.py
+  s_34ff7f78492131::t_5251ba534728e7 1-373
+backend/tests/unit/test_llm_gateway_accounting.py
+  s_34ff7f78492131::t_21ca4d1b7c8a20 4,14,28,32,1090-1232
+backend/tests/unit/test_managed_spend_ledger.py
+  s_34ff7f78492131::t_629f8e8a551130 23,134-151,159-160
+backend/tests/unit/test_mcp_api_key_full_access.py
+  s_34ff7f78492131::t_3082ea6fc06733 361-486
+backend/tests/unit/test_mcp_data_endpoints.py
+  s_34ff7f78492131::t_7e6c565d5aaa9d 184-187,201,203,209-217,220-225
+backend/tests/unit/test_mcp_oauth.py
+  s_34ff7f78492131::t_71a01bc388b751 246-273,315-318
+backend/tests/unit/test_mcp_request_observability.py
+  s_34ff7f78492131::t_6ce7b9f4ed233c 397,399,403,408,423,477,534,568,572-626
+backend/tests/unit/test_mcp_rest_sync.py
+  s_34ff7f78492131::t_216467ed368b23 505,867-868
+backend/tests/unit/test_memory_enabled_product_flag.py
+  s_34ff7f78492131::t_5698f6957d3af3 42
+backend/tests/unit/test_memory_ledger_fence_probes.py
+  s_34ff7f78492131::t_9b88807a883341 1-300
+backend/tests/unit/test_memory_product_error_sanitization.py
+  s_34ff7f78492131::t_c679473c05d65e 20-21,65
+backend/tests/unit/test_mobile_standard_batch.py
+  s_34ff7f78492131::t_93477a5f91a2fe 176-179,182,193-222
+backend/tests/unit/test_monitoring_alert_backtest.py
+  s_34ff7f78492131::t_5cf5e66bb1c5d0 131-138
+backend/tests/unit/test_monitoring_alert_rule_contract.py
+  s_34ff7f78492131::t_af43e47d27d577 395-478,671-735,899,908,910,1193,1196
+backend/tests/unit/test_neg_coverage_exporter.py
+  s_34ff7f78492131::t_18aeb0a2da2431 1-205
+backend/tests/unit/test_nllb_release_image.py
+  s_34ff7f78492131::t_217434dfe62d71 3,8,119-134
+backend/tests/unit/test_overage_catalog.py
+  s_34ff7f78492131::t_d37b9123f324cd 20-27
+backend/tests/unit/test_parakeet_failover_exhausted.py
+  s_34ff7f78492131::t_4dbfd9ce4a20dc 528
+backend/tests/unit/test_parakeet_helm_contract.py
+  s_34ff7f78492131::t_39f5211dbeed90 94-133
+backend/tests/unit/test_preflight_cloud_run_deploy.py
+  s_34ff7f78492131::t_5e99f7b50728c2 97-129
+backend/tests/unit/test_rate_card.py
+  s_34ff7f78492131::t_7c19dbd50253be 51,60-61,65-69,85-110
+backend/tests/unit/test_rate_limiting.py
+  s_34ff7f78492131::t_0f8b5ceb30517e 4,876-890
+backend/tests/unit/test_reconcile_listen_neg_zones.py
+  s_34ff7f78492131::t_a1fde92b18c77c 1-257
+backend/tests/unit/test_record_admission_review_fixes.py
+  s_34ff7f78492131::t_e7820b7b57c000 3-4,79-82
+backend/tests/unit/test_recovery_discard_pipeline.py
+  s_34ff7f78492131::t_9c15b14a3c50b6 178-273
+backend/tests/unit/test_relevance_decision_analytics.py
+  s_34ff7f78492131::t_68f6c2176d256b 60-89
+backend/tests/unit/test_render_backend_runtime_env.py
+  s_34ff7f78492131::t_3c42c29ed3b7d7 776,841
+backend/tests/unit/test_render_gke_backend_config.py
+  s_34ff7f78492131::t_3042694a1aeacb 108-124
+backend/tests/unit/test_scan_async_blockers.py
+  s_34ff7f78492131::t_32bd79a791b12d 683-826
+backend/tests/unit/test_screen_frame_env_state.py
+  s_34ff7f78492131::t_5e6f9fe149a845 14,133,146
+backend/tests/unit/test_selfheal_recovery.py
+  s_34ff7f78492131::t_1e81e712db75b3 392,408-409,427
+backend/tests/unit/test_soniox_transport_diagnostics.py
+  s_34ff7f78492131::t_a02223a98d5b72 1-167
+backend/tests/unit/test_staged_promote_coupled_cache.py
+  s_34ff7f78492131::t_9a58a2d469cf1f 1-220
+backend/tests/unit/test_staged_promote_empty_cache.py
+  s_34ff7f78492131::t_c150a04e4444cb 1-513
+backend/tests/unit/test_summary_delivery.py
+  s_34ff7f78492131::t_57debabba40c9c 15,149-150
+backend/tests/unit/test_summary_persistence.py
+  s_34ff7f78492131::t_efc21e293de39e 22
+backend/tests/unit/test_sync_assignment_recovery.py
+  s_34ff7f78492131::t_f68b6e0ccec258 25-26
+backend/tests/unit/test_sync_backfill_uid_sequencer.py
+  s_34ff7f78492131::t_2677f606c1d44f 312-358,1285-1358
+backend/tests/unit/test_sync_bridge_lifecycle.py
+  s_34ff7f78492131::t_ebeafd959b5c08 54-58,383-526
+backend/tests/unit/test_sync_capture_pipeline.py
+  s_34ff7f78492131::t_6ff37da7fa121a 545-647
+backend/tests/unit/test_sync_cloud_tasks.py
+  s_34ff7f78492131::t_5e46fdd17d91e6 1222,1488-1494,1870-1914,3859-3914
+backend/tests/unit/test_sync_completed_status.py
+  s_34ff7f78492131::t_088fbe7cb2eca4 1-283
+backend/tests/unit/test_sync_empty_recovery.py
+  s_34ff7f78492131::t_1e54eafede132c 1-129
+backend/tests/unit/test_sync_empty_recovery_intent.py
+  s_34ff7f78492131::t_ee42b8c800fe81 1-106
+backend/tests/unit/test_sync_final_pass_budget.py
+  s_34ff7f78492131::t_f77113e105b0c1 109-111
+backend/tests/unit/test_sync_geolocation_enrichment.py
+  s_34ff7f78492131::t_fc53297fcb2157 30-31,66-67,89,111-122,316-345
+backend/tests/unit/test_sync_lineage_allowlist.py
+  s_34ff7f78492131::t_998eb6c20c09f6 3-7,335,337,402,404
+backend/tests/unit/test_sync_lineage_live_fences.py
+  s_34ff7f78492131::t_3759a9464daf47 20
+backend/tests/unit/test_sync_live_overlap.py
+  s_34ff7f78492131::t_d43f1d18c595cf 1-345
+backend/tests/unit/test_sync_owner_prefetch.py
+  s_34ff7f78492131::t_c992f33b8aca08 1-163
+backend/tests/unit/test_sync_recording_lineage.py
+  s_34ff7f78492131::t_a13876cfd265b3 350,355,376
+backend/tests/unit/test_sync_redrive.py
+  s_34ff7f78492131::t_222ca0854fc150 1-74
+backend/tests/unit/test_sync_redrive_endpoint.py
+  s_34ff7f78492131::t_418bd6bf3879fa 1-64
+backend/tests/unit/test_sync_reprocess_coalesce.py
+  s_34ff7f78492131::t_282f21c92ad994 280-285,632,651,661,680,694,717,740,786,807,848,895,908,922-1076
+backend/tests/unit/test_sync_silent_failure.py
+  s_34ff7f78492131::t_63ed801ed71bd0 770,905-910
+backend/tests/unit/test_sync_v2.py
+  s_34ff7f78492131::t_c82525997d0342 1373,3404
+backend/tests/unit/test_tools_agent_route_response_shape.py
+  s_34ff7f78492131::t_0ff27991025594 16,157,168
+backend/tests/unit/test_tts_deploy_contract.py
+  s_34ff7f78492131::t_3912bff5588b69 49-54
+backend/tests/unit/test_universal_memory_service.py
+  s_34ff7f78492131::t_7e21d836704287 788-820
+backend/tests/unit/test_usage_units.py
+  s_34ff7f78492131::t_d77af3ff99c5cf 222-224,250
+backend/tests/unit/test_users_add_sample_transaction.py
+  s_34ff7f78492131::t_72703ac0adf4ce 16,62
+backend/tests/unit/test_vad_cache_ttl_config.py
+  s_34ff7f78492131::t_ab89820bdf84ab 10-13,21,29-32
+backend/tests/unit/test_vad_onnx.py
+  s_34ff7f78492131::t_e653f12cbc888e 22-23,30-37,140-141,143,458-459,468-469,481,492,524-525,533-534,543-544,557,567,603,611,618,626,642,673,675
+backend/tests/unit/test_vector_search_service.py
+  s_34ff7f78492131::t_6f5c1f80b900bc 891-1170
+backend/tests/unit/test_verify_pusher_cohost_env_diff.py
+  s_34ff7f78492131::t_83d748461b798b 322-326,328
+backend/tests/unit/test_verify_pusher_config_references.py
+  s_34ff7f78492131::t_60dd62d3747901 191-195,246
+backend/tests/unit/test_verify_pusher_live_alert_route.py
+  s_34ff7f78492131::t_e38bc87f55b1d2 1165-1236
+backend/tests/unit/test_vertex_content_cache.py
+  s_34ff7f78492131::t_81b72d68e8e199 53,74-78,93,142-176,182,207,227,241,248,264-270,273,313,329,333-334,338,341-343
+backend/tests/unit/test_vertex_pt_routing.py
+  s_34ff7f78492131::t_9928bea24dc7a1 116-120
+backend/tests/unit/test_wal_audio_coverage.py
+  s_34ff7f78492131::t_fd8e612c1a2ffc 550-555
+backend/tests/unit/test_workflow_contracts.py
+  s_34ff7f78492131::t_bb65b384ae3f4f 1499-1508,1840,1842,1845,1850-1855,1918
+backend/tests/unit/test_wrapped_error_sanitization.py
+  s_34ff7f78492131::t_9190e14878d36e 21-22,66
+backend/utils/batch_pipeline/README.md
+  s_34ff7f78492131::t_629e2344db7e5e 18
+backend/utils/batch_pipeline/contracts.py
+  s_34ff7f78492131::t_492ab575cad8b9 10,121,125-150,154-156
+backend/utils/batch_pipeline/errors.py
+  s_34ff7f78492131::t_e25df789a9acf5 3-27
+backend/utils/batch_pipeline/projection.py
+  s_34ff7f78492131::t_53478571c6ad2b 12-13,15-16,36-61,192-209,212-217,223-224,230-231,234-237,241-242,266-270,277-281,288-297,299-300,307-310,334,428-429,437-442,444-448,450-458,544-548
+backend/utils/batch_pipeline/projection_followup.py
+  s_34ff7f78492131::t_6f132ac33bd29d 1-191
+backend/utils/batch_pipeline/pump.py
+  s_34ff7f78492131::t_c65ff33bc9d765 17,231-242,244-255,257,259
+backend/utils/batch_pipeline/quarantine_recovery.py
+  s_34ff7f78492131::t_bb5c832c68faeb 4-6,18,40-42,267-326,344-349,356
+backend/utils/batch_pipeline/recovery_disposition.py
+  s_34ff7f78492131::t_465773b3b15800 60,137-140
+backend/utils/batch_pipeline/scheduler.py
+  s_34ff7f78492131::t_5ed01ea5b32a00 11,16,23,54-114,255,267-271,278,381-389,391-399,404,419-422,446-451
+backend/utils/batch_pipeline/serving.py
+  s_34ff7f78492131::t_65249b932b153a 10,66-70,133
+backend/utils/batch_pipeline/speech_redrive.py
+  s_34ff7f78492131::t_30b179b2756546 26,109
+backend/utils/batch_pipeline/worker_silence.py
+  s_34ff7f78492131::t_8c57eaa86cf7bf 1-31
+backend/utils/chat_turn.py
+  s_34ff7f78492131::t_da6f6f39f40335 525-526,533-552
+backend/utils/cloud_tasks.py
+  s_34ff7f78492131::t_8447bf2cfbf466 12-13
+backend/utils/conversations/final_pass_pyannote.py
+  s_34ff7f78492131::t_23157cbaf7ef1a 12
+backend/utils/conversations/lifecycle.py
+  s_34ff7f78492131::t_017bb12cacbaa8 12,21,102-109,113-114
+backend/utils/conversations/process_conversation.py
+  s_34ff7f78492131::t_fba3c8987efcfe 78,82-83,372,537-564,3132-3137,3148,3151-3164,3181,3231-3232,3247-3254
+backend/utils/conversations/recovery.py
+  s_34ff7f78492131::t_daa09f79a73a7b 13,18,43-80
+backend/utils/conversations/relevance.py
+  s_34ff7f78492131::t_d423f4b1a8b551 15-16,21-22,46,53-69,96-99,120-121,271-275,278-295,365-378
+backend/utils/conversations/relevance_io.py
+  s_34ff7f78492131::t_3877751f8361a7 115-117
+backend/utils/conversations/smart_merge_policy.py
+  s_34ff7f78492131::t_82eb4ffba600a2 10
+backend/utils/conversations/transcription_shadow.py
+  s_34ff7f78492131::t_f355140d059f0c 45
+backend/utils/external_list_reads.py
+  s_34ff7f78492131::t_045933678a3f8d 1-325
+backend/utils/llm/vertex_pt_routing.py
+  s_34ff7f78492131::t_9cf96256704be2 11-18,22,76,83
+backend/utils/mcp_analytics.py
+  s_34ff7f78492131::t_d4210314e31326 4,50,56,70,75,78,81,84-86,306-311,320,323-324,340,349-351,366,368-369,371,374,378
+backend/utils/mcp_scopes.py
+  s_34ff7f78492131::t_a95da88cdcec74 1,7,17-23,25-36,38-41,43
+backend/utils/mcp_server/handlers/conversations.py
+  s_34ff7f78492131::t_e509381e10309b 5-6,73,105
+backend/utils/mcp_server/handlers/memories.py
+  s_34ff7f78492131::t_e4d8db5cf6128f 47,220,230-234,269-276,278-292,304-306
+backend/utils/memory/canonical_memory_adapter.py
+  s_34ff7f78492131::t_6898425c75c903 24-28,80-86,990,1009-1036,1038-1086,1127-1148,1150
+backend/utils/memory/memory_service.py
+  s_34ff7f78492131::t_88e1094748b20d 71-76,623-627,1746,1763-1767,1845
+backend/utils/memory/vector_search_service.py
+  s_34ff7f78492131::t_422a09d092d233 9,12,19-23,25-34,36,42-43,51-53,65,111,145,183-187,242,342,352-358,371-373,375,380-384,393-463
+backend/utils/metrics.py
+  s_34ff7f78492131::t_81b273b7f2722c 14,779,786,789-813
+backend/utils/observability/demand_cohort.py
+  s_34ff7f78492131::t_08ee66644a4305 15-24,114,117,145,159,218,224-228
+backend/utils/observability/external_lists.py
+  s_34ff7f78492131::t_69ca893d5a9099 1-69
+backend/utils/other/fsr_leader_lease.py
+  s_34ff7f78492131::t_224fd0c7b63b90 4-7,18,42-49,53-55,59-63,82-84,254-255,298-299,301-326,329-330,388,428,431,434,436,440,469,472,483-526
+backend/utils/other/list_budget.py
+  s_34ff7f78492131::t_125325fc6f1530 41-42,73-77,114-121,174-175,188-192,290-291,300-301,318,323-324,326-349,360,383,407-411,417,429
+backend/utils/other/storage.py
+  s_34ff7f78492131::t_b80490f3feb948 38,627,630-640,647-666
+backend/utils/overage.py
+  s_34ff7f78492131::t_26004304cb46c4 33-35,42-43
+backend/utils/stt/failure_diagnostics.py
+  s_34ff7f78492131::t_bc52d6659c823e 3-62
+backend/utils/stt/live_cost_health.py
+  s_34ff7f78492131::t_8fb266dcad25cb 31-33,53-60,93,150-153,327-329,350-354,363-379,385-391,396,398,400-406,458-459,469-472,487-502,504-520,522,535-551,583-601,604,617-620,624,626,633-636,638-639,641-645
+backend/utils/stt/live_health.py
+  s_34ff7f78492131::t_4f08f548d9b2b3 22-27,313-317,329,333,346,351-353,368-381,383-385,390-392,395,397,402,412,417,431,443-445
+backend/utils/stt/live_metrics.py
+  s_34ff7f78492131::t_cf006ba1cbe3e1 3,5-7,178-184,186-234
+backend/utils/stt/local_vad.py
+  s_34ff7f78492131::t_d0f81df98e552e 1-167
+backend/utils/stt/soniox.py
+  s_34ff7f78492131::t_9f5f5a62eacc20 25,224,267-274,282-291,574-577,581-584,653-656,662-665
+backend/utils/stt/streaming.py
+  s_34ff7f78492131::t_ece274c42d51f0 878,881-882,884-885,898,901,915,923-925,967
+backend/utils/stt/vad.py
+  s_34ff7f78492131::t_0ee2a27eb1b7bb 12-17
+backend/utils/stt/vad_gate.py
+  s_34ff7f78492131::t_47dd5f4b7b0dd7 37
+backend/utils/sync/ARCHITECTURE.md
+  s_34ff7f78492131::t_64f114d2abf9b1 25,43,47
+backend/utils/sync/assignment.py
+  s_34ff7f78492131::t_9543caad1f34bd 42,204,299-307,432,434-435,764-765
+backend/utils/sync/bridge.py
+  s_34ff7f78492131::t_18f4decf739196 17-18,70-86,88,91,101,122-144,190-191,214-223,228-229,232
+backend/utils/sync/completed_status.py
+  s_34ff7f78492131::t_b5df6388308ae0 1-119
+backend/utils/sync/empty_recovery.py
+  s_34ff7f78492131::t_7eb26e468c7b2c 1-93
+backend/utils/sync/empty_recovery_intent.py
+  s_34ff7f78492131::t_ef286dc8d8b49b 1-24
+backend/utils/sync/live_overlap.py
+  s_34ff7f78492131::t_537d31695fff1e 1-65
+backend/utils/sync/owner_prefetch.py
+  s_34ff7f78492131::t_12014af846d4ff 1-55
+backend/utils/sync/pipeline.py
+  s_34ff7f78492131::t_10e825dd37f852 26,149-156,209,1105-1107,1260-1337,1433-1434,1524-1532,1760-1766,1768,1774,3245-3246
+backend/utils/sync/redrive_policy.py
+  s_34ff7f78492131::t_b663f514ce2ceb 1-15
+backend/utils/sync/reprocess.py
+  s_34ff7f78492131::t_91aede91ab6674 28-34,54-57,186,249,251,352,366,385,391,395,399-401,403-404,418,446,465,508
+backend/utils/sync/safety_wal_coverage.py
+  s_34ff7f78492131::t_0a8f93e7ce4d25 25
+backend/utils/sync/staged_prefetch.py
+  s_34ff7f78492131::t_b109d2b3d21140 1-85
+backend/utils/sync/telemetry.py
+  s_34ff7f78492131::t_10ba80368f063f 58-82
+backend/utils/sync/uid_sequencer.py
+  s_34ff7f78492131::t_8c9745e6b3881b 16,95,253,305-306,357
+codemagic.yaml
+  s_34ff7f78492131::t_aa946fd6ba1852 2974-2975,2978-3021
+config/deployment-setting-classification.json
+  s_34ff7f78492131::t_91eadf370dad78 114-115,148,298-300,434-435,442-444,456,464,492,494-516
+config/feature-flags.yaml
+  s_34ff7f78492131::t_d51c09f3c8ecd7 2-11,45-46,62-65,177-178,270-272,352,362,366-371
+contracts/analytics/TRACKING_PLAN.md
+  s_34ff7f78492131::t_8588d544e0b562 7
+contracts/analytics/consumers/saved-pendant-reconnect-presence.sql
+  s_34ff7f78492131::t_4cd2648163017a 1-4
+contracts/analytics/consumers/saved-pendant-reconnect.json
+  s_34ff7f78492131::t_94df17ebbf3014 1-18
+contracts/analytics/consumers/saved-pendant-reconnect.sql
+  s_34ff7f78492131::t_1e0ecd6ec3bffa 1-11
+contracts/analytics/events.json
+  s_34ff7f78492131::t_3ab543c5595654 5-57
+desktop/context-for-claude/changelog/unreleased/20261017-memories-reconcile-retry.json
+  s_34ff7f78492131::t_9d5ca7f7e43e64 1-3
+desktop/macos/CHANGELOG.json
+  s_34ff7f78492131::t_a15e211839c9bc 4-38
+desktop/macos/Desktop/Sources/Chat/AgentBridge.swift
+  s_34ff7f78492131::t_c569ccfe9b07ce 682-685
+desktop/macos/Desktop/Sources/Chat/AgentClient.swift
+  s_34ff7f78492131::t_b32564589a4086 174-177
+desktop/macos/Desktop/Sources/Chat/AgentRuntimeProcess.swift
+  s_34ff7f78492131::t_54b104d22a30e4 1650-1659
+desktop/macos/Desktop/Sources/DesktopDiagnosticsManager.swift
+  s_34ff7f78492131::t_66f4435f63f89f 1458-1462,1504-1507
+desktop/macos/Desktop/Sources/MainWindow/Components/ConversationQuoteTimestamps.swift
+  s_34ff7f78492131::t_9bd078a23ef265 1-66
+desktop/macos/Desktop/Sources/MainWindow/Components/ConversationSummarySections.swift
+  s_34ff7f78492131::t_7e649c277e6bb5 163-168
+desktop/macos/Desktop/Sources/MainWindow/Pages/ConversationSummarySelection.swift
+  s_34ff7f78492131::t_0b0231aa584f0a 93
+desktop/macos/Desktop/Sources/MainWindow/Pages/MemoriesPage.swift
+  s_34ff7f78492131::t_5924681b109f45 574,578-579,586,712-718,1429-1434,1439-1442,1477,1488-1489,1492,1502,1515,1521
+desktop/macos/Desktop/Sources/MainWindow/Pages/MemoriesViewModel+ReconcileRetry.swift
+  s_34ff7f78492131::t_ed491550b671b6 1-302
+desktop/macos/Desktop/Sources/MainWindow/Pages/Settings/Sections/SettingsContentView+Advanced.swift
+  s_34ff7f78492131::t_b81d9bf7413c59 242,244
+desktop/macos/Desktop/Sources/MainWindow/Pages/Settings/Sections/SettingsContentView+FloatingBarAndChat.swift
+  s_34ff7f78492131::t_82de23b177c1e4 144-188,233,235
+desktop/macos/Desktop/Sources/Providers/ChatProvider.swift
+  s_34ff7f78492131::t_1b0ef0f9ae6c54 1314-1315,1322-1330,2298-2321,2331-2336,2348-2354,2365,2380,2385-2386,2389-2390,2392,2447,2449-2451,2455-2463
+desktop/macos/Desktop/Tests/AgentRuntimeProcessTests.swift
+  s_34ff7f78492131::t_52cfc772e5f01a 845-864
+desktop/macos/Desktop/Tests/ChatErrorStateTests.swift
+  s_34ff7f78492131::t_aa4c8f90722c44 275
+desktop/macos/Desktop/Tests/ConversationQuoteTimestampsTests.swift
+  s_34ff7f78492131::t_7e12aebde732cf 1-117
+desktop/macos/Desktop/Tests/ConversationSummaryCompositionTests.swift
+  s_34ff7f78492131::t_76f0b5ea06693b 69-74
+desktop/macos/Desktop/Tests/DesktopReviewRegressionTests.swift
+  s_34ff7f78492131::t_c50c8d963b8cc1 8,11,14-15,18-102
+desktop/macos/Desktop/Tests/MemoriesReconcileRetryTests.swift
+  s_34ff7f78492131::t_3f9b1046a98efc 1-560
+desktop/macos/agent/src/adapters/acp.ts
+  s_34ff7f78492131::t_e114c3a450da09 194-221
+desktop/macos/agent/src/index.ts
+  s_34ff7f78492131::t_ec80c7a9f4fef7 97,3953-3962
+desktop/macos/agent/src/protocol.ts
+  s_34ff7f78492131::t_9142860d89c12c 635-639,694-695
+desktop/macos/agent/tests/acp-init-auth-nonblocking.test.ts
+  s_34ff7f78492131::t_2f10364afa4513 3-7,81-129
+desktop/macos/changelog/releases/0.12.498.json
+  s_34ff7f78492131::t_2affea79e750e6 1-7
+desktop/macos/changelog/releases/0.12.499.json
+  s_34ff7f78492131::t_46421a3ad26423 1-7
+desktop/macos/changelog/releases/0.12.500.json
+  s_34ff7f78492131::t_daf95c0736d824 1-7
+desktop/macos/changelog/releases/0.12.501.json
+  s_34ff7f78492131::t_d8d2f21744f7f7 1-7
+desktop/macos/changelog/releases/0.12.502.json
+  s_34ff7f78492131::t_b34ecd265d743f 1-7
+desktop/macos/docs/agent-model-credentials.md
+  s_34ff7f78492131::t_4320cfd530a2d4 55-77
+desktop/macos/e2e/flows/conversation-detail.yaml
+  s_34ff7f78492131::t_840de9d245e8f8 21-22
+desktop/macos/e2e/flows/memory-crud.yaml
+  s_34ff7f78492131::t_940dd3289e245a 10
+docs/doc/developer/Contribution.mdx
+  s_34ff7f78492131::t_ae7d12150ac292 49-52
+docs/doc/developer/api/conversations.mdx
+  s_34ff7f78492131::t_12c42c484e1fd2 43-44,54-61,857-859,861-862,888-893,925-931
+docs/doc/developer/api/overview.mdx
+  s_34ff7f78492131::t_13702a3475653d 162-170
+docs/doc/developer/mcp/tools.mdx
+  s_34ff7f78492131::t_c5d078d0c07c3b 7-15
+firestore.indexes.json
+  s_34ff7f78492131::t_7b34b092bb4cd4 3437-3500
+scripts/dev-harness/tests/test_event_registry.py
+  s_34ff7f78492131::t_852ddea4fb598e 173-189
+sdks/python-cli/omi_cli/client.py
+  s_34ff7f78492131::t_b187beb42e3a2e 50-72,75-77,256-257,485-498
+sdks/python-cli/omi_cli/commands/local.py
+  s_34ff7f78492131::t_2b7410c04983d5 18,463-470
+sdks/python-cli/omi_cli/config.py
+  s_34ff7f78492131::t_0e32326b9ddfdf 174-178,182-183,185-211
+sdks/python-cli/omi_cli/webhook_target.py
+  s_34ff7f78492131::t_552ccae8b7a0c2 38-45
+sdks/python-cli/tests/test_app_webhooks.py
+  s_34ff7f78492131::t_0fe603fd531411 406-416
+sdks/python-cli/tests/test_client_retry.py
+  s_34ff7f78492131::t_b756f3925a7477 13-20,293-330,614,616,635-636
+sdks/python-cli/tests/test_config.py
+  s_34ff7f78492131::t_09ce969da02250 73-186
+sdks/python-cli/tests/test_local.py
+  s_34ff7f78492131::t_49560685cf4770 277-323
+web/admin/AGENTS.md
+  s_34ff7f78492131::t_1b90ecbc7c60ce 10-11
+web/admin/app/api/grafana/tv-embed/route.ts
+  s_34ff7f78492131::t_e35ff6abf245ce 2,10-13,40
+web/admin/components/dashboard/grafana-kiosk.tsx
+  s_34ff7f78492131::t_c7c7b732c5cdf2 133
+web/admin/docs/posthog-events.md
+  s_34ff7f78492131::t_23f6483ba81a15 95
+web/admin/docs/tv-mode.md
+  s_34ff7f78492131::t_e2e9eb44882930 3-4,15,18-22
+web/admin/grafana/README.md
+  s_34ff7f78492131::t_4bdde5bb9a99bd 1,3,5,7-10,79-84,198
+web/admin/grafana/build_wall_dashboard.py
+  s_34ff7f78492131::t_02657d6cbf34df 51,54,250-255,357,361-364,370,437-438
+web/admin/grafana/dashboards/omi-tv-v2.json
+  s_34ff7f78492131::t_0b6b71c04f7234 5236,5302,5546,5594-5599,5604-5609,5740-5777,5925-5931
+web/admin/grafana/test_build_wall_dashboard.py
+  s_34ff7f78492131::t_15077172b5a6d7 2,114,118-119,127-130,133
+web/admin/lib/__tests__/grafana-embed.test.ts
+  s_34ff7f78492131::t_8036639072ac71 154,156-159,161-166
+web/admin/lib/__tests__/grafana-kiosk-render.test.tsx
+  s_34ff7f78492131::t_c1094ac2e1eb88 53-54,56-57
+web/admin/lib/__tests__/grafana-kiosk.test.tsx
+  s_34ff7f78492131::t_69ad83f98330a5 67-68
+web/admin/lib/__tests__/grafana-legacy-proxy.test.ts
+  s_34ff7f78492131::t_62c29c8c9bb322 7-8,10-11
+web/admin/lib/__tests__/grafana-tv-embed.test.ts
+  s_34ff7f78492131::t_91e8afb9fedd21 102,139,141-143
+web/admin/lib/__tests__/wall-cost.test.ts
+  s_34ff7f78492131::t_e259b8dba98c3d 2,55,107-112,126-146,178-181,192,195-202
+web/admin/lib/__tests__/wall-metrics.test.ts
+  s_34ff7f78492131::t_1c65a0c1223a4f 16,247-275
+web/admin/lib/__tests__/wall-series.test.ts
+  s_34ff7f78492131::t_cdd44d30654e12 122-126,480-483,489,543,562-590,604
+web/admin/lib/grafana-embed.ts
+  s_34ff7f78492131::t_4f3f76853978d3 100,132-136
+web/admin/lib/wall-cost.ts
+  s_34ff7f78492131::t_e6dc81d8962452 8-12,22,49-50,106-109,117-126,129,133-134,140,159-160,172
+web/admin/lib/wall-finops.ts
+  s_34ff7f78492131::t_91235aa8800b9a 54-57,67-73,80-82,91-92,125,130-134,144-145
+web/admin/lib/wall-metrics.ts
+  s_34ff7f78492131::t_aa9095ab7036c5 27,131,160,622-632,638,641-643,649-659
+web/admin/lib/wall-series.ts
+  s_34ff7f78492131::t_d4903f45c904e4 708-709,711-715,733-734,736-738,741-745,785,867,869-876,879-883,886
+web/app/src/components/chat/ChatCitationCards.tsx
+  s_34ff7f78492131::t_da330de5ec36c1 1-56
+web/app/src/components/chat/ChatPanel.tsx
+  s_34ff7f78492131::t_6bb272bf9f966f 17,377
+web/app/src/components/chat/ChatTranscript.tsx
+  s_34ff7f78492131::t_7dd76a3184a0bf 16,144
+web/app/src/components/chat/__tests__/ChatCitationCards.test.tsx
+  s_34ff7f78492131::t_ce72029955c158 1-150
+web/app/src/components/chat/__tests__/ChatPanel.evidence.test.tsx
+  s_34ff7f78492131::t_536d2837c1656f 1,4-7,10-29,39,63,80-119
+web/app/src/components/chat/__tests__/ChatTranscript.evidence.test.tsx
+  s_34ff7f78492131::t_a2e9f6cb2fff48 1-2,6-13,18,21,39,90-131
+web/app/src/components/conversations/ConversationDetailPanel.tsx
+  s_34ff7f78492131::t_6d2290e7de8df8 252,324
+web/app/src/components/conversations/NoteSections.tsx
+  s_34ff7f78492131::t_f486e764803502 3,36,42,45-47,58,60-66,68-72,87,102
+web/app/src/components/conversations/QuoteTimestamps.tsx
+  s_34ff7f78492131::t_803a133c258327 1-84
+web/app/src/components/conversations/__tests__/NoteSections.test.tsx
+  s_34ff7f78492131::t_d7d328ac679cc2 2-3,5,8-102,107-110,121,125-128,227
+web/app/src/components/conversations/__tests__/TranscriptView.sources.test.tsx
+  s_34ff7f78492131::t_31f7a3f6e79e72 32,38
+web/app/src/hooks/__tests__/useChat.test.tsx
+  s_34ff7f78492131::t_09ff4252f54949 187-240
+web/app/src/lib/__tests__/apiKeys.test.ts
+  s_34ff7f78492131::t_106d021d47f8d3 6-11,40-69
+web/app/src/lib/api.ts
+  s_34ff7f78492131::t_de2296978865c5 2269-2276,2278-2281,2284
+web/app/src/lib/chatCitationLinks.ts
+  s_34ff7f78492131::t_9433f44aea0567 3-54,94
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "10903f6461b2a1e450723d12a67aaa4dc1a49355",
+  "prompts": {},
+  "sessions": {
+    "s_34ff7f78492131": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5072624e-c5e8-4020-8be9-cfd65fb27aab",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Archit Lal <architdraftid@gmail.com>"
+    }
+  }
+}
