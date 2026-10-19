@@ -1,0 +1,113 @@
+app/lib/l10n/app_ar.arb
+  s_34ff7f78492131::t_e6a90a46839b0f 4373-4375
+app/lib/l10n/app_be.arb
+  s_34ff7f78492131::t_d40cdc3e82f44b 11799-11801
+app/lib/l10n/app_bg.arb
+  s_34ff7f78492131::t_b5f75f59213996 4373-4375
+app/lib/l10n/app_bn.arb
+  s_34ff7f78492131::t_1c9e1a24a3f551 11799-11801
+app/lib/l10n/app_bs.arb
+  s_34ff7f78492131::t_b858ec932cbb0f 11799-11801
+app/lib/l10n/app_ca.arb
+  s_34ff7f78492131::t_16112a79945c75 4373-4375
+app/lib/l10n/app_cs.arb
+  s_34ff7f78492131::t_3b61108a889641 4373-4375
+app/lib/l10n/app_da.arb
+  s_34ff7f78492131::t_3e21a5e875029a 4415-4417
+app/lib/l10n/app_de.arb
+  s_34ff7f78492131::t_940254ed33c438 4373-4375
+app/lib/l10n/app_el.arb
+  s_34ff7f78492131::t_d099083ba606f4 4373-4375
+app/lib/l10n/app_es.arb
+  s_34ff7f78492131::t_4ca9e97c613707 4373-4375
+app/lib/l10n/app_et.arb
+  s_34ff7f78492131::t_afab68070daf6f 4373-4375
+app/lib/l10n/app_fa.arb
+  s_34ff7f78492131::t_f5b624624f8739 11799-11801
+app/lib/l10n/app_fi.arb
+  s_34ff7f78492131::t_5275fb624597f4 4373-4375
+app/lib/l10n/app_fr.arb
+  s_34ff7f78492131::t_8840161da94272 4408-4410
+app/lib/l10n/app_he.arb
+  s_34ff7f78492131::t_d72188297a07fa 11799-11801
+app/lib/l10n/app_hi.arb
+  s_34ff7f78492131::t_024c078cb64d5d 4373-4375
+app/lib/l10n/app_hr.arb
+  s_34ff7f78492131::t_d95b72ff2f8171 11799-11801
+app/lib/l10n/app_hu.arb
+  s_34ff7f78492131::t_b9898b760c522a 4469-4471
+app/lib/l10n/app_id.arb
+  s_34ff7f78492131::t_64eb2c4aa80d81 4408-4410
+app/lib/l10n/app_it.arb
+  s_34ff7f78492131::t_e7416172191d91 4373-4375
+app/lib/l10n/app_ja.arb
+  s_34ff7f78492131::t_6f44416cb1c945 4373-4375
+app/lib/l10n/app_kn.arb
+  s_34ff7f78492131::t_62caf75ee93337 11799-11801
+app/lib/l10n/app_ko.arb
+  s_34ff7f78492131::t_24f186f96faef2 4373-4375
+app/lib/l10n/app_lt.arb
+  s_34ff7f78492131::t_a0ba72a63471a6 4373-4375
+app/lib/l10n/app_lv.arb
+  s_34ff7f78492131::t_6a7d6f48925c4c 4373-4375
+app/lib/l10n/app_mk.arb
+  s_34ff7f78492131::t_edc6b104ef2670 11799-11801
+app/lib/l10n/app_mr.arb
+  s_34ff7f78492131::t_dfda3571e4bc02 11799-11801
+app/lib/l10n/app_ms.arb
+  s_34ff7f78492131::t_e91631fc790cce 4373-4375
+app/lib/l10n/app_nl.arb
+  s_34ff7f78492131::t_b7fe924a1186bb 4373-4375
+app/lib/l10n/app_no.arb
+  s_34ff7f78492131::t_e440ad8bf7f1d0 4373-4375
+app/lib/l10n/app_pl.arb
+  s_34ff7f78492131::t_10f48c6813bfc7 4408-4410
+app/lib/l10n/app_pt.arb
+  s_34ff7f78492131::t_c063d0ec59de78 4408-4410
+app/lib/l10n/app_ro.arb
+  s_34ff7f78492131::t_3f677180ade55e 4373-4375
+app/lib/l10n/app_ru.arb
+  s_34ff7f78492131::t_5e0f913930fbb6 4408-4410
+app/lib/l10n/app_sk.arb
+  s_34ff7f78492131::t_a971c75b9cee1f 4373-4375
+app/lib/l10n/app_sl.arb
+  s_34ff7f78492131::t_9e3e9fdf0df9d8 11799-11801
+app/lib/l10n/app_sr.arb
+  s_34ff7f78492131::t_333e6af6219c3c 11799-11801
+app/lib/l10n/app_sv.arb
+  s_34ff7f78492131::t_6231aa9bad147f 4373-4375
+app/lib/l10n/app_ta.arb
+  s_34ff7f78492131::t_2dc29a01013b77 11799-11801
+app/lib/l10n/app_te.arb
+  s_34ff7f78492131::t_596aeea80215c7 11799-11801
+app/lib/l10n/app_th.arb
+  s_34ff7f78492131::t_5bec4dd4e73f90 4373-4375
+app/lib/l10n/app_tl.arb
+  s_34ff7f78492131::t_394bc5a10da91b 11799-11801
+app/lib/l10n/app_tr.arb
+  s_34ff7f78492131::t_63a1c9517aaf5f 4408-4410
+app/lib/l10n/app_uk.arb
+  s_34ff7f78492131::t_a105ef22ce31be 4373-4375
+app/lib/l10n/app_ur.arb
+  s_34ff7f78492131::t_bda79e9b18531c 11799-11801
+app/lib/l10n/app_vi.arb
+  s_34ff7f78492131::t_5bcbea8c8ece2c 4373-4375
+app/lib/l10n/app_zh.arb
+  s_34ff7f78492131::t_7b84603069ce23 4373-4375
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "96160ac037c9e643cd97849f54f85123d32c7432",
+  "prompts": {},
+  "sessions": {
+    "s_34ff7f78492131": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5072624e-c5e8-4020-8be9-cfd65fb27aab",
+        "model": "unknown"
+      },
+      "human_author": "Archit Lal <architdraftid@gmail.com>"
+    }
+  }
+}
