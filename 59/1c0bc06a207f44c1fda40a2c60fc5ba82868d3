@@ -1,0 +1,2672 @@
+.agent-artifacts/ui-evidence/20824/evidence.json
+  h_1f8b55eef4fb84 1-33
+.agent-artifacts/ui-evidence/connect-agent-revoke/evidence.json
+  h_1f8b55eef4fb84 1-12
+.agent-artifacts/ui-evidence/episodes-v1/evidence.json
+  h_1f8b55eef4fb84 1-75
+.agent-artifacts/ui-evidence/fix-20595-task-delivery/evidence.json
+  h_1f8b55eef4fb84 1-40
+.agent-artifacts/ui-evidence/fix-on-the-way-refused-server-job/evidence.json
+  h_1f8b55eef4fb84 1-19
+.agent-artifacts/ui-evidence/fr-b19-product/evidence.json
+  h_1f8b55eef4fb84 1-12
+.agent-artifacts/ui-evidence/review-stuck/evidence.json
+  h_1f8b55eef4fb84 1-19
+.agent-artifacts/ui-evidence/watch-recording-recovery/evidence.json
+  h_1f8b55eef4fb84 1-12
+.dockerignore
+  h_1f8b55eef4fb84 10
+.github/actions/deploy-backend-stack/action.yml
+  h_1f8b55eef4fb84 101-110,117-118,121-124,262-282,453-454,461-472,691,767,819,928,1120,1202-1203,1207,1221,1270
+.github/agent-docs/formatting.md
+  h_1f8b55eef4fb84 10-14
+.github/agent-docs/mobile-f1-telemetry-inventory.md
+  h_1f8b55eef4fb84 90
+.github/agent-docs/mobile-release-process.md
+  h_1f8b55eef4fb84 125-127,160-161
+.github/agent-docs/on-device-speech.md
+  h_1f8b55eef4fb84 14-56
+.github/checks-manifest.yaml
+  h_1f8b55eef4fb84 299-303,560,563-567,727-732,1152
+.github/ci-budget.yaml
+  h_1f8b55eef4fb84 4,7,45-62,64,73,512,518,530,536,548,554,996-1039,1041,1044,1054,1063,1066-1067,1072,1081,1084,1090,1099,1102,1108,1117,1120-1121,1126,1243,1252,1988,1994,2024,2030,2422-2457,2691-2712,2716,2728-2729,2749-2750,2976,2984-2985,2996-2997,3571,3616,3624,3632-3636,3830,3845,4635,4639-4643,4687,4693-4702,5007-5038
+.github/failure-classes/FC-calendar-purpose-string-without-signing-entitlement.json
+  h_1f8b55eef4fb84 1-17
+.github/failure-classes/FC-capture-recovery-dead-end.json
+  h_1f8b55eef4fb84 13,15-16
+.github/failure-classes/FC-customer-data-plane-divergence.json
+  h_1f8b55eef4fb84 8-9
+.github/failure-classes/FC-failed-listing-read-as-complete-capture.json
+  h_1f8b55eef4fb84 1-18
+.github/failure-classes/FC-hook-formats-merge-incoming-files.json
+  h_1f8b55eef4fb84 1-16
+.github/failure-classes/FC-ios-embed-after-thin-binary-cycle.json
+  h_1f8b55eef4fb84 1-16
+.github/failure-classes/FC-late-pop-after-route-left.json
+  h_1f8b55eef4fb84 5
+.github/failure-classes/FC-marker-absence-read-as-unapplied.json
+  h_1f8b55eef4fb84 2-14
+.github/failure-classes/FC-memory-index-window-starves-canonical-heads.json
+  h_1f8b55eef4fb84 1-17
+.github/failure-classes/FC-operator-process-env-pinned-as-server-policy.json
+  h_1f8b55eef4fb84 1-16
+.github/failure-classes/FC-permanent-review-conflict-reoffered.json
+  h_1f8b55eef4fb84 1-18
+.github/failure-classes/FC-stale-list-overwrites-acknowledged-task.json
+  h_1f8b55eef4fb84 1-10
+.github/failure-classes/FC-waiting-copy-ignores-pipeline-state.json
+  h_1f8b55eef4fb84 5,13
+.github/failure-classes/FC-watch-audio-released-before-durable-receipt.json
+  h_1f8b55eef4fb84 1-10
+.github/scripts/check-mobile-changelog.py
+  h_1f8b55eef4fb84 20-21
+.github/scripts/check_backend_deploy_source_admission.py
+  h_1f8b55eef4fb84 43,63-90,511,645-688
+.github/scripts/check_workflow_checkout_stall_bounds.py
+  h_1f8b55eef4fb84 1-132
+.github/scripts/dispatch_mobile_daily_train.py
+  h_1f8b55eef4fb84 33-41,50-52,62-68,70-77,98-102,115
+.github/scripts/dispatch_mobile_internal_builds.py
+  h_1f8b55eef4fb84 189-192
+.github/scripts/dispatch_mobile_rollout_watch.py
+  h_1f8b55eef4fb84 18,20,22,27-29,32-74,78-81,86,90-93,104-108,111-126
+.github/scripts/fixtures/codemagic_workflow_contract/v1.json
+  h_1f8b55eef4fb84 2-3
+.github/scripts/listen_helm_env_overrides.py
+  h_1f8b55eef4fb84 12-18,36-64,95-98,135-226,258-267,270-275,278-283,288-294,304-305,307,312-317
+.github/scripts/test_check_backend_deploy_source_admission.py
+  h_1f8b55eef4fb84 554-555,587-588,595-692
+.github/scripts/test_check_workflow_checkout_stall_bounds.py
+  h_1f8b55eef4fb84 1-101
+.github/scripts/test_dispatch_mobile_daily_train.py
+  h_1f8b55eef4fb84 61-77
+.github/scripts/test_dispatch_mobile_internal_builds.py
+  h_1f8b55eef4fb84 5,7-8,332-412
+.github/scripts/test_dispatch_mobile_rollout_watch.py
+  h_1f8b55eef4fb84 6-8,10,12,14-15,48-156,160-171
+.github/workflows/backend-checks.yml
+  h_1f8b55eef4fb84 13-23
+.github/workflows/backend-edge.yml
+  h_1f8b55eef4fb84 1-53
+.github/workflows/backend-emulator-proofs.yml
+  h_1f8b55eef4fb84 30-31,46-47,57-62
+.github/workflows/backend-hermetic-e2e.yml
+  h_1f8b55eef4fb84 22-32,54,129-131,138-141,190,282,364
+.github/workflows/backend-unit-tests.yml
+  h_1f8b55eef4fb84 118-123
+.github/workflows/ci-budget-audit.yml
+  h_1f8b55eef4fb84 13-18
+.github/workflows/desktop-backend-contracts.yml
+  h_1f8b55eef4fb84 26-31
+.github/workflows/desktop-checks.yml
+  h_1f8b55eef4fb84 13-18
+.github/workflows/desktop-swift-ci.yml
+  h_1f8b55eef4fb84 32-42
+.github/workflows/desktop-windows-ci.yml
+  h_1f8b55eef4fb84 20-21,28-29,37-42
+.github/workflows/desktop_auto_release.yml
+  h_1f8b55eef4fb84 15-20
+.github/workflows/desktop_backend_auto_dev.yml
+  h_1f8b55eef4fb84 29-32,275-277
+.github/workflows/desktop_backend_prod.yml
+  h_1f8b55eef4fb84 35-38,368-370
+.github/workflows/desktop_backend_recover_prod.yml
+  h_1f8b55eef4fb84 21-24
+.github/workflows/desktop_codemagic_failure_recovery.yml
+  h_1f8b55eef4fb84 20-25
+.github/workflows/desktop_promote_prod.yml
+  h_1f8b55eef4fb84 27-30
+.github/workflows/desktop_publish_preview.yml
+  h_1f8b55eef4fb84 37-42
+.github/workflows/desktop_release_doctor.yml
+  h_1f8b55eef4fb84 18-23
+.github/workflows/desktop_windows_release.yml
+  h_1f8b55eef4fb84 58-63
+.github/workflows/firestore_read_reconcile.yml
+  h_1f8b55eef4fb84 16-21
+.github/workflows/firmware_release.yml
+  h_1f8b55eef4fb84 63-68
+.github/workflows/gcp_admin.yml
+  h_1f8b55eef4fb84 30-35
+.github/workflows/gcp_app.yml
+  h_1f8b55eef4fb84 35-40
+.github/workflows/gcp_backend.yml
+  h_1f8b55eef4fb84 1-14,29,43,58-62,93-96,134-135,142-143,166-173,241-242,247,403-674,711
+.github/workflows/gcp_backend_auto_dev.yml
+  h_1f8b55eef4fb84 16-19
+.github/workflows/gcp_backend_listen_helm.yml
+  h_1f8b55eef4fb84 90-93,259-301,386-391,399-400,413-417,420-422,430-436,486,488,498,526-529
+.github/workflows/gcp_backend_pusher.yml
+  h_1f8b55eef4fb84 59-62,145-146
+.github/workflows/gcp_backend_pusher_auto_deploy.yml
+  h_1f8b55eef4fb84 18,45-48,297-312,314-367,378
+.github/workflows/gcp_cloud_run_metrics_egress.yml
+  h_1f8b55eef4fb84 34-39
+.github/workflows/gcp_day3_reengagement_email_job.yml
+  h_1f8b55eef4fb84 27-30
+.github/workflows/gcp_day3_reengagement_email_job_auto_dev.yml
+  h_1f8b55eef4fb84 12-15
+.github/workflows/gcp_diarizer.yml
+  h_1f8b55eef4fb84 41-44,56-58,202-205,207,212,216,219,222-231
+.github/workflows/gcp_finops_unit_cost_job.yml
+  h_1f8b55eef4fb84 37-40
+.github/workflows/gcp_firestore_indexes.yml
+  h_1f8b55eef4fb84 49-54
+.github/workflows/gcp_frame_request_retention_job.yml
+  h_1f8b55eef4fb84 18-21
+.github/workflows/gcp_frontend.yml
+  h_1f8b55eef4fb84 33-38
+.github/workflows/gcp_llm_gateway.yml
+  h_1f8b55eef4fb84 52-55
+.github/workflows/gcp_memory_maintenance_job.yml
+  h_1f8b55eef4fb84 25-28
+.github/workflows/gcp_memory_maintenance_job_auto_dev.yml
+  h_1f8b55eef4fb84 12-15
+.github/workflows/gcp_models.yml
+  h_1f8b55eef4fb84 35-38
+.github/workflows/gcp_nllb_translation.yml
+  h_1f8b55eef4fb84 33-36
+.github/workflows/gcp_notifications_job.yml
+  h_1f8b55eef4fb84 29-32
+.github/workflows/gcp_parakeet.yml
+  h_1f8b55eef4fb84 29-32
+.github/workflows/gcp_personas.yml
+  h_1f8b55eef4fb84 17-22
+.github/workflows/gcp_plugins.yml
+  h_1f8b55eef4fb84 26-29
+.github/workflows/gcp_scheduler_reconcile.yml
+  h_1f8b55eef4fb84 26-31
+.github/workflows/gcp_storage_lifecycle.yml
+  h_1f8b55eef4fb84 53-58
+.github/workflows/gcp_x_connector_sync_job.yml
+  h_1f8b55eef4fb84 27-30
+.github/workflows/grafana_dashboard_provisioning.yml
+  h_1f8b55eef4fb84 39-44
+.github/workflows/mobile-app-checks.yml
+  h_1f8b55eef4fb84 22-32
+.github/workflows/mobile_daily_train.yml
+  h_1f8b55eef4fb84 37-40,49-54,70,85-86
+.github/workflows/mobile_internal_build.yml
+  h_1f8b55eef4fb84 24-29
+.github/workflows/mobile_rollout_watch.yml
+  h_1f8b55eef4fb84 15-19,24-29,37-43,55,57,63-64
+.github/workflows/onboarding_figma_sync.yml
+  h_1f8b55eef4fb84 13-18
+.github/workflows/openapi-contract.yml
+  h_1f8b55eef4fb84 53-63
+.github/workflows/opentofu-development-wif-pilot-validate.yml
+  h_1f8b55eef4fb84 26-31
+.github/workflows/opentofu-development-wif-pilot.yml
+  h_1f8b55eef4fb84 14-19
+.github/workflows/opentofu-foundation-validate.yml
+  h_1f8b55eef4fb84 26-31
+.github/workflows/public-build-config-preflight.yml
+  h_1f8b55eef4fb84 37-42
+.github/workflows/publish_omi_cli.yml
+  h_1f8b55eef4fb84 46-51
+.github/workflows/python-cli-ci.yml
+  h_1f8b55eef4fb84 27-32
+.github/workflows/reid_onboarding_vercel.yml
+  h_1f8b55eef4fb84 24-29
+.github/workflows/release-eligibility.yml
+  h_1f8b55eef4fb84 11-16
+.github/workflows/repo-checks.yml
+  h_1f8b55eef4fb84 24-34
+.github/workflows/repo-hygiene.yml
+  h_1f8b55eef4fb84 27-32
+.github/workflows/role_images.yml
+  h_1f8b55eef4fb84 1-96
+.github/workflows/runtime_image_contracts.yml
+  h_1f8b55eef4fb84 17-22
+.github/workflows/sdk-cpp.yml
+  h_1f8b55eef4fb84 14-19
+.github/workflows/sdk-rust.yml
+  h_1f8b55eef4fb84 14-19
+.github/workflows/sync-docs.yml
+  h_1f8b55eef4fb84 11-16
+.github/workflows/sync_ledger_fence_cutover.yml
+  h_1f8b55eef4fb84 36-39
+.github/workflows/task-recommendation-live-eval.yml
+  h_1f8b55eef4fb84 9-14
+.github/workflows/web-checks.yml
+  h_1f8b55eef4fb84 13-18
+.github/workflows/windows-preflight-portability.yml
+  h_1f8b55eef4fb84 38-43
+app/AGENTS.md
+  h_1f8b55eef4fb84 17,110,161
+app/android/app/src/main/kotlin/com/example/my_project/ChatVideoSamplerPlugin.kt
+  h_1f8b55eef4fb84 1-166
+app/android/app/src/main/kotlin/com/example/my_project/MainActivity.kt
+  h_1f8b55eef4fb84 73
+app/android/app/src/main/kotlin/com/friend/ios/ble/BatteryHistorySessionStore.kt
+  h_1f8b55eef4fb84 3,6-263,273-294,297-298,300-302,308,311-332,334-351,358-363
+app/android/app/src/main/kotlin/com/friend/ios/ble/BleHostApiImpl.kt
+  h_1f8b55eef4fb84 222-232,234,241-242
+app/android/app/src/main/kotlin/com/friend/ios/ble/OmiBleForegroundService.kt
+  h_1f8b55eef4fb84 194-198,227,556,981-1007,1059-1060,1066,1075-1076,1080-1085,1098-1105,1153,1156-1161,1178-1188,1190,1202-1203,1218
+app/android/app/src/test/kotlin/com/friend/ios/ble/BatteryHistorySessionStoreTest.kt
+  h_1f8b55eef4fb84 3-4,9,14,17,20-179,189-191,194-507
+app/changelog/releases/1.0.568.json
+  h_1f8b55eef4fb84 1-13
+app/changelog/unreleased/20261020-capture-continuity-gates.json
+  h_1f8b55eef4fb84 2-3
+app/changelog/unreleased/20261020-device-page-right-now.json
+  h_1f8b55eef4fb84 2
+app/changelog/unreleased/20261020-episodes-live-row.json
+  h_1f8b55eef4fb84 1-3
+app/changelog/unreleased/20261020-task-delivery.json
+  h_1f8b55eef4fb84 1-3
+app/changelog/unreleased/20261021-flaky-test-determinism.json
+  h_1f8b55eef4fb84 1-4
+app/changelog/unreleased/20261021-offline-sync-day-boundaries.json
+  h_1f8b55eef4fb84 2
+app/docs/apple-watch-recovery.md
+  h_1f8b55eef4fb84 1-123
+app/docs/memory-graph-identity.md
+  h_1f8b55eef4fb84 1-51
+app/docs/task-delivery.md
+  h_1f8b55eef4fb84 1-111
+app/docs/transcription-connectivity-recovery.md
+  h_1f8b55eef4fb84 1-50
+app/docs/ux-contract.md
+  h_1f8b55eef4fb84 96
+app/e2e/SKILL.md
+  h_1f8b55eef4fb84 141
+app/e2e/flows/conversation-capturing.yaml
+  h_1f8b55eef4fb84 8
+app/e2e/flows/device-capture.yaml
+  h_1f8b55eef4fb84 15,44,48,57
+app/e2e/flows/phone-capture.yaml
+  h_1f8b55eef4fb84 14,46,50,57
+app/integration_test/support/task_delivery_fixture.dart
+  h_1f8b55eef4fb84 1-105
+app/integration_test/task_delivery_capture.dart
+  h_1f8b55eef4fb84 1-98
+app/integration_test/visual_audit/compat/capture-attention/UNTIL
+  h_1f8b55eef4fb84 1
+app/integration_test/visual_audit/compat/capture-attention/registry.dart
+  h_1f8b55eef4fb84 9-10,13
+app/integration_test/visual_audit/compat/capture-attention/scenarios/capture.dart
+  h_1f8b55eef4fb84 17,361,401
+app/integration_test/visual_audit/compat/capture-attention/scenarios/speaker_labels.dart
+  h_1f8b55eef4fb84 13,30,237
+app/integration_test/visual_audit/scenarios/capture.dart
+  h_1f8b55eef4fb84 21,344,410
+app/integration_test/visual_audit/scenarios/memories.dart
+  h_1f8b55eef4fb84 61-100
+app/integration_test/visual_audit/scenarios/offline_processing.dart
+  h_1f8b55eef4fb84 313-342
+app/integration_test/visual_audit/scenarios/speaker_labels.dart
+  h_1f8b55eef4fb84 13,30,237
+app/ios/Runner.xcodeproj/project.pbxproj
+  h_1f8b55eef4fb84 10-13,179-180,287,411,691,693,795,1194-1195,1211,1227,1285,1301
+app/ios/Runner/AppDelegate.swift
+  h_1f8b55eef4fb84 114,122,314-315,325,455-457,811-813,823-844,1172-1175,1202-1209,1239,1356,1361-1362,1369-1370,1392,1404,1414,1416,1425,1427
+app/ios/Runner/Ble/OmiBleManager.swift
+  h_1f8b55eef4fb84 52-69,581-625,644-655,659,1457-1458,1460-1461,1464-1465,1788-1795,1797-1800,1883-1888
+app/ios/Runner/ChatVideoSampler.swift
+  h_1f8b55eef4fb84 1-3,5,7-31,34-41,44-47,50-57,61-111,116-131
+app/ios/Runner/RecorderHostApiImpl.swift
+  h_1f8b55eef4fb84 15-20,22,25-26,29,37,40,122,135
+app/ios/Runner/SpeechDeadline.swift
+  h_1f8b55eef4fb84 75-84,107-120
+app/ios/Runner/WatchRecordingStore.swift
+  h_1f8b55eef4fb84 1-339
+app/ios/omiWatchApp/ContentView.swift
+  h_1f8b55eef4fb84 11,16,45,52,86-97,99-102,106
+app/ios/omiWatchApp/Localizable.xcstrings
+  h_1f8b55eef4fb84 71-182
+app/ios/omiWatchApp/WatchAudioRecorderViewModel.swift
+  h_1f8b55eef4fb84 10-21,43-46,48-53,60-63,67-68,71-104,113-114,119-120,123,143-145,292,307,309,316,323,329-331,333-348,354,357-358,360,364-365,371,376,380,384,386-387,396,420,423,428-475,481-482,484-508,510-511,514-515,517-519,535-536,539-542
+app/ios/omiWatchApp/WatchRecorderControlling.swift
+  h_1f8b55eef4fb84 8-9,13-19
+app/ios/omiWatchApp/omiwatchApp.swift
+  h_1f8b55eef4fb84 6,11-13
+app/ios/test/fixtures/watch_recording_store_harness.swift
+  h_1f8b55eef4fb84 1-211
+app/ios/test/rayban_dat_build_wrapper_test.rb
+  h_1f8b55eef4fb84 24,169,171-174,293-295,396-397,455
+app/ios/test/rayban_dat_xcode_graph_test.rb
+  h_1f8b55eef4fb84 142-155
+app/ios/test/speech_fallback_coordinator_test.rb
+  h_1f8b55eef4fb84 6-64
+app/ios/test/watch_recording_recovery_test.rb
+  h_1f8b55eef4fb84 1-48
+app/lib/backend/http/action_items_api_contract.dart
+  h_1f8b55eef4fb84 3,21
+app/lib/backend/http/api/conversations.dart
+  h_1f8b55eef4fb84 191-200,205,207,209
+app/lib/backend/http/api/episodes.dart
+  h_1f8b55eef4fb84 1-59
+app/lib/backend/http/api/knowledge_graph_api.dart
+  h_1f8b55eef4fb84 78
+app/lib/backend/http/api/messages.dart
+  h_1f8b55eef4fb84 10,14,338,340-368,370-405
+app/lib/backend/http/api/task_suggestions.dart
+  h_1f8b55eef4fb84 1-103
+app/lib/backend/http/api/users.dart
+  h_1f8b55eef4fb84 588-601
+app/lib/backend/http/api_result.dart
+  h_1f8b55eef4fb84 27,31-33,123-131,142
+app/lib/backend/http/budget_choice_api.dart
+  h_1f8b55eef4fb84 7-10
+app/lib/backend/http/shared.dart
+  h_1f8b55eef4fb84 773,790-794,801-808,817,835,839,855,858,912,932
+app/lib/backend/schema/episode.dart
+  h_1f8b55eef4fb84 1-183
+app/lib/backend/schema/gen/conversation_wire.g.dart
+  h_1f8b55eef4fb84 303,312,323,335
+app/lib/backend/schema/gen/episodes_wire.g.dart
+  h_1f8b55eef4fb84 1-369
+app/lib/backend/schema/gen/messages_wire.g.dart
+  h_1f8b55eef4fb84 133-180,189,199,211,224
+app/lib/backend/schema/structured.dart
+  h_1f8b55eef4fb84 8-9,74-75,78,82-83,120-123,157-165,186-189,194,196-197,200-205,211
+app/lib/core/app_shell.dart
+  h_1f8b55eef4fb84 65
+app/lib/l10n/app_ar.arb
+  h_1f8b55eef4fb84 4026,4386-4410
+app/lib/l10n/app_be.arb
+  h_1f8b55eef4fb84 11449,11812-11836
+app/lib/l10n/app_bg.arb
+  h_1f8b55eef4fb84 4026,4386-4410
+app/lib/l10n/app_bn.arb
+  h_1f8b55eef4fb84 11449,11812-11836
+app/lib/l10n/app_bs.arb
+  h_1f8b55eef4fb84 11449,11812-11836
+app/lib/l10n/app_ca.arb
+  h_1f8b55eef4fb84 4026,4386-4410
+app/lib/l10n/app_cs.arb
+  h_1f8b55eef4fb84 4026,4386-4410
+app/lib/l10n/app_da.arb
+  h_1f8b55eef4fb84 4068,4428-4452
+app/lib/l10n/app_de.arb
+  h_1f8b55eef4fb84 4026,4386-4410
+app/lib/l10n/app_el.arb
+  h_1f8b55eef4fb84 4026,4386-4410
+app/lib/l10n/app_en.arb
+  h_1f8b55eef4fb84 15873-15876,17516-17675
+app/lib/l10n/app_es.arb
+  h_1f8b55eef4fb84 4026,4386-4410
+app/lib/l10n/app_et.arb
+  h_1f8b55eef4fb84 4026,4386-4410
+app/lib/l10n/app_fa.arb
+  h_1f8b55eef4fb84 11449,11812-11836
+app/lib/l10n/app_fi.arb
+  h_1f8b55eef4fb84 4026,4386-4410
+app/lib/l10n/app_fr.arb
+  h_1f8b55eef4fb84 4061,4421-4445
+app/lib/l10n/app_he.arb
+  h_1f8b55eef4fb84 11449,11812-11836
+app/lib/l10n/app_hi.arb
+  h_1f8b55eef4fb84 4026,4386-4410
+app/lib/l10n/app_hr.arb
+  h_1f8b55eef4fb84 11449,11812-11836
+app/lib/l10n/app_hu.arb
+  h_1f8b55eef4fb84 4122,4482-4506
+app/lib/l10n/app_id.arb
+  h_1f8b55eef4fb84 4061,4421-4445
+app/lib/l10n/app_it.arb
+  h_1f8b55eef4fb84 4026,4386-4410
+app/lib/l10n/app_ja.arb
+  h_1f8b55eef4fb84 4026,4386-4410
+app/lib/l10n/app_kn.arb
+  h_1f8b55eef4fb84 11449,11812-11836
+app/lib/l10n/app_ko.arb
+  h_1f8b55eef4fb84 4026,4386-4410
+app/lib/l10n/app_localizations.dart
+  h_1f8b55eef4fb84 23328-23333,25488-25637
+app/lib/l10n/app_localizations_ar.dart
+  h_1f8b55eef4fb84 13047-13049,14308-14408
+app/lib/l10n/app_localizations_be.dart
+  h_1f8b55eef4fb84 13155-13157,14424-14524
+app/lib/l10n/app_localizations_bg.dart
+  h_1f8b55eef4fb84 13168-13170,14440-14540
+app/lib/l10n/app_localizations_bn.dart
+  h_1f8b55eef4fb84 13117-13119,14384-14484
+app/lib/l10n/app_localizations_bs.dart
+  h_1f8b55eef4fb84 13149-13151,14417-14517
+app/lib/l10n/app_localizations_ca.dart
+  h_1f8b55eef4fb84 13188-13190,14462-14562
+app/lib/l10n/app_localizations_cs.dart
+  h_1f8b55eef4fb84 13122-13124,14388-14488
+app/lib/l10n/app_localizations_da.dart
+  h_1f8b55eef4fb84 13107-13109,14378-14478
+app/lib/l10n/app_localizations_de.dart
+  h_1f8b55eef4fb84 13218-13220,14496-14596
+app/lib/l10n/app_localizations_el.dart
+  h_1f8b55eef4fb84 13203-13205,14482-14582
+app/lib/l10n/app_localizations_en.dart
+  h_1f8b55eef4fb84 13105-13107,14373-14473
+app/lib/l10n/app_localizations_es.dart
+  h_1f8b55eef4fb84 13159-13161,14432-14532
+app/lib/l10n/app_localizations_et.dart
+  h_1f8b55eef4fb84 13114-13116,14381-14481
+app/lib/l10n/app_localizations_fa.dart
+  h_1f8b55eef4fb84 13115-13117,14383-14483
+app/lib/l10n/app_localizations_fi.dart
+  h_1f8b55eef4fb84 13125-13127,14393-14493
+app/lib/l10n/app_localizations_fr.dart
+  h_1f8b55eef4fb84 13223-13225,14502-14602
+app/lib/l10n/app_localizations_he.dart
+  h_1f8b55eef4fb84 13027-13029,14286-14386
+app/lib/l10n/app_localizations_hi.dart
+  h_1f8b55eef4fb84 13101-13103,14372-14472
+app/lib/l10n/app_localizations_hr.dart
+  h_1f8b55eef4fb84 13154-13156,14424-14524
+app/lib/l10n/app_localizations_hu.dart
+  h_1f8b55eef4fb84 13172-13174,14446-14546
+app/lib/l10n/app_localizations_id.dart
+  h_1f8b55eef4fb84 13130-13132,14402-14502
+app/lib/l10n/app_localizations_it.dart
+  h_1f8b55eef4fb84 13189-13191,14464-14564
+app/lib/l10n/app_localizations_ja.dart
+  h_1f8b55eef4fb84 12934-12936,14184-14284
+app/lib/l10n/app_localizations_kn.dart
+  h_1f8b55eef4fb84 13159-13161,14435-14535
+app/lib/l10n/app_localizations_ko.dart
+  h_1f8b55eef4fb84 12939-12941,14190-14290
+app/lib/l10n/app_localizations_lt.dart
+  h_1f8b55eef4fb84 13144-13146,14412-14512
+app/lib/l10n/app_localizations_lv.dart
+  h_1f8b55eef4fb84 13149-13151,14420-14520
+app/lib/l10n/app_localizations_mk.dart
+  h_1f8b55eef4fb84 13181-13183,14453-14553
+app/lib/l10n/app_localizations_mr.dart
+  h_1f8b55eef4fb84 13126-13128,14399-14499
+app/lib/l10n/app_localizations_ms.dart
+  h_1f8b55eef4fb84 13151-13153,14424-14524
+app/lib/l10n/app_localizations_nl.dart
+  h_1f8b55eef4fb84 13156-13158,14427-14527
+app/lib/l10n/app_localizations_no.dart
+  h_1f8b55eef4fb84 13121-13123,14392-14492
+app/lib/l10n/app_localizations_pl.dart
+  h_1f8b55eef4fb84 13159-13161,14431-14531
+app/lib/l10n/app_localizations_pt.dart
+  h_1f8b55eef4fb84 13143-13145,14416-14516
+app/lib/l10n/app_localizations_ro.dart
+  h_1f8b55eef4fb84 13175-13177,14450-14550
+app/lib/l10n/app_localizations_ru.dart
+  h_1f8b55eef4fb84 13166-13168,14437-14537
+app/lib/l10n/app_localizations_sk.dart
+  h_1f8b55eef4fb84 13116-13118,14384-14484
+app/lib/l10n/app_localizations_sl.dart
+  h_1f8b55eef4fb84 13149-13151,14417-14517
+app/lib/l10n/app_localizations_sr.dart
+  h_1f8b55eef4fb84 13129-13131,14395-14495
+app/lib/l10n/app_localizations_sv.dart
+  h_1f8b55eef4fb84 13125-13127,14396-14496
+app/lib/l10n/app_localizations_ta.dart
+  h_1f8b55eef4fb84 13210-13212,14486-14586
+app/lib/l10n/app_localizations_te.dart
+  h_1f8b55eef4fb84 13172-13174,14447-14547
+app/lib/l10n/app_localizations_th.dart
+  h_1f8b55eef4fb84 13054-13056,14316-14416
+app/lib/l10n/app_localizations_tl.dart
+  h_1f8b55eef4fb84 13225-13227,14502-14602
+app/lib/l10n/app_localizations_tr.dart
+  h_1f8b55eef4fb84 13133-13135,14401-14501
+app/lib/l10n/app_localizations_uk.dart
+  h_1f8b55eef4fb84 13150-13152,14419-14519
+app/lib/l10n/app_localizations_ur.dart
+  h_1f8b55eef4fb84 13134-13136,14401-14501
+app/lib/l10n/app_localizations_vi.dart
+  h_1f8b55eef4fb84 13118-13120,14389-14489
+app/lib/l10n/app_localizations_zh.dart
+  h_1f8b55eef4fb84 12915-12917,14164-14264
+app/lib/l10n/app_lt.arb
+  h_1f8b55eef4fb84 4026,4386-4410
+app/lib/l10n/app_lv.arb
+  h_1f8b55eef4fb84 4026,4386-4410
+app/lib/l10n/app_mk.arb
+  h_1f8b55eef4fb84 11449,11812-11836
+app/lib/l10n/app_mr.arb
+  h_1f8b55eef4fb84 11449,11812-11836
+app/lib/l10n/app_ms.arb
+  h_1f8b55eef4fb84 4026,4386-4410
+app/lib/l10n/app_nl.arb
+  h_1f8b55eef4fb84 4026,4386-4410
+app/lib/l10n/app_no.arb
+  h_1f8b55eef4fb84 4026,4386-4410
+app/lib/l10n/app_pl.arb
+  h_1f8b55eef4fb84 4061,4421-4445
+app/lib/l10n/app_pt.arb
+  h_1f8b55eef4fb84 4061,4421-4445
+app/lib/l10n/app_ro.arb
+  h_1f8b55eef4fb84 4026,4386-4410
+app/lib/l10n/app_ru.arb
+  h_1f8b55eef4fb84 4061,4421-4445
+app/lib/l10n/app_sk.arb
+  h_1f8b55eef4fb84 4026,4386-4410
+app/lib/l10n/app_sl.arb
+  h_1f8b55eef4fb84 11449,11812-11836
+app/lib/l10n/app_sr.arb
+  h_1f8b55eef4fb84 11449,11812-11836
+app/lib/l10n/app_sv.arb
+  h_1f8b55eef4fb84 4026,4386-4410
+app/lib/l10n/app_ta.arb
+  h_1f8b55eef4fb84 11449,11812-11836
+app/lib/l10n/app_te.arb
+  h_1f8b55eef4fb84 11449,11812-11836
+app/lib/l10n/app_th.arb
+  h_1f8b55eef4fb84 4026,4386-4410
+app/lib/l10n/app_tl.arb
+  h_1f8b55eef4fb84 11449,11812-11836
+app/lib/l10n/app_tr.arb
+  h_1f8b55eef4fb84 4061,4421-4445
+app/lib/l10n/app_uk.arb
+  h_1f8b55eef4fb84 4026,4386-4410
+app/lib/l10n/app_ur.arb
+  h_1f8b55eef4fb84 11449,11812-11836
+app/lib/l10n/app_vi.arb
+  h_1f8b55eef4fb84 4026,4386-4410
+app/lib/l10n/app_zh.arb
+  h_1f8b55eef4fb84 4026,4386-4410
+app/lib/main.dart
+  h_1f8b55eef4fb84 73,672-673
+app/lib/models/custom_stt_config.dart
+  h_1f8b55eef4fb84 125-126
+app/lib/models/stt_request_credentials.dart
+  h_1f8b55eef4fb84 1-36
+app/lib/pages/action_items/action_items_page.dart
+  h_1f8b55eef4fb84 11,19,28,91-94,243-247,497,505,533,537-542,574
+app/lib/pages/action_items/widgets/task_suggestions_section.dart
+  h_1f8b55eef4fb84 1-100
+app/lib/pages/chat/widgets/ai_message.dart
+  h_1f8b55eef4fb84 4,806
+app/lib/pages/chat/widgets/chat_composer_parts.dart
+  h_1f8b55eef4fb84 219-226
+app/lib/pages/conversation_detail/conversation_detail_provider.dart
+  h_1f8b55eef4fb84 36,53,59-60,67-68,1047-1050,1070-1075
+app/lib/pages/conversation_detail/conversation_summary_generation.dart
+  h_1f8b55eef4fb84 7,22-25,58-59,64,67-70,99,331-334,337-344
+app/lib/pages/conversation_detail/conversation_summary_selection.dart
+  h_1f8b55eef4fb84 89-104
+app/lib/pages/conversation_detail/share.dart
+  h_1f8b55eef4fb84 5,15-16
+app/lib/pages/conversation_detail/widgets.dart
+  h_1f8b55eef4fb84 50-53,60,118-123,139
+app/lib/pages/conversation_detail/widgets/conversation_detail_header.dart
+  h_1f8b55eef4fb84 114
+app/lib/pages/conversation_detail/widgets/conversation_detail_tabs.dart
+  h_1f8b55eef4fb84 20,28-30,74
+app/lib/pages/conversation_detail/widgets/summary_generation.dart
+  h_1f8b55eef4fb84 33-34,42
+app/lib/pages/conversation_detail/widgets/summary_tab.dart
+  h_1f8b55eef4fb84 6,8-11,30,60-67,164-169,182-190
+app/lib/pages/conversation_detail/widgets/summary_task_recovery.dart
+  h_1f8b55eef4fb84 1-103
+app/lib/pages/conversation_detail/widgets/summary_template_sheet.dart
+  h_1f8b55eef4fb84 1-2,136-137
+app/lib/pages/conversations/conversations_page.dart
+  h_1f8b55eef4fb84 15,18-20,23,54,238-243,250-262,267,276-288,368-370,564-570,596-603,620-629,631,634-636,647,654,672-676,691-704,709-713,802-810,816,835
+app/lib/pages/conversations/on_the_way_page.dart
+  h_1f8b55eef4fb84 92,95-97,121-123
+app/lib/pages/conversations/widgets/capture_continuity_dogfood_banner.dart
+  h_1f8b55eef4fb84 1-33
+app/lib/pages/conversations/widgets/conversation_list_item.dart
+  h_1f8b55eef4fb84 81-84,94,124,456-473
+app/lib/pages/conversations/widgets/home_pending_row.dart
+  h_1f8b55eef4fb84 5,33,48-56,58-63,66,77-79
+app/lib/pages/conversations/widgets/processing_capture.dart
+  h_1f8b55eef4fb84 14-15,30,35-38,141-149,181
+app/lib/pages/conversations/widgets/synced_conversation_list_item.dart
+  h_1f8b55eef4fb84 5,92
+app/lib/pages/episodes/episode_moments_section.dart
+  h_1f8b55eef4fb84 1-176
+app/lib/pages/episodes/episode_presentation.dart
+  h_1f8b55eef4fb84 1-125
+app/lib/pages/episodes/live_episode_page.dart
+  h_1f8b55eef4fb84 1-660
+app/lib/pages/episodes/live_episode_row.dart
+  h_1f8b55eef4fb84 1-133
+app/lib/pages/episodes/live_transcript_view.dart
+  h_1f8b55eef4fb84 5-6,10,15-16,18-19,25-27,29,31,35,37,39-53,57-58,60-61,64,67,71,84-103,105-108,111,113-135,141-142,153,188-190,193-207,417-419,684-807
+app/lib/pages/home/home_deep_links.dart
+  h_1f8b55eef4fb84 34,177
+app/lib/pages/home/page.dart
+  h_1f8b55eef4fb84 390-392,837-839,946
+app/lib/pages/home/widgets/battery_info_widget.dart
+  h_1f8b55eef4fb84 11,15-17,83-93,207-230,395-396
+app/lib/pages/memories/widgets/memory_graph_page.dart
+  h_1f8b55eef4fb84 439-443,478-479,484-491,500-501
+app/lib/pages/review/widgets/review_question_card.dart
+  h_1f8b55eef4fb84 174
+app/lib/pages/search/global_search.dart
+  h_1f8b55eef4fb84 8,774,840
+app/lib/pages/settings/connect_agent/agent_key_sheet.dart
+  h_1f8b55eef4fb84 226
+app/lib/pages/settings/connect_agent/chatgpt_connect_sheet.dart
+  h_1f8b55eef4fb84 12-21,23,27-62,77,117-126
+app/lib/pages/settings/connect_agent/connect_agent_page.dart
+  h_1f8b55eef4fb84 86-91
+app/lib/pages/settings/device/device_live_sections.dart
+  h_1f8b55eef4fb84 1-258
+app/lib/pages/settings/device/device_page_header.dart
+  h_1f8b55eef4fb84 12-18,23-26,31-38,53,59-66,69-70
+app/lib/pages/settings/device_settings.dart
+  h_1f8b55eef4fb84 19-25,28,525-531,593-598,606-611,613-625,652-700
+app/lib/pages/settings/integrations_page.dart
+  h_1f8b55eef4fb84 14,481-489
+app/lib/pages/settings/person_detail_page.dart
+  h_1f8b55eef4fb84 5,377
+app/lib/pages/settings/settings_destinations.dart
+  h_1f8b55eef4fb84 26,78-79
+app/lib/pages/settings/settings_search_index.dart
+  h_1f8b55eef4fb84 22,204-205
+app/lib/pages/settings/transcription_settings_page.dart
+  h_1f8b55eef4fb84 25,407,412,530,1138-1148
+app/lib/providers/action_items_provider.dart
+  h_1f8b55eef4fb84 7,23,58,66-69,73-74,91-95,106,136,260,262,272,274,277,288,290,298,311,404,406,410,412-413,417-419,449-452,456-465,496-499,514-516,530,533-540,545,547-548,558,569-573,583,599,896,936,970-971,990-1027,1163,1170,1175,1182-1190,1211,1293,1295-1306,1308-1310,1322,1468-1470
+app/lib/providers/device_provider.dart
+  h_1f8b55eef4fb84 982-990,1074
+app/lib/providers/episode_provider.dart
+  h_1f8b55eef4fb84 1-168
+app/lib/providers/local_recordings_provider.dart
+  h_1f8b55eef4fb84 15,182-189
+app/lib/providers/message_provider.dart
+  h_1f8b55eef4fb84 24,328-329,403,406-408,411,420,452-466,482
+app/lib/providers/sync_provider.dart
+  h_1f8b55eef4fb84 16-17,515-517,531-543
+app/lib/providers/task_suggestions_controller.dart
+  h_1f8b55eef4fb84 1-248
+app/lib/services/agent_connect/agent_connections.dart
+  h_1f8b55eef4fb84 8,180-183,189-210
+app/lib/services/capture/CAPTURE_ARCHITECTURE.md
+  h_1f8b55eef4fb84 13-14
+app/lib/services/capture/CAPTURE_POLICY.md
+  h_1f8b55eef4fb84 121-130
+app/lib/services/capture/capture_composition.dart
+  h_1f8b55eef4fb84 21-23,201-215
+app/lib/services/capture/capture_continuity_monitor.dart
+  h_1f8b55eef4fb84 1-167
+app/lib/services/capture/capture_continuity_watch.dart
+  h_1f8b55eef4fb84 1-35
+app/lib/services/capture/capture_controller.dart
+  h_1f8b55eef4fb84 21,54,100-101,171,173,175-177,208,414,657,789-794,797,1175,1220,1234,1641-1644,1919-1925,2134,2273,2278,2337-2340,2658,2749-2751,3184,3187,3228,3304,3438,3808-3809,4312
+app/lib/services/capture/capture_evidence_identity.dart
+  h_1f8b55eef4fb84 1-21
+app/lib/services/capture/capture_live_recovery.dart
+  h_1f8b55eef4fb84 1-276
+app/lib/services/capture/capture_seams.dart
+  h_1f8b55eef4fb84 152,155,160,169,175-177
+app/lib/services/capture/capture_wedge_monitor.dart
+  h_1f8b55eef4fb84 493-497,516-522,911
+app/lib/services/capture/watch_recording_receipt.dart
+  h_1f8b55eef4fb84 1-38
+app/lib/services/chat_video_sampler.dart
+  h_1f8b55eef4fb84 1-81
+app/lib/services/connectivity_service.dart
+  h_1f8b55eef4fb84 4,9,15-35,44,46,51-62,66-71,73-77,79-108,113-115,117,119,122-133,136-152
+app/lib/services/devices/transports/device_transport.dart
+  h_1f8b55eef4fb84 34-43
+app/lib/services/devices/transports/native_ble_transport.dart
+  h_1f8b55eef4fb84 9,303-313,318-320,322-324,338-343,384,386-389
+app/lib/services/external_haptic_trigger.dart
+  h_1f8b55eef4fb84 32-35
+app/lib/services/siri_integration.dart
+  h_1f8b55eef4fb84 10,797-798
+app/lib/services/sockets/on_device_apple_provider.dart
+  h_1f8b55eef4fb84 157-159
+app/lib/services/wals/local_wal_sync.dart
+  h_1f8b55eef4fb84 180,668,914,1566
+app/lib/services/wals/recording_transfer_coordinator.dart
+  h_1f8b55eef4fb84 3-4,22-25,28-29,66,71-74,89,93-98,107,110-112,114-115,125-143,166,170-171,174-175,187-188,240-242,253-254,256-257,266,276-288,291-303,358-360,369-373,403-407,409-435,439-469,471-478,513,519,521,539,556,566,587-589
+app/lib/services/wals/ring_storage_sync.dart
+  h_1f8b55eef4fb84 45-74,499-504,561,565-566,575,590-591,614-622,649-650,765-773,777-778,1002,1004,1031-1038,1060
+app/lib/services/wals/sdcard_wal_sync.dart
+  h_1f8b55eef4fb84 189,194,222,274-277,280,468,470,508-510,675,712-714,718,722,726,733,860
+app/lib/services/wals/storage_sync.dart
+  h_1f8b55eef4fb84 703-704,711,717,735,737,768-774,787-788,800-802,825
+app/lib/services/wals/sync_upload_batch.dart
+  h_1f8b55eef4fb84 40-42,77,116
+app/lib/services/wals/wal.dart
+  h_1f8b55eef4fb84 1-2,271-276,395,441,482,489-496,499-502
+app/lib/ui/components/omi_live_indicators.dart
+  h_1f8b55eef4fb84 1-150
+app/lib/ui/ui.dart
+  h_1f8b55eef4fb84 15,38
+app/lib/utils/analytics/device_health_telemetry.dart
+  h_1f8b55eef4fb84 204-205,210,226-228,247,268-271,300,442-444,446,448,451-452,459-504,543-558,560-571,573-577,590,595
+app/lib/utils/analytics/registry/events.g.dart
+  h_1f8b55eef4fb84 2942-2971
+app/lib/utils/conversations/conversation_title.dart
+  h_1f8b55eef4fb84 9,46-47,55,63-78
+app/lib/utils/memory_graph_identity.dart
+  h_1f8b55eef4fb84 1-6,9-22
+app/lib/utils/note_citations.dart
+  h_1f8b55eef4fb84 1-13,23,88,100-101,103-108,129-135,153-248
+app/lib/widgets/freemium_switch_dialog.dart
+  h_1f8b55eef4fb84 114-123,125-137,139
+app/scripts/build_provenance_dart_defines.sh
+  h_1f8b55eef4fb84 44-53
+app/scripts/build_provenance_dart_defines_test.sh
+  h_1f8b55eef4fb84 157-189
+app/scripts/checkout_release_source_pin.sh
+  h_1f8b55eef4fb84 1-65
+app/scripts/mobile_capture_health.py
+  h_1f8b55eef4fb84 1-247
+app/scripts/mobile_capture_health_test.py
+  h_1f8b55eef4fb84 1-161
+app/scripts/mobile_daily_train.py
+  h_1f8b55eef4fb84 55,133-144,436-456,480-481,503-505,863-873,1074-1087,1089-1104,1106-1128,1139-1141
+app/scripts/mobile_daily_train_test.py
+  h_1f8b55eef4fb84 32-47,54-56,449-487,880,899,940,964,1037-1069,1071-1072,1076-1079,1081-1094,1099,1118,1132,1369-1452
+app/scripts/mobile_store_promote.py
+  h_1f8b55eef4fb84 425-431
+app/scripts/rayban_dat.sh
+  h_1f8b55eef4fb84 15-18,25,205-208,244-247,258-260
+app/scripts/visual_audit.sh
+  h_1f8b55eef4fb84 95-100
+app/test/backend/budget_choice_api_test.dart
+  h_1f8b55eef4fb84 33-49
+app/test/helpers/reprocess_fakes.dart
+  h_1f8b55eef4fb84 10
+app/test/helpers/summary_fixtures.dart
+  h_1f8b55eef4fb84 105,109-110,114
+app/test/pages/review/review_widgets_test.dart
+  h_1f8b55eef4fb84 34-43,120-143
+app/test/pages/settings/connect_agent/connect_agent_page_test.dart
+  h_1f8b55eef4fb84 168-187
+app/test/pages/settings/connect_agent/connect_agent_render_test.dart
+  h_1f8b55eef4fb84 146-153
+app/test/parity/conversation_summary_selection_test.dart
+  h_1f8b55eef4fb84 38-39,41
+app/test/providers/conversation_detail_reprocess_outcome_test.dart
+  h_1f8b55eef4fb84 94,123-133,161-162,176-191,197,279-310
+app/test/providers/speaker_summary_refresh_test.dart
+  h_1f8b55eef4fb84 64,93,114,140,178,205,229,265,296,319,344,374,402,427,443-444,468,502,550,727-728,756,795
+app/test/providers/task_delivery_test.dart
+  h_1f8b55eef4fb84 1-411
+app/test/providers/task_projection_ownership_test.dart
+  h_1f8b55eef4fb84 1-161
+app/test/providers/usage_provider_paywall_pin_test.dart
+  h_1f8b55eef4fb84 1-2,55-71
+app/test/services/capture/capture_continuity_monitor_test.dart
+  h_1f8b55eef4fb84 1-112
+app/test/services/capture/capture_continuity_test.dart
+  h_1f8b55eef4fb84 1-309
+app/test/services/capture/capture_device_pause_test.dart
+  h_1f8b55eef4fb84 54-106
+app/test/services/capture/capture_evidence_identity_test.dart
+  h_1f8b55eef4fb84 70
+app/test/services/capture/capture_live_recovery_test.dart
+  h_1f8b55eef4fb84 1-406
+app/test/services/capture/capture_wedge_monitor_test.dart
+  h_1f8b55eef4fb84 1106-1123
+app/test/services/capture/resume_sync_fence_test.dart
+  h_1f8b55eef4fb84 45,161,182,327
+app/test/services/capture/tiered_capture_test.dart
+  h_1f8b55eef4fb84 155
+app/test/services/capture/transcription_settings_retention_test.dart
+  h_1f8b55eef4fb84 1-55
+app/test/services/devices/transports/native_ble_transport_test.dart
+  h_1f8b55eef4fb84 1,8,143-213
+app/test/services/wals/periodic_recording_sync_test.dart
+  h_1f8b55eef4fb84 7,19-22,36,40,44,58,60,65-67,76,91,110,116-117
+app/test/services/wals/recording_transfer_coordinator_test.dart
+  h_1f8b55eef4fb84 5,101,108,112-113,117-222,561-562,576-577,676
+app/test/support/capture/capture_replay_world.dart
+  h_1f8b55eef4fb84 206-209,235,281,407,418,467,527-532,566,595
+app/test/support/capture/pendant_frame_ledger.dart
+  h_1f8b55eef4fb84 1-203
+app/test/support/capture/scripted_device_connection.dart
+  h_1f8b55eef4fb84 10-16,34-41
+app/test/support/typed_action_items_screen.dart
+  h_1f8b55eef4fb84 22-24
+app/test/unit/agent_connect/agent_connections_test.dart
+  h_1f8b55eef4fb84 166-199
+app/test/unit/capture_recovery_replay_scenarios_test.dart
+  h_1f8b55eef4fb84 124-125,147-149
+app/test/unit/chat_video_sampler_test.dart
+  h_1f8b55eef4fb84 1-20
+app/test/unit/connectivity_service_test.dart
+  h_1f8b55eef4fb84 1-206
+app/test/unit/conversation_summary_retry_title_test.dart
+  h_1f8b55eef4fb84 207-238
+app/test/unit/custom_stt_config_test.dart
+  h_1f8b55eef4fb84 1-2,8-40
+app/test/unit/device_health_telemetry_test.dart
+  h_1f8b55eef4fb84 573-661,695-956
+app/test/unit/episode_participants_test.dart
+  h_1f8b55eef4fb84 1-46
+app/test/unit/episode_provider_test.dart
+  h_1f8b55eef4fb84 1-136
+app/test/unit/external_haptic_trigger_test.dart
+  h_1f8b55eef4fb84 9-23
+app/test/unit/knowledge_graph_read_test.dart
+  h_1f8b55eef4fb84 223-225,230-231,234,243-265
+app/test/unit/local_recordings_owner_test.dart
+  h_1f8b55eef4fb84 46-67
+app/test/unit/local_stt_recovery_test.dart
+  h_1f8b55eef4fb84 13,81-156
+app/test/unit/local_wal_sync_test.dart
+  h_1f8b55eef4fb84 77-89,96-122,130-156,162-169,259-262,282-284,1182-1189,1231-1241,1248-1254,2568-2569,2580-2586,2612,2641,2651,2668-2670,2680,2697-2701,2717,2780-2791,2808-2817,2830-2835,2847-2851,2905-2916,2927-2934,2936-2938,2953-2959,2976-2980,3007-3017,3035-3049,3072-3082,3112-3113,3126-3136,3156-3159,3169-3179,3221-3224,3232-3235,3243-3246,3285-3295,3312-3314,3328-3340,3343,3370-3374,3383-3387,3396-3408,3411,3437-3447,3501-3505,3525-3537,3540
+app/test/unit/note_citation_contract_test.dart
+  h_1f8b55eef4fb84 30-65
+app/test/unit/ring_custody_download_test.dart
+  h_1f8b55eef4fb84 321-349
+app/test/unit/structured_decode_blast_radius_test.dart
+  h_1f8b55eef4fb84 94-130
+app/test/unit/stt_request_credentials_test.dart
+  h_1f8b55eef4fb84 1-67
+app/test/unit/wal_clock_run_test.dart
+  h_1f8b55eef4fb84 1-88
+app/test/unit/watch_recording_receipt_test.dart
+  h_1f8b55eef4fb84 1-53
+app/test/utils/memory_graph_identity_test.dart
+  h_1f8b55eef4fb84 1-61
+app/test/widgets/capture_home_ui_test.dart
+  h_1f8b55eef4fb84 18,615,624
+app/test/widgets/capturing_empty_state_test.dart
+  h_1f8b55eef4fb84 22,115,266
+app/test/widgets/capturing_finish_swipe_back_test.dart
+  h_1f8b55eef4fb84 14,162,165,171,193,196,204,216,228
+app/test/widgets/capturing_wal_backlog_test.dart
+  h_1f8b55eef4fb84 13,155
+app/test/widgets/conversation_activity_strip_reprocess_test.dart
+  h_1f8b55eef4fb84 73,93
+app/test/widgets/conversation_detail_status_test.dart
+  h_1f8b55eef4fb84 141,168,223,305
+app/test/widgets/conversation_detail_summary_retry_test.dart
+  h_1f8b55eef4fb84 80
+app/test/widgets/conversation_detail_title_alignment_test.dart
+  h_1f8b55eef4fb84 9,108-173
+app/test/widgets/conversation_summary_sections_test.dart
+  h_1f8b55eef4fb84 199-200,207
+app/test/widgets/episodes_ui_test.dart
+  h_1f8b55eef4fb84 1-473
+app/test/widgets/home/home_navigation_test.dart
+  h_1f8b55eef4fb84 10,263
+app/test/widgets/home_pending_row_test.dart
+  h_1f8b55eef4fb84 380-389
+app/test/widgets/memory_graph_empty_state_test.dart
+  h_1f8b55eef4fb84 196-229
+app/test/widgets/memory_graph_owner_identity_test.dart
+  h_1f8b55eef4fb84 1-176
+app/test/widgets/process_now_conversations_tab_test.dart
+  h_1f8b55eef4fb84 14,127,157,184,234,249
+app/test/widgets/settings/settings_structure_test.dart
+  h_1f8b55eef4fb84 314-316
+app/test/widgets/speaker_labeling_session_test.dart
+  h_1f8b55eef4fb84 115
+app/test/widgets/summary_generation_render_test.dart
+  h_1f8b55eef4fb84 132
+app/test/widgets/summary_generation_v2_test.dart
+  h_1f8b55eef4fb84 22,26,28,85,220,245
+app/test/widgets/summary_template_sheet_selection_test.dart
+  h_1f8b55eef4fb84 19
+app/test/widgets/surface_timer_after_dispose_test.dart
+  h_1f8b55eef4fb84 299-301
+app/test/widgets/task_delivery_test.dart
+  h_1f8b55eef4fb84 1-202
+app/test/widgets/transcription_settings_recovery_test.dart
+  h_1f8b55eef4fb84 1-175
+backend/.env.template
+  h_1f8b55eef4fb84 191-196
+backend/Dockerfile.roles
+  h_1f8b55eef4fb84 1-136
+backend/charts/backend-listen/dev_omi_backend_listen_values.yaml
+  h_1f8b55eef4fb84 109-114,225,389,391
+backend/charts/backend-listen/prod_omi_backend_listen_values.yaml
+  h_1f8b55eef4fb84 1,93-98,100-105,216,798,821-825,828-832
+backend/charts/backend-listen/templates/deployment.yaml
+  h_1f8b55eef4fb84 56,62-68,71,82-92
+backend/charts/batch-pipeline-worker/templates/deployment.yaml
+  h_1f8b55eef4fb84 22-24,58-61
+backend/charts/batch-pipeline-worker/values.yaml
+  h_1f8b55eef4fb84 29-34
+backend/charts/llm-gateway/templates/deployment.yaml
+  h_1f8b55eef4fb84 41
+backend/charts/monitoring/README.md
+  h_1f8b55eef4fb84 863
+backend/charts/monitoring/alert-rules.json
+  h_1f8b55eef4fb84 7401,7449-7468,7479-7480,7483,10905,10953-10972,10983-10984,10987,13430-13431,13433,13437,13453,13473,13493,13550-13552,13554,13556-13558,13561,13575,13579,13595,13615,13635,13685,13688,13692-13700,13703,13706,13712,13717,13721,13737,13757,13777,13827,13830,13834-13842,13845,13859,13863,13879,13899,13919,13970,13972,13976-13980,13982-13984,13987,14001,14005,14021,14041,14061,14112,14114,14118-14122,14124-14126,14129,14143,14147,14163,14183,14203,14254,14260-14262,14266,14271,14285,14289,14296,14305,14325,14375-14376,14378,14382-14390,14393,14396,14402,14407,14411,14427,14447,14467,14517,14520,14524-14532,14535,14549,14553,14560,14569,14576-14595,14609,14659,14662,14666-14674,14677,14680,14686,14691,14695,14711,14731,14751,14808-14811,14814-14816,14819,14833,14837,14853,14873,14893,14950-14951,14956-14958,14961,14975,14979,14995,15015,15035,15088,15092-15093,15098-15100,15103,15117,15121,15137,15157,15177,15230,15234-15236,15240-15242,15245,15259,15263,15270,15279,15290,15299,15319,15369,15372,15376-15378,15382-15384,15387,15396-15401,15406,15410,15426,15446,15466,15516,15519,15523-15525,15527,15529-15532,15534,15548,15552,15559,15568,15579,15588,15608,15665-15667,15669,15671-15673,15676,15695,15699,15715,15735,15755,15805,15808,15812-15814,15816,15818-15820,15823,15837,15841,15857,15877,15897,15947,15950,15954-15956,15958,15960-15962,15965,15974,15979,15983,15999,16019,16096,16098,16102-16104,16107,16121,16124-16126,16132,16141,16152,16161,16171-16190,16201,16204,16209,16228,16242,16246,16251,16254,16257-16266,16269-16271,16273,16283,16286-16288,16294,16303,16314,16317,16319-16339,16341-16342,16344,16347-16349,16364-16366,16374,16388,16391-16392,16396,16399,16402-16411,16414,16416,16428,16431-16433,16439,16448,16459,16468,16488,16491,16496,16515,16529,16533,16538,16541,16544-16553,16556-16560,16565,16570,16573-16574,16579,16581,16584,16586,16588-16589,16591-16592,16594-16622,16634-16641,16664-16667,16679-16686,16691,16710,16714,16717,16720-16739,16747,16750-16751,16758,16767,16787,16837-16838,16840,16843-16851,16855-16858,16868,16871-16873,16877,16879,16882,16885-16886,16888-16890,16892,16896,16908,16911-16912,16916,16927,16935,16945-16954,16959,16964-16972,16976-16979,16989,16993,17009,17082,17085-17087,17091-17092,17097-17099,17110,18784-19367,19370-19371,19373,19376-19377,19381,19392,19400,19414,19417-19419,19423-19424,19426,19429-19439,19442,19444-19446,19461,19464-19466,19472,19481,19489,19501,19504-19505,19509,19520,19528,19537-19547,19554,19557-19567,19570-19574,19579-19584,19589,19592-19593,19600,19609,19620,19629,19649,19702,19705-19715,19718,19720-19722,19730-19732,19737,19740-19741,19746,19751,19754-19755,19757,19760-19783,19790,19793,19796-19797,19799,19802-19807,19823,19876,19879-19889,19892-19893,19895-19896
+backend/charts/monitoring/alerts/backend-sync.json
+  h_1f8b55eef4fb84 987-1134
+backend/charts/monitoring/alerts/firestore.json
+  h_1f8b55eef4fb84 601-774
+backend/charts/monitoring/alerts/live-stt.json
+  h_1f8b55eef4fb84 1098-1099,1340,1344,4229-4504
+backend/charts/monitoring/alerts/resilience.json
+  h_1f8b55eef4fb84 187,235-254,265-266,269,2120,2168-2187,2198-2199,2202
+backend/charts/monitoring/gmp-query-migration-inventory.json
+  h_1f8b55eef4fb84 17-42,876-915,981-993,1151-1163,3039-3040
+backend/charts/monitoring/live-alert-gate.json
+  h_1f8b55eef4fb84 42-43
+backend/charts/monitoring/prometheus-stackdriver-exporter/dev_sync_omi_cloud_run_metrics_exporter.yaml
+  h_1f8b55eef4fb84 21-22,39-40
+backend/charts/monitoring/prometheus-stackdriver-exporter/prod_sync_omi_cloud_run_metrics_exporter.yaml
+  h_1f8b55eef4fb84 21-22,39-40
+backend/charts/pusher/dev_omi_pusher_values.yaml
+  h_1f8b55eef4fb84 119-124,189,228,230
+backend/charts/pusher/prod_omi_pusher_values.yaml
+  h_1f8b55eef4fb84 117-122,200
+backend/config/batch_pipeline.py
+  h_1f8b55eef4fb84 18-20,44-52,55-61,205-226,259-284,297-372,427-480
+backend/config/cap_recovery_pacing.py
+  h_1f8b55eef4fb84 1,3,5,7-10,13-16,18-24
+backend/config/demand_processing.py
+  h_1f8b55eef4fb84 37-43
+backend/config/episodes.py
+  h_1f8b55eef4fb84 1,3-6,8-18,25-111
+backend/config/firestore_read_levers.py
+  h_1f8b55eef4fb84 41-43
+backend/config/live_demand.py
+  h_1f8b55eef4fb84 24,26-28,33-37,39-40,42-51,53-54,58,60
+backend/config/live_stt_recovery.py
+  h_1f8b55eef4fb84 13-14,27-32
+backend/config/live_stt_registry.py
+  h_1f8b55eef4fb84 41-43,51-53,57-59,71-78
+backend/config/live_stt_replay.py
+  h_1f8b55eef4fb84 6,31-59
+backend/config/live_stt_resilience.py
+  h_1f8b55eef4fb84 1-41
+backend/config/policy/README.md
+  h_1f8b55eef4fb84 95-170
+backend/config/policy/batch.py
+  h_1f8b55eef4fb84 7,22-25,27,64-115
+backend/config/policy/covering_array.py
+  h_1f8b55eef4fb84 1-185
+backend/config/policy/generator.py
+  h_1f8b55eef4fb84 1-214
+backend/config/policy/guard.py
+  h_1f8b55eef4fb84 71,84,94,147-149,171-174,216
+backend/config/policy/kill_switches.py
+  h_1f8b55eef4fb84 1,15-23,34-37
+backend/config/policy/listen.py
+  h_1f8b55eef4fb84 1-501
+backend/config/rollout_cohorts.py
+  h_1f8b55eef4fb84 5,39-44,93-135
+backend/config/speaker_prior.py
+  h_1f8b55eef4fb84 1,14-15
+backend/config/stt_cap_dispatch.py
+  h_1f8b55eef4fb84 1,3,5-37,41,45-46,48-134
+backend/config/stt_provider_policy.py
+  h_1f8b55eef4fb84 130-135
+backend/config/sync_telemetry.py
+  h_1f8b55eef4fb84 11-30,103,151-158
+backend/config/translation.py
+  h_1f8b55eef4fb84 151
+backend/database/_client.py
+  h_1f8b55eef4fb84 2,4,6,9,13-17,39,360-363,373-378,382-411,463-466,480-488,490-491,497-505,507-517
+backend/database/batch_pipeline_policy.py
+  h_1f8b55eef4fb84 20,24-38,134,140,146,152,157-159,162,167-170,181-185,190-196,199-205,210,217,226-228,236-274
+backend/database/batch_pipeline_privacy.py
+  h_1f8b55eef4fb84 91-95,98,103-108,116,135
+backend/database/batch_pipeline_projection.py
+  h_1f8b55eef4fb84 8,19-21,35-36,232-239,250-253,262-269,271-280,283,287,290,300-302,340,375,401-621
+backend/database/batch_pipeline_purge.py
+  h_1f8b55eef4fb84 207,213-217,220
+backend/database/batch_pipeline_quarantine_recovery.py
+  h_1f8b55eef4fb84 7-12,21-24,89,251,284-293,328-333,345-347,424
+backend/database/batch_pipeline_speech_redrive.py
+  h_1f8b55eef4fb84 20-22,24,57-59,104,158
+backend/database/batch_pipeline_store.py
+  h_1f8b55eef4fb84 19-24,33,46-48,94-96,194-204,208-211,221-228,233,235-236,238,279-349
+backend/database/batch_pipeline_terminal_empty.py
+  h_1f8b55eef4fb84 73-75,77,91-93,144,169-171
+backend/database/budget_choice.py
+  h_1f8b55eef4fb84 7,27-30
+backend/database/candidates.py
+  h_1f8b55eef4fb84 19,697,1038
+backend/database/cap_hold_redrive.py
+  h_1f8b55eef4fb84 11-12,42-114
+backend/database/cap_recovery_pacing.py
+  h_1f8b55eef4fb84 1-84
+backend/database/conversations.py
+  h_1f8b55eef4fb84 48,2382,2384,4198-4199,4201-4206,4209,4214,4239,4244-4245,4248-4253,4255-4268,4272-4274,4277-4295,4299-4314,4345-4356,4373-4374
+backend/database/dream_turns.py
+  h_1f8b55eef4fb84 139-140
+backend/database/entities.py
+  h_1f8b55eef4fb84 302-313
+backend/database/episodes.py
+  h_1f8b55eef4fb84 1-269
+backend/database/firestore_index_registry.py
+  h_1f8b55eef4fb84 809-828
+backend/database/firestore_transaction_retry.py
+  h_1f8b55eef4fb84 48-61,107
+backend/database/focus_sessions.py
+  h_1f8b55eef4fb84 106-110,121-125,127-153
+backend/database/llm_gateway_accounting.py
+  h_1f8b55eef4fb84 7-16,24,30,43-50,55-59,164-166,185,187
+backend/database/mcp_conversation_pages.py
+  h_1f8b55eef4fb84 9-10,18-20,37-58,92-94,96-98,119,138-145,148,157-163,166,195-196,198-203,213-214,230,265
+backend/database/memories.py
+  h_1f8b55eef4fb84 28-30,33,151-163,175-198,217-223,254-259,330,453-455,457-478,600-627,1194,1486,1541,1550,1576,1797,1860
+backend/database/memory_source_index.py
+  h_1f8b55eef4fb84 1-233
+backend/database/processing_backlog.py
+  h_1f8b55eef4fb84 3,8,23,26,154,206-314,335-337,348,355-359
+backend/database/redis_db.py
+  h_1f8b55eef4fb84 763-768
+backend/database/review_changes.py
+  h_1f8b55eef4fb84 150-155,157,222-223,227-228,239-254,256,260-261,268,270-273
+backend/database/review_store.py
+  h_1f8b55eef4fb84 38-41,287,301,305-307,309-310,314
+backend/database/rollout_cohorts.py
+  h_1f8b55eef4fb84 8-28
+backend/database/screen_frames.py
+  h_1f8b55eef4fb84 23,29,37-38,187-197,215-226,228-232,235-265
+backend/database/summary_task_links.py
+  h_1f8b55eef4fb84 39-45,98-99
+backend/database/sync_assignment.py
+  h_1f8b55eef4fb84 1,3,6,16,23-25,57-141
+backend/database/sync_ledger.py
+  h_1f8b55eef4fb84 18-20,124-127,180-208,852-880
+backend/database/sync_pipeline_indexes.py
+  h_1f8b55eef4fb84 20-28
+backend/database/user_data_deletion.py
+  h_1f8b55eef4fb84 39-41
+backend/database/vector_db.py
+  h_1f8b55eef4fb84 1330
+backend/deploy/cloud_run_gmp_sync.yaml
+  h_1f8b55eef4fb84 19-25,29
+backend/deploy/runtime_env.yaml
+  h_1f8b55eef4fb84 21-23,28,295,342-344,355,412,601-603,654,733-735,802,930,1005-1007,1062,1209,1278-1280,1338,1551-1553,1601,1770,1836,1912,1977,2033,2113-2115,2120,2513-2515,2526,2713-2715,2767,2876-2878,2945,3237-3239,3294,3592-3594,3652,3942-3944,3992,4191,4252,4326,4391,4446
+backend/deploy/runtime_env/_base.yaml
+  h_1f8b55eef4fb84 25-27,33,517-519,531,722-724,784,879-881,973,1265-1267,1346,1618-1620,1698,1969-1971,2044,2265,2343,2426,2511,2582
+backend/deploy/runtime_env/dev.overlay.yaml
+  h_1f8b55eef4fb84 63,107,323,400
+backend/diarizer/batch_pipeline.md
+  h_1f8b55eef4fb84 42-46
+backend/diarizer/batch_pipeline.py
+  h_1f8b55eef4fb84 21,23-24,33,298-320,338-339,356-360,488,690-697,727-729,745-748,758-759,803-805,807,809-822,824-867,954,1012-1016
+backend/diarizer/batch_pipeline_context.py
+  h_1f8b55eef4fb84 18-19,38-58,87,109-110,116-117,126,132,134,144
+backend/diarizer/batch_pipeline_models.py
+  h_1f8b55eef4fb84 7,34,36,158-200,244,246,257-258
+backend/diarizer/batch_pipeline_runtime.py
+  h_1f8b55eef4fb84 18
+backend/docs/batch-pipeline-serving.md
+  h_1f8b55eef4fb84 289-374,484-490,493,495-532,617-726,799-817,827-976
+backend/docs/experiments/EXP-002-desktop-identity-memory-v1.md
+  h_1f8b55eef4fb84 3-5,7-23
+backend/docs/feature-flag-registry.md
+  h_1f8b55eef4fb84 1,11-42,103-108,112,126-131,135-305,309-421,425-552,564,571-573,575-577,580,583-585,587-589,593,595,610-612,621-626,630,639-645,686,699,706,708,712,793-804
+backend/docs/firestore-read-attribution.md
+  h_1f8b55eef4fb84 336,338
+backend/docs/listen_pusher_pipeline.mdx
+  h_1f8b55eef4fb84 28-36,43-59,62,237,392-398,675-685,702-704,1627,1640-1666,1949-1951,1999-2003,2544,2590-2617,3204-3231,3400,3402-3404,3411,3428-3429,3478,3485,3491-3497,3530,3532,3547,3562-3563,3565-3571,3859-3865,3963,3965-3967,3989,3994,4003-4006,4012,4025,4030,4574-4575,4577-4578,4868-4873,5732-5735,6151-6157,6172-6179
+backend/docs/llm/model_endpoint_inventory.yaml
+  h_1f8b55eef4fb84 51-52,134-135
+backend/docs/messaging-adapters.md
+  h_1f8b55eef4fb84 68-72
+backend/docs/operational/windowed-live-stt.md
+  h_1f8b55eef4fb84 481-537
+backend/docs/review_surface.mdx
+  h_1f8b55eef4fb84 58-73
+backend/docs/runbooks/cap-hold-durability.md
+  h_1f8b55eef4fb84 9-47
+backend/docs/runbooks/cloud-logging-cost-controls.md
+  h_1f8b55eef4fb84 35-38
+backend/docs/runbooks/cloud-run-metrics-ingestion.md
+  h_1f8b55eef4fb84 64-67
+backend/docs/runbooks/demand-driven-processing.md
+  h_1f8b55eef4fb84 35-38,65-67
+backend/docs/runbooks/held-content-acceptance.md
+  h_1f8b55eef4fb84 1-158
+backend/docs/runbooks/live-stt-routing.md
+  h_1f8b55eef4fb84 1
+backend/docs/runbooks/parakeet-packing.md
+  h_1f8b55eef4fb84 99-114
+backend/docs/runbooks/prod_hotfix_runbook.mdx
+  h_1f8b55eef4fb84 20,104-126
+backend/docs/runbooks/role-image-cutover.md
+  h_1f8b55eef4fb84 1-76
+backend/docs/runbooks/structured-logging-rollout.md
+  h_1f8b55eef4fb84 68-80
+backend/docs/runbooks/sync-status-reconciliation.md
+  h_1f8b55eef4fb84 24-32
+backend/docs/runbooks/sync-two-lane.md
+  h_1f8b55eef4fb84 208-218,221-222,269-295
+backend/docs/stt-cap-dispatch.md
+  h_1f8b55eef4fb84 3-282,292-300,418,496,597-641
+backend/docs/task_candidate_lifecycle.mdx
+  h_1f8b55eef4fb84 30-40
+backend/docs/transcription-architecture.md
+  h_1f8b55eef4fb84 54
+backend/docs/translation-on-demand.md
+  h_1f8b55eef4fb84 4-11,17-20,32-36,41,57-64,66-69
+backend/edge/.gitignore
+  h_1f8b55eef4fb84 1-3
+backend/edge/Cargo.lock
+  h_1f8b55eef4fb84 1-1399
+backend/edge/Cargo.toml
+  h_1f8b55eef4fb84 1-42
+backend/edge/Dockerfile
+  h_1f8b55eef4fb84 1-49
+backend/edge/README.md
+  h_1f8b55eef4fb84 1-148
+backend/edge/rust-toolchain.toml
+  h_1f8b55eef4fb84 1-3
+backend/edge/rustfmt.toml
+  h_1f8b55eef4fb84 1
+backend/edge/src/bin/edge_shadow_replay.rs
+  h_1f8b55eef4fb84 1-139
+backend/edge/src/codec.rs
+  h_1f8b55eef4fb84 1-150
+backend/edge/src/config.rs
+  h_1f8b55eef4fb84 1-279
+backend/edge/src/gate.rs
+  h_1f8b55eef4fb84 1-475
+backend/edge/src/lib.rs
+  h_1f8b55eef4fb84 1-19
+backend/edge/src/main.rs
+  h_1f8b55eef4fb84 1-84
+backend/edge/src/metrics.rs
+  h_1f8b55eef4fb84 1-791
+backend/edge/src/server.rs
+  h_1f8b55eef4fb84 1-547
+backend/edge/src/session.rs
+  h_1f8b55eef4fb84 1-434
+backend/edge/src/shadow.rs
+  h_1f8b55eef4fb84 1-1060
+backend/edge/src/silero.rs
+  h_1f8b55eef4fb84 1-133
+backend/edge/tests/common/mod.rs
+  h_1f8b55eef4fb84 1-363
+backend/edge/tests/drain.rs
+  h_1f8b55eef4fb84 1-253
+backend/edge/tests/passthrough.rs
+  h_1f8b55eef4fb84 1-452
+backend/edge/tests/shadow.rs
+  h_1f8b55eef4fb84 1-296
+backend/llm_gateway/config/generated_route_overrides.yaml
+  h_1f8b55eef4fb84 48-50,133-135
+backend/llm_gateway/gateway/config_loader.py
+  h_1f8b55eef4fb84 567-568
+backend/llm_gateway/main.py
+  h_1f8b55eef4fb84 7-12
+backend/main.py
+  h_1f8b55eef4fb84 6,18-22,32,51,135,164,272,291,417-421,429,431-433,436,681
+backend/models/agent_tools.py
+  h_1f8b55eef4fb84 13-18,31-32,49-57
+backend/models/calendar_context.py
+  h_1f8b55eef4fb84 40-81
+backend/models/chat.py
+  h_1f8b55eef4fb84 364-380,389,401-407
+backend/models/episode.py
+  h_1f8b55eef4fb84 1-81
+backend/models/structured.py
+  h_1f8b55eef4fb84 140-142
+backend/models/structured_extraction.py
+  h_1f8b55eef4fb84 3,224-229,408-463
+backend/omi_logging.py
+  h_1f8b55eef4fb84 169,178-180,184-185,189
+backend/pusher/Dockerfile
+  h_1f8b55eef4fb84 54
+backend/pusher/main.py
+  h_1f8b55eef4fb84 7,9-13,22,60
+backend/route_policy_manifest.yaml
+  h_1f8b55eef4fb84 25-28,37,53
+backend/routers/action_items.py
+  h_1f8b55eef4fb84 861
+backend/routers/apps.py
+  h_1f8b55eef4fb84 1,929,997,1081,1608,1666,1716,1884
+backend/routers/budget_choice.py
+  h_1f8b55eef4fb84 1,3,11,13,49-54,62-82,93,95-122
+backend/routers/chat.py
+  h_1f8b55eef4fb84 78,1466,1475-1480,1523-1526
+backend/routers/chat_video.py
+  h_1f8b55eef4fb84 1-98
+backend/routers/conversations.py
+  h_1f8b55eef4fb84 7,60,135,725,740,750-751,754-756,770-771,787-790,802-803,834-845,860-861,2082-2097,2099-2104
+backend/routers/desktop_realtime.py
+  h_1f8b55eef4fb84 16,153
+backend/routers/desktop_tts_updates.py
+  h_1f8b55eef4fb84 2,227
+backend/routers/developer.py
+  h_1f8b55eef4fb84 2035-2101,2210,2230,2243,2251,2301
+backend/routers/episodes.py
+  h_1f8b55eef4fb84 1-65
+backend/routers/integrations.py
+  h_1f8b55eef4fb84 1,263
+backend/routers/knowledge_graph.py
+  h_1f8b55eef4fb84 1,305
+backend/routers/listen/contracts.py
+  h_1f8b55eef4fb84 16,104-108,165-166
+backend/routers/listen/conversations.py
+  h_1f8b55eef4fb84 17,150,502,602-604,609,611-623,641,681-685,742
+backend/routers/listen/demand_switch.py
+  h_1f8b55eef4fb84 18,148
+backend/routers/listen/legacy_recovery.py
+  h_1f8b55eef4fb84 139
+backend/routers/listen/policy.py
+  h_1f8b55eef4fb84 1-178
+backend/routers/listen/receiver.py
+  h_1f8b55eef4fb84 13,82,126,143,158,180-190,276-279,334,376,383,501,572,913-917,1183,1341,1585-1587,1590,1609,1617,1693,1780,1924-1927,1943,2188-2192,2300-2301,2304,2307,2321,2342-2343,2409,2422,2487-2488,2538-2539,2542,2545-2546,2580,2767
+backend/routers/listen/runtime.py
+  h_1f8b55eef4fb84 60,93-94,402-406,416,453,457-461,589-591,605,945-947,953,1114,1118,1273-1299,1304-1305,1309,1357,1361
+backend/routers/listen/transcripts.py
+  h_1f8b55eef4fb84 351,468,470-478,489,493-500,713,718,746-747,754
+backend/routers/memories.py
+  h_1f8b55eef4fb84 1,14,452,784-813
+backend/routers/omni_relay.py
+  h_1f8b55eef4fb84 20,299,392
+backend/routers/payment.py
+  h_1f8b55eef4fb84 33,807,1080,1294
+backend/routers/public_shared_conversation_chat.py
+  h_1f8b55eef4fb84 4,305
+backend/routers/stt.py
+  h_1f8b55eef4fb84 33,208-209
+backend/routers/sync.py
+  h_1f8b55eef4fb84 2,153,201,679,856,1023,2042-2046,2972,3203,3305
+backend/routers/tts.py
+  h_1f8b55eef4fb84 13,110
+backend/routers/users.py
+  h_1f8b55eef4fb84 43,63-64,1084-1095,1252,1307,1321,1363,1452,2639
+backend/runtime_images.json
+  h_1f8b55eef4fb84 14-190,192-302,324-325,345-346,373,376-377,422-423,447-448,471-472,496-497,521-522,624-625
+backend/scripts/batch_pipeline_held_disposition.py
+  h_1f8b55eef4fb84 40-64,110,136,157-158,169-173,194-196,215,291,299-303
+backend/scripts/batch_pipeline_speech_redrive.py
+  h_1f8b55eef4fb84 31,35,59-66,91,123-125,146,188,198,221-222,224,240
+backend/scripts/batch_pipeline_terminal_empty.py
+  h_1f8b55eef4fb84 31,76,115,119-123,131-140,173-175,191,299,318
+backend/scripts/check_logging_entrypoints.py
+  h_1f8b55eef4fb84 28,72-73,90-92,96,131,134,136,225-227,230-232,236-239,243,248,250-272,282,289
+backend/scripts/dart_model_groups.py
+  h_1f8b55eef4fb84 28-38,224
+backend/scripts/deploy-llm-gateway.sh
+  h_1f8b55eef4fb84 6-9,30-35,108-110
+backend/scripts/deploy_status_report.py
+  h_1f8b55eef4fb84 604
+backend/scripts/edge_shadow_gate.py
+  h_1f8b55eef4fb84 1-171
+backend/scripts/edge_shadow_goldens.py
+  h_1f8b55eef4fb84 1-348
+backend/scripts/export_openapi.py
+  h_1f8b55eef4fb84 81
+backend/scripts/finops/README.md
+  h_1f8b55eef4fb84 34,252-265
+backend/scripts/finops/assemble_unit_cost.py
+  h_1f8b55eef4fb84 815,818
+backend/scripts/finops/auth_http.py
+  h_1f8b55eef4fb84 1-32
+backend/scripts/finops/fs.py
+  h_1f8b55eef4fb84 10-11,45,47-48,72,74-75
+backend/scripts/finops/gcp_cost_reconciliation.py
+  h_1f8b55eef4fb84 156-159,166-170,178-181,185,193,202-204,206-207
+backend/scripts/finops/posthog_client_shim/posthog_http.py
+  h_1f8b55eef4fb84 10,23-30,36-38
+backend/scripts/finops/pull_ledger.py
+  h_1f8b55eef4fb84 14-16,114,116-117
+backend/scripts/finops/pull_mercury.py
+  h_1f8b55eef4fb84 20,26
+backend/scripts/finops/pull_prometheus.py
+  h_1f8b55eef4fb84 23-28,56-57,59-66
+backend/scripts/finops/pull_stripe.py
+  h_1f8b55eef4fb84 31-33,89-93
+backend/scripts/finops/pull_stt_costs.py
+  h_1f8b55eef4fb84 19-20,38,40-41,57,102,107-112,126-127,134-151,157,175-180,182-185
+backend/scripts/finops/run_unit_cost.py
+  h_1f8b55eef4fb84 135-136,254-255,259-262,339-345
+backend/scripts/finops/vendor/anthropic-platform/anthropic_platform.py
+  h_1f8b55eef4fb84 16-19,87-91,115-116
+backend/scripts/finops/vendor/openai_admin.py
+  h_1f8b55eef4fb84 15,18-20,88,91-92
+backend/scripts/held_content_cohort.py
+  h_1f8b55eef4fb84 1-62
+backend/scripts/migrate_screen_frames_to_data_plane_bucket.py
+  h_1f8b55eef4fb84 1-682
+backend/scripts/policy_pairwise_sweep.py
+  h_1f8b55eef4fb84 1-50
+backend/scripts/pusher_release_receipt.py
+  h_1f8b55eef4fb84 19,27-33
+backend/scripts/pusher_semantic_probe.py
+  h_1f8b55eef4fb84 81,84-85,893-894,967,999-1000,1013,1084,1105,1146
+backend/scripts/resolve_service_images.py
+  h_1f8b55eef4fb84 1-160
+backend/scripts/role_images.py
+  h_1f8b55eef4fb84 1-453
+backend/scripts/route_policy_inventory.py
+  h_1f8b55eef4fb84 32-35
+backend/scripts/run-emulator-proofs.sh
+  h_1f8b55eef4fb84 3,68-71
+backend/scripts/runtime_image_contracts.py
+  h_1f8b55eef4fb84 21-23,60-70,84,164-169,171-181,202-203,222-223,262-274,276-300,302,324,392,590-593,597-602,697-699,704-713,769-778,782-786,798-1029,1037,1041,1060,1067-1068,1082
+backend/scripts/select_backend_unit_tests.py
+  h_1f8b55eef4fb84 157
+backend/scripts/stt_cap_cohort.py
+  h_1f8b55eef4fb84 1-63
+backend/scripts/verify_backend_release_vector.py
+  h_1f8b55eef4fb84 10,15,32-37,50,82-87,103,230,315-316,414-416,425,495-501,524
+backend/scripts/verify_pusher_live_alert_route.py
+  h_1f8b55eef4fb84 69-70,200-201
+backend/scripts/verify_pusher_promotion_evidence.py
+  h_1f8b55eef4fb84 14,28-35,72-108,110-115,656-660
+backend/test.sh
+  h_1f8b55eef4fb84 36-41,43
+backend/testing/e2e/fakes/listen_pusher_wire.py
+  h_1f8b55eef4fb84 19,30,359,363,365-371
+backend/testing/e2e/test_listen_pusher_wire_contract.py
+  h_1f8b55eef4fb84 159
+backend/testing/e2e/test_watch_recovery_process_now.py
+  h_1f8b55eef4fb84 1-48
+backend/testing/fresh_latency_scenario.py
+  h_1f8b55eef4fb84 1-276
+backend/testing/import_isolation.py
+  h_1f8b55eef4fb84 39,468-510,517
+backend/testing/merge_head_wait_scenario.py
+  h_1f8b55eef4fb84 1-279
+backend/testing/pipeline_sim/README.md
+  h_1f8b55eef4fb84 89-108,199-212
+backend/testing/pipeline_sim/cli.py
+  h_1f8b55eef4fb84 1-4,14,34-37,43-53
+backend/testing/pipeline_sim/policy_invariants.py
+  h_1f8b55eef4fb84 1-176
+backend/testing/pipeline_sim/projection_drain.py
+  h_1f8b55eef4fb84 1-525
+backend/testing/pipeline_sim/sim.py
+  h_1f8b55eef4fb84 39,46,170,180-181,433,517-518,545-546,731,743-750,834-848
+backend/testing/pipeline_sim/store.py
+  h_1f8b55eef4fb84 124-126,247,251-252,258-286
+backend/testing/recovered_release_scenario.py
+  h_1f8b55eef4fb84 1-220
+backend/testing/sync_cloud_tasks_stack/batch.py
+  h_1f8b55eef4fb84 625-629,631,634-635,638-639,643-644,1082-1092,1094-1123,1125-1126,1130-1134,1139-1150,1174-1175
+backend/testing/sync_cloud_tasks_stack/batch_worker.py
+  h_1f8b55eef4fb84 58-96,125
+backend/tests/README.md
+  h_1f8b55eef4fb84 56,62-63
+backend/tests/fast_unit_duration_allowlist.txt
+  h_1f8b55eef4fb84 1,480-486
+backend/tests/held_content_acceptance.txt
+  h_1f8b55eef4fb84 1-16
+backend/tests/integration/test_batch_pipeline_firestore.py
+  h_1f8b55eef4fb84 396-430
+backend/tests/integration/test_batch_pipeline_projection_firestore.py
+  h_1f8b55eef4fb84 5,1520-1566
+backend/tests/integration/test_review_surface_emulator.py
+  h_1f8b55eef4fb84 1070-1100
+backend/tests/integration/test_summary_task_promotion_emulator.py
+  h_1f8b55eef4fb84 12,17,23-24,64-73,151-260
+backend/tests/slow_guardrail_manifest.txt
+  h_1f8b55eef4fb84 50
+backend/tests/support/background_task_ratchet_scope.py
+  h_1f8b55eef4fb84 28,62
+backend/tests/support/firestore_batch_pipeline_drivers.py
+  h_1f8b55eef4fb84 55-59,62-66,91,93,157-206
+backend/tests/support/firestore_query_driver_registry.py
+  h_1f8b55eef4fb84 60-63,145,155-158,938-941,1651-1659,1661,1663-1697,3315-3375
+backend/tests/unit/fixtures/background_task_baseline.json
+  h_1f8b55eef4fb84 52-72,80-93,235-237,239,296-302
+backend/tests/unit/fixtures/cap_rollout.py
+  h_1f8b55eef4fb84 1-14
+backend/tests/unit/fixtures/dream_non_dream_routes.json
+  h_1f8b55eef4fb84 15,24,55
+backend/tests/unit/fixtures/notes_agent/weekly_sync_replay.json
+  h_1f8b55eef4fb84 1-118
+backend/tests/unit/fixtures/pipeline_sim_goldens/deleted_merged_targets.json
+  h_1f8b55eef4fb84 14,18,75,79,238,242,299,303,428,432,489,493,550,554,611,672,733,794,855,859,916,920
+backend/tests/unit/fixtures/pipeline_sim_goldens/duplicate_delivery.json
+  h_1f8b55eef4fb84 15,19,107,111,168,172,229,233,290,294,352,356,440,444
+backend/tests/unit/fixtures/pipeline_sim_goldens/empty_asr_padded_retry.json
+  h_1f8b55eef4fb84 15,19,106,110,168,172,255,259,317,321,404,408,465,469
+backend/tests/unit/fixtures/pipeline_sim_goldens/empty_asr_terminal.json
+  h_1f8b55eef4fb84 15,19,107,111,199,203,234-235,237,291,295,329,383,387,419,421
+backend/tests/unit/fixtures/pipeline_sim_goldens/healthy.json
+  h_1f8b55eef4fb84 14,18,75,79,136,140,197,201,258,262,319,323,380,384
+backend/tests/unit/fixtures/pipeline_sim_goldens/policy_window.json
+  h_1f8b55eef4fb84 21,25,82,86,143,147,204,208,265,269,326,330,387,391
+backend/tests/unit/fixtures/pipeline_sim_goldens/privacy_fence_midflight.json
+  h_1f8b55eef4fb84 63,67,101,263,267,298-299,301,351,355,387,389,439
+backend/tests/unit/fixtures/pipeline_sim_goldens/provider_failure_quarantine.json
+  h_1f8b55eef4fb84 15,19,107,111,199,203,291,295,383,387,475,479,567,571
+backend/tests/unit/fixtures/pipeline_sim_goldens/revision_replacement.json
+  h_1f8b55eef4fb84 14,18,75,79,136,140,197,201,258,262,294,308,320,324,379,400,411,415,447,461
+backend/tests/unit/fixtures/pipeline_sim_goldens/role_policy.json
+  h_1f8b55eef4fb84 15,72,95-96,98,160,207,231,295,342,366,368,430,487,513
+backend/tests/unit/llm_gateway/gateway/test_request_context.py
+  h_1f8b55eef4fb84 1-6,9,12-16,19-21,24-28,31-33,35-36,38-39,42-58,60,63-64,66-69
+backend/tests/unit/real_clock_budget_allowlist.txt
+  h_1f8b55eef4fb84 1-114
+backend/tests/unit/test_agent_tool_rules.py
+  h_1f8b55eef4fb84 1-380
+backend/tests/unit/test_attach_cloud_run_gmp_sidecar.py
+  h_1f8b55eef4fb84 1391-1399
+backend/tests/unit/test_audio_chunk_archive_listing.py
+  h_1f8b55eef4fb84 1-32
+backend/tests/unit/test_audio_timeline_round3.py
+  h_1f8b55eef4fb84 383
+backend/tests/unit/test_audio_timeline_span_flags.py
+  h_1f8b55eef4fb84 1,31,41,59-60
+backend/tests/unit/test_authorize_managed_compute.py
+  h_1f8b55eef4fb84 16,20-21,603-606,608-609,786-849
+backend/tests/unit/test_backend_listen_helm_defaults.py
+  h_1f8b55eef4fb84 122-155,254-299
+backend/tests/unit/test_backend_runtime_env_validator.py
+  h_1f8b55eef4fb84 67-69,185,361,388,452
+backend/tests/unit/test_background_task_ratchet.py
+  h_1f8b55eef4fb84 73,294
+backend/tests/unit/test_batch_live_preview.py
+  h_1f8b55eef4fb84 85-87,89-90
+backend/tests/unit/test_batch_operator_policy_source.py
+  h_1f8b55eef4fb84 1-200
+backend/tests/unit/test_batch_pipeline_admission.py
+  h_1f8b55eef4fb84 7-8,18,23,37,62-79,179-205
+backend/tests/unit/test_batch_pipeline_chart.py
+  h_1f8b55eef4fb84 167,209,247-279,351-383
+backend/tests/unit/test_batch_pipeline_contention_errors.py
+  h_1f8b55eef4fb84 1-185
+backend/tests/unit/test_batch_pipeline_empty_disposition.py
+  h_1f8b55eef4fb84 7,26-29,87,174,225,255,329,373,378-381,384-387,399-401,424
+backend/tests/unit/test_batch_pipeline_intake.py
+  h_1f8b55eef4fb84 295,307-553
+backend/tests/unit/test_batch_pipeline_left_context.py
+  h_1f8b55eef4fb84 1,8-10,12,15,18-19,28,33-49,70-71,74-77,79,81,86-88,93-94,101-103,105-121,168,171-172,174-175,215,217-221,224-225,229-244,258-259,261-262,270
+backend/tests/unit/test_batch_pipeline_live.py
+  h_1f8b55eef4fb84 253,257-258,295-296
+backend/tests/unit/test_batch_pipeline_long_speech_handoff.py
+  h_1f8b55eef4fb84 1-195
+backend/tests/unit/test_batch_pipeline_merge_fresh_first.py
+  h_1f8b55eef4fb84 1-560
+backend/tests/unit/test_batch_pipeline_merge_head_wait.py
+  h_1f8b55eef4fb84 1-428
+backend/tests/unit/test_batch_pipeline_merge_head_wait_sim.py
+  h_1f8b55eef4fb84 1-42
+backend/tests/unit/test_batch_pipeline_owner_chain_projection.py
+  h_1f8b55eef4fb84 79,81,159-160,308,310,435,440-441,444-445,448-449,495-521
+backend/tests/unit/test_batch_pipeline_owner_drain.py
+  h_1f8b55eef4fb84 1-691
+backend/tests/unit/test_batch_pipeline_projection.py
+  h_1f8b55eef4fb84 300,444-535
+backend/tests/unit/test_batch_pipeline_pump.py
+  h_1f8b55eef4fb84 3-4,553-609
+backend/tests/unit/test_batch_pipeline_quarantine_recovery.py
+  h_1f8b55eef4fb84 14,16,186,800,822-823,825-878,1129,1158-1536
+backend/tests/unit/test_batch_pipeline_recovered_release.py
+  h_1f8b55eef4fb84 1-190
+backend/tests/unit/test_batch_pipeline_runtime.py
+  h_1f8b55eef4fb84 3-4
+backend/tests/unit/test_batch_pipeline_scheduler.py
+  h_1f8b55eef4fb84 45-52,117-146,304-331,359-360,775-860
+backend/tests/unit/test_batch_pipeline_second_provider.py
+  h_1f8b55eef4fb84 1-197
+backend/tests/unit/test_batch_pipeline_serving.py
+  h_1f8b55eef4fb84 272-290,554-608
+backend/tests/unit/test_batch_pipeline_speech_redrive.py
+  h_1f8b55eef4fb84 13,67-70,76-79,88-93,104,106-109,111-114,120,133,153-155,180-198,203,218-221,225-228,233-267,316-320,326,328,337-339,342-345
+backend/tests/unit/test_batch_pipeline_sweep_owner_chain.py
+  h_1f8b55eef4fb84 1-636
+backend/tests/unit/test_batch_pipeline_terminal_empty.py
+  h_1f8b55eef4fb84 4-5,15,157-166,173-184,202-204,211-214,227-229,233,263,267-278,287-298,363,381-392,398-407,418,528,532,591,594-618
+backend/tests/unit/test_batch_pipeline_two_workers.py
+  h_1f8b55eef4fb84 12-13
+backend/tests/unit/test_batch_pipeline_worker.py
+  h_1f8b55eef4fb84 3-4,1055-1084
+backend/tests/unit/test_batch_privacy_conversation_fence.py
+  h_1f8b55eef4fb84 1-168
+backend/tests/unit/test_batch_unit_policy.py
+  h_1f8b55eef4fb84 82-85
+backend/tests/unit/test_brand_terms.py
+  h_1f8b55eef4fb84 97,121
+backend/tests/unit/test_budget_choice_routes.py
+  h_1f8b55eef4fb84 3,13-17,46-52,174-190,242-323
+backend/tests/unit/test_calendar_linking_overlap_selection.py
+  h_1f8b55eef4fb84 138-161
+backend/tests/unit/test_calendar_long_range_upcoming.py
+  h_1f8b55eef4fb84 164-195
+backend/tests/unit/test_calendar_meeting_from_records.py
+  h_1f8b55eef4fb84 55-86
+backend/tests/unit/test_calendar_timezone.py
+  h_1f8b55eef4fb84 60,86-89
+backend/tests/unit/test_calendar_tools_sanitization.py
+  h_1f8b55eef4fb84 132,146-149
+backend/tests/unit/test_cap_hold_durability.py
+  h_1f8b55eef4fb84 11,13,17-29,129-130,134-135,153,155,157-224,493-494,499-500,512-559,598-611
+backend/tests/unit/test_cap_publication_retry.py
+  h_1f8b55eef4fb84 1-1347
+backend/tests/unit/test_cap_recovery_pacing.py
+  h_1f8b55eef4fb84 1-104
+backend/tests/unit/test_capture_evidence_paths.py
+  h_1f8b55eef4fb84 10-11
+backend/tests/unit/test_capture_window_off_parity_r2.py
+  h_1f8b55eef4fb84 1,28-29,66-67
+backend/tests/unit/test_capture_window_resolution_r2.py
+  h_1f8b55eef4fb84 67,94,149,158,183-184,195
+backend/tests/unit/test_capture_window_resolution_r3.py
+  h_1f8b55eef4fb84 36-41,71,124
+backend/tests/unit/test_capture_window_resolution_r4.py
+  h_1f8b55eef4fb84 39-44,134,178,222
+backend/tests/unit/test_chat_funded_cap_boundary.py
+  h_1f8b55eef4fb84 6-7
+backend/tests/unit/test_chat_quota.py
+  h_1f8b55eef4fb84 10-11
+backend/tests/unit/test_chat_video.py
+  h_1f8b55eef4fb84 1-413
+backend/tests/unit/test_client_processing_acceptance.py
+  h_1f8b55eef4fb84 389,615
+backend/tests/unit/test_client_processing_finalize.py
+  h_1f8b55eef4fb84 437
+backend/tests/unit/test_committed_capture_coverage.py
+  h_1f8b55eef4fb84 499,517,581,606,649,746,813
+backend/tests/unit/test_compute_admission_import_purity.py
+  h_1f8b55eef4fb84 3-4,79
+backend/tests/unit/test_conversation_smart_merge_finalizer.py
+  h_1f8b55eef4fb84 55-56
+backend/tests/unit/test_conversation_smart_merge_flatten.py
+  h_1f8b55eef4fb84 1041,1076
+backend/tests/unit/test_conversation_speaker_resolution_stage.py
+  h_1f8b55eef4fb84 20,135-139,181-185,516,526-528,847-849,860-862,864-865,880-882,1194,1197,1229,1231
+backend/tests/unit/test_cross_service_deploy_contract.py
+  h_1f8b55eef4fb84 108,112-113,288,291
+backend/tests/unit/test_daily_summary_job_resilience.py
+  h_1f8b55eef4fb84 199-200
+backend/tests/unit/test_database_desktop_previews_resilience.py
+  h_1f8b55eef4fb84 4,17-18,40,42,48,50,52,63,67,73,75,79,85,87,89,119,121-157
+backend/tests/unit/test_demand_processing.py
+  h_1f8b55eef4fb84 42,119-152
+backend/tests/unit/test_demand_surface_http.py
+  h_1f8b55eef4fb84 113,142
+backend/tests/unit/test_developer_from_segments_idempotency.py
+  h_1f8b55eef4fb84 21-31,123-132,204-206,217-218,229,767,790,955,966-967,980,1004-1005,1033-1034,1052-1150
+backend/tests/unit/test_dream_cleanup_edits.py
+  h_1f8b55eef4fb84 10,230-286
+backend/tests/unit/test_dream_harness_runtime.py
+  h_1f8b55eef4fb84 7,353-401
+backend/tests/unit/test_dream_minute_headroom.py
+  h_1f8b55eef4fb84 6-7,11,13,57-117
+backend/tests/unit/test_dream_review_round_one.py
+  h_1f8b55eef4fb84 5,8,13,281-384
+backend/tests/unit/test_edge_shadow.py
+  h_1f8b55eef4fb84 1-483
+backend/tests/unit/test_episodes_finalizer_hook.py
+  h_1f8b55eef4fb84 1-83
+backend/tests/unit/test_episodes_incremental_live.py
+  h_1f8b55eef4fb84 1-162
+backend/tests/unit/test_episodes_policy_state.py
+  h_1f8b55eef4fb84 1-208
+backend/tests/unit/test_episodes_router.py
+  h_1f8b55eef4fb84 1-89
+backend/tests/unit/test_episodes_service.py
+  h_1f8b55eef4fb84 1-351
+backend/tests/unit/test_external_tools_sanitization.py
+  h_1f8b55eef4fb84 1,3-4,10-13,21-23,25,31-33,35,64-68
+backend/tests/unit/test_fair_use_admin.py
+  h_1f8b55eef4fb84 1-60
+backend/tests/unit/test_fallback_observability.py
+  h_1f8b55eef4fb84 4,391-420
+backend/tests/unit/test_finops_auth_http.py
+  h_1f8b55eef4fb84 1-124
+backend/tests/unit/test_finops_stt_costs.py
+  h_1f8b55eef4fb84 7-8,10,14-15,101-109,113-116,120-244,272-276,288,322,394-396
+backend/tests/unit/test_focus_sessions_read_boundary.py
+  h_1f8b55eef4fb84 374-484
+backend/tests/unit/test_free_tier_entrypoint_matrix.py
+  h_1f8b55eef4fb84 201
+backend/tests/unit/test_fresh_latency_sim.py
+  h_1f8b55eef4fb84 1-46
+backend/tests/unit/test_fsr_historical_scan_memo.py
+  h_1f8b55eef4fb84 12,127-131,295-297
+backend/tests/unit/test_fsr_wq5_index_window.py
+  h_1f8b55eef4fb84 1-368
+backend/tests/unit/test_fsr_wq6_mcp_cards.py
+  h_1f8b55eef4fb84 1-287
+backend/tests/unit/test_fsr_wq7_canonical_statuses.py
+  h_1f8b55eef4fb84 1-332
+backend/tests/unit/test_funded_dispatch_recheck.py
+  h_1f8b55eef4fb84 3-4
+backend/tests/unit/test_funded_processing.py
+  h_1f8b55eef4fb84 54,90
+backend/tests/unit/test_generated_compute_caps.py
+  h_1f8b55eef4fb84 6-7,255,290,351,369-388
+backend/tests/unit/test_held_audio_summary.py
+  h_1f8b55eef4fb84 2-3,30-31,43,64,69,83,98,121,144-145,151,230,241
+backend/tests/unit/test_held_content.py
+  h_1f8b55eef4fb84 3,13-17,36-38,53,63,78-117,138-162
+backend/tests/unit/test_held_content_cohort.py
+  h_1f8b55eef4fb84 1-376
+backend/tests/unit/test_held_content_deletion.py
+  h_1f8b55eef4fb84 1-138
+backend/tests/unit/test_import_isolation.py
+  h_1f8b55eef4fb84 13,416-468
+backend/tests/unit/test_ladder_ambiguous_http.py
+  h_1f8b55eef4fb84 6-7
+backend/tests/unit/test_ladder_v1_cutover.py
+  h_1f8b55eef4fb84 4-5,335-336,346-352
+backend/tests/unit/test_listen_audio_timeline_stack.py
+  h_1f8b55eef4fb84 367,1289-1293,1462
+backend/tests/unit/test_listen_cap_held_metering.py
+  h_1f8b55eef4fb84 1,3-5,7-8,12-15,18-19,24-25,27-32,35-57,59-181
+backend/tests/unit/test_listen_helm_env_overrides.py
+  h_1f8b55eef4fb84 214-658
+backend/tests/unit/test_listen_idempotent_create_capture.py
+  h_1f8b55eef4fb84 1-105
+backend/tests/unit/test_listen_persistence.py
+  h_1f8b55eef4fb84 3-4
+backend/tests/unit/test_listen_policy_runtime.py
+  h_1f8b55eef4fb84 1-150
+backend/tests/unit/test_listen_process_pending_shutdown.py
+  h_1f8b55eef4fb84 634-636
+backend/tests/unit/test_listen_pusher_stack_ci_wiring.py
+  h_1f8b55eef4fb84 66-68
+backend/tests/unit/test_listen_ready_provider.py
+  h_1f8b55eef4fb84 245,268-273
+backend/tests/unit/test_listen_runtime_regressions.py
+  h_1f8b55eef4fb84 35-46
+backend/tests/unit/test_listen_session_policy.py
+  h_1f8b55eef4fb84 1-507
+backend/tests/unit/test_listen_ws_close_metric.py
+  h_1f8b55eef4fb84 1-355
+backend/tests/unit/test_live_cap_hold.py
+  h_1f8b55eef4fb84 196,199-200,212,217
+backend/tests/unit/test_live_capture_persistence.py
+  h_1f8b55eef4fb84 264-265
+backend/tests/unit/test_live_capture_retention.py
+  h_1f8b55eef4fb84 45
+backend/tests/unit/test_live_capture_windows.py
+  h_1f8b55eef4fb84 451-452
+backend/tests/unit/test_live_recovery_matrix.py
+  h_1f8b55eef4fb84 74-78
+backend/tests/unit/test_live_replay_provider_pairs.py
+  h_1f8b55eef4fb84 688-711
+backend/tests/unit/test_live_selection_skip_causes.py
+  h_1f8b55eef4fb84 1-292
+backend/tests/unit/test_live_shadow_replay.py
+  h_1f8b55eef4fb84 18,213-215,232,236
+backend/tests/unit/test_live_stt_restart_burst_sim.py
+  h_1f8b55eef4fb84 1-477
+backend/tests/unit/test_live_transcript_merge.py
+  h_1f8b55eef4fb84 182-183,228-229,318-319
+backend/tests/unit/test_llm_gateway_accounting.py
+  h_1f8b55eef4fb84 680-723
+backend/tests/unit/test_llm_gateway_config.py
+  h_1f8b55eef4fb84 53-56
+backend/tests/unit/test_locked_content_reset_recovery.py
+  h_1f8b55eef4fb84 8-9
+backend/tests/unit/test_logging_entrypoint_guard.py
+  h_1f8b55eef4fb84 269-319
+backend/tests/unit/test_manual_speaker_assignments.py
+  h_1f8b55eef4fb84 491-494,496,498-499,502,505-506
+backend/tests/unit/test_meeting_notes_citation_contract.py
+  h_1f8b55eef4fb84 101,124
+backend/tests/unit/test_memories_pagination_clamp.py
+  h_1f8b55eef4fb84 354-466
+backend/tests/unit/test_memory_retraction_source_index.py
+  h_1f8b55eef4fb84 1-354
+backend/tests/unit/test_memory_tools_sanitization.py
+  h_1f8b55eef4fb84 127-129
+backend/tests/unit/test_merge_audio_chunk_copy_failure.py
+  h_1f8b55eef4fb84 51-53
+backend/tests/unit/test_messaging_modalities.py
+  h_1f8b55eef4fb84 700
+backend/tests/unit/test_migrate_screen_frames_bucket.py
+  h_1f8b55eef4fb84 1-463
+backend/tests/unit/test_mobile_standard_batch.py
+  h_1f8b55eef4fb84 247
+backend/tests/unit/test_modulate_stt.py
+  h_1f8b55eef4fb84 9,112-115,118,123-126,128,146-164,364-376,600,1374-1377,1380,1386-1389,1392
+backend/tests/unit/test_monitoring_alert_rule_contract.py
+  h_1f8b55eef4fb84 649,1138,1142-1143,1867-1917
+backend/tests/unit/test_monitoring_stt_metric_zero_init.py
+  h_1f8b55eef4fb84 28-31
+backend/tests/unit/test_monitoring_telemetry_contract.py
+  h_1f8b55eef4fb84 192-193
+backend/tests/unit/test_notes_agent.py
+  h_1f8b55eef4fb84 1-683
+backend/tests/unit/test_omi_logging.py
+  h_1f8b55eef4fb84 205-224
+backend/tests/unit/test_omi_qos_tiers.py
+  h_1f8b55eef4fb84 379-380
+backend/tests/unit/test_owner_identity_retry_telemetry.py
+  h_1f8b55eef4fb84 302-306
+backend/tests/unit/test_owner_recognition_resolver_diagnostics.py
+  h_1f8b55eef4fb84 68
+backend/tests/unit/test_paid_speaker_browse_recovery.py
+  h_1f8b55eef4fb84 1-227
+backend/tests/unit/test_parakeet_batch_pressure.py
+  h_1f8b55eef4fb84 433-434,450
+backend/tests/unit/test_parakeet_failover_exhausted.py
+  h_1f8b55eef4fb84 523-552
+backend/tests/unit/test_parakeet_request_metrics.py
+  h_1f8b55eef4fb84 1-128
+backend/tests/unit/test_parakeet_window_live.py
+  h_1f8b55eef4fb84 28,39,3144-3327
+backend/tests/unit/test_phone_batch_process_now.py
+  h_1f8b55eef4fb84 1,30,92-93,96,106-117
+backend/tests/unit/test_pinned_speaker_prior.py
+  h_1f8b55eef4fb84 30-38
+backend/tests/unit/test_pipeline_sim_policy_invariants.py
+  h_1f8b55eef4fb84 1-140
+backend/tests/unit/test_pipeline_sim_projection_drain.py
+  h_1f8b55eef4fb84 1-68
+backend/tests/unit/test_pipeline_sim_scenarios.py
+  h_1f8b55eef4fb84 12-14,19-20,24,27-32,90-99,120-125
+backend/tests/unit/test_preferred_app_preference.py
+  h_1f8b55eef4fb84 1,3,6-20,22-23,25-27,30-34,36,38-39,42-47,50-52,54,56-57,60-62,64,66-67,69,72-79
+backend/tests/unit/test_process_conversation_free_tier_branch.py
+  h_1f8b55eef4fb84 959,977
+backend/tests/unit/test_process_conversation_usage_context.py
+  h_1f8b55eef4fb84 602,617,629,1336-1338,1346-1455
+backend/tests/unit/test_processing_backlog.py
+  h_1f8b55eef4fb84 8-9,54,70,83,104,172,190,244,268,280,313,319,331,372,391,415,450,475,497
+backend/tests/unit/test_processing_backlog_reservation.py
+  h_1f8b55eef4fb84 1-535
+backend/tests/unit/test_processing_backlog_worker_review.py
+  h_1f8b55eef4fb84 23-24,177-180,215,221-223,298-299,306-317,778-834
+backend/tests/unit/test_pusher_auto_deploy_paths.py
+  h_1f8b55eef4fb84 27
+backend/tests/unit/test_pusher_deployment_control_workflow.py
+  h_1f8b55eef4fb84 43-151,451-453
+backend/tests/unit/test_pusher_semantic_probe.py
+  h_1f8b55eef4fb84 371,598,620-621
+backend/tests/unit/test_real_clock_budget_ratchet.py
+  h_1f8b55eef4fb84 1-475
+backend/tests/unit/test_record_admission_review_fixes.py
+  h_1f8b55eef4fb84 212-277
+backend/tests/unit/test_recovered_release_sim.py
+  h_1f8b55eef4fb84 1-31
+backend/tests/unit/test_render_backend_runtime_env.py
+  h_1f8b55eef4fb84 814
+backend/tests/unit/test_replay_harness_port_reservation.py
+  h_1f8b55eef4fb84 1,3-6,11,14-15,18-19,21-23,26-27,29-33,35-37,39-44
+backend/tests/unit/test_reprocess_app_selection.py
+  h_1f8b55eef4fb84 217,228-262,266-284
+backend/tests/unit/test_reprocess_tombstone_guard.py
+  h_1f8b55eef4fb84 130-134
+backend/tests/unit/test_resolve_service_images.py
+  h_1f8b55eef4fb84 1-177
+backend/tests/unit/test_review_stale_answers.py
+  h_1f8b55eef4fb84 1-561
+backend/tests/unit/test_role_images.py
+  h_1f8b55eef4fb84 1-335
+backend/tests/unit/test_rollout_cohorts.py
+  h_1f8b55eef4fb84 369-372
+backend/tests/unit/test_round4_reconnect_inventory.py
+  h_1f8b55eef4fb84 53-57,186,344,819,964,1301,1303,1307,1312-1313,1334-1335,1337,1340,1343-1344,1369-1376,1389
+backend/tests/unit/test_runtime_image_contracts.py
+  h_1f8b55eef4fb84 4,106-117,194,453-473,534-884
+backend/tests/unit/test_screen_activity_tools_sanitization.py
+  h_1f8b55eef4fb84 101-104,124-178
+backend/tests/unit/test_screen_frame_env_state.py
+  h_1f8b55eef4fb84 151-183
+backend/tests/unit/test_screen_frames_bucket_data_plane.py
+  h_1f8b55eef4fb84 1-49
+backend/tests/unit/test_shaped_agent.py
+  h_1f8b55eef4fb84 90-91
+backend/tests/unit/test_shared_budget_cache.py
+  h_1f8b55eef4fb84 8-9
+backend/tests/unit/test_shared_conversation_field_exposure.py
+  h_1f8b55eef4fb84 267-269
+backend/tests/unit/test_soniox_ack_association.py
+  h_1f8b55eef4fb84 17,36-38,40,191-194
+backend/tests/unit/test_soniox_transport_diagnostics.py
+  h_1f8b55eef4fb84 4,15,119,160,171-237
+backend/tests/unit/test_soniox_usage.py
+  h_1f8b55eef4fb84 7-36,38-40,42-44,46-47,49-51,53-54,56-57,59-61,63-77,79,81-88,92-94,97-122
+backend/tests/unit/test_streaming_deepgram_backoff.py
+  h_1f8b55eef4fb84 15,1065-1072,1076-1077
+backend/tests/unit/test_stt_cap_cohort_lanes.py
+  h_1f8b55eef4fb84 1-229
+backend/tests/unit/test_stt_cap_dispatch.py
+  h_1f8b55eef4fb84 6-7,421-533
+backend/tests/unit/test_stt_cap_dispatch_http.py
+  h_1f8b55eef4fb84 8-9,209-225
+backend/tests/unit/test_stt_cap_recovery_cohort.py
+  h_1f8b55eef4fb84 1-248
+backend/tests/unit/test_stt_cap_runtime_cohort.py
+  h_1f8b55eef4fb84 1-319
+backend/tests/unit/test_stt_provider_stream_end.py
+  h_1f8b55eef4fb84 1-624
+backend/tests/unit/test_stt_router.py
+  h_1f8b55eef4fb84 367-377
+backend/tests/unit/test_summary_delivery.py
+  h_1f8b55eef4fb84 41,45-61,63
+backend/tests/unit/test_summary_persistence.py
+  h_1f8b55eef4fb84 119
+backend/tests/unit/test_summary_task_promotion.py
+  h_1f8b55eef4fb84 9,16,275-334
+backend/tests/unit/test_sync_assignment_contention_retry.py
+  h_1f8b55eef4fb84 152-251
+backend/tests/unit/test_sync_assignment_recovery.py
+  h_1f8b55eef4fb84 92-93,106-107,127,130,163-164,189,211
+backend/tests/unit/test_sync_bridge_audio_copy.py
+  h_1f8b55eef4fb84 1-275
+backend/tests/unit/test_sync_bridge_lifecycle.py
+  h_1f8b55eef4fb84 79,174,192,204,253,275,414
+backend/tests/unit/test_sync_cap_coordinator.py
+  h_1f8b55eef4fb84 3-4,123-147
+backend/tests/unit/test_sync_cap_hold.py
+  h_1f8b55eef4fb84 3-4,74,92-93,117,124,146,179-193,254,378-379,446-481
+backend/tests/unit/test_sync_cap_hold_recovery.py
+  h_1f8b55eef4fb84 7-8,18-20,408-409,496,525-677
+backend/tests/unit/test_sync_cap_reconciliation_metrics.py
+  h_1f8b55eef4fb84 3-4
+backend/tests/unit/test_sync_cap_recovery_dispatch_signal.py
+  h_1f8b55eef4fb84 3-4,67
+backend/tests/unit/test_sync_capture_pipeline.py
+  h_1f8b55eef4fb84 5,7,17,437,454-455,491-495,565-615,688-689,747-816
+backend/tests/unit/test_sync_clock_run_partition.py
+  h_1f8b55eef4fb84 1-155
+backend/tests/unit/test_sync_cloud_tasks.py
+  h_1f8b55eef4fb84 20,1451-1463,2529-2531,2547-2578,5877-5908,5931,6342,6409,6474,6556,6707,6723-6724
+backend/tests/unit/test_sync_cloud_tasks_stack_ci_wiring.py
+  h_1f8b55eef4fb84 58-60
+backend/tests/unit/test_sync_completed_status.py
+  h_1f8b55eef4fb84 180-257
+backend/tests/unit/test_sync_cross_job_assignment.py
+  h_1f8b55eef4fb84 555-583
+backend/tests/unit/test_sync_failure_reason.py
+  h_1f8b55eef4fb84 1-228
+backend/tests/unit/test_sync_fresh_conversation_turn.py
+  h_1f8b55eef4fb84 1-125
+backend/tests/unit/test_sync_lineage_allowlist.py
+  h_1f8b55eef4fb84 86,226-227,241-259,586,617
+backend/tests/unit/test_sync_lineage_dedupe_replay.py
+  h_1f8b55eef4fb84 601
+backend/tests/unit/test_sync_lineage_diagnostics.py
+  h_1f8b55eef4fb84 407,570,575,600-619,621,674-796
+backend/tests/unit/test_sync_lineage_flags_off_parity.py
+  h_1f8b55eef4fb84 1,44-48,156,158-160,176,197-205,279,284,325
+backend/tests/unit/test_sync_lineage_s1_tiebreak.py
+  h_1f8b55eef4fb84 564,599,632,638,646
+backend/tests/unit/test_sync_lineage_s1_tiebreak_pipeline.py
+  h_1f8b55eef4fb84 367,401,420,448,473,528,554,560,584
+backend/tests/unit/test_sync_live_stub_intake.py
+  h_1f8b55eef4fb84 189-190,195-198
+backend/tests/unit/test_sync_minimal_redrive.py
+  h_1f8b55eef4fb84 1-522
+backend/tests/unit/test_sync_recording_lineage.py
+  h_1f8b55eef4fb84 1143-1146,1188-1199,1222,1235,1251-1253,1263
+backend/tests/unit/test_sync_repeat_failure_cap.py
+  h_1f8b55eef4fb84 12,239-253
+backend/tests/unit/test_sync_s1_projection.py
+  h_1f8b55eef4fb84 1-159
+backend/tests/unit/test_sync_s1_refusal.py
+  h_1f8b55eef4fb84 54,126-127,130-134,178,182,190,194-223
+backend/tests/unit/test_sync_v2.py
+  h_1f8b55eef4fb84 1311,1315-1318,1320-1321,1333-1341,1593,3628
+backend/tests/unit/test_task_sharing.py
+  h_1f8b55eef4fb84 433-452
+backend/tests/unit/test_text_window_abstention.py
+  h_1f8b55eef4fb84 189
+backend/tests/unit/test_transcription_allowance.py
+  h_1f8b55eef4fb84 16-17,503-518
+backend/tests/unit/test_translation_coordinator_demand.py
+  h_1f8b55eef4fb84 51,55,94,98,122,153,194
+backend/tests/unit/test_translation_demand.py
+  h_1f8b55eef4fb84 10,12,15-17,20,27,33,35-36,38-39,41,48-51,54,56,58,63-64
+backend/tests/unit/test_translation_receiver_protocol.py
+  h_1f8b55eef4fb84 48,72
+backend/tests/unit/test_translation_truthfulness.py
+  h_1f8b55eef4fb84 13,177,232,244,248
+backend/tests/unit/test_usage_units.py
+  h_1f8b55eef4fb84 3-4
+backend/tests/unit/test_usage_units_session.py
+  h_1f8b55eef4fb84 7-8
+backend/tests/unit/test_user_speaker_embedding.py
+  h_1f8b55eef4fb84 311,336-341
+backend/tests/unit/test_user_subscription_wire_contract.py
+  h_1f8b55eef4fb84 2-3
+backend/tests/unit/test_users_joan_followup_tombstone_guard.py
+  h_1f8b55eef4fb84 11,22-40,76,85,90,94,103,108,112,121,126,129,136,138,143-147,150,157,159,164-168,171,180,185
+backend/tests/unit/test_verify_backend_release_vector.py
+  h_1f8b55eef4fb84 742-782
+backend/tests/unit/test_verify_pusher_config_references.py
+  h_1f8b55eef4fb84 191-193,222,231
+backend/tests/unit/test_verify_pusher_live_alert_route.py
+  h_1f8b55eef4fb84 500,507
+backend/tests/unit/test_verify_pusher_promotion_evidence.py
+  h_1f8b55eef4fb84 5,11,14,16,810-912
+backend/tests/unit/test_verify_pusher_source_closure.py
+  h_1f8b55eef4fb84 42-43
+backend/tests/unit/test_voiceprint_publication_authority.py
+  h_1f8b55eef4fb84 10,193-211
+backend/tests/unit/test_wal_audio_coverage.py
+  h_1f8b55eef4fb84 591
+backend/tests/unit/test_wal_audio_coverage_pipeline.py
+  h_1f8b55eef4fb84 7,41-44,151,548-557,571-572,1070,1135,1314,1347,1402,1456,1502,1532,1600-1601,1603-1605,1615,1624,1634
+backend/tests/unit/test_workflow_contracts.py
+  h_1f8b55eef4fb84 71,1476-1477
+backend/utils/agent_capabilities/ARCHITECTURE.md
+  h_1f8b55eef4fb84 16
+backend/utils/agent_capabilities/errors.py
+  h_1f8b55eef4fb84 3-4,55,82-85
+backend/utils/agent_capabilities/reads.py
+  h_1f8b55eef4fb84 12-13,16,75,86-87,108,129-130,132-134,137-156,159-160,164-168,171-172
+backend/utils/agent_capabilities/session.py
+  h_1f8b55eef4fb84 19-20,84-85,99-104,154-155,307-308,343,364,376,386-387
+backend/utils/agent_capabilities/tools.py
+  h_1f8b55eef4fb84 6,35-38,81-82,205-214,236-237,269,279-280,282-286,288-290,465-466,468-469,603-604,704-705,738-739,809-810
+backend/utils/analytics.py
+  h_1f8b55eef4fb84 2,16,30-32,40-41
+backend/utils/app_integrations.py
+  h_1f8b55eef4fb84 82,966-969
+backend/utils/apps.py
+  h_1f8b55eef4fb84 1,962
+backend/utils/batch_pipeline/admission.py
+  h_1f8b55eef4fb84 39-40,44-48
+backend/utils/batch_pipeline/context.py
+  h_1f8b55eef4fb84 66-75,84
+backend/utils/batch_pipeline/contracts.py
+  h_1f8b55eef4fb84 135,166-168
+backend/utils/batch_pipeline/correctness_metrics.py
+  h_1f8b55eef4fb84 6-10
+backend/utils/batch_pipeline/intake.py
+  h_1f8b55eef4fb84 19-23,37-42,46-48,63-141,155-167,173-191,200-231,300-329,396-398,435-437
+backend/utils/batch_pipeline/live.py
+  h_1f8b55eef4fb84 212-216
+backend/utils/batch_pipeline/live_projection.py
+  h_1f8b55eef4fb84 14,19-26,31
+backend/utils/batch_pipeline/merge.py
+  h_1f8b55eef4fb84 3-9,14-66,70-78,82-97,99-178,180-187,189-201,206-280,283-287,316-321,334-436,441-464
+backend/utils/batch_pipeline/projection.py
+  h_1f8b55eef4fb84 10-11,13,17,20-26,28-30,32,34,40-43,46-48,51-130,145,148-150,229,238,281-329,346-349,351-404,412-416,420,428-430,435,438,442-449,451,458,460-461,464,468-497,499-549,569-570,588-628,647-648,651,657-658,678-684,686-688,701,704-711,714-715,719-727,746-751,762-763,767-768,776-778,920-983,985-1008,1010,1016-1059,1062-1075,1084-1098,1100-1106,1108,1110-1113,1117-1125,1127,1129-1130,1134-1137,1140,1149-1171,1174-1178,1188,1191,1195-1197,1199-1240,1249-1254,1256-1288
+backend/utils/batch_pipeline/projection_discovery.py
+  h_1f8b55eef4fb84 7,10-11,14,17-18,20
+backend/utils/batch_pipeline/projection_drain.py
+  h_1f8b55eef4fb84 1-113
+backend/utils/batch_pipeline/projection_followup.py
+  h_1f8b55eef4fb84 20,30-32,44,61-73,82-83,86-87,89-90,99-108,130,181-185
+backend/utils/batch_pipeline/projection_index.py
+  h_1f8b55eef4fb84 1-76
+backend/utils/batch_pipeline/projection_prefetch.py
+  h_1f8b55eef4fb84 1-147
+backend/utils/batch_pipeline/pump.py
+  h_1f8b55eef4fb84 205-225,231-238,255,260-262,294,362-368,373-380
+backend/utils/batch_pipeline/quarantine_recovery.py
+  h_1f8b55eef4fb84 10,14-15,21,25-26,29,42,44,57-63,84,91,101,104-163,180-198,200,202,205-245,252-253,278,295,313,327-328,337-341,344-351,415-416,499-506,537-541
+backend/utils/batch_pipeline/recovery_disposition.py
+  h_1f8b55eef4fb84 111,123-129,145-148,151-155,165
+backend/utils/batch_pipeline/retention.py
+  h_1f8b55eef4fb84 215-237
+backend/utils/batch_pipeline/scheduler.py
+  h_1f8b55eef4fb84 11,188-189,214-230,254-257,398-401,440,467-469,496,554-571
+backend/utils/batch_pipeline/serving.py
+  h_1f8b55eef4fb84 10-15,20,31-32,57-59,75-81,83,95-97,99-104,122,126,133-140,145-150,166-174,181-190,241-263
+backend/utils/batch_pipeline/speech_redrive.py
+  h_1f8b55eef4fb84 6,8,37,42-51,54,89,128-130,136
+backend/utils/capture_evidence.py
+  h_1f8b55eef4fb84 353,357,359-373,376
+backend/utils/chat.py
+  h_1f8b55eef4fb84 32,181-188,269-294
+backend/utils/cloud_tasks.py
+  h_1f8b55eef4fb84 75-77
+backend/utils/conversations/action_item_identity.py
+  h_1f8b55eef4fb84 48,201,242,245,257,264
+backend/utils/conversations/calendar_utils.py
+  h_1f8b55eef4fb84 6-7,13-15,37
+backend/utils/conversations/demand_processing.py
+  h_1f8b55eef4fb84 24-25,240-242,267,272-275,299
+backend/utils/conversations/deterministic_minimum.py
+  h_1f8b55eef4fb84 143,148-154
+backend/utils/conversations/finalizer.py
+  h_1f8b55eef4fb84 9,17,106-161,259,374,440,443,536
+backend/utils/conversations/llm_input_dedupe.py
+  h_1f8b55eef4fb84 143
+backend/utils/conversations/meeting_context_pack.py
+  h_1f8b55eef4fb84 314-328,509
+backend/utils/conversations/meeting_notes_wiring.py
+  h_1f8b55eef4fb84 196-215
+backend/utils/conversations/merge_conversations.py
+  h_1f8b55eef4fb84 14-15,22-23,33,623,644-646,653-657,666-669,677-681,695-772,866
+backend/utils/conversations/notes_agent_tools.py
+  h_1f8b55eef4fb84 1-396
+backend/utils/conversations/onopen_translation.py
+  h_1f8b55eef4fb84 75,96
+backend/utils/conversations/paid_lock_recovery.py
+  h_1f8b55eef4fb84 1-88
+backend/utils/conversations/process_conversation.py
+  h_1f8b55eef4fb84 93-97,216,238,535,631,636,760,762-769,798-799,850-851,1938,2443,2495-2496,2503-2507,2569,2863-2867,2936-2937,2959-2979,2984,2987-2988,2994-2999,3002-3003
+backend/utils/conversations/reprocess_contract.py
+  h_1f8b55eef4fb84 1,3,6-7,10-15,17-21,25-27,31-38,47-50
+backend/utils/conversations/screen_people_leads.py
+  h_1f8b55eef4fb84 1-120
+backend/utils/conversations/screen_text_digest.py
+  h_1f8b55eef4fb84 31
+backend/utils/conversations/search.py
+  h_1f8b55eef4fb84 6,280,294-296,311-315
+backend/utils/conversations/smart_merge_policy.py
+  h_1f8b55eef4fb84 40,111-121
+backend/utils/conversations/speaker_resolution.py
+  h_1f8b55eef4fb84 1258-1277,1281-1294,1296-1303,1341,1384,1390-1414,1418-1422,1432,1438,1528-1529,1531
+backend/utils/conversations/transcription_shadow.py
+  h_1f8b55eef4fb84 50,57-63,328
+backend/utils/dream_agent.py
+  h_1f8b55eef4fb84 3,44,154-155,261-262,270,353,356,390-399,578,614
+backend/utils/dream_harness_transport.py
+  h_1f8b55eef4fb84 3,23,220,313-314
+backend/utils/entity_pages.py
+  h_1f8b55eef4fb84 38
+backend/utils/episodes/ARCHITECTURE.md
+  h_1f8b55eef4fb84 1-93
+backend/utils/episodes/incremental.py
+  h_1f8b55eef4fb84 1-9,14,16,18-27,29-32,36-57,59-73,77-116,118,120-124,126-169,171-214,216-222
+backend/utils/episodes/live.py
+  h_1f8b55eef4fb84 1-150
+backend/utils/episodes/metrics.py
+  h_1f8b55eef4fb84 1-143
+backend/utils/episodes/moment.py
+  h_1f8b55eef4fb84 1-18
+backend/utils/episodes/policy.py
+  h_1f8b55eef4fb84 1-170
+backend/utils/episodes/service.py
+  h_1f8b55eef4fb84 1-644
+backend/utils/episodes/state.py
+  h_1f8b55eef4fb84 1-214
+backend/utils/funded_processing.py
+  h_1f8b55eef4fb84 15,22-26,29,37,126,146,168-169
+backend/utils/generated_compute.py
+  h_1f8b55eef4fb84 16-19,45-47,109,117,125
+backend/utils/held_content_cohort.py
+  h_1f8b55eef4fb84 1-151
+backend/utils/llm/ARCHITECTURE.md
+  h_1f8b55eef4fb84 63-92
+backend/utils/llm/app_generator.py
+  h_1f8b55eef4fb84 6,167
+backend/utils/llm/clients.py
+  h_1f8b55eef4fb84 145,404,446,453,465,472,479,491
+backend/utils/llm/conversation_processing.py
+  h_1f8b55eef4fb84 27,69-73,384-390,412,416-418,457-465,500-505,512
+backend/utils/llm/meeting_notes_validation.py
+  h_1f8b55eef4fb84 267
+backend/utils/llm/model_config.py
+  h_1f8b55eef4fb84 104-107
+backend/utils/llm/notes_agent.py
+  h_1f8b55eef4fb84 1-431
+backend/utils/llm/notes_agent_policy.py
+  h_1f8b55eef4fb84 1-144
+backend/utils/llm/notes_agent_prompt.py
+  h_1f8b55eef4fb84 1-321
+backend/utils/llm/notes_agent_serving.py
+  h_1f8b55eef4fb84 1-180
+backend/utils/llm/notes_agent_validation.py
+  h_1f8b55eef4fb84 1-172
+backend/utils/llm/shaped_agent.py
+  h_1f8b55eef4fb84 8-13,24-32,37,45-51,86-89,219-222,265-431
+backend/utils/managed_compute.py
+  h_1f8b55eef4fb84 42-43,476-478,480
+backend/utils/media/video_frames.py
+  h_1f8b55eef4fb84 1-530
+backend/utils/media/video_upload.py
+  h_1f8b55eef4fb84 1-104
+backend/utils/memory/canonical_memory_adapter.py
+  h_1f8b55eef4fb84 1466-1468,1474,1483-1486,1488
+backend/utils/memory/index_window.py
+  h_1f8b55eef4fb84 1-53
+backend/utils/memory/index_window_cursor.py
+  h_1f8b55eef4fb84 1-100
+backend/utils/memory/memory_service.py
+  h_1f8b55eef4fb84 31,35,37-43,83,1126-1155,1513-1515,1536-1537,1547-1580,1708-1709,1714-1715,1731-1745,1749,1751,2494-2497,2551-2600,3105-3109,3145-3149,3215,3245-3255,3270,3314-3317,4469-4476
+backend/utils/memory/universal_list_cursor.py
+  h_1f8b55eef4fb84 49,119-122,137-140
+backend/utils/messaging/adapters/media.py
+  h_1f8b55eef4fb84 42,78-81,90-100,104,243-254,256-258,295-328,358-364
+backend/utils/messaging/maintenance.py
+  h_1f8b55eef4fb84 7-12
+backend/utils/metrics.py
+  h_1f8b55eef4fb84 513,950-975,1026-1033,1184
+backend/utils/model_text.py
+  h_1f8b55eef4fb84 86-248
+backend/utils/observability/ARCHITECTURE.md
+  h_1f8b55eef4fb84 12,19
+backend/utils/observability/fallback.py
+  h_1f8b55eef4fb84 21,42-48,58,69-78,174-175,272,348-351,416-425
+backend/utils/observability/held_content.py
+  h_1f8b55eef4fb84 1-214
+backend/utils/observability/listen_close.py
+  h_1f8b55eef4fb84 1-84
+backend/utils/observability/listen_loop.py
+  h_1f8b55eef4fb84 3
+backend/utils/observability/stt_cap_dispatch.py
+  h_1f8b55eef4fb84 3-5,15-24
+backend/utils/observability/sync_phases.py
+  h_1f8b55eef4fb84 336-341
+backend/utils/observability/transcription.py
+  h_1f8b55eef4fb84 16,33,55-57,265,267-271,278,283,286-289
+backend/utils/onboarding.py
+  h_1f8b55eef4fb84 1,251
+backend/utils/other/chat_file.py
+  h_1f8b55eef4fb84 1,6,8,20-21,104-107,307-348,351,386,444-446,452,504-505,531-533,537,539-540,545-553,577-600
+backend/utils/other/storage.py
+  h_1f8b55eef4fb84 1036,1039,1114-1115
+backend/utils/proactivity_producers.py
+  h_1f8b55eef4fb84 582-586
+backend/utils/processing_backlog.py
+  h_1f8b55eef4fb84 9,35,73
+backend/utils/processing_backlog_worker.py
+  h_1f8b55eef4fb84 17,20,97-125,128-129,138-142,199-215,217-218,230,237-248,290
+backend/utils/rate_limit_config.py
+  h_1f8b55eef4fb84 108-109
+backend/utils/retrieval/tools/calendar_tools.py
+  h_1f8b55eef4fb84 27,649-652,655-657
+backend/utils/retrieval/tools/file_tools.py
+  h_1f8b55eef4fb84 103-109,112-116,131-132,186-191
+backend/utils/retrieval/tools/memory_tools.py
+  h_1f8b55eef4fb84 472-474
+backend/utils/retrieval/tools/perplexity_tools.py
+  h_1f8b55eef4fb84 5,151
+backend/utils/retrieval/tools/screen_activity_tools.py
+  h_1f8b55eef4fb84 14-16,19-20,109-130,418-419,433-436,452-456,476,695-697,711-720
+backend/utils/review.py
+  h_1f8b55eef4fb84 22,28,218-221,288-289,311-316,329-361
+backend/utils/rollout_cohorts.py
+  h_1f8b55eef4fb84 16,30,137,145,173
+backend/utils/screen_frames/environment.py
+  h_1f8b55eef4fb84 3-8
+backend/utils/stt/batch_pressure.py
+  h_1f8b55eef4fb84 15,50
+backend/utils/stt/committed_words.py
+  h_1f8b55eef4fb84 47-48
+backend/utils/stt/edge_shadow.py
+  h_1f8b55eef4fb84 1-368
+backend/utils/stt/failure_diagnostics.py
+  h_1f8b55eef4fb84 32-47,60-61,63,67-104
+backend/utils/stt/language_policy.py
+  h_1f8b55eef4fb84 20,90-94,111-115,153
+backend/utils/stt/legacy_replay.py
+  h_1f8b55eef4fb84 16,144
+backend/utils/stt/live_chain.py
+  h_1f8b55eef4fb84 5-6,47-49,77,90-97,286-287,302,304,322-330,411-423,427-433,436,514,531,663-664,683-687,733,767-770,775,780,782-790,924-927,946-950,999,1011-1069,1082-1086,1089,1097,1111,1115,1126,1130-1133,1225,1229-1236
+backend/utils/stt/live_cost_health.py
+  h_1f8b55eef4fb84 5-6,15,30,64-76,150,274-312,328,350,352-363
+backend/utils/stt/live_failure.py
+  h_1f8b55eef4fb84 14,116-124,127-128,163-168,177,208,214-215,218-221,311,357,394-402,577
+backend/utils/stt/live_gate.py
+  h_1f8b55eef4fb84 10-11,117
+backend/utils/stt/live_health.py
+  h_1f8b55eef4fb84 18,90,129
+backend/utils/stt/live_metrics.py
+  h_1f8b55eef4fb84 90-109,284
+backend/utils/stt/live_outcome.py
+  h_1f8b55eef4fb84 10-11,16-17,60-72,79,86,90,96-100,131
+backend/utils/stt/live_recovery.py
+  h_1f8b55eef4fb84 5-6,11-15,33-82,101-161,174,182-184,235,238-240
+backend/utils/stt/live_retry.py
+  h_1f8b55eef4fb84 1-47
+backend/utils/stt/live_rollout.py
+  h_1f8b55eef4fb84 6-7
+backend/utils/stt/live_router.py
+  h_1f8b55eef4fb84 12,194-215,254-259,262-263,265-266,287,289-290,292,308-314,321
+backend/utils/stt/live_session.py
+  h_1f8b55eef4fb84 5-6,10,20,24,39-43,112,236,510-516,621-627,630-634,687-688,696-781,786-789,801,845-847,900-907,910,912,914,941-943,964-965,967-979,1211-1213
+backend/utils/stt/no_text_rescue.py
+  h_1f8b55eef4fb84 9,18-21,23
+backend/utils/stt/paid_admission.py
+  h_1f8b55eef4fb84 11-12,38-41,45-50
+backend/utils/stt/parakeet_request_metrics.py
+  h_1f8b55eef4fb84 1-79
+backend/utils/stt/parakeet_window.py
+  h_1f8b55eef4fb84 5-7,116-119
+backend/utils/stt/pod_drain.py
+  h_1f8b55eef4fb84 1-51
+backend/utils/stt/pre_recorded.py
+  h_1f8b55eef4fb84 42,857-858,862-865
+backend/utils/stt/provider_resilience.py
+  h_1f8b55eef4fb84 9-10,54
+backend/utils/stt/provider_stream_end.py
+  h_1f8b55eef4fb84 1-503
+backend/utils/stt/recovery_state.py
+  h_1f8b55eef4fb84 78-80,220,298-326,354-358,365-368,380-381
+backend/utils/stt/replay_delivery.py
+  h_1f8b55eef4fb84 17,335-344,839
+backend/utils/stt/resilient_stream.py
+  h_1f8b55eef4fb84 223-227
+backend/utils/stt/soniox.py
+  h_1f8b55eef4fb84 25-33,197,235,259-262,283-291,306-307,312,399,423-434,443,538-539,656-657,667,670,678,681,696-701,708-709,765,885-886,901,927
+backend/utils/stt/soniox_idle.py
+  h_1f8b55eef4fb84 31,168,435
+backend/utils/stt/soniox_usage.py
+  h_1f8b55eef4fb84 1,9,30,36,41-50,56,59,61-63,66-67,69,74,76-80
+backend/utils/stt/soniox_wire_ledger.py
+  h_1f8b55eef4fb84 14-17,266
+backend/utils/stt/streaming.py
+  h_1f8b55eef4fb84 35,46-54,261,293,463,828,849,858,868,919,1002,1455,1469,1491,1542-1552,1557,1646,1653-1664,1680,1700,1760-1761,1763,1783-1784,1792,1795,1801,1804,1831-1832,1834-1835,1837,1856,1896,1954-1960
+backend/utils/stt/vad_gate.py
+  h_1f8b55eef4fb84 205-210,282-285,336-347,385-386,397,435,438,440-451,582-585
+backend/utils/stt_cap_cohort.py
+  h_1f8b55eef4fb84 1-128
+backend/utils/stt_cap_dispatch.py
+  h_1f8b55eef4fb84 1,12,32,38-43,71-74,80,86-89,119-122,160,200-225,228,344,351,372-374
+backend/utils/subscription.py
+  h_1f8b55eef4fb84 1,1643,1655
+backend/utils/sync/ARCHITECTURE.md
+  h_1f8b55eef4fb84 25,35,37,45,64,72,77-82,109-112
+backend/utils/sync/assignment.py
+  h_1f8b55eef4fb84 31,43-44,68,78-79,208,212-215,225-226,239-248,256-258,267,274-276,289,292,307,309-311,319-321,343,346,361-363,378,440-444,634,640,675-708,762,815-816,833-834
+backend/utils/sync/assignment_errors.py
+  h_1f8b55eef4fb84 3-57,64-72,82
+backend/utils/sync/assignment_index.py
+  h_1f8b55eef4fb84 12,44-46
+backend/utils/sync/bridge.py
+  h_1f8b55eef4fb84 30-34,96,114-117
+backend/utils/sync/cap_hold.py
+  h_1f8b55eef4fb84 18,75,355-356,367-368,381,383,464,485,491,519-523,541,557,573-578
+backend/utils/sync/cap_hold_recovery.py
+  h_1f8b55eef4fb84 14,16,23,36,39,45-52,112-113,120,125-127,134,162,215,240-267,306,383,394-396,423-430,434-435,456
+backend/utils/sync/cap_hold_redrive.py
+  h_1f8b55eef4fb84 6,12-13,36-41,43-44,53-54,62,65-68,70-71,73-79,82,84-90
+backend/utils/sync/capture.py
+  h_1f8b55eef4fb84 8-15,21-23
+backend/utils/sync/clock_run.py
+  h_1f8b55eef4fb84 1-21,24-45,48-51
+backend/utils/sync/completed_status.py
+  h_1f8b55eef4fb84 5-11,26-31,106,116-132
+backend/utils/sync/conversation_turn.py
+  h_1f8b55eef4fb84 1-13,17,20-22,24,26-28,32-37,39-44,48-107
+backend/utils/sync/deleted_conversation.py
+  h_1f8b55eef4fb84 1-48
+backend/utils/sync/failure_reason.py
+  h_1f8b55eef4fb84 1-147
+backend/utils/sync/held_audio_summary.py
+  h_1f8b55eef4fb84 8,88,92,122
+backend/utils/sync/intake_completion.py
+  h_1f8b55eef4fb84 25,91-94,122-137,165,183-184
+backend/utils/sync/live_cap_capacity.py
+  h_1f8b55eef4fb84 8,57-60,89
+backend/utils/sync/live_cap_codec.py
+  h_1f8b55eef4fb84 8-9,61
+backend/utils/sync/live_cap_hold.py
+  h_1f8b55eef4fb84 22,25,99,514-524
+backend/utils/sync/live_cap_manifest.py
+  h_1f8b55eef4fb84 3,10,12,14-16,20,33-153,155
+backend/utils/sync/live_cap_publication.py
+  h_1f8b55eef4fb84 3-4,6,9-61
+backend/utils/sync/live_cap_staging.py
+  h_1f8b55eef4fb84 7-10,15,17-20,23,26-28,34-46,62,67-73,120,124-210,212-279,283,285-372,374-378,387-393,395,397-410,417-419,444-457,461,465,470-520,523,525,536-537,546,548,552-561,565,574-584,587-603
+backend/utils/sync/live_overlap.py
+  h_1f8b55eef4fb84 5-6,14-18
+backend/utils/sync/minimal_redrive.py
+  h_1f8b55eef4fb84 1-212
+backend/utils/sync/pipeline.py
+  h_1f8b55eef4fb84 43,147,156,174,176,211,215-219,276,367,370-371,380,389,545,560,573,585,798,821,849,857-860,899-900,910-913,952-953,968,972,1253-1259,1279,1285-1286,1399,1428-1429,1431-1453,1455,1459,1466,1474-1476,1492,1498-1500,1533,1535,1541,1551-1552,1568,1576,1578-1580,1607,1616-1628,1696,1699,1703-1704,1709,1719,1723-1725,1804,1828,1835,1873-1874,2333,2354,2357,2480,2577,2579,2624,2921-2925,3054-3055,3179,3186-3188,3231-3241,3261,3332,3403,3410,3417-3418,3430,3450,3454-3455,3466,3479,3482-3484,3503
+backend/utils/sync/recording_intent.py
+  h_1f8b55eef4fb84 1-17
+backend/utils/sync/recording_lineage.py
+  h_1f8b55eef4fb84 48,93-109,140,148-149,199-202,204-240,252,278-284,735,901-903
+backend/utils/sync/wal_audio_coverage.py
+  h_1f8b55eef4fb84 443,502-507
+backend/utils/translation_coordinator.py
+  h_1f8b55eef4fb84 199,201,279,331,406,503,557
+backend/utils/translation_demand.py
+  h_1f8b55eef4fb84 42,64,67,71,78
+codemagic.yaml
+  h_1f8b55eef4fb84 42-44,223-225
+config/deployment-setting-classification.json
+  h_1f8b55eef4fb84 42,224-227,411-414
+config/feature-flags.yaml
+  h_1f8b55eef4fb84 2-325,329-352,354-370,372-376,378-387,440-451
+contracts/analytics/TRACKING_PLAN.md
+  h_1f8b55eef4fb84 196
+contracts/analytics/consumers/capture-recovery-presence.sql
+  h_1f8b55eef4fb84 1-4
+contracts/analytics/consumers/capture-recovery.json
+  h_1f8b55eef4fb84 1-18
+contracts/analytics/consumers/capture-recovery.sql
+  h_1f8b55eef4fb84 1-6
+contracts/analytics/events.json
+  h_1f8b55eef4fb84 4366-4389
+contracts/note_citation_contract.json
+  h_1f8b55eef4fb84 47-50
+desktop/macos/CHANGELOG.json
+  h_1f8b55eef4fb84 4-74
+desktop/macos/Desktop/Info.plist
+  h_1f8b55eef4fb84 62,64
+desktop/macos/Desktop/Omi-Release.entitlements
+  h_1f8b55eef4fb84 13-14
+desktop/macos/Desktop/Omi.entitlements
+  h_1f8b55eef4fb84 15-16
+desktop/macos/Desktop/Sources/APIClient.swift
+  h_1f8b55eef4fb84 919-923
+desktop/macos/Desktop/Sources/AppState/AppState+MeetingBoundaries.swift
+  h_1f8b55eef4fb84 31-36,47-57,59-62,160
+desktop/macos/Desktop/Sources/AppState/AppState+Transcription.swift
+  h_1f8b55eef4fb84 754,769
+desktop/macos/Desktop/Sources/AppState/MeetingConversationBoundaryPolicy.swift
+  h_1f8b55eef4fb84 26-31,69,74
+desktop/macos/Desktop/Sources/Audio/CallAppAudioSummaryTelemetry.swift
+  h_1f8b55eef4fb84 78-113
+desktop/macos/Desktop/Sources/Audio/CallAudioSnapshot.swift
+  h_1f8b55eef4fb84 11-17,23-26
+desktop/macos/Desktop/Sources/Audio/MeetingCallObservation.swift
+  h_1f8b55eef4fb84 5-48,55-62,64,66,68,82-83,86-87,106-113
+desktop/macos/Desktop/Sources/CalendarMeetingContext/ARCHITECTURE.md
+  h_1f8b55eef4fb84 1-47
+desktop/macos/Desktop/Sources/CalendarMeetingContext/MeetingMemoryBrief.swift
+  h_1f8b55eef4fb84 1-326
+desktop/macos/Desktop/Sources/CalendarMeetingContext/SystemCalendarMeetingContextService.swift
+  h_1f8b55eef4fb84 240-241,264-281
+desktop/macos/Desktop/Sources/Chat/ChatAttachment.swift
+  h_1f8b55eef4fb84 67-71,133-135
+desktop/macos/Desktop/Sources/Chat/ChatVideoSampler.swift
+  h_1f8b55eef4fb84 1-180
+desktop/macos/Desktop/Sources/Chat/ClaudeAuthSheet.swift
+  h_1f8b55eef4fb84 39
+desktop/macos/Desktop/Sources/ConferencingApps.swift
+  h_1f8b55eef4fb84 1,228-231,240-242,244-245,327-328
+desktop/macos/Desktop/Sources/ConversationFinalizationService.swift
+  h_1f8b55eef4fb84 326
+desktop/macos/Desktop/Sources/DefaultsKey.swift
+  h_1f8b55eef4fb84 130-133
+desktop/macos/Desktop/Sources/Generated/OmiApi.generated.swift
+  h_1f8b55eef4fb84 4385,4394,4405,4413,4415,10069,10081-10083,11631-11728,17889-17912,19073-19096,20318
+desktop/macos/Desktop/Sources/Logger.swift
+  h_1f8b55eef4fb84 199
+desktop/macos/Desktop/Sources/MainWindow/Components/ChatInputView.swift
+  h_1f8b55eef4fb84 286
+desktop/macos/Desktop/Sources/MainWindow/Components/ChatMessagesView.swift
+  h_1f8b55eef4fb84 1162
+desktop/macos/Desktop/Sources/MainWindow/Components/ConversationActionItemRow.swift
+  h_1f8b55eef4fb84 57-58,86,111
+desktop/macos/Desktop/Sources/MainWindow/ConversationDetailAutomationState.swift
+  h_1f8b55eef4fb84 51-57
+desktop/macos/Desktop/Sources/MainWindow/Conversations/MeetingFollowUpDraftSheet.swift
+  h_1f8b55eef4fb84 1-51
+desktop/macos/Desktop/Sources/MainWindow/Conversations/MeetingMemoryBriefCard.swift
+  h_1f8b55eef4fb84 1-62
+desktop/macos/Desktop/Sources/MainWindow/Pages/ConversationDetailHeader.swift
+  h_1f8b55eef4fb84 78,251-255
+desktop/macos/Desktop/Sources/MainWindow/Pages/ConversationDetailSections.swift
+  h_1f8b55eef4fb84 66-67
+desktop/macos/Desktop/Sources/MainWindow/Pages/ConversationDetailView.swift
+  h_1f8b55eef4fb84 100,155-156,293-305,532-540
+desktop/macos/Desktop/Sources/MainWindow/Pages/ConversationSummarySelection.swift
+  h_1f8b55eef4fb84 108-134
+desktop/macos/Desktop/Sources/MainWindow/Pages/ConversationsPage.swift
+  h_1f8b55eef4fb84 1,53-57,174-182,220-222,454-476,500-568
+desktop/macos/Desktop/Sources/MainWindow/Pages/MemoriesPage.swift
+  h_1f8b55eef4fb84 1300
+desktop/macos/Desktop/Sources/MainWindow/Pages/MemoriesViewModel+ReconcileRetry.swift
+  h_1f8b55eef4fb84 203-207,210-211,215-218,225-226,262-265
+desktop/macos/Desktop/Sources/MainWindow/Pages/NoteCitationContract.swift
+  h_1f8b55eef4fb84 18-106,108,113-114,207-212
+desktop/macos/Desktop/Sources/MainWindow/Pages/Settings/Components/SettingsContentView+BillingHelpers.swift
+  h_1f8b55eef4fb84 884-885,899-900,902-903
+desktop/macos/Desktop/Sources/MainWindow/Pages/Settings/Components/SettingsContentView+Controls.swift
+  h_1f8b55eef4fb84 1010,1029-1034
+desktop/macos/Desktop/Sources/MainWindow/Pages/Settings/Components/SettingsContentView+SettingsUpdates.swift
+  h_1f8b55eef4fb84 27-38,40-53,110,112-125,131,133-146,282-315
+desktop/macos/Desktop/Sources/MainWindow/Pages/Settings/Sections/SettingsContentView+Advanced.swift
+  h_1f8b55eef4fb84 421-483
+desktop/macos/Desktop/Sources/MainWindow/Pages/Settings/Sections/SettingsContentView+NotificationsPrivacy.swift
+  h_1f8b55eef4fb84 206-212,348-349,360-361
+desktop/macos/Desktop/Sources/MainWindow/Pages/SettingsPage.swift
+  h_1f8b55eef4fb84 196-200,278-281,302-303,305-306
+desktop/macos/Desktop/Sources/MeetingDetector.swift
+  h_1f8b55eef4fb84 19-21,30-40,96-97,104-115,144-148,152-153,198-199,255-256,270-280,283-284,287,289,291,303,315-321,329-344
+desktop/macos/Desktop/Sources/PostHogManager.swift
+  h_1f8b55eef4fb84 37-41,239-240,242-244,260-269,272-273
+desktop/macos/Desktop/Sources/ProactiveAssistants/Assistants/TaskExtraction/ScreenTaskAuthority.swift
+  h_1f8b55eef4fb84 111-113,115,117,120,122,130-131,149-150
+desktop/macos/Desktop/Sources/ProactiveAssistants/Assistants/TaskExtraction/ScreenTaskPolicy.swift
+  h_1f8b55eef4fb84 5-10,13
+desktop/macos/Desktop/Sources/ProactiveAssistants/Services/MeetingNoteTakingNotice.swift
+  h_1f8b55eef4fb84 6-7
+desktop/macos/Desktop/Sources/Providers/ChatProvider+VideoAttachments.swift
+  h_1f8b55eef4fb84 3-22
+desktop/macos/Desktop/Sources/Providers/ChatProvider.swift
+  h_1f8b55eef4fb84 3685-3689
+desktop/macos/Desktop/Sources/Services/APIClient/APIClient+ConversationModels.swift
+  h_1f8b55eef4fb84 235,266-267,347-349,417,448,495-501
+desktop/macos/Desktop/Sources/Services/APIClient/APIClient+Messages.swift
+  h_1f8b55eef4fb84 117-172
+desktop/macos/Desktop/Sources/Services/APIClient/APIClient+Settings.swift
+  h_1f8b55eef4fb84 57-65,348-352
+desktop/macos/Desktop/Tests/APIClientMemoryMutationRequestTests.swift
+  h_1f8b55eef4fb84 10-16,41,54-55,58-62,224-242
+desktop/macos/Desktop/Tests/BooleanSettingSaverTests.swift
+  h_1f8b55eef4fb84 5-6,8-14,16-23,25-28,31,33-35,37-43,45-46,49-58,61-62,64-65,67-72,74-75
+desktop/macos/Desktop/Tests/CallAppMicSessionTests.swift
+  h_1f8b55eef4fb84 26,49,238,244,248-249,256-257,263,266,302-303,320,369,377,405-407,432-434,457-458,480-481,529,577,585,713,722,731
+desktop/macos/Desktop/Tests/ChatVideoSamplerTests.swift
+  h_1f8b55eef4fb84 1-59
+desktop/macos/Desktop/Tests/ConversationDetailAutomationStateTests.swift
+  h_1f8b55eef4fb84 10-17
+desktop/macos/Desktop/Tests/ConversationDisplayStateTests.swift
+  h_1f8b55eef4fb84 142-161
+desktop/macos/Desktop/Tests/ConversationSummarySelectionTests.swift
+  h_1f8b55eef4fb84 209-222
+desktop/macos/Desktop/Tests/MeetingCallIdentityTests.swift
+  h_1f8b55eef4fb84 117-118,139-140
+desktop/macos/Desktop/Tests/MeetingDetectionConfirmationTests.swift
+  h_1f8b55eef4fb84 1-287
+desktop/macos/Desktop/Tests/MeetingGatedSystemAudioTests.swift
+  h_1f8b55eef4fb84 11,13,217,226,515,528,541,554,564,577,590
+desktop/macos/Desktop/Tests/MeetingMemoryBriefComposerTests.swift
+  h_1f8b55eef4fb84 1-459
+desktop/macos/Desktop/Tests/MeetingMemoryBriefRenderingTests.swift
+  h_1f8b55eef4fb84 1-80
+desktop/macos/Desktop/Tests/MemoriesReconcileRetryTests.swift
+  h_1f8b55eef4fb84 206-207,209,242-243,249-256
+desktop/macos/Desktop/Tests/NoteCitationContractTests.swift
+  h_1f8b55eef4fb84 7-42
+desktop/macos/Desktop/Tests/ScreenTaskPipelineTests.swift
+  h_1f8b55eef4fb84 15-16
+desktop/macos/Desktop/Tests/ScreenTaskRampBoundaryTests.swift
+  h_1f8b55eef4fb84 222-240
+desktop/macos/Desktop/Tests/ServerConversationDecodingTests.swift
+  h_1f8b55eef4fb84 78-87
+desktop/macos/Desktop/Tests/SystemCalendarMeetingContextServiceTests.swift
+  h_1f8b55eef4fb84 166-195
+desktop/macos/changelog/releases/0.12.508.json
+  h_1f8b55eef4fb84 1-7
+desktop/macos/changelog/releases/0.12.509.json
+  h_1f8b55eef4fb84 1-7
+desktop/macos/changelog/releases/0.12.510.json
+  h_1f8b55eef4fb84 1-7
+desktop/macos/changelog/releases/0.12.511.json
+  h_1f8b55eef4fb84 1-7
+desktop/macos/changelog/releases/0.12.512.json
+  h_1f8b55eef4fb84 1-8
+desktop/macos/changelog/releases/0.12.513.json
+  h_1f8b55eef4fb84 1-7
+desktop/macos/changelog/releases/0.12.514.json
+  h_1f8b55eef4fb84 2-6
+desktop/macos/changelog/releases/0.12.515.json
+  h_1f8b55eef4fb84 1-7
+desktop/macos/changelog/releases/0.12.516.json
+  h_1f8b55eef4fb84 1-7
+desktop/macos/changelog/releases/0.12.517.json
+  h_1f8b55eef4fb84 1-7
+desktop/macos/docs/screen-task-pipeline.md
+  h_1f8b55eef4fb84 1,3-10
+desktop/macos/e2e/flows/conversation-detail.yaml
+  h_1f8b55eef4fb84 28-30
+desktop/macos/e2e/flows/screen-frame-attach.yaml
+  h_1f8b55eef4fb84 13-16
+desktop/macos/e2e/flows/screen-task-jev-gate.yaml
+  h_1f8b55eef4fb84 4,33-34,38,46
+desktop/macos/e2e/flows/task-context-dogfood.yaml
+  h_1f8b55eef4fb84 32
+desktop/macos/tests/test-prepare-local-dev-entitlements.sh
+  h_1f8b55eef4fb84 23,108-109,118-119,122-123
+desktop/windows/changelog/unreleased/2026-10-chat-history-midnight-refresh.json
+  h_1f8b55eef4fb84 1-5
+desktop/windows/changelog/unreleased/2026-10-daily-recap-memories-window.json
+  h_1f8b55eef4fb84 2-4
+desktop/windows/changelog/unreleased/20261020-claude-auth-no-price.json
+  h_1f8b55eef4fb84 2
+desktop/windows/changelog/unreleased/20261020-note-citation-repair.json
+  h_1f8b55eef4fb84 1
+desktop/windows/e2e/claude-signin.spec.mjs
+  h_1f8b55eef4fb84 116
+desktop/windows/electron.vite.config.ts
+  h_1f8b55eef4fb84 141-144
+desktop/windows/src/main/agentKernel/productToolExecutors.ts
+  h_1f8b55eef4fb84 904,961,1043
+desktop/windows/src/main/agentKernel/productToolExecutorsTierB.test.ts
+  h_1f8b55eef4fb84 418-420,425-426,438-439
+desktop/windows/src/main/ipc/db.ts
+  h_1f8b55eef4fb84 2092-2105
+desktop/windows/src/renderer/src/components/settings/billing/ClaudeAuthSheet.test.tsx
+  h_1f8b55eef4fb84 35,45,50,56,61,69,73
+desktop/windows/src/renderer/src/components/settings/billing/ClaudeAuthSheet.tsx
+  h_1f8b55eef4fb84 49
+desktop/windows/src/renderer/src/hooks/useChatSessions.test.ts
+  h_1f8b55eef4fb84 173-203
+desktop/windows/src/renderer/src/hooks/useChatSessions.ts
+  h_1f8b55eef4fb84 108-116,249-252
+desktop/windows/src/renderer/src/lib/omiApi.generated.ts
+  h_1f8b55eef4fb84 838-845,1230-1240,2414-2467,2659,3798,6309,6360,6506-6511,8942-8982,11380-11387,11804-11813,14868,16002-16079,20805-20823,21708-21727,22628
+desktop/windows/src/renderer/src/pages/ConversationDetail.test.tsx
+  h_1f8b55eef4fb84 178-204
+desktop/windows/src/renderer/src/pages/ConversationDetail.tsx
+  h_1f8b55eef4fb84 30-34,590-594,630,792,858
+desktop/windows/tsconfig.web.json
+  h_1f8b55eef4fb84 16-18
+desktop/windows/vitest.config.ts
+  h_1f8b55eef4fb84 33-34
+docs/api-reference/app-client-openapi.json
+  h_1f8b55eef4fb84 5275-5325,7815-7867,15029-15356,16516-16525,23591-23602,49950,49994-50010,50060,54665-54929,54938-55039,55057,55059,75836-75911,80118-80209
+docs/doc/developer/AppSetup.mdx
+  h_1f8b55eef4fb84 449-461
+firestore.indexes.json
+  h_1f8b55eef4fb84 135-220,399-484,3289-3342
+plugins/omi-plugin-sdk/src/omi_plugin_sdk/models.py
+  h_1f8b55eef4fb84 170-172
+scripts/check_feature_flag_registry.py
+  h_1f8b55eef4fb84 11-22,27-63,65-67,73,75-86,101-102,108-127,133-135,142-180
+scripts/feature_flag_registry.py
+  h_1f8b55eef4fb84 9,21-24,50-51,65-113,142-163,176-187,279-280,380-384,433,438-478,487-497
+scripts/pre-commit
+  h_1f8b55eef4fb84 29-46,48,88-95,102,111,129
+scripts/render_feature_flag_registry.py
+  h_1f8b55eef4fb84 282-313,403-423,441-442,450-452,467-469,497-498,518,527-528
+scripts/run-workflow-checkout-stall-bounds.sh
+  h_1f8b55eef4fb84 1-22
+scripts/test-pre-commit-pinned-toolchains.sh
+  h_1f8b55eef4fb84 52-53,260-292
+scripts/test_check_feature_flag_registry.py
+  h_1f8b55eef4fb84 19-28,37,41,47-57,100-108,122-125,139-141,144-149,157-162,166-169,225,236-246,251-327,349-351,353-390,504
+scripts/test_posthog_flag_sync.py
+  h_1f8b55eef4fb84 28-37,46,50,59-61
+sdks/python-cli/README.md
+  h_1f8b55eef4fb84 385-386
+sdks/python-cli/omi_cli/auth/oauth.py
+  h_1f8b55eef4fb84 35,310-313,317,335-343
+sdks/python-cli/omi_cli/commands/conversation.py
+  h_1f8b55eef4fb84 5,9,35-42,209-214,218-230,232-238
+sdks/python-cli/omi_cli/commands/local.py
+  h_1f8b55eef4fb84 504-510
+sdks/python-cli/omi_cli/config.py
+  h_1f8b55eef4fb84 46-54,331-336,339
+sdks/python-cli/omi_cli/json_input.py
+  h_1f8b55eef4fb84 9-14,32-33,38-39,41,45-47,49-52
+sdks/python-cli/omi_cli/key_info.py
+  h_1f8b55eef4fb84 5,19-24
+sdks/python-cli/omi_cli/main.py
+  h_1f8b55eef4fb84 15,26,91-96,99-100,105,111-116,152,315-323
+sdks/python-cli/tests/test_auth_oauth.py
+  h_1f8b55eef4fb84 352-399
+sdks/python-cli/tests/test_config.py
+  h_1f8b55eef4fb84 9,18,235-278
+sdks/python-cli/tests/test_conversation.py
+  h_1f8b55eef4fb84 6,139-260
+sdks/python-cli/tests/test_json_input_recursion.py
+  h_1f8b55eef4fb84 9,12-16,18-32
+sdks/python-cli/tests/test_key_info.py
+  h_1f8b55eef4fb84 35-46
+sdks/python-cli/tests/test_local_screenshot_encoding.py
+  h_1f8b55eef4fb84 3,13,15,53-103
+sdks/python-cli/tests/test_main.py
+  h_1f8b55eef4fb84 345-371
+sdks/rust/omi-device/README.md
+  h_1f8b55eef4fb84 20
+sdks/rust/omi-device/src/lib.rs
+  h_1f8b55eef4fb84 349-356,358-363,590-614
+web/admin/docs/posthog-events.md
+  h_1f8b55eef4fb84 96,153,157
+web/admin/grafana/build_wall_dashboard.py
+  h_1f8b55eef4fb84 211,380
+web/admin/grafana/dashboards/omi-tv-v2.json
+  h_1f8b55eef4fb84 6043,6132
+web/admin/grafana/test_build_wall_dashboard.py
+  h_1f8b55eef4fb84 207
+web/admin/lib/__tests__/wall-series.test.ts
+  h_1f8b55eef4fb84 396-398,421-441,1203-1232
+web/admin/lib/services/omi-api/omiApi.generated.ts
+  h_1f8b55eef4fb84 838-845,1230-1240,2414-2467,2659,3798,6309,6360,6506-6511,8942-8982,11380-11387,11804-11813,14868,16002-16079,20805-20823,21708-21727,22628
+web/admin/lib/wall-series.ts
+  h_1f8b55eef4fb84 631-632,634,668,721,898-904,1574-1576,1592-1602
+web/app/src/components/chat/__tests__/ChatCitationCards.test.tsx
+  h_1f8b55eef4fb84 19-28
+web/app/src/components/conversations/ConversationDetailPanel.tsx
+  h_1f8b55eef4fb84 65,334,895,954,1041-1046
+web/app/src/components/conversations/ConversationSplitView.tsx
+  h_1f8b55eef4fb84 468,476
+web/app/src/components/conversations/ConversationTile.tsx
+  h_1f8b55eef4fb84 9,102-103,106,108-109,111,115,119,133,141,157,160,165,170,174-175,181,187,189,194-195,200-201,206-207,219-220,222
+web/app/src/components/conversations/EditableTitle.tsx
+  h_1f8b55eef4fb84 10-11,19,97-98,113,118
+web/app/src/components/conversations/MergeConfirmationDialog.tsx
+  h_1f8b55eef4fb84 7,48-50,85-87,96,98-99,102,108-109,112,116,121,130-131,134,140,145,150-151,163,167,176-177,181,185,187
+web/app/src/components/conversations/NoteActionItems.tsx
+  h_1f8b55eef4fb84 6,20-26,28-33,70,97-103,112-116,155,191-197,220
+web/app/src/components/conversations/NoteSections.tsx
+  h_1f8b55eef4fb84 4-7,50-54
+web/app/src/components/conversations/__tests__/ConversationDetailPanel.note.test.tsx
+  h_1f8b55eef4fb84 452-469
+web/app/src/components/conversations/__tests__/ConversationSplitView.test.tsx
+  h_1f8b55eef4fb84 2-11,244-256,419-438
+web/app/src/components/conversations/__tests__/EditableTitle.test.tsx
+  h_1f8b55eef4fb84 1-37
+web/app/src/components/conversations/__tests__/NoteSections.test.tsx
+  h_1f8b55eef4fb84 40-60,143-145
+web/app/src/components/items/ItemListPage.tsx
+  h_1f8b55eef4fb84 18,42
+web/app/src/components/notifications/NotificationCenter.tsx
+  h_1f8b55eef4fb84 11
+web/app/src/components/recaps/ConversationPreviewPanel.tsx
+  h_1f8b55eef4fb84 10,160
+web/app/src/hooks/__tests__/useActionItems.test.tsx
+  h_1f8b55eef4fb84 100-135
+web/app/src/hooks/useActionItems.ts
+  h_1f8b55eef4fb84 13,16,188,509-522
+web/app/src/lib/__tests__/actionItemGroups.test.ts
+  h_1f8b55eef4fb84 1-18,20-62
+web/app/src/lib/__tests__/conversationTitle.test.ts
+  h_1f8b55eef4fb84 1-35
+web/app/src/lib/__tests__/notificationGroups.test.ts
+  h_1f8b55eef4fb84 1-111
+web/app/src/lib/actionItemGroups.ts
+  h_1f8b55eef4fb84 1-89
+web/app/src/lib/chatCitationLinks.ts
+  h_1f8b55eef4fb84 1,38,40-41
+web/app/src/lib/conversationTitle.ts
+  h_1f8b55eef4fb84 1-21
+web/app/src/lib/notificationGroups.ts
+  h_1f8b55eef4fb84 1-50
+web/app/src/lib/omiApi.generated.ts
+  h_1f8b55eef4fb84 838-845,1230-1240,2414-2467,2659,3798,6309,6360,6506-6511,8942-8982,11380-11387,11804-11813,14868,16002-16079,20805-20823,21708-21727,22628
+web/frontend/src/__tests__/note-citations.test.mjs
+  h_1f8b55eef4fb84 12,15-18,21-45
+web/frontend/src/__tests__/note-sources.test.mjs
+  h_1f8b55eef4fb84 3-8,11-14,19-90
+web/frontend/src/__tests__/shared-note.test.mjs
+  h_1f8b55eef4fb84 275-278
+web/frontend/src/app/memories/[id]/og/route.tsx
+  h_1f8b55eef4fb84 12-15,23,79-85
+web/frontend/src/app/memories/[id]/page.tsx
+  h_1f8b55eef4fb84 22-25,57-61,64,67-68
+web/frontend/src/components/memories/events/memory-events.tsx
+  h_1f8b55eef4fb84 3,7,9,15-18
+web/frontend/src/components/memories/memory.tsx
+  h_1f8b55eef4fb84 16-19,28-32
+web/frontend/src/components/memories/summary/action-items.tsx
+  h_1f8b55eef4fb84 7,11,14,31-33,46-50
+web/frontend/src/components/memories/summary/sumary.tsx
+  h_1f8b55eef4fb84 8-11,32-36,126,140
+web/packages/note-shared/README.md
+  h_1f8b55eef4fb84 11-18
+web/packages/note-shared/note-citations.mjs
+  h_1f8b55eef4fb84 2-77,84,89,154,169,173-179,199-205
+web/packages/note-shared/note-sources.d.mts
+  h_1f8b55eef4fb84 2-14
+web/packages/note-shared/note-sources.mjs
+  h_1f8b55eef4fb84 1-2,8-157
+web/personas-open-source/src/lib/omiApi.generated.ts
+  h_1f8b55eef4fb84 838-845,1230-1240,2414-2467,2659,3798,6309,6360,6506-6511,8942-8982,11380-11387,11804-11813,14868,16002-16079,20805-20823,21708-21727,22628
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "591c0bc06a207f44c1fda40a2c60fc5ba82868d3",
+  "prompts": {},
+  "humans": {
+    "h_1f8b55eef4fb84": {
+      "author": "Archit Lal <architdraftid@gmail.com>"
+    }
+  }
+}
